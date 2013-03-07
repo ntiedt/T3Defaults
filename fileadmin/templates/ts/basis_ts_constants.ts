@@ -6,7 +6,7 @@
 #<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_ts_constants.ts">
 
 ##
-## Constants ###
+## Default Constants ###
 PAGE_TARGET = _top
 content.pageFrameObj = _top
 
@@ -15,13 +15,13 @@ content.pageFrameObj = _top
 ## Bereich Basis ###
 
 ### enable ###
-#cat=basis/enable/10; type=boolean; label=Templavoila verwenden:-> 0=Ein / 1=Aus
+#cat=basis/enable/10; type=boolean; label=Templavoila verwenden:-> 0=Aus / 1=Ein
 basis.templavoila = 1
 
-#cat=basis/enable/12; type=boolean; label=Favicon verwenden:-> 0=Ein / 1=Aus
+#cat=basis/enable/12; type=boolean; label=Favicon verwenden:-> 0=Aus / 1=Ein
 basis.favicon = 0
 
-#cat=basis/enable/15; type=boolean; label=eigenes Listenbild verwenden:-> 0=Ein / 1=Aus
+#cat=basis/enable/15; type=boolean; label=eigenes Listenbild verwenden:-> 0=Aus / 1=Ein
 basis.ul_liststyleimage = 0
 
 #cat=basis/enable/25; type=boolean; label=RealUrl (config.tx_realurl_enable):-> 0=Aus / 1=Ein
@@ -54,13 +54,13 @@ basis.ts_navigation = 1
 #cat=basis/enable/65; type=boolean; label=TS E-Tracker laden:-> 0=Aus / 1=Ein
 basis.ts_etracker = 1
 
-#cat=basis/enable/70; type=boolean; label=Google Verifizierung einschalten:-> 0=Ein / 1=Aus
+#cat=basis/enable/70; type=boolean; label=Google Verifizierung einschalten:-> 0=Aus / 1=Ein
 basis.google_ver = 0
 
-#cat=basis/enable/75; type=boolean; label=TS Funktionen laden:-> 0=Ein / 1=Aus
+#cat=basis/enable/75; type=boolean; label=TS Funktionen laden:-> 0=Aus / 1=Ein
 basis.ts_funktionen = 0
 
-#cat=basis/enable/80; type=boolean; label=TS JS laden:-> 1=Ein / 0=Aus
+#cat=basis/enable/80; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
 basis.ts_js = 1
 
 
@@ -128,22 +128,22 @@ basis.ul_liststyleimage_file = fileadmin/bilder/basis/logo.gif
 
 ### color ###
 #cat=basis/color/10; type=color; label=Hintergrundfarbe der Seite
-basis.bgcolor = 
+basis.bgcolor = white
 
 #cat=basis/color/15; type=color; label=Hintergrundfarbe der Klickvergroesserung
-basis.bgcolor_showpic = 
+basis.bgcolor_showpic = white
 
 #cat=basis/color/20; type=color; label=Schriftfarbe
-basis.font_color = 
+basis.font_color = black
 
 #cat=basis/color/25; type=color; label=Linkfarbe:(href)
-basis.anchor_color = 
+basis.anchor_color = blue
 
 #cat=basis/color/30; type=color; label=Linkfarbe-Hover
-basis.anchor_color_hover = 
+basis.anchor_color_hover = red
 
 #cat=basis/color/35; type=color; label=Schriftfarbe Liste
-basis.ul_color = 
+basis.ul_color = black
 
 
 
@@ -233,7 +233,7 @@ basis.locale_all = de_DE
 #cat=basis/language/30; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
 basis._DEFAULT_PI_VARS_lang = 0
 
-#cat=basis/language/35; type=boolean; label=2. Seitensprache aktivieren
+#cat=basis/language/35; type=boolean; label=2. Seitensprache aktivieren:-> 0=Aus / 1=Ein
 basis.second_lang = 0
 
 #cat=basis/language/40; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=2. Standardsprache (config.language)
