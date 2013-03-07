@@ -15,8 +15,8 @@ content.pageFrameObj = _top
 ## Bereich Basis ###
 
 ### enable ###
-#cat=basis/enable/10; type=boolean; label=Templavoila verwenden:-> 0=Aus / 1=Ein
-basis.templavoila = 1
+#cat=basis/enable/10; type=options[Default=0,Fluid=1,Templavoila=2]; label=Templateengine
+basis.templateengine = 2
 
 #cat=basis/enable/12; type=boolean; label=Favicon verwenden:-> 0=Aus / 1=Ein
 basis.favicon = 0
@@ -62,6 +62,14 @@ basis.ts_funktionen = 0
 
 #cat=basis/enable/80; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
 basis.ts_js = 1
+
+
+
+
+### pfade ###
+
+#cat=pfade//10; type=string; label=Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/
+pfade.tmpl_img = fileadmin/templates/
 
 
 
@@ -166,8 +174,8 @@ basis.shopemail =
 #cat=basis/links/30; type=string; label=@-Zeichen Ersetzung (config.spamProtectEmailAddresses_atSubst):-> (at)
 basis.spamProtectEmailAddresses_atSubst = (at)
 
-#cat=basis/links/35; type=string; label=Pfad zum Logo (lib.logo.file):-> z.b. fileadmin/bilder/basis/obj_logo.gif
-basis.logopfad = fileadmin/bilder/basis/obj_logo.gif
+#cat=basis/links/35; type=string; label=Name Objekt Logo (lib.obj_logo.file):-> z.b. obj_logo.gif
+basis.obj_logo = obj_logo.gif
 
 #cat=basis/links/40; type=string; label=Favicon (page.shortcutIcon):-> z.b. fileadmin/bilder/basis/favicon.ico
 basis.favicon_file = fileadmin/bilder/basis/favicon.ico

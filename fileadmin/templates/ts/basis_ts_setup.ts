@@ -146,8 +146,35 @@ config.no_cache = {$basis.no_cache}
 ### Default PAGE object ###
 page = PAGE
 page.typeNum = 0
-## Templavoila
-[globalVar = LIT:1 = {$basis.templavoila}]
+## Templateengine fluid
+[globalVar = LIT:1 = {$basis.templavoila}]page.10 = FLUIDTEMPLATE
+page.10 {
+  file = fileadmin/templates/fluid/normal.html
+  partialRootPath = fileadmin/templates/fluid/partials
+  variables{
+    content_main < styles.content.get
+    objs < lib.objs
+    navsub < lib.nav_sub
+    nav {
+      head < lib.nav_header
+      nmain < lib.nav_main
+      sub < lib.nav_sub
+      footer1 < lib.nav_footer_1
+      footer2 < lib.nav_footer_2
+    }
+    ob {
+      logo < lib.obj_logo
+      claim < lib.obj_claim
+      search < lib.obj_search
+      header_pic < lib.obj_header_pic
+      address < lib.obj_address
+      map < lib.obj_map
+    }
+  }
+}
+[global]
+## Templateengine templavoila
+[globalVar = LIT:2 = {$basis.templavoila}]
 page.10 = USER
 page.10.userFunc = tx_templavoila_pi1->main_page
 page.10.disableExplosivePreview = 1
