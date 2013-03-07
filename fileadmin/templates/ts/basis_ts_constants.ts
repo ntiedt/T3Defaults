@@ -1,7 +1,9 @@
 ###
 ### Basis-Definitionen ###
 
-# Ins Root-Template unter Constants einfuegen
+
+# Include following tag without # in the typoscript constant section of your root template
+#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_ts_constants.ts">
 
 ##
 ## Constants ###

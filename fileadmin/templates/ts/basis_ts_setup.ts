@@ -1,7 +1,7 @@
 ###
 ### Basis-Definitionen ###
 
-# In Root-Template unter Constants einfuegen
+# Include following tag without # in the typoscript setup section of your root template
 #<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_ts_setup.ts">
 
 ##
@@ -270,21 +270,16 @@ page.10000{
 #----------------------------------------------------------- PAGETITLE-END
 
 
+#----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
 ### tt_content Definitionen ###
-[globalVar = LIT:1 = {$basis.ts_tt_content}]
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/tt_content_ts_setup.ts">
-[global]
 
 ### Seitentypen ###
-[globalVar = LIT:1 = {$basis.ts_seitentypen}]
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_ts_setup.ts">
-[global]
 
 
 ### CSS ###
-[globalVar = LIT:1 = {$basis.ts_css}]
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_ts_setup.ts">
-[global]
 
 
 ### JS ###
@@ -301,9 +296,4 @@ page.10000{
 
 ### Funktionen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_ts_setup.ts">
-
-
-
-### noch einbauen ###
-#If the constant {$constant_to_turnSomethingOn} is “1” then this matches:
-#[globalVar = LIT:1 = {$constant_to_turnSomethingOn}]
+#----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END

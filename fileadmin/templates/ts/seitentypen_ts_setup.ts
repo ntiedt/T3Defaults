@@ -1,4 +1,5 @@
-# Thumb mit Bildern
+# Seitentypen
+[globalVar = LIT:1 = {$basis.ts_seitentypen}]
 seitentypen_a = PAGE
 seitentypen_a{
   typeNum = {$seitentypen.b_typenum}
@@ -17,6 +18,8 @@ seitentypen_a{
     }
   }
 }
+[global]
+
 [globalVar = LIT:1 = {$seitentypen.b_cobj_tables_ids_data}]
 seitentypen_a{
   10{

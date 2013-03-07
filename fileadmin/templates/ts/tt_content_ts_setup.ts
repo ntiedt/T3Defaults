@@ -1,5 +1,6 @@
 ###
 ### tt_content Definitionen ###
+[globalVar = LIT:1 = {$basis.ts_tt_content}]
 
 ### Eigenschaften von showpic.php -> bild -> Klickvergroesserung ### 
 tt_content.textpic.20.1.imageLinkWrap = 1 
@@ -40,10 +41,11 @@ tt_content.mailform.20 {
 }
 
 
+[global]
 
 ### Link to top ###
 tt_content.stdWrap.innerWrap2 = |<a href="#top">{$basis.linktotop}</ a>
-[globalVar = GP:L = 1] && [globalVar = LIT:1 = {$basis.second_lang}]
+[globalVar = LIT:1 = {$basis.ts_tt_content}] && [globalVar = GP:L = 1] && [globalVar = LIT:1 = {$basis.second_lang}]
 tt_content.stdWrap.innerWrap2 = |<a href="#top">{$basis.second_lang_linktotop}</ a>
 [global]
 

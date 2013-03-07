@@ -1,5 +1,6 @@
 ###
 ### CSS ###
+[globalVar = LIT:1 = {$basis.ts_css}]
 page.includeCSS{
   normal = fileadmin/templates/css/normal.css
 }
@@ -147,9 +148,10 @@ page.headerData.111{
   }
 }
 
+[global]
 
 ### List Image ###
-[globalVar = LIT:1 = {$basis.ul_liststyleimage}]
+[globalVar = LIT:1 = {$basis.ts_css}] && [globalVar = LIT:1 = {$basis.ul_liststyleimage}]
 css.20 = TEXT
 css.20.value(
     ul{
