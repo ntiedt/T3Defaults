@@ -1,6 +1,6 @@
 ###
 ### CSS ###
-[globalVar = LIT:1 = {$basis.ts_css}]
+[globalVar = LIT:1 = {$t3d_basis.ts_css}]
 page.includeCSS{
   normal = {$pfade.tmpls}css/normal.css
 }
@@ -16,51 +16,51 @@ css {
 	10 = TEXT
 	10.value (
     body{
-      background-color: {$basis.bgcolor};
+      background-color: {$t3d_basis.bgcolor};
     }
     body, div, a, p, ul, li, input, select, textarea, h1, h2, h3{
-    	font-size:{$basis.font_size};
-    	font-weight: {$basis.font_weight};
+    	font-size:{$t3d_basis.font_size};
+    	font-weight: {$t3d_basis.font_weight};
     	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva;
-    	color: {$basis.font_color};
+    	color: {$t3d_basis.font_color};
     }
     a {
-    	font-size:{$basis.font_size_anchor};
-    	font-weight: {$basis.font_weight_anchor};
+    	font-size:{$t3d_basis.font_size_anchor};
+    	font-weight: {$t3d_basis.font_weight_anchor};
     	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva;
-    	color: {$basis.anchor_color};
+    	color: {$t3d_basis.anchor_color};
     	text-decoration: none;
     }
     a:hover {
-    	color: {$basis.anchor_color_hover};
-    	font-weight: {$basis.font_weight_anchor_hover};
+    	color: {$t3d_basis.anchor_color_hover};
+    	font-weight: {$t3d_basis.font_weight_anchor_hover};
     }
     h1, h2, h3{
-    	font-weight: {$basis.font_weight_headlines};
+    	font-weight: {$t3d_basis.font_weight_headlines};
     }
     h1.csc-firstHeader {
-    	font-size:{$basis.font_size_h1_cscFirstHeader};
+    	font-size:{$t3d_basis.font_size_h1_cscFirstHeader};
     }
     h1 {
-    	font-size:{$basis.font_size_h1};
+    	font-size:{$t3d_basis.font_size_h1};
     }
     h2 {
-    	font-size:{$basis.font_size_h2};
+    	font-size:{$t3d_basis.font_size_h2};
     }
     h3 {
-    	font-size:{$basis.font_size_h3};
+    	font-size:{$t3d_basis.font_size_h3};
     }
     ul{
-      color:{$basis.ul_color};
-      margin:{$basis.ul_margin};
-      padding:{$basis.ul_padding};
-      list-style-type:{$basis.ul_liststyletype};
-      list-style-position:{$basis.ul_liststyleposition};
+      color:{$t3d_basis.ul_color};
+      margin:{$t3d_basis.ul_margin};
+      padding:{$t3d_basis.ul_padding};
+      list-style-type:{$t3d_basis.ul_liststyletype};
+      list-style-position:{$t3d_basis.ul_liststyleposition};
     }
     li{
-      margin:{$basis.li_margin};
-      padding:{$basis.li_padding};
-      font-size:{$basis.font_size_li};
+      margin:{$t3d_basis.li_margin};
+      padding:{$t3d_basis.li_padding};
+      font-size:{$t3d_basis.font_size_li};
     }
     
     
@@ -151,11 +151,11 @@ page.headerData.111{
 [global]
 
 ### List Image ###
-[globalVar = LIT:1 = {$basis.ts_css}] && [globalVar = LIT:1 = {$basis.ul_liststyleimage}]
+[globalVar = LIT:1 = {$t3d_basis.ts_css}] && [globalVar = LIT:1 = {$t3d_basis.ul_liststyleimage}]
 css.20 = TEXT
 css.20.value(
     ul{
-      list-style-image:url({$basis.ul_liststyleimage_file});
+      list-style-image:url({$t3d_basis.ul_liststyleimage_file});
     }
 )
 [global]

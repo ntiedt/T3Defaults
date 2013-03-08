@@ -2,8 +2,8 @@
 ### Objekte ###
 tmp.obj_logo = IMAGE
 tmp.obj_logo {
-  file = {$pfade.tmpls}/image/{$basis.obj_logo}
-  stdWrap.typolink.parameter = {$basis.rootpageID}
+  file = {$pfade.tmpls}/image/{$t3d_basis.obj_logo}
+  stdWrap.typolink.parameter = {$t3d_basis.rootpageID}
   file.import = uploads/tx_templavoila/
   file.import.listNum = 0
 }
@@ -53,7 +53,7 @@ tmp.objs{
 }
 
 
-[globalVar = LIT:1 = {$basis.ts_objekte}]
+[globalVar = LIT:1 = {$t3d_basis.ts_objekte}]
 lib.obj_logo < tmp.obj_logo
 lib.obj_claim < tmp.obj_claim
 lib.obj_search < tmp.obj_search

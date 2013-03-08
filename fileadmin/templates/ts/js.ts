@@ -1,5 +1,5 @@
 ### JAVASCRIPT INCLUDES ANFANG
-[globalVar = LIT:1 = {$basis.ts_js}]
+[globalVar = LIT:1 = {$t3d_basis.ts_js}]
 
 page.includeJSFooter{
   jquery = {$pfade.tmpls}js/jquery-1.9.1.min.js
@@ -27,7 +27,7 @@ page.headerData.150{
   8= TEXT
   8.value(
 
-var config_baseurl = '{$basis.baseURL}';
+var config_baseurl = '{$t3d_basis.baseURL}';
   )
   9= TEXT
   9.value(

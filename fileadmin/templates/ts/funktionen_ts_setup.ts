@@ -1,6 +1,6 @@
 ###
 ### Funktionen ###
-[globalVar = LIT:1 = {$basis.ts_funktionen}]
+[globalVar = LIT:1 = {$t3d_basis.ts_funktionen}]
 
 includeLibs.testMd5 = {$pfade.tmpls}ts/userfunc_funktionen.php
 temp.info = USER

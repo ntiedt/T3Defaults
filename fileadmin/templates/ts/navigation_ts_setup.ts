@@ -142,7 +142,7 @@ tmp.nav_rootline{
 }
 
 
-[globalVar = LIT:1 = {$basis.ts_navigation}]
+[globalVar = LIT:1 = {$t3d_basis.ts_navigation}]
 # Include tmenulinebreak script
 page.includeLibs.tmenulinebreak = {$pfade.tmpls}php/tmenulinebreak.php
 

@@ -132,14 +132,14 @@ et={$etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 
 )
 
-[globalVar = LIT:1 = {$basis.ts_etracker}]
+[globalVar = LIT:1 = {$t3d_basis.ts_etracker}]
 page.1001 < temp.etrackerjavascript
 [global]
 
 
 ### Google Verifizierung ###
-[globalVar = LIT:1 = {$basis.google_ver}]
+[globalVar = LIT:1 = {$t3d_basis.google_ver}]
 page.meta.verify-v1.cObject = COA
 page.meta.verify-v1.cObject.10 = TEXT
-page.meta.verify-v1.cObject.10.value= {$basis.google_vid}
+page.meta.verify-v1.cObject.10.value= {$t3d_basis.google_vid}
 [global]

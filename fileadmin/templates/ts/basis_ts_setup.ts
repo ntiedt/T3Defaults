@@ -10,15 +10,15 @@
 #----------------------------------------------------------- CONFIG-BEGIN
 config{
   doctype = xhtml_trans
-  htmlTag_langKey = {$basis.locale_all}
+  htmlTag_langKey = {$t3d_basis.locale_all}
   xhtml_cleaning = all
   removeDefaultJS = external
   doctypeSwitch = 1
   
   ## 1. Sprache Deutsch
   sys_language_uid = 0
-  language = {$basis.language}
-  locale_all = {$basis.locale_all}
+  language = {$t3d_basis.language}
+  locale_all = {$t3d_basis.locale_all}
   sys_language_mode = content_fallback
   sys_language_overlay = hideNonTranslated
   # Setting up the language variable "L" to be passed along with links
@@ -27,33 +27,33 @@ config{
   
   index_enable = 1
   
-  simulateStaticDocuments = {$basis.simulateStaticDocuments}
-  baseURL = {$basis.baseURL}
-  tx_realurl_enable = {$basis.tx_realurl_enable}
+  simulateStaticDocuments = {$t3d_basis.simulateStaticDocuments}
+  baseURL = {$t3d_basis.baseURL}
+  tx_realurl_enable = {$t3d_basis.tx_realurl_enable}
 
   spamProtectEmailAddresses = 1
-  spamProtectEmailAddresses_atSubst = {$basis.spamProtectEmailAddresses_atSubst}
+  spamProtectEmailAddresses_atSubst = {$t3d_basis.spamProtectEmailAddresses_atSubst}
 }
 #----------------------------------------------------------- CONFIG-END
 
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-BEGIN
-plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$basis._DEFAULT_PI_VARS_lang}
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$t3d_basis._DEFAULT_PI_VARS_lang}
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-END
 
 #----------------------------------------------------------- PAGE-CONFIG-UTF8-BEGIN
-[globalVar = LIT:1 = {$basis.utf8_support}]
+[globalVar = LIT:1 = {$t3d_basis.utf8_support}]
 page.config.metaCharset = utf-8
 page.config.additionalHeaders = Content-Type:text/html;charset=utf-8
 [global]
 #----------------------------------------------------------- PAGE-CONFIG-UTF8-END
 
 #----------------------------------------------------------- CONFIG-LANGUAGE-BEGIN
-[globalVar = GP:L = 1] && [globalVar = LIT:1 = {$basis.second_lang}]
+[globalVar = GP:L = 1] && [globalVar = LIT:1 = {$t3d_basis.second_lang}]
 config.sys_language_uid = 1
-config.language = {$basis.second_lang_language}
-config.locale_all = {$basis.second_lang_locale_all}
+config.language = {$t3d_basis.second_lang_language}
+config.locale_all = {$t3d_basis.second_lang_locale_all}
 #----------------------------- EXT-INDEXEDSEARCH-LANG
-plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$basis.second_lang_DEFAULT_PI_VARS_lang}
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$t3d_basis.second_lang_DEFAULT_PI_VARS_lang}
 [global]
 #------------------------------------------------------------ CONFIG-LANGUAGE-BEGIN
 
@@ -138,7 +138,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 
 #----------------------------------------------------------- CONFIG-CACHE-BEGIN
 [globalVar = TSFE : beUserLogin> 0]
-config.no_cache = {$basis.no_cache}
+config.no_cache = {$t3d_basis.no_cache}
 [global]
 #----------------------------------------------------------- CONFIG-CACHE-END
 
@@ -147,7 +147,7 @@ config.no_cache = {$basis.no_cache}
 page = PAGE
 page.typeNum = 0
 ## Templateengine fluid
-[globalVar = LIT:1 = {$basis.templavoila}]page.10 = FLUIDTEMPLATE
+[globalVar = LIT:1 = {$t3d_basis.templavoila}]page.10 = FLUIDTEMPLATE
 page.10 {
   file = fileadmin/templates/fluid/normal.html
   partialRootPath = fileadmin/templates/fluid/partials
@@ -174,7 +174,7 @@ page.10 {
 }
 [global]
 ## Templateengine templavoila
-[globalVar = LIT:2 = {$basis.templavoila}]
+[globalVar = LIT:2 = {$t3d_basis.templavoila}]
 page.10 = USER
 page.10.userFunc = tx_templavoila_pi1->main_page
 page.10.disableExplosivePreview = 1
@@ -182,8 +182,8 @@ page.10.disableExplosivePreview = 1
 #----------------------------------------------------------- DEFAULT-PAGE-END
 
 #----------------------------------------------------------- PAGE-SHORTCUT-ICON-BEGIN
-[globalVar = LIT:1 = {$basis.favicon}]
-page.shortcutIcon = {$basis.favicon_file}
+[globalVar = LIT:1 = {$t3d_basis.favicon}]
+page.shortcutIcon = {$t3d_basis.favicon_file}
 [global]
 #----------------------------------------------------------- PAGE-SHORTCUT-ICON-END
 

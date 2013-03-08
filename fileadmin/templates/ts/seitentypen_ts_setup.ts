@@ -1,5 +1,5 @@
 # Seitentypen
-[globalVar = LIT:1 = {$basis.ts_seitentypen}]
+[globalVar = LIT:1 = {$t3d_basis.ts_seitentypen}]
 seitentypen_a = PAGE
 seitentypen_a{
   typeNum = {$seitentypen.b_typenum}
