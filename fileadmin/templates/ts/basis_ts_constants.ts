@@ -12,7 +12,7 @@ content.pageFrameObj = _top
 
 
 ##
-## Bereich Basis ###
+## TYPO3 Defaults (T3D) Bereich Basis ###
 
 ### enable ###
 #cat=t3d_basis/enable/10; type=options[Default=0,Fluid=1,Templavoila=2]; label=Templateengine
