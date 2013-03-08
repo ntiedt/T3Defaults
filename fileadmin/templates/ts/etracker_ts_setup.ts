@@ -3,19 +3,19 @@
 
 ### Bereiche - et_areas ###
  temp.etrackerareas = HMENU
- temp.etrackerareas.special.range = {$etracker.range_areas}
+ temp.etrackerareas.special.range = {$t3d_etracker.range_areas}
  temp.etrackerareas.special = rootline
  temp.etrackerareas.1 = TMENU
  temp.etrackerareas.1 {
- NO.allWrap = | {$etracker.areas_splitchar} |*||*| |
+ NO.allWrap = | {$t3d_etracker.areas_splitchar} |*||*| |
  NO.doNotLinkIt = 1
  }
 
 
 ### Seitenname -  et_pagename ###
  temp.etrackerpagename < temp.etrackerareas 
- temp.etrackerpagename.special.range = {$etracker.range_pagename}
- temp.etrackerpagename.1.NO.allWrap = | {$etracker.pagename_splitchar}  |*||*| |
+ temp.etrackerpagename.special.range = {$t3d_etracker.range_pagename}
+ temp.etrackerpagename.1.NO.allWrap = | {$t3d_etracker.pagename_splitchar}  |*||*| |
 
 
 ### URL -  et_url ###
@@ -36,25 +36,25 @@ temp.etrackerurl{
 
 ### Besucherinteresse -  et_ilevel ###
 temp.etrackerilevel=TEXT
-temp.etrackerilevel.value = {$etracker.ilevel_all}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_all}
 
 [treeLevel = 1]
-temp.etrackerilevel.value = {$etracker.ilevel_1}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_1}
 [global]
 [treeLevel = 2]
-temp.etrackerilevel.value = {$etracker.ilevel_2}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_2}
 [global]
 [treeLevel = 3]
-temp.etrackerilevel.value = {$etracker.ilevel_3}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_3}
 [global]
 [treeLevel = 4]
-temp.etrackerilevel.value = {$etracker.ilevel_4}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_4}
 [global]
 [treeLevel = 5]
-temp.etrackerilevel.value = {$etracker.ilevel_5}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_5}
 [global]
 [treeLevel = 6]
-temp.etrackerilevel.value = {$etracker.ilevel_6}
+temp.etrackerilevel.value = {$t3d_etracker.ilevel_6}
 [global]
 
 
@@ -68,7 +68,7 @@ temp.etrackerjavascript.10.value (
 <!-- without the express prior written permission of the copyright holder. -->
 
 <!-- BEGIN etracker Tracklet 3.0 -->
-<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.etracker.com/t.js?et={$etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
+<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.t3d_etracker.com/t.js?et={$t3d_etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
 
 <!-- etracker PARAMETER 3.0 -->
 <script type="text/javascript">
@@ -114,12 +114,12 @@ var et_se           = "0";
 <!-- etracker PARAMETER END -->
 
 <script type="text/javascript">_etc();</script>
-<noscript><p><a href="www.etracker.com"><img style="border:0px;" alt="" src="http://www.etracker.com/nscnt.php?et={$etracker.id}" /></a></p></noscript>
+<noscript><p><a href="www.t3d_etracker.com"><img style="border:0px;" alt="" src="http://www.t3d_etracker.com/nscnt.php?et={$t3d_etracker.id}" /></a></p></noscript>
 <!-- etracker CODE NOSCRIPT 3.0 -->
 <noscript>
-<p><a href='http://www.etracker.de/app?et={$etracker.id}'>
-<img style='border:0px;' alt='' src='http://www.etracker.de/cnt.php?
-et={$etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
+<p><a href='http://www.t3d_etracker.de/app?et={$t3d_etracker.id}'>
+<img style='border:0px;' alt='' src='http://www.t3d_etracker.de/cnt.php?
+et={$t3d_etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 &amp;et_pagename=
 &amp;et_areas=&amp;et_ilevel=0&amp;et_target=,0,,0
 &amp;et_lpage=0&amp;et_trig=&amp;et_se=0&amp;et_cust=0

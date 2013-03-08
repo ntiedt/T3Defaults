@@ -190,41 +190,41 @@ t3d_basis.favicon_file = fileadmin/bilder/t3d_basis/favicon.ico
 
 
 ###  TYPO3 Defaults (T3D) Bereich Etracker ###
-#cat=etracker/links/10; type=string; label=E-Tracker ID
-etracker.id =
+#cat=t3d_etracker/links/10; type=string; label=E-Tracker ID
+t3d_etracker.id =
 
-#cat=etracker/links/15; type=string; label=E-Tracker Range (et_areas):z.b. 1|-2
-etracker.range_areas = 1|-2
+#cat=t3d_etracker/links/15; type=string; label=E-Tracker Range (et_areas):z.b. 1|-2
+t3d_etracker.range_areas = 1|-2
 
-#cat=etracker/links/20; type=string; label=E-Tracker Trennerzeichen (et_areas):-> ,=Standard und /=Bereichsabhaengige Auswertung
-etracker.areas_splitchar = ,
+#cat=t3d_etracker/links/20; type=string; label=E-Tracker Trennerzeichen (et_areas):-> ,=Standard und /=Bereichsabhaengige Auswertung
+t3d_etracker.areas_splitchar = ,
 
-#cat=etracker/links/25; type=string; label=E-Tracker Range (et_pagename):-> z.b. 1|-1
-etracker.range_pagename = 1|-1
+#cat=t3d_etracker/links/25; type=string; label=E-Tracker Range (et_pagename):-> z.b. 1|-1
+t3d_etracker.range_pagename = 1|-1
 
-#cat=etracker/links/30; type=string; label=E-Tracker Trennerzeichen (et_pagename):-> z.b. %20->%20
-etracker.pagename_splitchar = %20->%20
+#cat=t3d_etracker/links/30; type=string; label=E-Tracker Trennerzeichen (et_pagename):-> z.b. %20->%20
+t3d_etracker.pagename_splitchar = %20->%20
 
-#cat=etracker/links/35; type=int+; label=Bewertung Standard Level(et_ilevel):-> 0-10
-etracker.ilevel_all = 4
+#cat=t3d_etracker/links/35; type=int+; label=Bewertung Standard Level(et_ilevel):-> 0-10
+t3d_etracker.ilevel_all = 4
 
-#cat=etracker/links/40; type=int+; label=Bewertung Level 1(et_ilevel):-> 0-10
-etracker.ilevel_1 = 5
+#cat=t3d_etracker/links/40; type=int+; label=Bewertung Level 1(et_ilevel):-> 0-10
+t3d_etracker.ilevel_1 = 5
 
-#cat=etracker/links/45; type=int+; label=Bewertung Level 2(et_ilevel):-> 0-10
-etracker.ilevel_2 = 6
+#cat=t3d_etracker/links/45; type=int+; label=Bewertung Level 2(et_ilevel):-> 0-10
+t3d_etracker.ilevel_2 = 6
 
-#cat=etracker/links/50; type=int+; label=Bewertung Level 3(et_ilevel):-> 0-10
-etracker.ilevel_3 = 7
+#cat=t3d_etracker/links/50; type=int+; label=Bewertung Level 3(et_ilevel):-> 0-10
+t3d_etracker.ilevel_3 = 7
 
-#cat=etracker/links/55; type=int+; label=Bewertung Level 4(et_ilevel):-> 0-10
-etracker.ilevel_4 = 8
+#cat=t3d_etracker/links/55; type=int+; label=Bewertung Level 4(et_ilevel):-> 0-10
+t3d_etracker.ilevel_4 = 8
 
-#cat=etracker/links/60; type=int+; label=Bewertung Level 5(et_ilevel):-> 0-10
-etracker.ilevel_5 = 9
+#cat=t3d_etracker/links/60; type=int+; label=Bewertung Level 5(et_ilevel):-> 0-10
+t3d_etracker.ilevel_5 = 9
 
-#cat=etracker/links/65; type=int+; label=Bewertung Level 6(et_ilevel):-> 0-10
-etracker.ilevel_6 = 10
+#cat=t3d_etracker/links/65; type=int+; label=Bewertung Level 6(et_ilevel):-> 0-10
+t3d_etracker.ilevel_6 = 10
 
 #cat=t3d_basis/links/90; type=string; label=Google Verifizierung ID
 t3d_basis.google_vid = 
