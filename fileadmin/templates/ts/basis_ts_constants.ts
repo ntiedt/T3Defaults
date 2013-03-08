@@ -129,8 +129,8 @@ basis.ul_liststyletype = disc
 #cat=basis/typo/75; type=options[ausgerueckt=outside,eingerueckt=inside]; label=Listeneinrueckung (ul list-style-position)
 basis.ul_liststyleposition = outside
 
-#cat=basis/typo/80; type=string; label=eigenes Listenbild (ul list-style-image):Pfad ausgehend vom CSS
-basis.ul_liststyleimage_file = fileadmin/bilder/basis/logo.gif
+#cat=basis/typo/80; type=string; label=eigenes Listenbild (ul list-style-image):z.b. bg_liste.gif
+basis.ul_liststyleimage_file = bg_liste.gif
 
 
 
@@ -259,10 +259,6 @@ basis.second_lang_DEFAULT_PI_VARS_lang = 1
 
 ##
 ## Bereich Navigation ###
-
-#cat=navigation//10; type=string; label=Pfad zum tmenulinebreak-Script:z.b. fileadmin/templates/php/tmenulinebreak.php
-navigation.tmenulinebreak = fileadmin/templates/php/tmenulinebreak.php
-
 ## Hauptnavigation #
 #cat=navigation//15; type=int; label=Hauptnavigation Einstiegslevel(entryLevel):z.b. 1
 navigation.nav_main_entryLevel = 0

@@ -84,7 +84,7 @@ tmp.nav_rootline{
 
 [globalVar = LIT:1 = {$basis.ts_navigation}]
 # Include tmenulinebreak script
-page.includeLibs.tmenulinebreak = {$navigation.tmenulinebreak}
+page.includeLibs.tmenulinebreak = {$pfade.tmpls}php/tmenulinebreak.php
 
 lib.nav_main < tmp.nav_main
 lib.nav_sub < tmp.nav_sub
