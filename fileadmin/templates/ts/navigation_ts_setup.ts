@@ -129,7 +129,7 @@ tmp.nav_rootline{
       NO {
         ATagParams = class = nav_rootline_norm
         allWrap = <div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_text">|</div><div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_norm">|</div>
-        #allWrap = |*| |  <img src="{$pfade.tmpls}verlaufsnav_trenner_9.png" width="7" height="20" />  |*| |
+        #allWrap = |*| |  <img src="{$t3d_pfade.tmpls}verlaufsnav_trenner_9.png" width="7" height="20" />  |*| |
       }
       CUR < .NO
       CUR = 1
@@ -144,7 +144,7 @@ tmp.nav_rootline{
 
 [globalVar = LIT:1 = {$t3d_basis.ts_navigation}]
 # Include tmenulinebreak script
-page.includeLibs.tmenulinebreak = {$pfade.tmpls}php/tmenulinebreak.php
+page.includeLibs.tmenulinebreak = {$t3d_pfade.tmpls}php/tmenulinebreak.php
 
 lib.nav_main < tmp.nav_main
 lib.nav_sub < tmp.nav_sub

@@ -2,7 +2,7 @@
 ### CSS ###
 [globalVar = LIT:1 = {$t3d_basis.ts_css}]
 page.includeCSS{
-  normal = {$pfade.tmpls}css/normal.css
+  normal = {$t3d_pfade.tmpls}css/normal.css
 }
 css = PAGE
 css {

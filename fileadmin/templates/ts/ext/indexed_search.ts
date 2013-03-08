@@ -5,7 +5,7 @@ config.index_externals = 1
 config.index_metatags = 1
 
 plugin.tx_indexedsearch {
-	templateFile = {$pfade.tmpls}html/ext_indexed_search.html
+	templateFile = {$t3d_pfade.tmpls}html/ext_indexed_search.html
 
 	## Date formats for created/modified dates in search results. See PHP strftime() function.
   ## Leave blank for using system defaults

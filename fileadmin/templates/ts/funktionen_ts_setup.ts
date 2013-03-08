@@ -2,7 +2,7 @@
 ### Funktionen ###
 [globalVar = LIT:1 = {$t3d_basis.ts_funktionen}]
 
-includeLibs.testMd5 = {$pfade.tmpls}ts/userfunc_funktionen.php
+includeLibs.testMd5 = {$t3d_pfade.tmpls}ts/userfunc_funktionen.php
 temp.info = USER
 temp.info {
   userFunc =user_testMd5->main

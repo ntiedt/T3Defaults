@@ -2,8 +2,8 @@
 [globalVar = LIT:1 = {$t3d_basis.ts_js}]
 
 page.includeJSFooter{
-  jquery = {$pfade.tmpls}js/jquery-1.9.1.min.js
-  funktionen = {$pfade.tmpls}js/funktionen.js
+  jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 
 

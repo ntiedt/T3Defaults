@@ -69,7 +69,7 @@ t3d_basis.ts_js = 1
 ### pfade ###
 
 #cat=pfade//10; type=string; label=Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/
-pfade.tmpls = fileadmin/templates/
+t3d_pfade.tmpls = fileadmin/templates/
 
 
 
