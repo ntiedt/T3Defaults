@@ -15,52 +15,52 @@ content.pageFrameObj = _top
 ## Bereich Basis ###
 
 ### enable ###
-#cat=basis/enable/10; type=options[Default=0,Fluid=1,Templavoila=2]; label=Templateengine
+#cat=t3d_basis/enable/10; type=options[Default=0,Fluid=1,Templavoila=2]; label=Templateengine
 t3d_basis.templateengine = 2
 
-#cat=basis/enable/12; type=boolean; label=Favicon verwenden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/12; type=boolean; label=Favicon verwenden:-> 0=Aus / 1=Ein
 t3d_basis.favicon = 0
 
-#cat=basis/enable/15; type=boolean; label=eigenes Listenbild verwenden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/15; type=boolean; label=eigenes Listenbild verwenden:-> 0=Aus / 1=Ein
 t3d_basis.ul_liststyleimage = 0
 
-#cat=basis/enable/25; type=boolean; label=RealUrl (config.tx_realurl_enable):-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/25; type=boolean; label=RealUrl (config.tx_realurl_enable):-> 0=Aus / 1=Ein
 t3d_basis.tx_realurl_enable = 0
 
-#cat=basis/enable/30; type=boolean; label=simulateStaticDocuments (config.simulateStaticDocuments):-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/30; type=boolean; label=simulateStaticDocuments (config.simulateStaticDocuments):-> 0=Aus / 1=Ein
 t3d_basis.simulateStaticDocuments = 0
 
-#cat=basis/enable/35; type=boolean; label=UTF-8 Support :-> 0=Aus / 1=Ein : Zusaetzlich im Install-Tool unter forceCharset "utf-8" eingeben
+#cat=t3d_basis/enable/35; type=boolean; label=UTF-8 Support :-> 0=Aus / 1=Ein : Zusaetzlich im Install-Tool unter forceCharset "utf-8" eingeben
 t3d_basis.utf8_support = 1
 
-#cat=basis/enable/40; type=boolean; label=Seitencache wenn BE-User eingeloggt (config.no_cache):-> 0=Ein / 1=Aus, Nach Entwicklung deaktivieren!!
+#cat=t3d_basis/enable/40; type=boolean; label=Seitencache wenn BE-User eingeloggt (config.no_cache):-> 0=Ein / 1=Aus, Nach Entwicklung deaktivieren!!
 t3d_basis.no_cache = 1
 
-#cat=basis/enable/43; type=boolean; label=TS tt_content laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/43; type=boolean; label=TS tt_content laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_tt_content = 1
 
-#cat=basis/enable/45; type=boolean; label=TS Seitentypen laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/45; type=boolean; label=TS Seitentypen laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_seitentypen = 1
 
-#cat=basis/enable/50; type=boolean; label=TS CSS laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/50; type=boolean; label=TS CSS laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_css = 1
 
-#cat=basis/enable/55; type=boolean; label=TS Objekte laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/55; type=boolean; label=TS Objekte laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_objekte = 1
 
-#cat=basis/enable/60; type=boolean; label=TS Navigation laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/60; type=boolean; label=TS Navigation laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_navigation = 1
 
-#cat=basis/enable/65; type=boolean; label=TS E-Tracker laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/65; type=boolean; label=TS E-Tracker laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_etracker = 1
 
-#cat=basis/enable/70; type=boolean; label=Google Verifizierung einschalten:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/70; type=boolean; label=Google Verifizierung einschalten:-> 0=Aus / 1=Ein
 t3d_basis.google_ver = 0
 
-#cat=basis/enable/75; type=boolean; label=TS Funktionen laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/75; type=boolean; label=TS Funktionen laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_funktionen = 0
 
-#cat=basis/enable/80; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/80; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_js = 1
 
 
@@ -75,116 +75,116 @@ pfade.tmpls = fileadmin/templates/
 
 
 ### typo ###
-#cat=basis/typo/10; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse
+#cat=t3d_basis/typo/10; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse
 t3d_basis.font_size = 8pt
 
-#cat=basis/typo/12; type=string; label=Zeilenabstand (line-height):-> 13pt
+#cat=t3d_basis/typo/12; type=string; label=Zeilenabstand (line-height):-> 13pt
 t3d_basis.line_height = 13pt
 
-#cat=basis/typo/15; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse Link:(href)
+#cat=t3d_basis/typo/15; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse Link:(href)
 t3d_basis.font_size_anchor = 8pt
 
-#cat=basis/typo/18; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse erster H1 auf Seite
+#cat=t3d_basis/typo/18; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse erster H1 auf Seite
 t3d_basis.font_size_h1_cscFirstHeader = 11pt
 
-#cat=basis/typo/20; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H1
+#cat=t3d_basis/typo/20; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H1
 t3d_basis.font_size_h1 = 11pt
 
-#cat=basis/typo/25; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H2
+#cat=t3d_basis/typo/25; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H2
 t3d_basis.font_size_h2 = 10pt
 
-#cat=basis/typo/30; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H3
+#cat=t3d_basis/typo/30; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse H3
 t3d_basis.font_size_h3 = 9pt
 
-#cat=basis/typo/32; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse Liste
+#cat=t3d_basis/typo/32; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse Liste
 t3d_basis.font_size_li = 9pt
 
-#cat=basis/typo/35; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung
+#cat=t3d_basis/typo/35; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung
 t3d_basis.font_weight = normal
 
-#cat=basis/typo/40; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Link:(a)
+#cat=t3d_basis/typo/40; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Link:(a)
 t3d_basis.font_weight_anchor = bold
 
-#cat=basis/typo/43; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Link Hover:(a:hover)
+#cat=t3d_basis/typo/43; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Link Hover:(a:hover)
 t3d_basis.font_weight_anchor_hover = bold
 
-#cat=basis/typo/46; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Headlines (h1+h2+h3)
+#cat=t3d_basis/typo/46; type=options[Normal=normal,Fett=bold]; label=Schriftformatierung Headlines (h1+h2+h3)
 t3d_basis.font_weight_headlines = bold
 
-#cat=basis/typo/50; type=string; label=Listen Aussenabstand (ul margin):-> 0px 0px 0px 0px
+#cat=t3d_basis/typo/50; type=string; label=Listen Aussenabstand (ul margin):-> 0px 0px 0px 0px
 t3d_basis.ul_margin = 0px 0px 0px 0px
 
-#cat=basis/typo/55; type=string; label=Listenpunkt Aussenabstand (li margin):-> 0px 0px 0px 0px
+#cat=t3d_basis/typo/55; type=string; label=Listenpunkt Aussenabstand (li margin):-> 0px 0px 0px 0px
 t3d_basis.li_margin = 0px 0px 0px 0px
 
-#cat=basis/typo/60; type=string; label=Listen Innenabstand (ul padding):-> 0px 0px 0px 0px
+#cat=t3d_basis/typo/60; type=string; label=Listen Innenabstand (ul padding):-> 0px 0px 0px 0px
 t3d_basis.ul_padding = 0px 0px 0px 0px
 
-#cat=basis/typo/65; type=string; label=Listenpunkt Innenabstand (li padding):-> 0px 0px 0px 0px
+#cat=t3d_basis/typo/65; type=string; label=Listenpunkt Innenabstand (li padding):-> 0px 0px 0px 0px
 t3d_basis.li_padding = 0px 0px 0px 0px
 
-#cat=basis/typo/70; type=options[gefuellter Kreis als Bullet-Zeichen=disc,leerer Kreis als Bullet-Zeichen=circle,rechteckiges Bullet-Zeichen=square,kein Zeichen=none]; label=Listen Darstellung (ul list-style-type)
+#cat=t3d_basis/typo/70; type=options[gefuellter Kreis als Bullet-Zeichen=disc,leerer Kreis als Bullet-Zeichen=circle,rechteckiges Bullet-Zeichen=square,kein Zeichen=none]; label=Listen Darstellung (ul list-style-type)
 t3d_basis.ul_liststyletype = disc
 
-#cat=basis/typo/75; type=options[ausgerueckt=outside,eingerueckt=inside]; label=Listeneinrueckung (ul list-style-position)
+#cat=t3d_basis/typo/75; type=options[ausgerueckt=outside,eingerueckt=inside]; label=Listeneinrueckung (ul list-style-position)
 t3d_basis.ul_liststyleposition = outside
 
-#cat=basis/typo/80; type=string; label=eigenes Listenbild (ul list-style-image):z.b. bg_liste.gif
+#cat=t3d_basis/typo/80; type=string; label=eigenes Listenbild (ul list-style-image):z.b. bg_liste.gif
 t3d_basis.ul_liststyleimage_file = bg_liste.gif
 
 
 
 ### color ###
-#cat=basis/color/10; type=color; label=Hintergrundfarbe der Seite
+#cat=t3d_basis/color/10; type=color; label=Hintergrundfarbe der Seite
 t3d_basis.bgcolor = white
 
-#cat=basis/color/15; type=color; label=Hintergrundfarbe der Klickvergroesserung
+#cat=t3d_basis/color/15; type=color; label=Hintergrundfarbe der Klickvergroesserung
 t3d_basis.bgcolor_showpic = white
 
-#cat=basis/color/20; type=color; label=Schriftfarbe
+#cat=t3d_basis/color/20; type=color; label=Schriftfarbe
 t3d_basis.font_color = black
 
-#cat=basis/color/25; type=color; label=Linkfarbe:(href)
+#cat=t3d_basis/color/25; type=color; label=Linkfarbe:(href)
 t3d_basis.anchor_color = blue
 
-#cat=basis/color/30; type=color; label=Linkfarbe-Hover
+#cat=t3d_basis/color/30; type=color; label=Linkfarbe-Hover
 t3d_basis.anchor_color_hover = red
 
-#cat=basis/color/35; type=color; label=Schriftfarbe Liste
+#cat=t3d_basis/color/35; type=color; label=Schriftfarbe Liste
 t3d_basis.ul_color = black
 
 
 
 ### links ###
-##cat=basis/links/10; type=string; label=Seitentitel (sitetitle)
+##cat=t3d_basis/links/10; type=string; label=Seitentitel (sitetitle)
 #t3d_basis.sitetitle = 
 
-#cat=basis/links/10; type=int; label=Root-Seite:z.b.1
+#cat=t3d_basis/links/10; type=int; label=Root-Seite:z.b.1
 t3d_basis.rootpageID = 1
 
-#cat=basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
+#cat=t3d_basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
 t3d_basis.baseURL = 
 
-#cat=basis/links/10; type=int; label=Adress-Seite:z.b.2
+#cat=t3d_basis/links/10; type=int; label=Adress-Seite:z.b.2
 t3d_basis.adresspageID = 2
 
-#cat=basis/links/10; type=int; label=News-Sysordner:z.b.3
+#cat=t3d_basis/links/10; type=int; label=News-Sysordner:z.b.3
 t3d_basis.newsfolderID = 3
 
-#cat=basis/links/20; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
+#cat=t3d_basis/links/20; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
 t3d_basis.kontaktemail = 
 
-#cat=basis/links/25; type=string; label=Shop-E-Mail:-> z.b. shop@kunde.de
+#cat=t3d_basis/links/25; type=string; label=Shop-E-Mail:-> z.b. shop@kunde.de
 t3d_basis.shopemail = 
 
-#cat=basis/links/30; type=string; label=@-Zeichen Ersetzung (config.spamProtectEmailAddresses_atSubst):-> (at)
+#cat=t3d_basis/links/30; type=string; label=@-Zeichen Ersetzung (config.spamProtectEmailAddresses_atSubst):-> (at)
 t3d_basis.spamProtectEmailAddresses_atSubst = (at)
 
-#cat=basis/links/35; type=string; label=Name Objekt Logo (lib.obj_logo.file):-> z.b. obj_logo.gif
+#cat=t3d_basis/links/35; type=string; label=Name Objekt Logo (lib.obj_logo.file):-> z.b. obj_logo.gif
 t3d_basis.obj_logo = obj_logo.gif
 
-#cat=basis/links/40; type=string; label=Favicon (page.shortcutIcon):-> z.b. fileadmin/bilder/basis/favicon.ico
-t3d_basis.favicon_file = fileadmin/bilder/basis/favicon.ico
+#cat=t3d_basis/links/40; type=string; label=Favicon (page.shortcutIcon):-> z.b. fileadmin/bilder/t3d_basis/favicon.ico
+t3d_basis.favicon_file = fileadmin/bilder/t3d_basis/favicon.ico
 
 
 
@@ -226,37 +226,37 @@ etracker.ilevel_5 = 9
 #cat=etracker/links/65; type=int+; label=Bewertung Level 6(et_ilevel):-> 0-10
 etracker.ilevel_6 = 10
 
-#cat=basis/links/90; type=string; label=Google Verifizierung ID
+#cat=t3d_basis/links/90; type=string; label=Google Verifizierung ID
 t3d_basis.google_vid = 
 
 
 
 ### language ###
-#cat=basis/language/10; type=string; label=Text Link zum Seitenanfang (Standardsprache):z.b. Seitenanfang
+#cat=t3d_basis/language/10; type=string; label=Text Link zum Seitenanfang (Standardsprache):z.b. Seitenanfang
 t3d_basis.linktotop = Seitenanfang
 
-#cat=basis/language/15; type=string; label=Text Link zum Seitenanfang (2. Sprache):z.b. To Top
+#cat=t3d_basis/language/15; type=string; label=Text Link zum Seitenanfang (2. Sprache):z.b. To Top
 t3d_basis.second_lang_linktotop = To Top
 
-#cat=basis/language/20; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=Standardsprache (config.language)
+#cat=t3d_basis/language/20; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=Standardsprache (config.language)
 t3d_basis.language = de
 
-#cat=basis/language/25; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=Standardlokalisierung (config.locale_all)
+#cat=t3d_basis/language/25; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=Standardlokalisierung (config.locale_all)
 t3d_basis.locale_all = de_DE
 
-#cat=basis/language/30; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
+#cat=t3d_basis/language/30; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
 t3d_basis._DEFAULT_PI_VARS_lang = 0
 
-#cat=basis/language/35; type=boolean; label=2. Seitensprache aktivieren:-> 0=Aus / 1=Ein
+#cat=t3d_basis/language/35; type=boolean; label=2. Seitensprache aktivieren:-> 0=Aus / 1=Ein
 t3d_basis.second_lang = 0
 
-#cat=basis/language/40; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=2. Standardsprache (config.language)
+#cat=t3d_basis/language/40; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=2. Standardsprache (config.language)
 t3d_basis.second_lang_language = en
 
-#cat=basis/language/45; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=2. Standardlokalisierung (config.locale_all)
+#cat=t3d_basis/language/45; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=2. Standardlokalisierung (config.locale_all)
 t3d_basis.second_lang_locale_all = english
 
-#cat=basis/language/50; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=2. Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
+#cat=t3d_basis/language/50; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=2. Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
 t3d_basis.second_lang_DEFAULT_PI_VARS_lang = 1
 
 
