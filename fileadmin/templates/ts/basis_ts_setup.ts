@@ -299,28 +299,28 @@ page.10000{
 
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
 ### tt_content Definitionen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/tt_content_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/tt_content_ts_setup.ts">
 
 ### Seitentypen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/seitentypen_ts_setup.ts">
 
 
 ### CSS ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/css_ts_setup.ts">
 
 
 ### JS ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/js.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/js.ts">
 
 ### Navigation ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/navigation_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/navigation_ts_setup.ts">
 
 ### Objekte ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/objekte_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/objekte_ts_setup.ts">
 
 ### E-Tracker ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/etracker_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/etracker_ts_setup.ts">
 
 ### Funktionen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$pfade.tmpls}ts/funktionen_ts_setup.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END

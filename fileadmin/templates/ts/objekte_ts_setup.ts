@@ -2,7 +2,7 @@
 ### Objekte ###
 tmp.obj_logo = IMAGE
 tmp.obj_logo {
-  file = {$pfade.tmpl_img}/image/{$basis.obj_logo}
+  file = {$pfade.tmpls}/image/{$basis.obj_logo}
   stdWrap.typolink.parameter = {$basis.rootpageID}
   file.import = uploads/tx_templavoila/
   file.import.listNum = 0

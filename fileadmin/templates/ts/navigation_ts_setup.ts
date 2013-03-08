@@ -69,7 +69,7 @@ tmp.nav_rootline{
       NO {
         ATagParams = class = nav_rootline_norm
         allWrap = <div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_text">|</div><div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_norm">|</div>
-        #allWrap = |*| |  <img src="fileadmin/bilder/basis/verlaufsnav_trenner_9.png" width="7" height="20" />  |*| |
+        #allWrap = |*| |  <img src="{$pfade.tmpls}verlaufsnav_trenner_9.png" width="7" height="20" />  |*| |
       }
       CUR < .NO
       CUR = 1

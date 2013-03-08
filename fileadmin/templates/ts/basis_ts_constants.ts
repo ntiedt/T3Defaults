@@ -69,7 +69,7 @@ basis.ts_js = 1
 ### pfade ###
 
 #cat=pfade//10; type=string; label=Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/
-pfade.tmpl_img = fileadmin/templates/
+pfade.tmpls = fileadmin/templates/
 
 
 

@@ -2,7 +2,7 @@
 ### CSS ###
 [globalVar = LIT:1 = {$basis.ts_css}]
 page.includeCSS{
-  normal = fileadmin/templates/css/normal.css
+  normal = {$pfade.tmpls}css/normal.css
 }
 css = PAGE
 css {

@@ -2,7 +2,7 @@
 [globalVar = LIT:1 = {$basis.ts_js}]
 
 page.includeJS{
-  funktionen = fileadmin/templates/js/funktionen.js
+  funktionen = {$pfade.tmpls}js/funktionen.js
 }
 
 
