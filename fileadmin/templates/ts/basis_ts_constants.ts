@@ -165,7 +165,7 @@ basis.rootpageID = 1
 #cat=basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
 basis.baseURL = 
 
-#cat=basis/links/10; type=int; label=Adress-Seiten:z.b.2
+#cat=basis/links/10; type=int; label=Adress-Seite:z.b.2
 basis.adresspageID = 2
 
 #cat=basis/links/10; type=int; label=News-Sysordner:z.b.3
