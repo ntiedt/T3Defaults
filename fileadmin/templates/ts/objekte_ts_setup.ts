@@ -12,7 +12,7 @@ tmp.obj_claim = COA
 tmp.obj_claim{
   10=RECORDS
   10{
-    source={$seitentitel.basisTemplateId}
+    source={$t3d_seitentitel.basisTemplateId}
     tables = sys_template
     conf.sys_template >
     conf.sys_template = TEXT

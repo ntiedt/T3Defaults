@@ -307,61 +307,61 @@ t3d_jquery.speed = 1000
 
 ##
 ## Seitentitel ###
-#cat=seitentitel//10; type=boolean; label=Seitentitelersetzung aktivieren:-> 0=Aus / 1=Ein
-seitentitel.activate = 1
+#cat=t3d_seitentitel//10; type=boolean; label=Seitentitelersetzung aktivieren:-> 0=Aus / 1=Ein
+t3d_seitentitel.activate = 1
 
-#cat=seitentitel//20; type=int; label=ID des Basis-Templates:z.b. 1
-seitentitel.basisTemplateId = 1
+#cat=t3d_seitentitel//20; type=int; label=ID des Basis-Templates:z.b. 1
+t3d_seitentitel.basisTemplateId = 1
 
-#cat=seitentitel//30; type=string; label=Seiten ausschliesen(Liste von IDs):z.b. 1,2,3
-seitentitel.excludeUidList = 121
+#cat=t3d_seitentitel//30; type=string; label=Seiten ausschliesen(Liste von IDs):z.b. 1,2,3
+t3d_seitentitel.excludeUidList = 121
 
-#cat=seitentitel//40; type=int; label=Max. Anzahl an Unterseiten:0=alle anzeigen
-seitentitel.max = 0
+#cat=t3d_seitentitel//40; type=int; label=Max. Anzahl an Unterseiten:0=alle anzeigen
+t3d_seitentitel.max = 0
 
-#cat=seitentitel//50; type=string; label=Trennzeichen zwischen Woertern:z.b. |
-seitentitel.charBetweenWords = |
+#cat=t3d_seitentitel//50; type=string; label=Trennzeichen zwischen Woertern:z.b. |
+t3d_seitentitel.charBetweenWords = |
 
-#cat=seitentitel//60; type=boolean; label=Debug-Modus fuer eingeloggt BE-User:-> 0=Aus / 1=Ein
-seitentitel.debug = 0
+#cat=t3d_seitentitel//60; type=boolean; label=Debug-Modus fuer eingeloggt BE-User:-> 0=Aus / 1=Ein
+t3d_seitentitel.debug = 0
 
 
 
 
 ##
 ## SeitenTypen ###
-#cat=seitentypen//; type=int+; label=Typ A(CSS) - TypeNum(&type=) :-> 500
-seitentypen.a_typenum = 500
+#cat=t3d_seitentypen//; type=int+; label=Typ A(CSS) - TypeNum(&type=) :-> 500
+t3d_seitentypen.a_typenum = 500
 
-#cat=seitentypen//; type=boolean; label=Typ A(CSS) - no_cache :-> 0=Cache an / 1=Cache aus
-seitentypen.a_no_cache = 0
+#cat=t3d_seitentypen//; type=boolean; label=Typ A(CSS) - no_cache :-> 0=Cache an / 1=Cache aus
+t3d_seitentypen.a_no_cache = 0
 
-#cat=seitentypen//; type=boolean; label=Typ A(CSS) - debug :-> 0=Aus / 1=Ein
-seitentypen.a_debug = 0
+#cat=t3d_seitentypen//; type=boolean; label=Typ A(CSS) - debug :-> 0=Aus / 1=Ein
+t3d_seitentypen.a_debug = 0
 
-#cat=seitentypen//; type=int+; label=Typ B(nur Inhalt) - TypeNum(&type=) :-> 500
-seitentypen.b_typenum = 22
+#cat=t3d_seitentypen//; type=int+; label=Typ B(nur Inhalt) - TypeNum(&type=) :-> 500
+t3d_seitentypen.b_typenum = 22
 
-#cat=seitentypen//; type=boolean; label=Typ B(nur Inhalt) - no_cache :-> 0=Cache an / 1=Cache aus
-seitentypen.b_no_cache = 1
+#cat=t3d_seitentypen//; type=boolean; label=Typ B(nur Inhalt) - no_cache :-> 0=Cache an / 1=Cache aus
+t3d_seitentypen.b_no_cache = 1
 
-#cat=seitentypen//; type=boolean; label=Typ B(nur Inhalt) - debug :-> 0=Aus / 1=Ein
-seitentypen.b_debug = 0
+#cat=t3d_seitentypen//; type=boolean; label=Typ B(nur Inhalt) - debug :-> 0=Aus / 1=Ein
+t3d_seitentypen.b_debug = 0
 
-#cat=seitentypen//; type=boolean; label=Typ B(nur Inhalt) - Content/Records :-> 0=Content / 1=Records
-seitentypen.b_cobj_type = 0
+#cat=t3d_seitentypen//; type=boolean; label=Typ B(nur Inhalt) - Content/Records :-> 0=Content / 1=Records
+t3d_seitentypen.b_cobj_type = 0
 
-#cat=seitentypen//; type=string; label=Typ B(nur Inhalt) - Tabelle(n) :-> tt_content,...
-seitentypen.b_cobj_tables = tt_content
+#cat=t3d_seitentypen//; type=string; label=Typ B(nur Inhalt) - Tabelle(n) :-> tt_content,...
+t3d_seitentypen.b_cobj_tables = tt_content
 
-#cat=seitentypen//; type=string; label=Typ B(nur Inhalt) - Bei Auswahl Content -> Page-UID(s), bei Auswahl Records -> Element-UID(s) :-> 1,2,3
-seitentypen.b_cobj_tables_ids = 
+#cat=t3d_seitentypen//; type=string; label=Typ B(nur Inhalt) - Bei Auswahl Content -> Page-UID(s), bei Auswahl Records -> Element-UID(s) :-> 1,2,3
+t3d_seitentypen.b_cobj_tables_ids = 
 
-#cat=seitentypen//; type=boolean; label=Typ B(nur Inhalt) - UIDs von Post Objekt laden :-> 0=Nein / 1=Ja
-seitentypen.b_cobj_tables_ids_data = 0
+#cat=t3d_seitentypen//; type=boolean; label=Typ B(nur Inhalt) - UIDs von Post Objekt laden :-> 0=Nein / 1=Ja
+t3d_seitentypen.b_cobj_tables_ids_data = 0
 
-#cat=seitentypen//; type=string; label=Typ B(nur Inhalt) - UIDs von Post Objekt laden (z.b &uid=) :-> z.b. uid 
-seitentypen.b_cobj_tables_ids_data_gp = uid
+#cat=t3d_seitentypen//; type=string; label=Typ B(nur Inhalt) - UIDs von Post Objekt laden (z.b &uid=) :-> z.b. uid 
+t3d_seitentypen.b_cobj_tables_ids_data_gp = uid
 
 
 

@@ -2,51 +2,51 @@
 [globalVar = LIT:1 = {$t3d_basis.ts_seitentypen}]
 seitentypen_a = PAGE
 seitentypen_a{
-  typeNum = {$seitentypen.b_typenum}
+  typeNum = {$t3d_seitentypen.b_typenum}
   config{
     disableAllHeaderCode = 1
     xhtml_cleaning = 0
     admPanel = 0
-    debug = {$seitentypen.b_debug}
-    no_cache = {$seitentypen.b_no_cache}
+    debug = {$t3d_seitentypen.b_debug}
+    no_cache = {$t3d_seitentypen.b_no_cache}
   }
   10 = CONTENT
   10{
-  	table = {$seitentypen.b_cobj_tables}
+  	table = {$t3d_seitentypen.b_cobj_tables}
     select{
-      pidInList = {$seitentypen.b_cobj_tables_ids}
+      pidInList = {$t3d_seitentypen.b_cobj_tables_ids}
     }
   }
 }
 [global]
 
-[globalVar = LIT:1 = {$seitentypen.b_cobj_tables_ids_data}]
+[globalVar = LIT:1 = {$t3d_seitentypen.b_cobj_tables_ids_data}]
 seitentypen_a{
   10{
     select{
       pidInList >
-      pidInList.data = GP:{$seitentypen.b_cobj_tables_ids_data_gp}
+      pidInList.data = GP:{$t3d_seitentypen.b_cobj_tables_ids_data_gp}
     }
   }
 }
 [global]
 
-[globalVar = LIT:1 = {$seitentypen.b_cobj_type}]
+[globalVar = LIT:1 = {$t3d_seitentypen.b_cobj_type}]
 seitentypen_a{
   10 >
   10 = RECORDS
   10{
-  	tables = {$seitentypen.b_cobj_tables}
-    source = {$seitentypen.b_cobj_tables_ids}
+  	tables = {$t3d_seitentypen.b_cobj_tables}
+    source = {$t3d_seitentypen.b_cobj_tables_ids}
   }
 }
 [global]
 
-[globalVar = LIT:1 = {$seitentypen.b_cobj_type}] && [globalVar = LIT:1 = {$seitentypen.b_cobj_tables_ids_data}]
+[globalVar = LIT:1 = {$t3d_seitentypen.b_cobj_type}] && [globalVar = LIT:1 = {$t3d_seitentypen.b_cobj_tables_ids_data}]
 seitentypen_a{
   10{
     source >
-    source.data = GP:{$seitentypen.b_cobj_tables_ids_data_gp}
+    source.data = GP:{$t3d_seitentypen.b_cobj_tables_ids_data_gp}
   }
 }
 [global]

@@ -229,7 +229,7 @@ page.bodyTagCObject.20.10.value = safari
 #------------------------------------------------------------ BODY-TAG-END
 
 #----------------------------------------------------------- PAGETITLE-BEGIN
-[globalVar = LIT:1 = {$seitentitel.activate}]
+[globalVar = LIT:1 = {$t3d_seitentitel.activate}]
 temp.pageTitle=COA
 temp.pageTitle{
   10 = TEXT
@@ -237,7 +237,7 @@ temp.pageTitle{
     if.isTrue.field = subtitle
     data = page:subtitle
     stdWrap.append = TEXT
-    stdWrap.append.value = {$seitentitel.charBetweenWords}
+    stdWrap.append.value = {$t3d_seitentitel.charBetweenWords}
     stdWrap.append.noTrimWrap = | | |
   }
   20 = TEXT
@@ -245,21 +245,21 @@ temp.pageTitle{
     if.isFalse.field = subtitle
     data = page:title
     stdWrap.append = TEXT
-    stdWrap.append.value = {$seitentitel.charBetweenWords}
+    stdWrap.append.value = {$t3d_seitentitel.charBetweenWords}
     stdWrap.append.noTrimWrap = | | |
   }
   30 = HMENU
   30{
     if.isFalse.field = subtitle
     special = directory
-    excludeUidList = {$seitentitel.excludeUidList}
-    maxItems = {$seitentitel.max}
+    excludeUidList = {$t3d_seitentitel.excludeUidList}
+    maxItems = {$t3d_seitentitel.max}
     1 = TMENU
     1{
       NO{
         doNotLinkIt = 1
         stdWrap.append = TEXT
-        stdWrap.append.value = {$seitentitel.charBetweenWords}
+        stdWrap.append.value = {$t3d_seitentitel.charBetweenWords}
         stdWrap.append.noTrimWrap = | | |
       }
     }
@@ -267,7 +267,7 @@ temp.pageTitle{
   100=RECORDS
   100{
     # id of the template record
-    source={$seitentitel.basisTemplateId}
+    source={$t3d_seitentitel.basisTemplateId}
     tables = sys_template
     conf.sys_template >
     conf.sys_template = TEXT
@@ -286,10 +286,10 @@ page {
 [global]
 
 ### Seitentitle im Content ausgeben wenn Debug-Modus eingeschalten
-[globalVar = TSFE : beUserLogin > 0] AND [globalVar = LIT:1 = {$seitentitel.activate}]
+[globalVar = TSFE : beUserLogin > 0] AND [globalVar = LIT:1 = {$t3d_seitentitel.activate}]
 page.10000 = COA
 page.10000{
-  if.isTrue ={$seitentitel.debug}
+  if.isTrue ={$t3d_seitentitel.debug}
   wrap=<div id="seitentitel_debug" style="position:absolute;top:0;left:0;background-color:white;color:black;">|</div>
   20 < temp.pageTitle
 }
