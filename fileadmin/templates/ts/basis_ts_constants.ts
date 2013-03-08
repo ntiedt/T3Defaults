@@ -266,25 +266,25 @@ t3d_basis.second_lang_DEFAULT_PI_VARS_lang = 1
 ##  TYPO3 Defaults (T3D) Bereich Navigation ###
 
 ## Hauptnavigation #
-#cat=navigation//15; type=int; label=Hauptnavigation Einstiegslevel(entryLevel):z.b. 1
-navigation.nav_main_entryLevel = 0
+#cat=t3d_navigation//15; type=int; label=Hauptnavigation Einstiegslevel(entryLevel):z.b. 1
+t3d_navigation.nav_main_entryLevel = 0
 
-#cat=navigation//20; type=string; label=Hauptnavigation Seiten ausschliesen(excludeUidList):z.b. 350
-navigation.nav_main_excludeUidList =
+#cat=t3d_navigation//20; type=string; label=Hauptnavigation Seiten ausschliesen(excludeUidList):z.b. 350
+t3d_navigation.nav_main_excludeUidList =
 
 ## Unternavigation #
-#cat=navigation//25; type=int; label=Unternavigation Einstiegslevel(entryLevel):z.b. 1
-navigation.nav_sub_entryLevel = 0
+#cat=t3d_navigation//25; type=int; label=Unternavigation Einstiegslevel(entryLevel):z.b. 1
+t3d_navigation.nav_sub_entryLevel = 0
 
-#cat=navigation//30; type=string; label=Unternavigation Seiten ausschliesen(excludeUidList):z.b. 350
-navigation.nav_sub_excludeUidList =
+#cat=t3d_navigation//30; type=string; label=Unternavigation Seiten ausschliesen(excludeUidList):z.b. 350
+t3d_navigation.nav_sub_excludeUidList =
 
 ## Verlaufsnavigation #
-#cat=navigation//35; type=string; label=Text vor Verlaufnavigation:z.b. Hier bin ich:&nbsp;
-navigation.nav_rootline_text = Hier bin ich:&nbsp;
+#cat=t3d_navigation//35; type=string; label=Text vor Verlaufnavigation:z.b. Hier bin ich:&nbsp;
+t3d_navigation.nav_rootline_text = Hier bin ich:&nbsp;
 
-#cat=navigation//40; type=string; label=Verlaufnavigation Bereich (range):z.b. 1|5
-navigation.nav_rootline_range = 1|5
+#cat=t3d_navigation//40; type=string; label=Verlaufnavigation Bereich (range):z.b. 1|5
+t3d_navigation.nav_rootline_range = 1|5
 
 
 

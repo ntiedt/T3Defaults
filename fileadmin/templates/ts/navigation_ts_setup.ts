@@ -9,8 +9,8 @@ tmp.nav_main{
     wrap = <div>|</div>
     10 = HMENU
     10{
-      entryLevel = {$navigation.nav_main_entryLevel}
-      excludeUidList = {$navigation.nav_main_excludeUidList}
+      entryLevel = {$t3d_navigation.nav_main_entryLevel}
+      excludeUidList = {$t3d_navigation.nav_main_excludeUidList}
       1 = TMENU
       1 {
         wrap = <ul class="level-1">|</ul>
@@ -65,8 +65,8 @@ tmp.nav_sub{
     wrap = <div>|</div>
     10 = HMENU
     10{
-      entryLevel = {$navigation.nav_sub_entryLevel}
-      excludeUidList = {$navigation.nav_sub_excludeUidList}
+      entryLevel = {$t3d_navigation.nav_sub_entryLevel}
+      excludeUidList = {$t3d_navigation.nav_sub_excludeUidList}
       1 = TMENU
       1 {
         wrap = <ul class="level-1">|</ul>
@@ -118,12 +118,12 @@ tmp.nav_rootline = COA
 tmp.nav_rootline{
   wrap = |
   10 = TEXT
-  10.value = {$navigation.nav_rootline_text}
+  10.value = {$t3d_navigation.nav_rootline_text}
   10.wrap = <div id="nav_rootline_text">|</div>
   20 = HMENU
   20{
     special = rootline
-    special.range = {$navigation.nav_rootline_range}
+    special.range = {$t3d_navigation.nav_rootline_range}
     1 = TMENU
     1{
       NO {
