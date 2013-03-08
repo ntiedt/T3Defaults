@@ -66,15 +66,15 @@ t3d_basis.ts_js = 1
 
 
 
-### pfade ###
+### TYPO3 Defaults (T3D) Bereich Pfade ###
 
-#cat=pfade//10; type=string; label=Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/
+#cat=t3d_pfade//10; type=string; label=Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/
 t3d_pfade.tmpls = fileadmin/templates/
 
 
 
 
-### typo ###
+###  TYPO3 Defaults (T3D) Bereich Basis - Typographie ###
 #cat=t3d_basis/typo/10; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse
 t3d_basis.font_size = 8pt
 
@@ -134,7 +134,7 @@ t3d_basis.ul_liststyleimage_file = bg_liste.gif
 
 
 
-### color ###
+###  TYPO3 Defaults (T3D) Bereich Basis - Color ###
 #cat=t3d_basis/color/10; type=color; label=Hintergrundfarbe der Seite
 t3d_basis.bgcolor = white
 
@@ -155,7 +155,7 @@ t3d_basis.ul_color = black
 
 
 
-### links ###
+###  TYPO3 Defaults (T3D) Bereich Basis - Links ###
 ##cat=t3d_basis/links/10; type=string; label=Seitentitel (sitetitle)
 #t3d_basis.sitetitle = 
 
@@ -189,7 +189,7 @@ t3d_basis.favicon_file = fileadmin/bilder/t3d_basis/favicon.ico
 
 
 
-### etracker ###
+###  TYPO3 Defaults (T3D) Bereich Etracker ###
 #cat=etracker/links/10; type=string; label=E-Tracker ID
 etracker.id =
 
@@ -231,7 +231,7 @@ t3d_basis.google_vid =
 
 
 
-### language ###
+### TYPO3 Defaults (T3D) Bereich Basis - Language ###
 #cat=t3d_basis/language/10; type=string; label=Text Link zum Seitenanfang (Standardsprache):z.b. Seitenanfang
 t3d_basis.linktotop = Seitenanfang
 
@@ -263,8 +263,8 @@ t3d_basis.second_lang_DEFAULT_PI_VARS_lang = 1
 
 
 
-##
-## Bereich Navigation ###
+##  TYPO3 Defaults (T3D) Bereich Navigation ###
+
 ## Hauptnavigation #
 #cat=navigation//15; type=int; label=Hauptnavigation Einstiegslevel(entryLevel):z.b. 1
 navigation.nav_main_entryLevel = 0
