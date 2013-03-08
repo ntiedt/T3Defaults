@@ -4,23 +4,55 @@
 ### Hauptnavigation ###
 tmp.nav_main = COA
 tmp.nav_main{
-  10 = HMENU
+  10 = COA
   10{
-    entryLevel = {$navigation.nav_main_entryLevel}
-    excludeUidList = {$navigation.nav_main_excludeUidList}
-    1 = TMENU
-    1 {
-      wrap = <div id="nav_main_level1" class="clearfix">|</div>
-      IProcFunc = user_tmenulinebreak->main
-      NO{
-        allWrap = |
-        ATagParams = class = nav_main_norm
+    wrap = <div>|</div>
+    10 = HMENU
+    10{
+      entryLevel = {$navigation.nav_main_entryLevel}
+      excludeUidList = {$navigation.nav_main_excludeUidList}
+      1 = TMENU
+      1 {
+        wrap = <ul class="level-1">|</ul>
+        IProcFunc = user_tmenulinebreak->main
+        expAll = 1
+        noBlur = 1
+        NO{
+          wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
+          ATagParams = class="level-1 norm"
+          stdWrap.wrap = <span>|</span>
+        }
+        CUR < .NO
+        CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
+        CUR.ATagParams = class="level-1 click"
+        CUR = 1
+        ACT < .CUR
+        ACT = 1
       }
-      CUR < .NO
-      CUR.ATagParams = class = nav_main_click
-      CUR = 1
-      ACT < .CUR
-      ACT = 1
+      2 < .1
+      2 {
+        wrap = <ul class="level-2">|</ul>
+        expAll = 1
+        noBlur = 1
+        NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
+        NO.ATagParams = class="level-2 norm"
+        CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
+        CUR.ATagParams = class="level-2 click"
+        ACT < .CUR
+        ACT = 1
+      }
+      3 < .1
+      3 {
+        wrap = <ul class="level-3">|</ul>
+        expAll = 1
+        noBlur = 1
+        NO.wrapItemAndSub = <li class="level-3 norm first">|</li>|*|<li class="level-3 norm">|</li>|*|<li class="level-3 norm last">|</li>
+        NO.ATagParams = class="level-3 norm"
+        CUR.wrapItemAndSub = <li class="level-3 click first">|</li>|*|<li class="level-3 click">|</li>|*|<li class="level-3 click last">|</li>
+        CUR.ATagParams = class="level-3 click"
+        ACT < .CUR
+        ACT = 1
+      }
     }
   }
 }
@@ -28,27 +60,55 @@ tmp.nav_main{
 ### Unternavigation ###
 tmp.nav_sub = COA
 tmp.nav_sub{
-  10 = HMENU
+  10 = COA
   10{
-    entryLevel = {$navigation.nav_sub_entryLevel}
-    excludeUidList = {$navigation.nav_sub_excludeUidList}
-    1 = TMENU
-    1 {
-      wrap = <div id="nav_sub_level1" class="clearfix">|</div>
-      IProcFunc = user_tmenulinebreak->main
-      NO{
-        allWrap = |
-        ATagParams = class = nav_sub_norm
+    wrap = <div>|</div>
+    10 = HMENU
+    10{
+      entryLevel = {$navigation.nav_sub_entryLevel}
+      excludeUidList = {$navigation.nav_sub_excludeUidList}
+      1 = TMENU
+      1 {
+        wrap = <ul class="level-1">|</ul>
+        IProcFunc = user_tmenulinebreak->main
+        expAll = 1
+        noBlur = 1
+        NO{
+          wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
+          ATagParams = class="level-1 norm"
+          stdWrap.wrap = <span>|</span>
+        }
+        CUR < .NO
+        CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
+        CUR.ATagParams = class="level-1 click"
+        CUR = 1
+        ACT < .CUR
+        ACT = 1
       }
-      CUR < .NO
-      CUR.ATagParams = class = nav_sub_click
-      CUR = 1
-      ACT < .CUR
-      ACT = 1
-    }
-    2 < .1
-    2 {
-      wrap = <div id="nav_sub_level2" class="clearfix">|</div>
+      2 < .1
+      2 {
+        wrap = <ul class="level-2">|</ul>
+        expAll = 1
+        noBlur = 1
+        NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
+        NO.ATagParams = class="level-2 norm"
+        CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
+        CUR.ATagParams = class="level-2 click"
+        ACT < .CUR
+        ACT = 1
+      }
+      3 < .1
+      3 {
+        wrap = <ul class="level-3">|</ul>
+        expAll = 1
+        noBlur = 1
+        NO.wrapItemAndSub = <li class="level-3 norm first">|</li>|*|<li class="level-3 norm">|</li>|*|<li class="level-3 norm last">|</li>
+        NO.ATagParams = class="level-3 norm"
+        CUR.wrapItemAndSub = <li class="level-3 click first">|</li>|*|<li class="level-3 click">|</li>|*|<li class="level-3 click last">|</li>
+        CUR.ATagParams = class="level-3 click"
+        ACT < .CUR
+        ACT = 1
+      }
     }
   }
 }
