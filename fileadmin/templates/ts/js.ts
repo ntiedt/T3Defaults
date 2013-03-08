@@ -36,11 +36,11 @@ var ajax_param = '{$seitentypen.b_typenum}';
   )
   10 = TEXT
   10.value(
-var jquery_interval = '{$jquery.interval}';
+var jquery_interval = '{$t3d_jquery.interval}';
   )
   20 = TEXT
   20.value(
-var jquery_speed = '{$jquery.speed}';
+var jquery_speed = '{$t3d_jquery.speed}';
   )
   22 = COA
   22{

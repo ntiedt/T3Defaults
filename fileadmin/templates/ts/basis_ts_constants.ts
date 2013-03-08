@@ -293,14 +293,14 @@ t3d_navigation.nav_rootline_range = 1|5
 ##
 ## Bereich jQuery ###
 
-#cat=jquery//10; type=string; label=jQuery Animation-Geschwindigkeit:slow/normal/fast oder in ms z.b. 400(normal)
-jquery.speed = normal
+#cat=t3d_jquery//10; type=string; label=jQuery Animation-Geschwindigkeit:slow/normal/fast oder in ms z.b. 400(normal)
+t3d_jquery.speed = normal
 
-#cat=jquery//20; type=string; label=jQuery Slideshow Interval:in ms z.b. 1000
-jquery.interval = 1000
+#cat=t3d_jquery//20; type=string; label=jQuery Slideshow Interval:in ms z.b. 1000
+t3d_jquery.interval = 1000
 
-#cat=jquery//20; type=string; label=jQuery Slideshow Animation-Geschwindigkeit:in ms z.b. 1000
-jquery.speed = 1000
+#cat=t3d_jquery//20; type=string; label=jQuery Slideshow Animation-Geschwindigkeit:in ms z.b. 1000
+t3d_jquery.speed = 1000
 
 
 
