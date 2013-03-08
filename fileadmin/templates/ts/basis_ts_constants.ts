@@ -159,11 +159,17 @@ basis.ul_color = black
 ##cat=basis/links/10; type=string; label=Seitentitel (sitetitle)
 #basis.sitetitle = 
 
-#cat=basis/links/10; type=int; label=Root-Seiten-ID
+#cat=basis/links/10; type=int; label=Root-Seite:z.b.1
 basis.rootpageID = 1
 
 #cat=basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
 basis.baseURL = 
+
+#cat=basis/links/10; type=int; label=Adress-Seiten:z.b.2
+basis.adresspageID = 2
+
+#cat=basis/links/10; type=int; label=News-Sysordner:z.b.3
+basis.newsfolderID = 3
 
 #cat=basis/links/20; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
 basis.kontaktemail = 

@@ -49,6 +49,29 @@ tt_content.stdWrap.innerWrap2 = |<a href="#top">{$basis.linktotop}</ a>
 tt_content.stdWrap.innerWrap2 = |<a href="#top">{$basis.second_lang_linktotop}</ a>
 [global]
 
+### CType: image / Lightbox + Scrollable ###
+tt_content.image.20 {
+  imageStdWrap.dataWrap = <div class="csc-textpic-imagewrap" style="width:{register:totalwidth}px;"><div class="scrollable scrollable-textpic"> | </div><div class="navi navi-scrollable"></div></div>
+  imageStdWrapNoWidth.wrap = <div class="csc-textpic-imagewrap"><div class="scrollable scrollable-textpic"> | </div><div class="navi navi-scrollable"></div></div>
+  rendering {
+		ul {
+			# Just one image without a caption => don't need the ul-overhead, use the "simple" rendering
+      /*
+			fallbackRendering < tt_content.image.20.rendering.dl.fallbackRendering.10
+      */
+			#imageRowStdWrap.dataWrap = <div class="csc-textpic-imagerow" style="width:{register:rowwidth}px;"><ul class="items"> | </ul></div>
+			#imageLastRowStdWrap.dataWrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-last" style="width:{register:rowwidth}px;"><ul class="items"> | </ul></div>
+			noRowsStdWrap.wrap = <ul class="items"> | </ul>
+			oneImageStdWrap.dataWrap = <li class="item csc-textpic-image###CLASSES###" style="width:{register:imagespace}px;"> | </li>
+      /*
+			imgTagStdWrap.wrap =
+			editIconsStdWrap.wrap = <div> | </div>
+			caption.wrap = <div class="csc-textpic-caption"> | </div>
+      */
+		}
+	}
+}
+
 ### Rahmen ###
 /*
 ### IN SEITEN TS-CONFIG

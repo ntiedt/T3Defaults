@@ -1,7 +1,8 @@
 ### JAVASCRIPT INCLUDES ANFANG
 [globalVar = LIT:1 = {$basis.ts_js}]
 
-page.includeJS{
+page.includeJSFooter{
+  jquery = {$pfade.tmpls}js/jquery-1.9.1.min.js
   funktionen = {$pfade.tmpls}js/funktionen.js
 }
 
