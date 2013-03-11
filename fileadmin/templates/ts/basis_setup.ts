@@ -2,7 +2,7 @@
 ### Basis-Definitionen ###
 
 # Include following tag without # in the typoscript setup section of your root template
-#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_ts_setup.ts">
+#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_setup.ts">
 
 ##
 ## Setup ###
@@ -299,28 +299,28 @@ page.10000{
 
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
 ### tt_content Definitionen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/tt_content_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/tt_content_setup.ts">
 
 ### Seitentypen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/seitentypen_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/seitentypen_setup.ts">
 
 
 ### CSS ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/css_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/css_setup.ts">
 
 
 ### JS ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/js.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/js_setup.ts">
 
 ### Navigation ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/navigation_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/navigation_setup.ts">
 
 ### Objekte ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/objekte_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/objekte_setup.ts">
 
 ### E-Tracker ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/etracker_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/etracker_setup.ts">
 
 ### Funktionen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/funktionen_ts_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/funktionen_setup.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END

@@ -3,7 +3,7 @@
 
 
 # Include following tag without # in the typoscript constant section of your root template
-#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_ts_constants.ts">
+#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_constants.ts">
 
 ##
 ## Default Constants ###
