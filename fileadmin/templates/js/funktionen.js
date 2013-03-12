@@ -27,7 +27,7 @@ jQuery(function(j){
   );
   
   /* COLORBOX: http://www.jacklmoore.com/colorbox */
-  if(j('a.lightbox')){
+  if(typeof jQuery == "colorbox"){
     j('li').not('.cloned').find('a.lightbox').colorbox({
       'current': '{current} / {total}',
       'previous': '<',
