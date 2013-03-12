@@ -285,28 +285,28 @@ page.10000{
 
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
 ### tt_content Definitionen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/tt_content_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/tt_content_setup.ts">
 
 ### Seitentypen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/seitentypen_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_setup.ts">
 
 
 ### CSS ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/css_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_setup.ts">
 
 
 ### JS ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/js_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/js_setup.ts">
 
 ### Navigation ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/navigation_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/navigation_setup.ts">
 
 ### Objekte ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/objekte_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/objekte_setup.ts">
 
 ### E-Tracker ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/etracker_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/etracker_setup.ts">
 
 ### Funktionen ###
-<INCLUDE_TYPOSCRIPT:source="file:{$t3d_pfade.tmpls}ts/funktionen_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END
