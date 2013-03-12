@@ -27,10 +27,12 @@ jQuery(function(j){
   );
   
   /* COLORBOX: http://www.jacklmoore.com/colorbox */
-  j('li').not('.cloned').find('a.lightbox').colorbox({
-    'current': '{current} / {total}',
-    'previous': '<',
-    'next': '>',
-    'close': 'X'
-  });
+  if(j('a.lightbox')){
+    j('li').not('.cloned').find('a.lightbox').colorbox({
+      'current': '{current} / {total}',
+      'previous': '<',
+      'next': '>',
+      'close': 'X'
+    });
+  }
 });
