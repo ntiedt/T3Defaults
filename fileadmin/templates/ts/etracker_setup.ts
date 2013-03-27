@@ -68,7 +68,7 @@ temp.etrackerjavascript.10.value (
 <!-- without the express prior written permission of the copyright holder. -->
 
 <!-- BEGIN etracker Tracklet 3.0 -->
-<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.t3d_etracker.com/t.js?et={$t3d_etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
+<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.etracker.com/t.js?et={$t3d_etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
 
 <!-- etracker PARAMETER 3.0 -->
 <script type="text/javascript">
@@ -114,11 +114,11 @@ var et_se           = "0";
 <!-- etracker PARAMETER END -->
 
 <script type="text/javascript">_etc();</script>
-<noscript><p><a href="www.t3d_etracker.com"><img style="border:0px;" alt="" src="http://www.t3d_etracker.com/nscnt.php?et={$t3d_etracker.id}" /></a></p></noscript>
+<noscript><p><a href="www.etracker.com"><img style="border:0px;" alt="" src="http://www.etracker.com/nscnt.php?et={$t3d_etracker.id}" /></a></p></noscript>
 <!-- etracker CODE NOSCRIPT 3.0 -->
 <noscript>
-<p><a href='http://www.t3d_etracker.de/app?et={$t3d_etracker.id}'>
-<img style='border:0px;' alt='' src='http://www.t3d_etracker.de/cnt.php?
+<p><a href='http://www.etracker.de/app?et={$t3d_etracker.id}'>
+<img style='border:0px;' alt='' src='http://www.etracker.de/cnt.php?
 et={$t3d_etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 &amp;et_pagename=
 &amp;et_areas=&amp;et_ilevel=0&amp;et_target=,0,,0
