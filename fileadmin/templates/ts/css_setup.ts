@@ -4,6 +4,13 @@
 page.includeCSS{
   normal = {$t3d_pfade.tmpls}css/normal.css
 }
+
+[globalString = IENV:HTTP_HOST=m.*]
+page.includeCSS{
+  normal >
+  mobil = {$t3d_pfade.tmpls}css/mobil.css
+}
+[global]
 css = PAGE
 css {
 	typeNum = {$t3d_seitentypen.a_typenum}
@@ -134,16 +141,28 @@ css {
     /* End hide from IE-mac */
 	)
 }
-page.headerData.111 = COA
-page.headerData.111{
-  wrap = <link rel="stylesheet" type="text/css" title="Dynamische TYPO3-Styles" href="|" />
-  10 = TEXT
-  10{
-    typolink{
-      parameter.data = field:uid
-      additionalParams =&type={$t3d_seitentypen.a_typenum}
-      returnLast = url
-      useCacheHash = 1
+page.headerData{
+  110 = COA
+  110{
+    10 = TEXT
+    10{
+      if.isTrue = {$t3d_basis.webfont}
+      value(
+      <link href='{$t3d_basis.webfont}' rel='stylesheet' type='text/css'>
+      )
+    }
+  }
+  111 = COA
+  111{
+    wrap = <link rel="stylesheet" type="text/css" title="Dynamische TYPO3-Styles" href="|" />
+    10 = TEXT
+    10{
+      typolink{
+        parameter.data = field:uid
+        additionalParams =&type={$t3d_seitentypen.a_typenum}
+        returnLast = url
+        useCacheHash = 1
+      }
     }
   }
 }

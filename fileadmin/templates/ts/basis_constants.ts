@@ -75,6 +75,9 @@ t3d_pfade.tmpls = fileadmin/templates/
 
 
 ###  TYPO3 Defaults (T3D) Bereich Basis - Typographie ###
+#cat=t3d_basis/typo/5; type=string; label=Pfad zur Webfont:e.g.http://fonts.googleapis.com/css?family=Roboto+Condensed
+t3d_basis.webfont = 
+
 #cat=t3d_basis/typo/10; type=options[8pt=8pt,9pt=9pt,10pt=10pt,11pt=11pt,12pt=12pt,13pt=13pt,14pt=14pt,15pt=15pt,16pt=16pt,17pt=17pt,18pt=18pt,19pt=19pt,20pt=20pt,21pt=21pt,22pt=22pt,23pt=23pt,24pt=24pt,25pt=25pt]; label=Schriftgroesse
 t3d_basis.font_size = 8pt
 
@@ -164,6 +167,9 @@ t3d_basis.rootpageID = 1
 
 #cat=t3d_basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
 t3d_basis.baseURL = 
+
+#cat=t3d_basis/links/17; type=string; label=Basis-Url Mobil (config.baseURL):z.b. http://m.kunde.de/
+t3d_basis.baseURL_mobil = 
 
 #cat=t3d_basis/links/10; type=int; label=Adress-Seite:z.b.2
 t3d_basis.adresspageID = 2

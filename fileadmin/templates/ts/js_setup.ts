@@ -51,11 +51,25 @@ var jquery_speed = '{$t3d_jquery.speed}';
       ifEmpty = 0
     }
   }
+  24 = COA
+  24{
+    wrap = var mobil = |;
+    10 = TEXT
+    10{
+      value = 0
+    }
+  }
   100 = TEXT
   100.value(
 </script>
   )
 }
 
+[global]
+
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalString = IENV:HTTP_HOST=m.*]
+page.headerData.150{
+  24.10.value=1
+}
 [global]
 ### JAVASCRIPT INCLUDES ENDE

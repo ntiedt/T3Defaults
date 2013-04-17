@@ -36,6 +36,14 @@ config{
 }
 #----------------------------------------------------------- CONFIG-END
 
+#------------------------------------------------------------ CONFIG-MOBIL-BEGIN
+[globalString = IENV:HTTP_HOST=m.*]
+config{
+  baseURL = {$t3d_basis.baseURL_mobil}
+}
+[global]
+#------------------------------------------------------------ CONFIG-MOBIL-END
+
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-BEGIN
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$t3d_basis._DEFAULT_PI_VARS_lang}
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-END
@@ -167,6 +175,16 @@ page.10.disableExplosivePreview = 1
 [global]
 #----------------------------------------------------------- DEFAULT-PAGE-END
 
+#------------------------------------------------------------ PAGE-CONFIG-MOBIL-BEGIN
+[globalString = IENV:HTTP_HOST=m.*]
+page.headerData.10 = HTML
+page.headerData.10.value(
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+)
+[global]
+#------------------------------------------------------------ PAGE-CONFIG-MOBIL-END
+
 #----------------------------------------------------------- PAGE-SHORTCUT-ICON-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.favicon}]
 page.shortcutIcon = {$t3d_basis.favicon_file}
@@ -196,6 +214,11 @@ page.bodyTagCObject{
     20.noTrimWrap = | l_|| 
   }
 }
+
+[globalString = IENV:HTTP_HOST=m.*]
+page.bodyTagCObject.20.30 = TEXT
+page.bodyTagCObject.20.30.noTrimWrap = | mobil||
+[global]
 
 [browser = msie]
 page.bodyTagCObject.20.10.value = msie
