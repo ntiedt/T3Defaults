@@ -36,31 +36,46 @@ t3d_basis.utf8_support = 1
 #cat=t3d_basis/enable/40; type=boolean; label=Seitencache wenn BE-User eingeloggt (config.no_cache):-> 0=Ein / 1=Aus, Nach Entwicklung deaktivieren!!
 t3d_basis.no_cache = 1
 
-#cat=t3d_basis/enable/43; type=boolean; label=TS tt_content laden:-> 0=Aus / 1=Ein
+
+
+#cat=t3d_basis/enable/42; type=boolean; label=Zusammenfuehren von JS-Dateien:-> 0=Aus / 1=Ein
+t3d_basis.concatenateJs = 1
+
+#cat=t3d_basis/enable/44; type=boolean; label=Zusammenfuehren von CSS-Dateien:-> 0=Aus / 1=Ein
+t3d_basis.concatenateCss = 1
+
+#cat=t3d_basis/enable/46; type=boolean; label=Komprimieren von JS-Dateien:-> 0=Aus / 1=Ein
+t3d_basis.compressJs = 1
+
+#cat=t3d_basis/enable/48; type=boolean; label=Komprimieren von CSS-Dateien:-> 0=Aus / 1=Ein
+t3d_basis.compressCss = 1
+
+
+#cat=t3d_basis/enable/80; type=boolean; label=TS tt_content laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_tt_content = 1
 
-#cat=t3d_basis/enable/45; type=boolean; label=TS Seitentypen laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/82; type=boolean; label=TS Seitentypen laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_seitentypen = 1
 
-#cat=t3d_basis/enable/50; type=boolean; label=TS CSS laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/84; type=boolean; label=TS CSS laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_css = 1
 
-#cat=t3d_basis/enable/55; type=boolean; label=TS Objekte laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/86; type=boolean; label=TS Objekte laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_objekte = 1
 
-#cat=t3d_basis/enable/60; type=boolean; label=TS Navigation laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/88; type=boolean; label=TS Navigation laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_navigation = 1
 
-#cat=t3d_basis/enable/65; type=boolean; label=TS E-Tracker laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/90; type=boolean; label=TS E-Tracker laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_etracker = 1
 
-#cat=t3d_basis/enable/70; type=boolean; label=Google Verifizierung einschalten:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/92; type=boolean; label=Google Verifizierung einschalten:-> 0=Aus / 1=Ein
 t3d_basis.google_ver = 0
 
-#cat=t3d_basis/enable/75; type=boolean; label=TS Funktionen laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/94; type=boolean; label=TS Funktionen laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_funktionen = 0
 
-#cat=t3d_basis/enable/80; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
+#cat=t3d_basis/enable/96; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_js = 1
 
 

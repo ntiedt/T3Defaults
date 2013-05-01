@@ -33,6 +33,12 @@ config{
 
   spamProtectEmailAddresses = 1
   spamProtectEmailAddresses_atSubst = {$t3d_basis.spamProtectEmailAddresses_atSubst}
+
+  # JS/CSS Cache Einstellungen
+  concatenateJs = {$t3d_basis.concatenateJs}
+  concatenateCss = {$t3d_basis.concatenateCss}
+  compressJs = {$t3d_basis.compressJs}
+  compressCss = {$t3d_basis.compressCss}
 }
 #----------------------------------------------------------- CONFIG-END
 
