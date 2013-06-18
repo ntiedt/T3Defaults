@@ -150,12 +150,6 @@ t3d_basis.ul_liststyleposition = outside
 #cat=t3d_basis/typo/80; type=string; label=eigenes Listenbild (ul list-style-image):z.b. bg_liste.gif
 t3d_basis.ul_liststyleimage_file = bg_liste.gif
 
-
-
-###  TYPO3 Defaults (T3D) Bereich Basis - Color ###
-#cat=t3d_basis/color/10; type=color; label=Hintergrundfarbe der Seite
-t3d_basis.bgcolor = white
-
 #cat=t3d_basis/color/15; type=color; label=Hintergrundfarbe der Klickvergroesserung
 t3d_basis.bgcolor_showpic = white
 
@@ -206,6 +200,24 @@ t3d_basis.obj_logo = obj_logo.gif
 
 #cat=t3d_basis/links/40; type=string; label=Favicon (page.shortcutIcon):-> z.b. fileadmin/bilder/t3d_basis/favicon.ico
 t3d_basis.favicon_file = fileadmin/bilder/t3d_basis/favicon.ico
+
+
+
+###  TYPO3 Defaults (T3D) Bereich Grid ###
+#cat=t3d_grid/enable/10; type=boolean; label=Grid verwenden:-> 0=Nein / 1=Ja
+t3d_grid.enable = 1
+
+#cat=t3d_grid/dims/15; type=int+; label=Max. Breite der Seite(px):z.b. 1148
+t3d_grid.max_width = 1148
+
+#cat=t3d_grid/dims/20; type=int+; label=Max. Spalten:z.b. 12
+t3d_grid.max_cols = 12
+
+#cat=t3d_grid/dims/25; type=int+; label=Breite einer Spalte(px):z.b. 70
+t3d_grid.col_width = 70
+
+#cat=t3d_grid/dims/30; type=options[in Pixeln=px,in Prozent=%]; label=Einheit des Grids:z.b.
+t3d_grid.unity = %
 
 
 
