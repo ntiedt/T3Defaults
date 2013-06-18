@@ -2,15 +2,19 @@
 ### CSS ###
 [globalVar = LIT:1 = {$t3d_basis.ts_css}]
 page.includeCSS{
+  reset = {$t3d_pfade.tmpls}css/reset.css
+  ie = {$t3d_pfade.tmpls}css/ie.css
   normal = {$t3d_pfade.tmpls}css/normal.css
 }
 
-[globalString = IENV:HTTP_HOST=m.*]
+[globalVar = LIT:1 = {$t3d_basis.ts_css}] AND [globalString = IENV:HTTP_HOST=m.*]
 page.includeCSS{
   normal >
   mobil = {$t3d_pfade.tmpls}css/mobil.css
 }
 [global]
+
+[globalVar = LIT:1 = {$t3d_basis.ts_css}]
 css = PAGE
 css {
 	typeNum = {$t3d_seitentypen.a_typenum}
@@ -140,6 +144,10 @@ css {
     * html #clearfix{height: 1%;}
     /* End hide from IE-mac */
 	)
+	15 = COA
+	15{
+    20 < temp.grid
+	}
 }
 page.headerData{
   110 = COA
