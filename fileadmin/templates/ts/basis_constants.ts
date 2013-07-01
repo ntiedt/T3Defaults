@@ -186,7 +186,10 @@ t3d_basis.adresspageID = 2
 #cat=t3d_basis/links/18; type=int; label=News-Sysordner:z.b.3
 t3d_basis.newsfolderID = 3
 
-#cat=t3d_basis/links/20; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
+#cat=t3d_basis/links/20; type=int; label=Fe-User-Sysordner:z.b.4
+t3d_basis.feloginfolderID = 4
+
+#cat=t3d_basis/links/22; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
 t3d_basis.kontaktemail = 
 
 #cat=t3d_basis/links/25; type=string; label=Shop-E-Mail:-> z.b. shop@kunde.de
@@ -321,6 +324,18 @@ t3d_navigation.nav_rootline_range = 1|5
 
 
 
+
+
+##  TYPO3 Defaults (T3D) Bereich EXT:fe_login ###
+
+#cat=t3d_exts//; type=int; label=Fe-User-Sysordner:z.b.4
+t3d_exts.felogin_folderID = 4
+
+#cat=t3d_exts//; type=boolean; label=Passwort vergessen Link anzeigen:-> 0=Aus / 1=Ein
+t3d_exts.felogin_showForgotPasswordLink = 1
+
+#cat=t3d_exts//; type=boolean; label=Permanent Login Link anzeigen:-> 0=Aus / 1=Ein
+t3d_exts.felogin_showPermaLogin = 1
 
 
 ##
