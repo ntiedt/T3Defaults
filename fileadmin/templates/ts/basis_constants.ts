@@ -174,16 +174,16 @@ t3d_basis.ul_color = black
 #cat=t3d_basis/links/10; type=int; label=Root-Seite:z.b.1
 t3d_basis.rootpageID = 1
 
-#cat=t3d_basis/links/15; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
+#cat=t3d_basis/links/12; type=string; label=Basis-Url (config.baseURL):z.b. http://www.kunde.de/
 t3d_basis.baseURL = 
 
-#cat=t3d_basis/links/17; type=string; label=Basis-Url Mobil (config.baseURL):z.b. http://m.kunde.de/
+#cat=t3d_basis/links/14; type=string; label=Basis-Url Mobil (config.baseURL):z.b. http://m.kunde.de/
 t3d_basis.baseURL_mobil = 
 
-#cat=t3d_basis/links/10; type=int; label=Adress-Seite:z.b.2
+#cat=t3d_basis/links/16; type=int; label=Adress-Seite:z.b.2
 t3d_basis.adresspageID = 2
 
-#cat=t3d_basis/links/10; type=int; label=News-Sysordner:z.b.3
+#cat=t3d_basis/links/18; type=int; label=News-Sysordner:z.b.3
 t3d_basis.newsfolderID = 3
 
 #cat=t3d_basis/links/20; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
