@@ -43,7 +43,7 @@ tmp.obj_address{
   10{
     table = tt_content
     select{
-      pidInList = 116
+      pidInList = {$t3d_basis.adresspageID}
     }
   }
 }
