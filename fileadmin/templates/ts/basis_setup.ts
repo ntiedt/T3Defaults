@@ -152,11 +152,17 @@ config.locale_all = ro_RO
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 [global]
 
-#----------------------------------------------------------- CONFIG-CACHE-BEGIN
-[globalVar = TSFE : beUserLogin > 0]
-config.no_cache = {$t3d_cache.no_cache}
+#----------------------------------------------------------- CONFIG-BE-USER-BEGIN
+[globalVar = TSFE : beUserLogin> 0]
+config{
+  no_cache = {$t3d_cache.no_cache}
+  concatenateJs = 0
+  concatenateCss = 0
+  compressJs = 0
+  compressCss = 0
+}
 [global]
-#----------------------------------------------------------- CONFIG-CACHE-END
+#----------------------------------------------------------- CONFIG-BE-USER-END
 
 #----------------------------------------------------------- DEFAULT-PAGE-BEGIN
 ### Default PAGE object ###

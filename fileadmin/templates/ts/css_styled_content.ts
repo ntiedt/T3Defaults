@@ -863,8 +863,9 @@ tt_content.image.20 {
 	addClassesImage = csc-textpic-first |*| |*| csc-textpic-last
 
 	#
-	imageStdWrap.dataWrap = <div class="csc-textpic-imagewrap" style="width:{register:totalwidth}px;"> | </div>
-	imageStdWrapNoWidth.wrap = <div class="csc-textpic-imagewrap"> | </div>
+	imageStdWrap.dataWrap = <div class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}" style="width:{register:totalwidth}px;"> | </div>
+	imageStdWrapNoWidth.wrap = <div class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}"> | </div>
+	imageStdWrapNoWidth.wrap.insertData = 1
 
 	# if noRows is set, wrap around each column:
 	imageColumnStdWrap.dataWrap = <div class="csc-textpic-imagecolumn" style="width:{register:columnwidth}px;"> | </div>
@@ -957,7 +958,8 @@ tt_content.image.20 {
 				}
 			}
 			allStdWrap {
-				wrap = <div class="csc-textpic-imagewrap"> | </div>
+				wrap = <div class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}"> | </div>
+				wrap.insertData =1
 				innerWrap.cObject = CASE
 				innerWrap.cObject {
 					key.field = imageorient
@@ -991,7 +993,8 @@ tt_content.image.20 {
 		noCaption {
 			# Multiple images and no caption at all
 			fallbackRendering < tt_content.image.20.rendering.singleNoCaption.fallbackRendering.10
-			allStdWrap.wrap = <div class="csc-textpic-imagewrap"> | </div>
+			allStdWrap.wrap = <div class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}"> | </div>
+			allStdWrap.wrap.insertData = 1
 			singleStdWrap {
 				wrap = <div class="csc-textpic-image###CLASSES###"> | </div>
 				wrap {
@@ -1068,9 +1071,11 @@ tt_content.image.20 {
 			# Just one image without a caption
 			fallbackRendering < tt_content.image.20.rendering.singleNoCaption.fallbackRendering.10
 			allStdWrap {
-				wrap = <div class="csc-textpic-imagewrap"><table>###CAPTION###<tbody> | </tbody></table></div>
+				wrap = <div class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}"><table>###CAPTION###<tbody> | </tbody></table></div>
+				wrap.insertData = 1
 				wrap {
-					override = <figure class="csc-textpic-imagewrap"> | ###CAPTION###</figure>
+					override = <figure class="csc-textpic-imagewrap csc-textpic-count-{field:imagecols}"> | ###CAPTION###</figure>
+					override.insertData = 1
 					override {
 						if {
 							value = html5
