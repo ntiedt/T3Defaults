@@ -34,11 +34,13 @@ config{
   spamProtectEmailAddresses = 1
   spamProtectEmailAddresses_atSubst = {$t3d_basis.spamProtectEmailAddresses_atSubst}
 
-  # JS/CSS Cache Einstellungen
-  concatenateJs = {$t3d_basis.concatenateJs}
-  concatenateCss = {$t3d_basis.concatenateCss}
-  compressJs = {$t3d_basis.compressJs}
-  compressCss = {$t3d_basis.compressCss}
+  # JS/CSS/Cache Einstellungen
+  concatenateJs = {$t3d_cache.concatenateJs}
+  concatenateCss = {$t3d_cache.concatenateCss}
+  compressJs = {$t3d_cache.compressJs}
+  compressCss = {$t3d_cache.compressCss}
+  cache_period = {$t3d_cache.period}
+  cache_clearAtMidnight = {$t3d_cache.clearAtMidnight}
 }
 #----------------------------------------------------------- CONFIG-END
 
@@ -151,8 +153,8 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 [global]
 
 #----------------------------------------------------------- CONFIG-CACHE-BEGIN
-[globalVar = TSFE : beUserLogin> 0]
-config.no_cache = {$t3d_basis.no_cache}
+[globalVar = TSFE : beUserLogin > 0]
+config.no_cache = {$t3d_cache.no_cache}
 [global]
 #----------------------------------------------------------- CONFIG-CACHE-END
 

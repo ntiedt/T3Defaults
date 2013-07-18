@@ -33,23 +33,6 @@ t3d_basis.simulateStaticDocuments = 0
 #cat=t3d_basis/enable/35; type=boolean; label=UTF-8 Support :-> 0=Aus / 1=Ein : Zusaetzlich im Install-Tool unter forceCharset "utf-8" eingeben
 t3d_basis.utf8_support = 1
 
-#cat=t3d_basis/enable/40; type=boolean; label=Seitencache wenn BE-User eingeloggt (config.no_cache):-> 0=Ein / 1=Aus, Nach Entwicklung deaktivieren!!
-t3d_basis.no_cache = 1
-
-
-
-#cat=t3d_basis/enable/42; type=boolean; label=Zusammenfuehren von JS-Dateien:-> 0=Aus / 1=Ein
-t3d_basis.concatenateJs = 1
-
-#cat=t3d_basis/enable/44; type=boolean; label=Zusammenfuehren von CSS-Dateien:-> 0=Aus / 1=Ein
-t3d_basis.concatenateCss = 1
-
-#cat=t3d_basis/enable/46; type=boolean; label=Komprimieren von JS-Dateien:-> 0=Aus / 1=Ein
-t3d_basis.compressJs = 1
-
-#cat=t3d_basis/enable/48; type=boolean; label=Komprimieren von CSS-Dateien:-> 0=Aus / 1=Ein
-t3d_basis.compressCss = 1
-
 
 #cat=t3d_basis/enable/80; type=boolean; label=TS css_styled_content laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_css_styled_content = 1
@@ -77,6 +60,29 @@ t3d_basis.ts_funktionen = 0
 
 #cat=t3d_basis/enable/96; type=boolean; label=TS JS laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_js = 1
+
+
+### TYPO3 Defaults (T3D) Bereich Cache ###
+#cat=t3d_cache/enable/10; type=boolean; label=Seitencache wenn BE-User eingeloggt (config.no_cache):-> 0=Cache an / 1=Cache aus
+t3d_cache.no_cache = 1
+
+#cat=t3d_cache/enable/15; type=boolean; label=Cache nach Mitternacht loeschen:-> 0=Aus / 1=Ein
+t3d_cache.clearAtMidnight = 1
+
+#cat=t3d_cache/enable/20; type=int+; label=Cache nach x-Sekunden loeschen:-> 86400 = 1 Tag
+t3d_cache.period = 86400
+
+#cat=t3d_cache/enable/42; type=boolean; label=Zusammenfuehren von JS-Dateien:-> 0=Aus / 1=Ein
+t3d_cache.concatenateJs = 1
+
+#cat=t3d_cache/enable/44; type=boolean; label=Zusammenfuehren von CSS-Dateien:-> 0=Aus / 1=Ein
+t3d_cache.concatenateCss = 1
+
+#cat=t3d_cache/enable/46; type=boolean; label=Komprimieren von JS-Dateien:-> 0=Aus / 1=Ein
+t3d_cache.compressJs = 1
+
+#cat=t3d_cache/enable/48; type=boolean; label=Komprimieren von CSS-Dateien:-> 0=Aus / 1=Ein
+t3d_cache.compressCss = 1
 
 
 
