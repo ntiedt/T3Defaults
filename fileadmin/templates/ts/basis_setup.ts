@@ -313,8 +313,8 @@ page.10000{
 
 
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
-### tt_content Definitionen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/tt_content_setup.ts">
+### css_styled_content Definitionen ###
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_styled_content.ts">
 
 ### Seitentypen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_setup.ts">

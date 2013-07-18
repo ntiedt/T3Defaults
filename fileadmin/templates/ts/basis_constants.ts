@@ -51,8 +51,8 @@ t3d_basis.compressJs = 1
 t3d_basis.compressCss = 1
 
 
-#cat=t3d_basis/enable/80; type=boolean; label=TS tt_content laden:-> 0=Aus / 1=Ein
-t3d_basis.ts_tt_content = 1
+#cat=t3d_basis/enable/80; type=boolean; label=TS css_styled_content laden:-> 0=Aus / 1=Ein
+t3d_basis.ts_css_styled_content = 1
 
 #cat=t3d_basis/enable/82; type=boolean; label=TS Seitentypen laden:-> 0=Aus / 1=Ein
 t3d_basis.ts_seitentypen = 1
@@ -180,13 +180,16 @@ t3d_basis.baseURL =
 #cat=t3d_basis/links/14; type=string; label=Basis-Url Mobil (config.baseURL):z.b. http://m.kunde.de/
 t3d_basis.baseURL_mobil = 
 
-#cat=t3d_basis/links/16; type=int; label=Adress-Seite:z.b.2
-t3d_basis.adresspageID = 2
+#cat=t3d_basis/links/18; type=int; label=ID der Suchseite:z.b.2
+t3d_basis.searchpageID = 2
 
-#cat=t3d_basis/links/18; type=int; label=News-Sysordner:z.b.3
-t3d_basis.newsfolderID = 3
+#cat=t3d_basis/links/20; type=int; label=ID der Adressseite:z.b.3
+t3d_basis.adresspageID = 3
 
-#cat=t3d_basis/links/22; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
+#cat=t3d_basis/links/22; type=int; label=ID des News-Sysordner:z.b.4
+t3d_basis.newsfolderID = 4
+
+#cat=t3d_basis/links/24; type=string; label=Kontakt-E-Mail:-> z.b. info@kunde.de
 t3d_basis.kontaktemail = 
 
 #cat=t3d_basis/links/25; type=string; label=Shop-E-Mail:-> z.b. shop@kunde.de
