@@ -49,33 +49,63 @@ defaultLanguageFlag = gb
 defaultLanguageLabel = English
 }
 
-### RTE Link without alttext and titletext
+### RTE
 RTE {
-   classesAnchor {
-     externalLink {
-       altText =
-       titleText =
-     }
-     externalLinkInNewWindow {
-       altText =
-       titleText =
-     }
-     internalLink {
-       altText =
-       titleText =
-     }
-     internalLinkInNewWindow {
-       altText =
-       titleText =
-     }
-     download {
-       altText =
-       titleText =
-     }
-     mail {
-       altText =
-       titleText =
-     }
-   }
+  ## Anchor classes configuration for use by the anchor accesibility feature
+  classesAnchor {
+    externalLink {
+      altText =
+      titleText =
+    }
+    externalLinkInNewWindow {
+      altText =
+      titleText =
+    }
+    externalOverlay {
+      class = external-overlay
+      type = url
+      altText =
+      titleText =
+      target = overlay
+    }
+    internalLink {
+      altText =
+      titleText =
+    }
+    internalLinkInNewWindow {
+      altText =
+      titleText =
+    }
+    internalOverlay {
+      class = internal-overlay
+      type = page
+      altText =
+      titleText =
+      target = overlay
+    }
+    download {
+      altText =
+      titleText =
+    }
+    mail {
+      altText =
+      titleText =
+    }
+  }
+  default{
+  	## List all class selectors that are allowed on the way to the database
+  	proc.allowedClasses (
+  		external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, download, mail,
+  		align-left, align-center, align-right, align-justify,
+  		csc-frame-frame1, csc-frame-frame2,
+  		component-items, action-items,
+  		component-items-ordered, action-items-ordered,
+  		important, name-of-person, detail,
+  		indent
+  	)
+		## Configuration of links
+		## These classes should also be in the list proc.allowedClasses
+  	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, download, mail
+  }
 }
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-END
