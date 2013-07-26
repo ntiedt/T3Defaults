@@ -42,9 +42,40 @@ TCEFORM.tt_content {
   #section_frame.addItems.22=3 Name de Rahmens
   section_frame.removeItems = 1,5,6,10,11,12,20,21,66
 }
+
 ### language default flag
 mod.SHARED {
 defaultLanguageFlag = gb
 defaultLanguageLabel = English
+}
+
+### RTE Link without alttext and titletext
+RTE {
+   classesAnchor {
+     externalLink {
+       altText =
+       titleText =
+     }
+     externalLinkInNewWindow {
+       altText =
+       titleText =
+     }
+     internalLink {
+       altText =
+       titleText =
+     }
+     internalLinkInNewWindow {
+       altText =
+       titleText =
+     }
+     download {
+       altText =
+       titleText =
+     }
+     mail {
+       altText =
+       titleText =
+     }
+   }
 }
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-END
