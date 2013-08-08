@@ -234,6 +234,11 @@ page.bodyTagCObject.20.30 = TEXT
 page.bodyTagCObject.20.30.noTrimWrap = | mobil||
 [global]
 
+[globalVar = TSFE:id = {$t3d_basis.rootpageID}]
+page.bodyTagCObject.20.40 = TEXT
+page.bodyTagCObject.20.40.noTrimWrap = | rootpage||
+[global]
+
 [browser = msie]
 page.bodyTagCObject.20.10.value = msie
 [global]
