@@ -225,7 +225,10 @@ t3d_grid.max_cols = 12
 #cat=t3d_grid/dims/25; type=int+; label=Breite einer Spalte(px):z.b. 70
 t3d_grid.col_width = 70
 
-#cat=t3d_grid/dims/30; type=options[in Pixeln=px,in Prozent=%]; label=Einheit des Grids:z.b.
+#cat=t3d_grid/dims/30; type=int+; label=Breite eines Spaltenabstands(px):z.b. 20
+t3d_grid.col_margin = 20
+
+#cat=t3d_grid/dims/35; type=options[in Pixeln=px,in Prozent=%]; label=Einheit des Grids:z.b.
 t3d_grid.unity = %
 
 

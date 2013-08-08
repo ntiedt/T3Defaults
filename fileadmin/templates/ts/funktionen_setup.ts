@@ -88,7 +88,7 @@ temp.grid{
     
     50 = TEXT
     50{
-      wrap = @media ( min-width : 768px ) {.col {margin-left: |;}}
+      wrap = @media ( min-width : 768px ) {.col {margin-left: |%;}}
       data = register:grid_col_margin
     }
     
