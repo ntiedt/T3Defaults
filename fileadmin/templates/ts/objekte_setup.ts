@@ -2,7 +2,7 @@
 ### Objekte ###
 tmp.obj_logo = IMAGE
 tmp.obj_logo {
-  file = {$t3d_pfade.tmpls}/image/{$t3d_basis.obj_logo}
+  file = {$t3d_pfade.tmpls}image/{$t3d_basis.obj_logo}
   stdWrap.typolink.parameter = {$t3d_basis.rootpageID}
   file.import = uploads/tx_templavoila/
   file.import.listNum = 0
@@ -24,7 +24,7 @@ tmp.obj_search = COA
 tmp.obj_search{
   10 < plugin.tx_indexedsearch
   10{
-    templateFile = {$t3d_pfade.tmpls}/html/ext_indexed_search_mini.html
+    templateFile = {$t3d_pfade.tmpls}html/ext_indexed_search_mini.html
   }
 }
 

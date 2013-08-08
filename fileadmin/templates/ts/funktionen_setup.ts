@@ -22,7 +22,7 @@ page.XX < temp.info
 ### Grid ###
 [globalVar = LIT:1 = {$t3d_grid.enable}]
 
-includeLibs.grid = {$t3d_pfade.tmpls}/php/grid.php
+includeLibs.grid = {$t3d_pfade.tmpls}php/grid.php
 
 temp.grid = COA
 temp.grid{
