@@ -64,7 +64,7 @@ temp.grid{
       }
       
       /* SELF CLEARING FLOATS - CLEARFIX METHOD */
-      .row:after, .col:after .clr:after, .group:after {
+      .row:after, .col:after, .clr:after, .group:after {
       	content: ""; 
       	display: block; 
       	height: 0; 
