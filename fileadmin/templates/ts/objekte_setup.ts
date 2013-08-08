@@ -24,7 +24,7 @@ tmp.obj_search = COA
 tmp.obj_search{
   10 < plugin.tx_indexedsearch
   10{
-    templateFile = fileadmin/templates/html/ext_indexed_search_mini.html
+    templateFile = {$t3d_pfade.tmpls}/html/ext_indexed_search_mini.html
   }
 }
 
