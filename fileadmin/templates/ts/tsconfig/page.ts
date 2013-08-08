@@ -23,6 +23,15 @@ TCEFORM.pages {
 
 ### tt_content Layout
 TCEFORM.tt_content {
+  header_layout.altLabels.0 = Standard
+  header_layout.altLabels.1 = Layout 1
+  header_layout.altLabels.2 = Layout 2
+  header_layout.altLabels.3 = Layout 3
+  header_layout.altLabels.4 = Layout 4
+  header_layout.altLabels.5 = Layout 5
+  header_layout.altLabels.100 = Verborgen
+  #header_layout.addItems.7 = Bereichsheadline (H1)
+  
   layout.altLabels.0 = Standard
   layout.altLabels.1 = Layout 1
   layout.altLabels.2 = Layout 2
