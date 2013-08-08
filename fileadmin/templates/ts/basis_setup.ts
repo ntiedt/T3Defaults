@@ -327,10 +327,11 @@ page.10000{
 ### Seitentypen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_setup.ts">
 
+### Funktionen ###
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
 
 ### CSS ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_setup.ts">
-
 
 ### JS ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/js_setup.ts">
@@ -343,7 +344,4 @@ page.10000{
 
 ### E-Tracker ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/etracker_setup.ts">
-
-### Funktionen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END
