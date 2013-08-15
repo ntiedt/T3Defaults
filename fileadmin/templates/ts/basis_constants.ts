@@ -286,7 +286,7 @@ t3d_basis.second_lang_linktotop = To Top
 #cat=t3d_basis/language/20; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=Standardsprache (config.language)
 t3d_basis.language = de
 
-#cat=t3d_basis/language/25; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=Standardlokalisierung (config.locale_all)
+#cat=t3d_basis/language/25; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=Standardlokalisierung (config.locale_all)
 t3d_basis.locale_all = de_DE
 
 #cat=t3d_basis/language/30; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
@@ -298,7 +298,7 @@ t3d_basis.second_lang = 0
 #cat=t3d_basis/language/40; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=2. Standardsprache (config.language)
 t3d_basis.second_lang_language = en
 
-#cat=t3d_basis/language/45; type=options[Deutsch=de_DE,Englisch=english,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=2. Standardlokalisierung (config.locale_all)
+#cat=t3d_basis/language/45; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=2. Standardlokalisierung (config.locale_all)
 t3d_basis.second_lang_locale_all = english
 
 #cat=t3d_basis/language/50; type=options[0=0,1=1,2=2,3=3,4=4,5=5,6=6,7=7,8=8,9=9,10=10]; label=2. Standard-PI_VARS (Seiten-id):(plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang)
