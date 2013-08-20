@@ -3,6 +3,7 @@
 
 page.includeJSFooter{
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  #jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 

@@ -4,6 +4,7 @@
 page.includeCSS{
   reset = {$t3d_pfade.tmpls}css/reset.css
   ie = {$t3d_pfade.tmpls}css/ie.css
+  #jqueryui = {$t3d_pfade.tmpls}css/ui-lightness/jquery-ui-1.10.3.custom.min.css
   normal = {$t3d_pfade.tmpls}css/normal.css
 }
 
