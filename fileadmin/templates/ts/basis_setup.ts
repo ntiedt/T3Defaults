@@ -153,9 +153,10 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 [global]
 
 #----------------------------------------------------------- CONFIG-BE-USER-BEGIN
-[globalVar = TSFE : beUserLogin> 0]
+[globalVar = TSFE : beUserLogin > 0]
 config{
   no_cache = {$t3d_cache.no_cache}
+  tx_realurl_enable = 0
   concatenateJs = 0
   concatenateCss = 0
   compressJs = 0
