@@ -5,7 +5,7 @@
 # ***************************************************************************
 
 # Clear out any constants in this reserved room!
-styles.content >
+#styles.content >
 
 # get content
 styles.content.get = CONTENT
@@ -400,7 +400,7 @@ includeLibs.tx_cssstyledcontent_pi1 = EXT:css_styled_content/pi1/class.tx_csssty
 #**********************************
 # tt_content is started
 #**********************************
-tt_content >
+#tt_content >
 tt_content = CASE
 tt_content.key.field = CType
 tt_content.stdWrap {
@@ -2212,63 +2212,5 @@ plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE (
 
 
 
-#############################################
-## TypoScript added by extension "felogin"
-#############################################
-
-# Setting felogin plugin TypoScript
-tt_content.login = COA
-tt_content.login {
-	10 = < lib.stdheader
-	20 >
-	20 = < plugin.tx_felogin_pi1
-}
-
-
-#############################################
-## TypoScript added by extension "indexed_search"
-#############################################
-
-
-# Setting indexed_search plugin TypoScript
-tt_content.list.20.indexed_search = < plugin.tx_indexedsearch
-
-
-#############################################
-## TypoScript added by extension "IndexedSearch"
-#############################################
-
-
-# Setting IndexedSearch plugin TypoScript
-tt_content.list.20.indexedsearch_pi2 = USER
-tt_content.list.20.indexedsearch_pi2 {
-	userFunc = tx_extbase_core_bootstrap->run
-	extensionName = IndexedSearch
-	pluginName = Pi2
-}
-
-#############################################
-## TypoScript added by extension "templavoila"
-#############################################
-
-
-# Setting templavoila plugin TypoScript
-tt_content.templavoila_pi1 = COA
-tt_content.templavoila_pi1 {
-	10 = < lib.stdheader
-	20 = < plugin.tx_templavoila_pi1
-}
-
-
-#############################################
-## TypoScript added by extension "templavoila"
-#############################################
-
-plugin.tx_templavoila_pi1.disableExplosivePreview = 1
-tt_content.templavoila_pi1.10 >
-tt_content.menu.20.3 = USER
-tt_content.menu.20.3.userFunc = tx_templavoila_pi1->tvSectionIndex
-tt_content.menu.20.3.select.where >
-tt_content.menu.20.3.indexField.data = register:tx_templavoila_pi1.current_field
 
 [global]
