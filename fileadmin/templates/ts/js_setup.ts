@@ -60,6 +60,14 @@ var jquery_speed = '{$t3d_jquery.speed}';
       value = 0
     }
   }
+  26 = COA
+  26{
+    wrap = var job = '|';
+    10 = TEXT
+    10{
+      data = GP:job
+    }
+  }
   100 = TEXT
   100.value(
 </script>

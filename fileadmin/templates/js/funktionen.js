@@ -25,6 +25,17 @@ jQuery(function(j){
       j(this).removeClass('hover');
     }
   );
+
+  /* FUNC: Jobs: Uebergabe */
+  if(j('* a.internal-job').length>0){
+    href = j('* a.internal-job').attr('href');
+    field = '&job=';
+    job = j('.news-single-item h1:first').text();
+    j('* a.internal-job').attr('href',encodeURI(href+field+job));
+  };
+  if(job!==''){
+    j('form.powermail_form .powermail_field:first').val(job);
+  };
   
   /* COLORBOX: http://www.jacklmoore.com/colorbox */
   if(typeof jQuery == "colorbox"){
@@ -33,6 +44,18 @@ jQuery(function(j){
       'previous': '<',
       'next': '>',
       'close': 'X'
+    });
+  }
+  
+  
+  /* FLEXSLIDER: */
+  if(jQuery().flexslider){
+    j('.flexslider').flexslider({
+      animation: "slide",
+      selector: ".slides > .csc-textpic-imagerow",
+      slideshowSpeed: 7000,
+      animationSpeed: 600,
+      initDelay: 0
     });
   }
 });

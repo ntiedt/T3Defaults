@@ -60,6 +60,18 @@ defaultLanguageLabel = English
 
 ### RTE
 RTE {
+  classes{
+    /*
+    csc-frame-frame1 {
+      name = gestrichelte Linie davor
+      value = border-top: 1px dashed #CECECE;
+    }
+  	action-items {
+  		name = Aufzählung Maschinenbereich
+  		value = 
+  	}
+    */
+  }
   ## Anchor classes configuration for use by the anchor accesibility feature
   classesAnchor {
     externalLink {
@@ -92,6 +104,12 @@ RTE {
       titleText =
       target = overlay
     }
+    internalJob {
+      class = internal-job
+      type = page
+      altText =
+      titleText =
+    }
     download {
       altText =
       titleText =
@@ -104,7 +122,7 @@ RTE {
   default{
   	## List all class selectors that are allowed on the way to the database
   	proc.allowedClasses (
-  		external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, download, mail,
+  		external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail,
   		align-left, align-center, align-right, align-justify,
   		csc-frame-frame1, csc-frame-frame2,
   		component-items, action-items,
@@ -114,7 +132,7 @@ RTE {
   	)
 		## Configuration of links
 		## These classes should also be in the list proc.allowedClasses
-  	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, download, mail
+  	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail
   }
 }
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-END
