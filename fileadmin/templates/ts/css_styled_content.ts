@@ -1,3 +1,6 @@
+###
+### CSS_STYLED_CONTENT ###
+
 [globalVar = LIT:1 = {$t3d_basis.ts_css_styled_content}]
 # ***************************************************************************
 # Notice: "styles." (and "temp.") objects are UNSET after template parsing!
@@ -569,7 +572,7 @@ tt_content.stdWrap {
 		}
 	}
 
-	innerWrap2 = | <p class="csc-linkToTop"><a href="#">{$t3d_basis.linktotop}</a></p>
+	innerWrap2 = | <p class="csc-linkToTop"><a href="#">{LLL:fileadmin/templates/ts/locallang/t3d.xml:linkToTop}</a></p>
 	innerWrap2.insertData = 1
 	innerWrap2.fieldRequired = linkToTop
 
@@ -589,10 +592,6 @@ tt_content.stdWrap {
 
 	prefixComment = 1 | CONTENT ELEMENT, uid:{field:uid}/{field:CType}
 }
-[global]
-
-[globalVar = LIT:1 = {$t3d_basis.ts_css_styled_content}] && [globalVar = GP:L = 1] && [globalVar = LIT:1 = {$t3d_basis.second_lang}]
-tt_content.stdWrap.innerWrap2 = | <p class="csc-linkToTop"><a href="#">{$t3d_basis.second_lang_linktotop}</a></p>
 [global]
 
 [globalVar = LIT:1 = {$t3d_basis.ts_css_styled_content}]
@@ -673,7 +672,7 @@ tt_content.image.20 {
 		file.width.field = imagewidth
 		imageLinkWrap = 1
 		imageLinkWrap {
-			bodyTag = <body style="margin:0; background:{$t3d_basis.bgcolor_showpic};">
+			bodyTag = <body style="margin:0; background:{$t3d_style.bgcolor_showpic};">
 			wrap = <a href="javascript:close();"> | </a>
 			width = {$styles.content.imgtext.linkWrap.width}
 			height = {$styles.content.imgtext.linkWrap.height}

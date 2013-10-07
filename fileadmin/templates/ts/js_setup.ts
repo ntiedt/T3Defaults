@@ -3,7 +3,9 @@
 
 page.includeJSFooter{
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  jquery.disableCompression = 1
   #jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
+  #jqueryui.disableCompression = 1
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 
@@ -66,6 +68,26 @@ var jquery_speed = '{$t3d_jquery.speed}';
     10 = TEXT
     10{
       data = GP:job
+    }
+  }
+  28 = COA
+  28{
+    wrap = var debug = '|';
+    10 = TEXT
+    10{
+      data = GP:debug
+      removeBadHTML = 1
+      ifEmpty = 0
+    }
+  }
+  30 = COA
+  30{
+    wrap = var subscription_mail = '|';
+    10 = TEXT
+    10{
+      data = GP:subscription_mail
+      removeBadHTML = 1
+      ifEmpty = 0
     }
   }
   100 = TEXT

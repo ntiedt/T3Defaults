@@ -1,5 +1,8 @@
 ###
 ### CSS ###
+
+
+#----------------------------------------------------------- INCLUDECSS-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}]
 page.includeCSS{
   reset = {$t3d_pfade.tmpls}css/reset.css
@@ -7,72 +10,79 @@ page.includeCSS{
   #jqueryui = {$t3d_pfade.tmpls}css/ui-lightness/jquery-ui-1.10.3.custom.min.css
   normal = {$t3d_pfade.tmpls}css/normal.css
 }
+[global]
+#----------------------------------------------------------- INCLUDECSS-END
 
+#----------------------------------------------------------- INCLUDECSS-MOBILE-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}] AND [globalString = IENV:HTTP_HOST=m.*]
 page.includeCSS{
   normal >
   mobil = {$t3d_pfade.tmpls}css/mobil.css
 }
 [global]
+#----------------------------------------------------------- INCLUDECSS-MOBILE-END
 
+#----------------------------------------------------------- DYN-CSS-PAGE-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}]
 css = PAGE
 css {
-	typeNum = {$t3d_seitentypen.a_typenum}
+	typeNum = {$t3d_seitentypen.a.typenum}
 	config{
 		additionalHeaders = Content-type: text/css
 		disableAllHeaderCode = 1
-    debug = {$t3d_seitentypen.a_debug}
-    no_cache = {$t3d_seitentypen.a_no_cache}
+    debug = {$t3d_seitentypen.a.debug}
+    no_cache = {$t3d_seitentypen.a.no_cache}
 	}
 	10 = TEXT
 	10.value (
     body{
-      background-color: {$t3d_basis.bgcolor};
+      background-color: {$t3d_style.bgcolor};
     }
     body, div, a, p, ul, li, input, select, textarea, h1, h2, h3{
-    	font-size:{$t3d_basis.font_size};
-    	font-weight: {$t3d_basis.font_weight};
+    	font-size:{$t3d_style.font_size_default};
+    	line-height:{$t3d_style.line_height_default};
+    	font-weight: {$t3d_style.font_weight};
     	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva;
-    	color: {$t3d_basis.font_color};
+    	color: {$t3d_style.font_color};
     }
     a {
-    	font-size:{$t3d_basis.font_size_anchor};
-    	font-weight: {$t3d_basis.font_weight_anchor};
+    	font-size:{$t3d_style.font_size_anchor};
+    	line-height:{$t3d_style.line_height_anchor};
+    	font-weight: {$t3d_style.font_weight_anchor};
     	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva;
-    	color: {$t3d_basis.anchor_color};
+    	color: {$t3d_style.anchor_color};
     	text-decoration: none;
     }
     a:hover {
-    	color: {$t3d_basis.anchor_color_hover};
-    	font-weight: {$t3d_basis.font_weight_anchor_hover};
+    	color: {$t3d_style.anchor_color_hover};
+    	font-weight: {$t3d_style.font_weight_anchor_hover};
     }
     h1, h2, h3{
-    	font-weight: {$t3d_basis.font_weight_headlines};
+    	font-weight: {$t3d_style.font_weight_headlines};
     }
     h1.csc-firstHeader {
-    	font-size:{$t3d_basis.font_size_h1_cscFirstHeader};
+    	font-size:{$t3d_style.font_size_h1_cscFirstHeader};
     }
     h1 {
-    	font-size:{$t3d_basis.font_size_h1};
+    	font-size:{$t3d_style.font_size_h1};
     }
     h2 {
-    	font-size:{$t3d_basis.font_size_h2};
+    	font-size:{$t3d_style.font_size_h2};
     }
     h3 {
-    	font-size:{$t3d_basis.font_size_h3};
+    	font-size:{$t3d_style.font_size_h3};
     }
     ul{
-      color:{$t3d_basis.ul_color};
-      margin:{$t3d_basis.ul_margin};
-      padding:{$t3d_basis.ul_padding};
-      list-style-type:{$t3d_basis.ul_liststyletype};
-      list-style-position:{$t3d_basis.ul_liststyleposition};
+      color:{$t3d_style.ul_color};
+      margin:{$t3d_style.ul_margin};
+      padding:{$t3d_style.ul_padding};
+      list-style-type:{$t3d_style.ul_liststyletype};
+      list-style-position:outside;
     }
     li{
-      margin:{$t3d_basis.li_margin};
-      padding:{$t3d_basis.li_padding};
-      font-size:{$t3d_basis.font_size_li};
+      margin:{$t3d_style.li_margin};
+      padding:{$t3d_style.li_padding};
+      font-size:{$t3d_style.font_size_li};
     }
     
     
@@ -145,11 +155,15 @@ css {
     * html #clearfix{height: 1%;}
     /* End hide from IE-mac */
 	)
+  # GRID
 	15 = COA
 	15{
     20 < temp.grid
 	}
 }
+#----------------------------------------------------------- DYN-CSS-PAGE-END
+
+#----------------------------------------------------------- HEADERDATA-BEGIN
 page.headerData{
   110 = COA
   110{
@@ -157,7 +171,7 @@ page.headerData{
     10{
       if.isTrue = {$t3d_basis.webfont}
       value(
-      <link href='{$t3d_basis.webfont}' rel='stylesheet' type='text/css'>
+      <link href='{$t3d_style.webfont}' rel='stylesheet' type='text/css'>
       )
     }
   }
@@ -168,22 +182,24 @@ page.headerData{
     10{
       typolink{
         parameter.data = field:uid
-        additionalParams =&type={$t3d_seitentypen.a_typenum}
+        additionalParams =&type={$t3d_seitentypen.a.typenum}
         returnLast = url
         useCacheHash = 1
       }
     }
   }
 }
+#----------------------------------------------------------- HEADERDATA-END
 
 [global]
 
-### List Image ###
+#----------------------------------------------------------- OWN-LISTSTYLEIMAGE-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}] && [globalVar = LIT:1 = {$t3d_basis.ul_liststyleimage}]
 css.20 = TEXT
 css.20.value(
     ul{
-      list-style-image:url({$t3d_basis.ul_liststyleimage_file});
+      list-style-image:url({$t3d_style.ul_liststyleimage_file});
     }
 )
 [global]
+#----------------------------------------------------------- OWN-LISTSTYLEIMAGE-END

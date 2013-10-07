@@ -17,8 +17,8 @@ config{
   
   ## 1. Sprache Deutsch
   sys_language_uid = 0
-  language = {$t3d_basis.language}
-  locale_all = {$t3d_basis.locale_all}
+  language = {$t3d_config.language}
+  locale_all = {$t3d_config.locale_all}
   sys_language_mode = content_fallback
   sys_language_overlay = hideNonTranslated
   # Setting up the language variable "L" to be passed along with links
@@ -27,18 +27,22 @@ config{
   
   index_enable = 1
   
-  simulateStaticDocuments = {$t3d_basis.simulateStaticDocuments}
-  baseURL = {$t3d_basis.baseURL}
-  tx_realurl_enable = {$t3d_basis.tx_realurl_enable}
+  baseURL = {$t3d_config.baseURL}
+  tx_realurl_enable = {$t3d_config.tx_realurl_enable}
+  simulateStaticDocuments = {$t3d_config.simulateStaticDocuments}
 
-  spamProtectEmailAddresses = 1
-  spamProtectEmailAddresses_atSubst = {$t3d_basis.spamProtectEmailAddresses_atSubst}
 
-  # JS/CSS/Cache Einstellungen
+  metaCharset = utf-8
+  additionalHeaders = Content-Type:text/html;charset=utf-8
+
+  spamProtectEmailAddresses = {$t3d_config.spamProtectEmailAddresses}
+  spamProtectEmailAddresses_atSubst = {$t3d_config.spamProtectEmailAddresses_atSubst}
+
   concatenateJs = {$t3d_cache.concatenateJs}
   concatenateCss = {$t3d_cache.concatenateCss}
   compressJs = {$t3d_cache.compressJs}
   compressCss = {$t3d_cache.compressCss}
+
   cache_period = {$t3d_cache.period}
   cache_clearAtMidnight = {$t3d_cache.clearAtMidnight}
 }
@@ -47,31 +51,31 @@ config{
 #------------------------------------------------------------ CONFIG-MOBIL-BEGIN
 [globalString = IENV:HTTP_HOST=m.*]
 config{
-  baseURL = {$t3d_basis.baseURL_mobil}
+  baseURL = {$t3d_config.baseURL_mobil}
 }
 [global]
 #------------------------------------------------------------ CONFIG-MOBIL-END
 
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-BEGIN
-plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$t3d_basis._DEFAULT_PI_VARS_lang}
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-END
 
-#----------------------------------------------------------- PAGE-CONFIG-UTF8-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.utf8_support}]
-page.config.metaCharset = utf-8
-page.config.additionalHeaders = Content-Type:text/html;charset=utf-8
-[global]
-#----------------------------------------------------------- PAGE-CONFIG-UTF8-END
-
 #----------------------------------------------------------- CONFIG-LANGUAGE-BEGIN
-[globalVar = GP:L = 1] && [globalVar = LIT:1 = {$t3d_basis.second_lang}]
+[globalVar = GP:L = 1]
 config.sys_language_uid = 1
-config.language = {$t3d_basis.second_lang_language}
-config.locale_all = {$t3d_basis.second_lang_locale_all}
-#----------------------------- EXT-INDEXEDSEARCH-LANG
-plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$t3d_basis.second_lang_DEFAULT_PI_VARS_lang}
+config.language = {$t3d_config.language_2}
+config.locale_all = {$t3d_config.locale_all_2}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 1
 [global]
-#------------------------------------------------------------ CONFIG-LANGUAGE-BEGIN
+
+[globalVar = GP:L = 2]
+config.sys_language_uid = 2
+config.language = {$t3d_config.language_3}
+config.locale_all = {$t3d_config.locale_all_3}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 2
+[global]
 
 ## Sprache Slowenisch
 [globalVar = GP:L = 3]
@@ -151,6 +155,7 @@ config.language = ro
 config.locale_all = ro_RO 
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 [global]
+#------------------------------------------------------------ CONFIG-LANGUAGE-END
 
 #----------------------------------------------------------- CONFIG-BE-USER-BEGIN
 [globalVar = TSFE : beUserLogin > 0]
@@ -222,11 +227,18 @@ page.bodyTagCObject{
   20 = COA
   20{
     wrap = class="|"
+    # Browser
     10 = TEXT
-    10.value = 
+    10.value =
+    # Version 
+    15 = TEXT 
+    15.value =
+    # Language Parameter
     20 = TEXT
     20.data = TSFE:sys_language_uid
     20.noTrimWrap = | l_|| 
+    #30 Mobil
+    #40 startseite
   }
 }
 
@@ -243,8 +255,9 @@ page.bodyTagCObject.20.40.noTrimWrap = | rootpage||
 [browser = msie]
 page.bodyTagCObject.20.10.value = msie
 [global]
-[browser = chrome]
-page.bodyTagCObject.20.10.value = chrome
+[browser = msie] && [version = 9]
+page.bodyTagCObject.20.15.value = version-9
+page.bodyTagCObject.20.15.noTrimWrap = | || 
 [global]
 [browser = firefox]
 page.bodyTagCObject.20.10.value = firefox
@@ -255,10 +268,13 @@ page.bodyTagCObject.20.10.value = opera
 [browser = safari]
 page.bodyTagCObject.20.10.value = safari
 [global]
+[browser = chrome]
+page.bodyTagCObject.20.10.value = chrome
+[global]
 #------------------------------------------------------------ BODY-TAG-END
 
 #----------------------------------------------------------- PAGETITLE-BEGIN
-[globalVar = LIT:1 = {$t3d_seitentitel.activate}]
+[globalVar = LIT:1 = {$t3d_seitentitel.enable}]
 temp.pageTitle=COA
 temp.pageTitle{
   10 = TEXT
@@ -315,7 +331,7 @@ page {
 [global]
 
 ### Seitentitle im Content ausgeben wenn Debug-Modus eingeschalten
-[globalVar = TSFE : beUserLogin > 0] AND [globalVar = LIT:1 = {$t3d_seitentitel.activate}]
+[globalVar = TSFE : beUserLogin > 0] AND [globalVar = LIT:1 = {$t3d_seitentitel.enable}]
 page.10000 = COA
 page.10000{
   if.isTrue ={$t3d_seitentitel.debug}
@@ -331,7 +347,7 @@ page.10000{
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_styled_content.ts">
 
 ### Seitentypen ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/seitentypen_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_seitentypen.ts">
 
 ### Funktionen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
@@ -349,5 +365,5 @@ page.10000{
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/objekte_setup.ts">
 
 ### E-Tracker ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/etracker_setup.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_searchengine.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END
