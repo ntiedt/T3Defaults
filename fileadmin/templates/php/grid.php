@@ -58,7 +58,7 @@ class user_grid {
       
       // Last col (100%)
       }else if($i==$Register["grid_max_cols"]){
-        $Register["grid_cols"] .= ("span_" . $i) . ",100;";
+        $Register["grid_cols"] .= ("span_" . $i) . ",100";
         $debug .= '<tr><td style="padding-right: 1em;">last: </td><td>'.$i.'</td></tr>';
       }
       $debug .= '<tr><td style="padding-right: 1em;">'.$Register["grid_cols"].': </td><td>'.$i.'</td></tr>';

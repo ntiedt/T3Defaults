@@ -42,73 +42,105 @@ temp.grid{
     
     10 = TEXT
     10.value(
+/* Begin grid */
+/* 
+  12 COLUMN - RESPONSIVE GRID SYSTEM
+  DEVELOPED BY DENIS LEBLANC
+  URL - http://responsive.gs
+  VERSION - 2.0
+  LICENSED UNDER GPL & MIT
+  
+  SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+  If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-      /* Begin grid */
-      /* 
-      	12 COLUMN - RESPONSIVE GRID SYSTEM
-      	DEVELOPED BY DENIS LEBLANC
-      	URL - http://responsive.gs
-      	VERSION - 2.0
-      	LICENSED UNDER GPL & MIT
-      */
-      /* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
-      	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
-      * { -webkit-box-sizing: border-box;
-      	-moz-box-sizing: border-box;
-      	box-sizing: border-box; }
-      
-      /* MAIN CONTAINER */
-      .container{
-        max-width: {$t3d_grid.max_width}px;
-        margin: 0 auto;
-      }
-      
-      /* SELF CLEARING FLOATS - CLEARFIX METHOD */
-      .row:after, .col:after, .clr:after, .group:after {
-      	content: ""; 
-      	display: block; 
-      	height: 0; 
-      	clear: both; 
-      	visibility: hidden; }
-      
-      /* DEFAULT ROW STYLES */
-      .row { margin-bottom: 0; } /* set according to preference*/
-      								  
-      /* DEFAULT COLUMN STYLES */
-      .col {
-      	display: block;
-      	float:left;
-      	width: 100%;
-      }
-      
-      /* RESET MARGINS */
-      .col:first-child{ margin-left: 0; } /* all browsers except IE6 and lower */
-      
+/* MAIN CONTAINER */
+.container{
+  max-width: {$t3d_grid.max_width}px;
+  margin: 0 auto;
+}
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after {
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+/* DEFAULT ROW STYLES */
+.row { margin-bottom: 0; } /* set according to preference*/
+								  
+/* DEFAULT COLUMN STYLES */
+.col {
+  display: block;
+  float:left;
+  width: 100%;
+}
+
+/* RESET MARGINS */
+.col:first-child{ margin-left: 0; } /* all browsers except IE6 and lower */
+
     )
     
-    50 = TEXT
+    50 = COA
     50{
-      wrap = @media ( min-width : 768px ) {.col {margin-left: |%;}}
-      data = register:grid_col_margin
+      wrap = @media ( min-width : 768px ) {|}
+      5 = TEXT
+      5.value(
+      
+      )
+      10 = TEXT
+      10{
+        noTrimWrap = |  .col {margin-left: |;}|
+        data = register:grid_col_margin
+      }
+      55 = TEXT
+      55.value(
+      
+      )
     }
+  
+    55 = TEXT
+    55.value(
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+    )
     
-    60 = TEXT
+    60 = COA
     60{
-      wrap = /* COLUMN WIDTH ON DISPLAYS +768px */@media ( min-width : 768px ) {|}
-      data = register:grid_cols
-      split{
-        token = ;
-        cObjNum = 1
-        1.current = 1
-        1.split{
-          token = ,
-          cObjNum = 1 || 2
+      wrap = @media ( min-width : 768px ) {|}
+      5 = TEXT
+      5.value(
+      
+      )
+      10 = TEXT
+      10{
+        wrap = |
+        data = register:grid_cols
+        split{
+          token = ;
+          cObjNum = 1
           1.current = 1
-          1.wrap = .|
-          2{
-            10 = TEXT
-            10.current = 1
-            10.wrap = {width:|%;}
+          1.split{
+            token = ,
+            cObjNum = 1 || 2
+            1.current = 1
+            1.noTrimWrap = |  .||
+            2{
+              10 = TEXT
+              10.current = 1
+              10.wrap = {width:|%;}
+              15 = TEXT
+              15.value(
+              
+              )
+            }
           }
         }
       }
@@ -116,7 +148,8 @@ temp.grid{
     
     90 = TEXT
     90.value(
-      /* End grid */
+    
+/* End grid */
     )
   }
   /*
