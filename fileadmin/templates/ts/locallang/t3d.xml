@@ -64,6 +64,8 @@
 			<label index="t3d_pfade.tmpls">Template base path:e.g. fileadmin/templates/</label>
 			<label index="t3d_pfade.webfont">Path to Webfont:e.g.http://fonts.googleapis.com/css?family=Roboto+Condensed</label>
       
+			<label index="t3d_style.bgcolor_showpic">Background color of click magnifying</label>
+      
 			<label index="t3d_basis.rootpageID">ID of the rootpage</label>
 			<label index="t3d_basis.searchpageID">ID of the searchpage</label>
 			<label index="t3d_basis.adresspageID">ID of the addresspage</label>
@@ -175,6 +177,8 @@
       
 			<label index="t3d_pfade.tmpls">Pfad zum Template Standard Verzeichnis:z.b. fileadmin/templates/</label>
 			<label index="t3d_pfade.webfont">Pfad zur Webfont:z.b.http://fonts.googleapis.com/css?family=Roboto+Condensed</label>
+      
+			<label index="t3d_style.bgcolor_showpic">Hintergrundfarbe der Klickvergrößerung</label>
       
 			<label index="t3d_style.font_size.default">Standard Schriftgröße</label>
 			<label index="t3d_style.line_height.default">Standard Zeilenabstand</label>
