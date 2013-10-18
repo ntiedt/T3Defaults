@@ -13,6 +13,11 @@
 		<languageKey index="default" type="array">
 			<label index="linkToTop">To Top</label>
       
+			<label index="customsubcategory.etracker">Etracker</label>
+			<label index="customsubcategory.google">Google</label>
+			<label index="customsubcategory.alpha">Page type A(dynamic CSS)</label>
+			<label index="customsubcategory.beta">Page type B(dynamic db output e.g. for ajax)</label>
+      
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
 			<label index="t3d_config.baseURL_mobil">Basis-Url Mobil:e.g. http://m.kunde.de/</label>
 			<label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
@@ -21,6 +26,20 @@
 			<label index="t3d_config.locale_all">Default localisation</label>
 			<label index="t3d_config.language_2">2. language</label>
 			<label index="t3d_config.locale_all_2">Localisation of 2. language</label>
+			<label index="t3d_config.language_3">3. language</label>
+			<label index="t3d_config.locale_all_3">Localisation of 3. language</label>
+			<label index="t3d_config.language_4">4. language</label>
+			<label index="t3d_config.locale_all_4">Localisation of 4. language</label>
+			<label index="t3d_config.language_5">5. language</label>
+			<label index="t3d_config.locale_all_5">Localisation of 5. language</label>
+			<label index="t3d_config.language_6">6. language</label>
+			<label index="t3d_config.locale_all_6">Localisation of 6. language</label>
+			<label index="t3d_config.language_7">7. language</label>
+			<label index="t3d_config.locale_all_7">Localisation of 7. language</label>
+			<label index="t3d_config.language_8">8. language</label>
+			<label index="t3d_config.locale_all_8">Localisation of 8. language</label>
+			<label index="t3d_config.language_9">9. language</label>
+			<label index="t3d_config.locale_all_9">Localisation of 9. language</label>
       
 			<label index="t3d_basis.templateengine">Template engine</label>
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
@@ -31,7 +50,6 @@
 			<label index="t3d_basis.ts_objekte">Load TS:ts_objekte</label>
 			<label index="t3d_basis.ts_navigation">Load TS:ts_navigation</label>
 			<label index="t3d_basis.ts_etracker">Load TS:ts_etracker</label>
-			<label index="t3d_basis.google_ver">Enable Google verification?</label>
 			<label index="t3d_basis.ts_funktionen">Load TS:ts_funktionen</label>
 			<label index="t3d_basis.ts_js">Load TS:ts_js</label>
       
@@ -74,6 +92,7 @@
 			<label index="t3d_searchengine.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
 			<label index="t3d_searchengine.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
 			<label index="t3d_searchengine.google.id">Google verification id</label>
+			<label index="t3d_searchengine.google.enable">Enable Google verification?</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Entry level of main navigation</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Exclude page ids from main navigation</label>
@@ -104,6 +123,11 @@
 		<languageKey index="de" type="array">
 			<label index="linkToTop">Seitenanfang</label>
       
+			<label index="customsubcategory.etracker">Etracker</label>
+			<label index="customsubcategory.google">Google</label>
+			<label index="customsubcategory.alpha">Seitentyp A(dynamisches CSS)</label>
+			<label index="customsubcategory.beta">Seitentyp B(dynamischer DB-Ausgabe z.b. für Ajax)</label>
+      
 			<label index="t3d_config.baseURL">Basis-Url:z.b. http://www.kunde.de/</label>
 			<label index="t3d_config.baseURL_mobil">Basis-Url Mobil:z.b. http://m.kunde.de/</label>
 			<label index="t3d_config.spamProtectEmailAddresses">@-Zeichen Ersetzung einschalten</label>
@@ -114,6 +138,20 @@
 			<label index="t3d_config.locale_all">Standard Lokalisierung</label>
 			<label index="t3d_config.language_2">2. Sprache</label>
 			<label index="t3d_config.locale_all_2">2. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_3">3. Sprache</label>
+			<label index="t3d_config.locale_all_3">3. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_4">4. Sprache</label>
+			<label index="t3d_config.locale_all_4">4. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_5">5. Sprache</label>
+			<label index="t3d_config.locale_all_5">5. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_6">6. Sprache</label>
+			<label index="t3d_config.locale_all_6">6. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_7">7. Sprache</label>
+			<label index="t3d_config.locale_all_7">7. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_8">8. Sprache</label>
+			<label index="t3d_config.locale_all_8">8. Sprache Lokalisierung</label>
+			<label index="t3d_config.language_9">9. Sprache</label>
+			<label index="t3d_config.locale_all_9">9. Sprache Lokalisierung</label>
       
 			<label index="t3d_basis.templateengine">Template-Engine</label>
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
@@ -124,7 +162,6 @@
 			<label index="t3d_basis.ts_objekte">Lade TS:ts_objekte</label>
 			<label index="t3d_basis.ts_navigation">Lade TS:ts_navigation</label>
 			<label index="t3d_basis.ts_etracker">Lade TS:ts_etracker</label>
-			<label index="t3d_basis.google_ver">Google Verifizierung aktivieren?</label>
 			<label index="t3d_basis.ts_funktionen">Lade TS:ts_funktionen</label>
 			<label index="t3d_basis.ts_js">Lade TS:ts_js</label>
       
@@ -198,6 +235,7 @@
 			<label index="t3d_searchengine.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
 			<label index="t3d_searchengine.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
 			<label index="t3d_searchengine.google.id">Google Verifizierung ID</label>
+			<label index="t3d_searchengine.google.enable">Google Verifizierung aktivieren?</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Hauptnavigation Einstiegslevel</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Hauptnavigation Seiten ausschließen</label>

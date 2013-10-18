@@ -144,7 +144,7 @@ page.1001 < temp.etrackerjavascript
 
 #----------------------------------------------------------- GOOGLE-BEGIN
 ### Google Verifizierung ###
-[globalVar = LIT:1 = {$t3d_basis.google_ver}]
+[globalVar = LIT:1 = {$t3d_searchengine.google.enable}]
 page.meta.verify-v1.cObject = COA
 page.meta.verify-v1.cObject.10 = TEXT
 page.meta.verify-v1.cObject.10.value= {$t3d_searchengine.google.id}

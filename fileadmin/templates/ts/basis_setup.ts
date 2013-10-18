@@ -77,6 +77,55 @@ config.locale_all = {$t3d_config.locale_all_3}
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 2
 [global]
 
+[globalVar = GP:L = 3]
+config.sys_language_uid = 3
+config.language = {$t3d_config.language_4}
+config.locale_all = {$t3d_config.locale_all_4}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 3
+[global]
+
+[globalVar = GP:L = 4]
+config.sys_language_uid = 4
+config.language = {$t3d_config.language_5}
+config.locale_all = {$t3d_config.locale_all_5}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 4
+[global]
+
+[globalVar = GP:L = 5]
+config.sys_language_uid = 5
+config.language = {$t3d_config.language_6}
+config.locale_all = {$t3d_config.locale_all_6}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 5
+[global]
+
+[globalVar = GP:L = 6]
+config.sys_language_uid = 6
+config.language = {$t3d_config.language_7}
+config.locale_all = {$t3d_config.locale_all_7}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 6
+[global]
+
+[globalVar = GP:L = 7]
+config.sys_language_uid = 7
+config.language = {$t3d_config.language_8}
+config.locale_all = {$t3d_config.locale_all_8}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 7
+[global]
+
+[globalVar = GP:L = 8]
+config.sys_language_uid = 8
+config.language = {$t3d_config.language_9}
+config.locale_all = {$t3d_config.locale_all_9}
+#----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 8
+[global]
+
+/*
 ## Sprache Slowenisch
 [globalVar = GP:L = 3]
 config.sys_language_uid = 3
@@ -155,6 +204,7 @@ config.language = ro
 config.locale_all = ro_RO 
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 11
 [global]
+*/
 #------------------------------------------------------------ CONFIG-LANGUAGE-END
 
 #----------------------------------------------------------- CONFIG-BE-USER-BEGIN

@@ -10,39 +10,88 @@
 PAGE_TARGET = _top
 content.pageFrameObj = _top
 
+###
+### Define custom categories ###
+# customsubcategory=etracker=LLL:fileadmin/templates/ts/locallang/t3d.xml:customsubcategory.etracker
+# customsubcategory=google=LLL:fileadmin/templates/ts/locallang/t3d.xml:customsubcategory.google
+# customsubcategory=alpha=LLL:fileadmin/templates/ts/locallang/t3d.xml:customsubcategory.alpha
+# customsubcategory=beta=LLL:fileadmin/templates/ts/locallang/t3d.xml:customsubcategory.beta
+
 
 ###
 ### TYPO3 Defaults (T3D) Bereich Config ###
 t3d_config{
-  #cat=t3d_config/enable//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.tx_realurl_enable
+  #cat=t3d_config/enable/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.tx_realurl_enable
   tx_realurl_enable = 0
   
-  #cat=t3d_config/enable//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.simulateStaticDocuments
+  #cat=t3d_config/enable/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.simulateStaticDocuments
   simulateStaticDocuments = 0
   
-  #cat=t3d_config/links//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL
+  #cat=t3d_config/links/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL
   baseURL = 
   
-  #cat=t3d_config/links//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL_mobil
+  #cat=t3d_config/links/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL_mobil
   baseURL_mobil = 
   
-  #cat=t3d_config/enable//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses
+  #cat=t3d_config/enable/050; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses
   spamProtectEmailAddresses = 1
   
-  #cat=t3d_config/links//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses_atSubst
+  #cat=t3d_config/links/060; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses_atSubst
   spamProtectEmailAddresses_atSubst = (at)
   
-  #cat=t3d_config/language//; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language
+  #cat=t3d_config/language/070; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language
   language = de
   
-  #cat=t3d_config/language//; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all
+  #cat=t3d_config/language/080; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all
   locale_all = de_DE
   
-  #cat=t3d_config/language//; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_2
+  #cat=t3d_config/language/090; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_2
   language_2 = en
   
-  #cat=t3d_config/language//; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch(ohne UTF8 metaCharset/renderCharset setzen)=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_2
+  #cat=t3d_config/language/100; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_2
   locale_all_2 = en_GB
+  
+  #cat=t3d_config/language/110; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_3
+  language_3 = fr
+  
+  #cat=t3d_config/language/120; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_3
+  locale_all_3 = fr_FR
+  
+  #cat=t3d_config/language/130; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_4
+  language_4 = it
+  
+  #cat=t3d_config/language/140; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_4
+  locale_all_4 = it_IT
+  
+  #cat=t3d_config/language/150; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_5
+  language_5 = es
+  
+  #cat=t3d_config/language/160; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_5
+  locale_all_5 = es_ES
+  
+  #cat=t3d_config/language/170; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_6
+  language_6 = nl
+  
+  #cat=t3d_config/language/180; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_6
+  locale_all_6 = nl_NL
+  
+  #cat=t3d_config/language/190; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_7
+  language_7 = cz
+  
+  #cat=t3d_config/language/200; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_7
+  locale_all_7 = cs_CZ
+  
+  #cat=t3d_config/language/210; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_8
+  language_8 = ro
+  
+  #cat=t3d_config/language/220; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_8
+  locale_all_8 = ro_RO
+  
+  #cat=t3d_config/language/230; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_9
+  language_9 = pl
+  
+  #cat=t3d_config/language/240; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_9
+  locale_all_9 = pl_PL
 }
 
 
@@ -73,9 +122,6 @@ t3d_basis{
   
   #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_etracker
   ts_etracker = 1
-  
-  #cat=t3d_basis/enable/92; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.google_ver
-  google_ver = 0
   
   #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_funktionen
   ts_funktionen = 0
@@ -291,7 +337,7 @@ t3d_grid{
   max_width = 1148
   
   #cat=t3d_grid/dims/20; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_grid.max_cols
-  max_cols = 12
+  max_cols = 24
   
   #cat=t3d_grid/dims/25; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_grid.col_width
   col_width = 70
@@ -307,43 +353,46 @@ t3d_grid{
 
 ###  TYPO3 Defaults (T3D) Bereich Etracker ###
 t3d_searchengine{
-  #cat=t3d_searchengine/links/10; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.id
+  #cat=t3d_searchengine/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.id
   etracker.id =
   
-  #cat=t3d_searchengine/links/15; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
+  #cat=t3d_searchengine/etracker/020; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
   etracker.range_areas = 1|-2
   
-  #cat=t3d_searchengine/links/20; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.areas_splitchar
+  #cat=t3d_searchengine/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.areas_splitchar
   etracker.areas_splitchar = ,
   
-  #cat=t3d_searchengine/links/25; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_pagename
+  #cat=t3d_searchengine/etracker/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_pagename
   etracker.range_pagename = 1|-1
   
-  #cat=t3d_searchengine/links/30; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.pagename_splitchar
+  #cat=t3d_searchengine/etracker/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.pagename_splitchar
   etracker.pagename_splitchar = %20->%20
   
-  #cat=t3d_searchengine/links/35; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_all
+  #cat=t3d_searchengine/etracker/060; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_all
   etracker.ilevel_all = 4
   
-  #cat=t3d_searchengine/links/40; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_1
+  #cat=t3d_searchengine/etracker/070; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_1
   etracker.ilevel_1 = 5
   
-  #cat=t3d_searchengine/links/45; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_2
+  #cat=t3d_searchengine/etracker/080; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_2
   etracker.ilevel_2 = 6
   
-  #cat=t3d_searchengine/links/50; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_3
+  #cat=t3d_searchengine/etracker/090; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_3
   etracker.ilevel_3 = 7
   
-  #cat=t3d_searchengine/links/55; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_4
+  #cat=t3d_searchengine/etracker/100; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_4
   etracker.ilevel_4 = 8
   
-  #cat=t3d_searchengine/links/60; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_5
+  #cat=t3d_searchengine/etracker/110; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_5
   etracker.ilevel_5 = 9
   
-  #cat=t3d_searchengine/links/65; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_6
+  #cat=t3d_searchengine/etracker/120; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_6
   etracker.ilevel_6 = 10
   
-  #cat=t3d_searchengine/links/90; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google.id
+  #cat=t3d_searchengine/google/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google.enable
+  google.enable = 0
+  
+  #cat=t3d_searchengine/google/020; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google.id
   google.id = 
 }
 
@@ -410,37 +459,37 @@ t3d_seitentitel{
 ##
 ## SeitenTypen ###
 t3d_seitentypen{
-  #cat=t3d_seitentypen//; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.typenum
+  #cat=t3d_seitentypen/alpha/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.typenum
   a.typenum = 500
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.no_cache
+  #cat=t3d_seitentypen/alpha/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.no_cache
   a.no_cache = 0
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.debug
+  #cat=t3d_seitentypen/alpha/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.debug
   a.debug = 0
   
-  #cat=t3d_seitentypen//; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.typenum
+  #cat=t3d_seitentypen/beta/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.typenum
   b.typenum = 22
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.no_cache
+  #cat=t3d_seitentypen/beta/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.no_cache
   b.no_cache = 1
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.debug
+  #cat=t3d_seitentypen/beta/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.debug
   b.debug = 0
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_type
+  #cat=t3d_seitentypen/beta/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_type
   b.cobj_type = 0
   
-  #cat=t3d_seitentypen//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.debug.b.cobj_tables
+  #cat=t3d_seitentypen/beta/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables
   b.cobj_tables = tt_content
   
-  #cat=t3d_seitentypen//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.debug.b.cobj_tables_ids
+  #cat=t3d_seitentypen/beta/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids
   b.cobj_tables_ids = 
   
-  #cat=t3d_seitentypen//; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.debug.b.cobj_tables_ids_data
+  #cat=t3d_seitentypen/beta/060; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids_data
   b.cobj_tables_ids_data = 0
   
-  #cat=t3d_seitentypen//; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.debug.b.cobj_tables_ids_data_gp
+  #cat=t3d_seitentypen/beta/070; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids_data_gp
   b.cobj_tables_ids_data_gp = uid
 }
 
