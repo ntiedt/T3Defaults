@@ -98,6 +98,12 @@ var jquery_speed = '{$t3d_jquery.speed}';
 
 [global]
 
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalVar = LIT:1 = {$t3d_searchengine.etracker.eventtracker_enable}]
+page.includeJSFooter{
+  etracker_event_tracking = {$t3d_pfade.tmpls}js/etracker_event_tracking.js
+}
+[global]
+
 [globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalString = IENV:HTTP_HOST=m.*]
 page.headerData.150{
   24.10.value=1
