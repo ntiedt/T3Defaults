@@ -44,14 +44,14 @@
 			<label index="t3d_basis.templateengine">Template engine</label>
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
 			<label index="t3d_basis.ul_liststyleimage">Enable own list image?</label>
-			<label index="t3d_basis.ts_css_styled_content">Load TS:css_styled_content</label>
-			<label index="t3d_basis.ts_seitentypen">Load TS:ts_seitentypen</label>
-			<label index="t3d_basis.ts_css">Load TS:ts_css</label>
-			<label index="t3d_basis.ts_objekte">Load TS:ts_objekte</label>
-			<label index="t3d_basis.ts_navigation">Load TS:ts_navigation</label>
-			<label index="t3d_basis.ts_etracker">Load TS:ts_etracker</label>
-			<label index="t3d_basis.ts_funktionen">Load TS:ts_funktionen</label>
-			<label index="t3d_basis.ts_js">Load TS:ts_js</label>
+			<label index="t3d_basis.ts_css_styled_content">Load TS css_styled_content</label>
+			<label index="t3d_basis.ts_seitentypen">Load TS ts_seitentypen</label>
+			<label index="t3d_basis.ts_css">Load TS ts_css</label>
+			<label index="t3d_basis.ts_objekte">Load TS ts_objekte</label>
+			<label index="t3d_basis.ts_navigation">Load TS ts_navigation</label>
+			<label index="t3d_basis.t3d_searchengine">Load TS t3d_searchengine:Etracker and google(needs to activate)</label>
+			<label index="t3d_basis.ts_funktionen">Load TS ts_funktionen</label>
+			<label index="t3d_basis.ts_js">Load TS ts_js</label>
       
 			<label index="t3d_cache.no_cache">Deactivate page cache if BE user is logged in (0=Cache on / 1=Cache off)</label>
 			<label index="t3d_cache.clearAtMidnight">Clear cache at midnight?</label>
@@ -82,6 +82,7 @@
       
 			<label index="t3d_searchengine.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
 			<label index="t3d_searchengine.etracker.id">E-Tracker id</label>
+			<label index="t3d_searchengine.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
 			<label index="t3d_searchengine.etracker.range_areas">E-Tracker range (et_areas):e.g. 1|-2</label>
 			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker separator char (et_areas):,=default or /=area-dependent evaluation</label>
 			<label index="t3d_searchengine.etracker.range_pagename">E-Tracker range pagename(et_pagename):-> e.g. 1|-1</label>
@@ -159,14 +160,14 @@
 			<label index="t3d_basis.templateengine">Template-Engine</label>
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
 			<label index="t3d_basis.ul_liststyleimage">Eigenes Listenbild aktivieren?</label>
-			<label index="t3d_basis.ts_css_styled_content">Lade TS:css_styled_content</label>
-			<label index="t3d_basis.ts_seitentypen">Lade TS:t3d_seitentypen</label>
-			<label index="t3d_basis.ts_css">Lade TS:ts_css</label>
-			<label index="t3d_basis.ts_objekte">Lade TS:ts_objekte</label>
-			<label index="t3d_basis.ts_navigation">Lade TS:ts_navigation</label>
-			<label index="t3d_basis.ts_etracker">Lade TS:ts_etracker</label>
-			<label index="t3d_basis.ts_funktionen">Lade TS:ts_funktionen</label>
-			<label index="t3d_basis.ts_js">Lade TS:ts_js</label>
+			<label index="t3d_basis.ts_css_styled_content">Lade TS css_styled_content</label>
+			<label index="t3d_basis.ts_seitentypen">Lade TS t3d_seitentypen</label>
+			<label index="t3d_basis.ts_css">Lade TS ts_css</label>
+			<label index="t3d_basis.ts_objekte">Lade TS ts_objekte</label>
+			<label index="t3d_basis.ts_navigation">Lade TS ts_navigation</label>
+			<label index="t3d_basis.t3d_searchengine">Lade TS t3d_searchengine:Etracker und google(muß aktiviert werden)</label>
+			<label index="t3d_basis.ts_funktionen">Lade TS ts_funktionen</label>
+			<label index="t3d_basis.ts_js">Lade TS ts_js</label>
       
 			<label index="t3d_cache.no_cache">Seitencache deaktivieren wenn BE-User eingeloggt?(0=Cache an / 1=Cache aus)</label>
 			<label index="t3d_cache.clearAtMidnight">Cache um Mitternacht löschen?</label>
@@ -197,6 +198,7 @@
       
 			<label index="t3d_searchengine.etracker.id">E-Tracker ID</label>
 			<label index="t3d_searchengine.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
+			<label index="t3d_searchengine.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
 			<label index="t3d_searchengine.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>
 			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker Trennerzeichen (et_areas):,=Standard und /=Bereichsabhaengige Auswertung</label>
 			<label index="t3d_searchengine.etracker.range_pagename">E-Tracker Bereich Seitenname (et_pagename):z.b. 1|-1</label>

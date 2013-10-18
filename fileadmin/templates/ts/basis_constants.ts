@@ -120,8 +120,8 @@ t3d_basis{
   #cat=t3d_basis/enable/88; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_navigation
   ts_navigation = 1
   
-  #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_etracker
-  ts_etracker = 1
+  #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_searchengine
+  t3d_searchengine = 1
   
   #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_funktionen
   ts_funktionen = 0

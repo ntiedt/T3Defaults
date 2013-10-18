@@ -173,7 +173,7 @@ et={$t3d_searchengine.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 temp.etrackerjavascript.60 >
 [global]
 
-[globalVar = LIT:1 = {$t3d_basis.ts_etracker}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_searchengine}]
 page.1001 < temp.etrackerjavascript
 [global]
 #----------------------------------------------------------- JS-END
