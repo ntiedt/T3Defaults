@@ -230,37 +230,40 @@ t3d_searchengine{
   #cat=t3d_searchengine/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.id
   etracker.id =
   
-  #cat=t3d_searchengine/etracker/020; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
+  #cat=t3d_searchengine/etracker/020; type=enable; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.asnch.enable
+  etracker.asnch_enable = 1
+  
+  #cat=t3d_searchengine/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
   etracker.range_areas = 1|-2
   
-  #cat=t3d_searchengine/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.areas_splitchar
+  #cat=t3d_searchengine/etracker/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.areas_splitchar
   etracker.areas_splitchar = ,
   
-  #cat=t3d_searchengine/etracker/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_pagename
+  #cat=t3d_searchengine/etracker/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_pagename
   etracker.range_pagename = 1|-1
   
-  #cat=t3d_searchengine/etracker/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.pagename_splitchar
+  #cat=t3d_searchengine/etracker/060; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.pagename_splitchar
   etracker.pagename_splitchar = %20->%20
   
-  #cat=t3d_searchengine/etracker/060; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_all
+  #cat=t3d_searchengine/etracker/070; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_all
   etracker.ilevel_all = 4
   
-  #cat=t3d_searchengine/etracker/070; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_1
+  #cat=t3d_searchengine/etracker/080; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_1
   etracker.ilevel_1 = 5
   
-  #cat=t3d_searchengine/etracker/080; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_2
+  #cat=t3d_searchengine/etracker/090; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_2
   etracker.ilevel_2 = 6
   
-  #cat=t3d_searchengine/etracker/090; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_3
+  #cat=t3d_searchengine/etracker/100; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_3
   etracker.ilevel_3 = 7
   
-  #cat=t3d_searchengine/etracker/100; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_4
+  #cat=t3d_searchengine/etracker/110; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_4
   etracker.ilevel_4 = 8
   
-  #cat=t3d_searchengine/etracker/110; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_5
+  #cat=t3d_searchengine/etracker/120; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_5
   etracker.ilevel_5 = 9
   
-  #cat=t3d_searchengine/etracker/120; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_6
+  #cat=t3d_searchengine/etracker/130; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_6
   etracker.ilevel_6 = 10
   
   #cat=t3d_searchengine/google/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google.enable

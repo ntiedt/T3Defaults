@@ -80,6 +80,7 @@
 			<label index="t3d_grid.col_margin">Margin of single column(px):e.g. 20</label>
 			<label index="t3d_grid.unity">Unit of the grid:e.g.</label>
       
+			<label index="t3d_searchengine.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
 			<label index="t3d_searchengine.etracker.id">E-Tracker id</label>
 			<label index="t3d_searchengine.etracker.range_areas">E-Tracker range (et_areas):e.g. 1|-2</label>
 			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker separator char (et_areas):,=default or /=area-dependent evaluation</label>
@@ -180,37 +181,6 @@
       
 			<label index="t3d_style.bgcolor_showpic">Hintergrundfarbe der Klickvergrößerung</label>
       
-			<label index="t3d_style.font_size.default">Standard Schriftgröße</label>
-			<label index="t3d_style.line_height.default">Standard Zeilenabstand</label>
-			<label index="t3d_style.font_weight.default">Standard Schrift fett</label>
-			<label index="t3d_style.font_size.anchor">Schriftgröße Link</label>
-			<label index="t3d_style.line_height.anchor">Zeilenabstand Link</label>
-			<label index="t3d_style.font_weight.anchor">Link fett</label>
-			<label index="t3d_style.font_size.h1_cscFirstHeader">Schriftgröße erster H1 auf Seite</label>
-			<label index="t3d_style.line_height.h1_cscFirstHeader">Zeilenabstand erster H1 auf Seite</label>
-			<label index="t3d_style.font_weight.h1_cscFirstHeader">Schriftformatierung erster H1 auf Seite fett</label>
-			<label index="t3d_style.font_size.h1">Schriftgröße H1</label>
-			<label index="t3d_style.line_height.h1">Zeilenabstand H1</label>
-			<label index="t3d_style.font_weight.h1">H1 fett</label>
-			<label index="t3d_style.font_size.h2">Schriftgröße H2</label>
-			<label index="t3d_style.line_height.h2">Zeilenabstand H2</label>
-			<label index="t3d_style.font_weight.h2">H2 fett</label>
-			<label index="t3d_style.font_size.h3">Schriftgröße H3</label>
-			<label index="t3d_style.line_height.h3">Zeilenabstand H3</label>
-			<label index="t3d_style.font_weight.h3">H3 fett</label>
-			<label index="t3d_style.font_size.h4">Schriftgröße H4</label>
-			<label index="t3d_style.line_height.h4">Zeilenabstand H4</label>
-			<label index="t3d_style.font_weight.h4">H4 fett</label>
-			<label index="t3d_style.font_size.h5">Schriftgröße H5</label>
-			<label index="t3d_style.line_height.h5">Zeilenabstand H5</label>
-			<label index="t3d_style.font_weight.h5">H5 fett</label>
-			<label index="t3d_style.font_size.h6">Schriftgröße H6</label>
-			<label index="t3d_style.line_height.h6">Zeilenabstand H6</label>
-			<label index="t3d_style.font_weight.h6">H6 fett</label>
-			<label index="t3d_style.font_size.li">Schriftgröße Liste</label>
-			<label index="t3d_style.line_height.li">Zeilenabstand Liste</label>
-			<label index="t3d_style.font_weight.li">Liste Schriftformatierung fett</label>
-      
 			<label index="t3d_basis.rootpageID">ID der Root-Seite</label>
 			<label index="t3d_basis.searchpageID">ID der Suchseite</label>
 			<label index="t3d_basis.adresspageID">ID der Adressseite</label>
@@ -226,6 +196,7 @@
 			<label index="t3d_grid.unity">Einheit des Grids:z.b.</label>
       
 			<label index="t3d_searchengine.etracker.id">E-Tracker ID</label>
+			<label index="t3d_searchengine.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
 			<label index="t3d_searchengine.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>
 			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker Trennerzeichen (et_areas):,=Standard und /=Bereichsabhaengige Auswertung</label>
 			<label index="t3d_searchengine.etracker.range_pagename">E-Tracker Bereich Seitenname (et_pagename):z.b. 1|-1</label>
