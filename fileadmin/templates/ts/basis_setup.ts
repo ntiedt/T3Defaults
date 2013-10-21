@@ -10,7 +10,7 @@
 #----------------------------------------------------------- CONFIG-BEGIN
 config{
   doctype = xhtml_trans
-  htmlTag_langKey = {$t3d_basis.locale_all}
+  htmlTag_langKey = {$t3d_config.locale_all}
   xhtml_cleaning = all
   removeDefaultJS = external
   doctypeSwitch = 1

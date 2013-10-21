@@ -53,7 +53,7 @@ page.headerData{
   110{
     10 = TEXT
     10{
-      if.isTrue = {$t3d_basis.webfont}
+      if.isTrue = {$t3d_style.webfont}
       value(
       <link href='{$t3d_style.webfont}' rel='stylesheet' type='text/css'>
       )

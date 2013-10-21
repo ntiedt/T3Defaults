@@ -53,6 +53,14 @@ temp.grid{
   SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
   If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill
 */
+/*
+Conf:
+max_width={$t3d_grid.max_width}
+max_cols={$t3d_grid.max_cols}
+col_width={$t3d_grid.col_width}
+col_margin={$t3d_grid.col_margin}
+unity={$t3d_grid.unity}
+*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
