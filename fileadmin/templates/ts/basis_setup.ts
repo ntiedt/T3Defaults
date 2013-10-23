@@ -23,7 +23,7 @@ config{
   sys_language_overlay = hideNonTranslated
   # Setting up the language variable "L" to be passed along with links
   linkVars = L(0-11)
-  uniqueLinkVars = L
+  uniqueLinkVars = 1
   
   index_enable = 1
   

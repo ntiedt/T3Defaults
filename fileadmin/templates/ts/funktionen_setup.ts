@@ -105,7 +105,7 @@ unity={$t3d_grid.unity}
       )
       10 = TEXT
       10{
-        noTrimWrap = |  .col {margin-left: |;}|
+        noTrimWrap = |  .col {margin-left: |%;}|
         data = register:grid_col_margin
       }
       55 = TEXT

@@ -6,6 +6,8 @@ page.includeJSFooter{
   jquery.disableCompression = 1
   #jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
   #jqueryui.disableCompression = 1
+  colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
+  colorbox.disableCompression = 1
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 
@@ -90,12 +92,73 @@ var jquery_speed = '{$t3d_jquery.speed}';
       ifEmpty = 0
     }
   }
+  32 = COA
+  32{
+    wrap = var document_url = '|';
+    10 = TEXT
+    10{
+      typolink{
+        parameter.data = page:uid
+        additionalParams = &debug=0
+        addQueryString = 1
+        addQueryString.method = GET
+        addQueryString.exclude = id
+        forceAbsoluteUrl = 1
+        returnLast = url
+      }
+    }
+  }
+  34 = COA
+  34{
+    wrap = var debug_url = '|';
+    10 = TEXT
+    10{
+      typolink{
+        parameter.data = page:uid
+        additionalParams = &debug=1
+        addQueryString = 1
+        addQueryString.method = GET
+        addQueryString.exclude = id
+        forceAbsoluteUrl = 1
+        returnLast = url
+      }
+    }
+  }
   100 = TEXT
   100.value(
 </script>
   )
 }
 
+[global]
+
+
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = LIT:1 = {$styles.content.imgtext.linkWrap.lightboxEnabled}]
+page.footerData.150 = COA
+page.footerData.150{
+  wrap = <script>|</script>
+  10 = TEXT
+  10.value(
+    jQuery(function(j){
+      /* COLORBOX: http://www.jacklmoore.com/colorbox */
+      if(jQuery().colorbox){
+        j('a.lightbox').colorbox({
+  )
+  20 = TEXT
+  20.value(
+          'current': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.current}',
+          'previous': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.previous}',
+          'next': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.next}',
+          'close': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.close}'
+  )
+  20.insertData = 1
+  30 = TEXT
+  30.value(
+        });
+      }
+    });
+  )
+}
 [global]
 
 [globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalVar = LIT:1 = {$t3d_searchengine.etracker.eventtracker_enable}]

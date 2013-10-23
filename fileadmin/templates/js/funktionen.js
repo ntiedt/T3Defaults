@@ -4,14 +4,35 @@ jQuery.noConflict();
 function dbg(what, value){
   if(debug==1){
     if(jQuery('.debugbox').length<1){
-      jQuery('body').prepend('<div class="debugbox" style="position:fixed ;top:0;left:0;z-index:2000;width:auto;height:auto;border:1px solid black;background-color:white;font-size: 15pt;overflow: scroll;"><table width="100%"></table></div>');
+      jQuery('body').prepend('<style>.debugbox td{padding: 5px;border: 1px solid black;}</style><div class="debugbox" style="position:fixed ;top:0;left:0;z-index:2000;width:auto;height:auto;background-color:white;font-size: 15pt;overflow: scroll;opacity: 0.9;"><table width="100%"></table></div>');
     }
-    jQuery('.debugbox').append('<tr><td>'+what+': </td><td>'+value+'</td></tr>');
+    jQuery('.debugbox table').append('<tr><td>'+what+': </td><td>'+value+'</td></tr>');
   }
 }
 
 jQuery(function(j){
   var the_overlay;
+  
+
+	j(document).keypress(function(e) {
+		if (e.which === 68 && e.ctrlKey && e.altKey && e.shiftKey){
+      if(debug==1){
+		    window.location.href = document_url;
+		  }else{
+		    window.location.href = debug_url;
+		  }
+		}
+	});
+  if(debug==1){
+    dbg('appCodeName',navigator.appCodeName);
+    dbg('appName',navigator.appName);
+    dbg('appVersion',navigator.appVersion);
+    dbg('cookieEnabled',navigator.cookieEnabled);
+    dbg('language',navigator.language);
+    dbg('platform',navigator.platform);
+    dbg('userAgent',navigator.userAgent);
+    dbg('window.location.href',window.location.href);
+  }
   
   /* SETUP: Ajax */
   j.ajaxSetup({

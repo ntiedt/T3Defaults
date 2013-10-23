@@ -230,10 +230,10 @@ t3d_searchengine{
   #cat=t3d_searchengine/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.id
   etracker.id =
   
-  #cat=t3d_searchengine/etracker/020; type=enable; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.asnch.enable
+  #cat=t3d_searchengine/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.asnch.enable
   etracker.asnch_enable = 1
   
-  #cat=t3d_searchengine/etracker/015; type=enable; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.eventtracker.enable
+  #cat=t3d_searchengine/etracker/015; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.eventtracker.enable
   etracker.eventtracker_enable = 0
   
   #cat=t3d_searchengine/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
