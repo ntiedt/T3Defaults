@@ -1,6 +1,6 @@
-<div class="all">
+<div class="all container row">
     <f:render partial="header" />
-    <f:render partial="body" arguments="{content:content_main}" />
+    <f:render partial="body" arguments="{content_head:content_head,content_main:content_main,content_right:content_right,layout:layout}" />
     <f:render partial="footer" />
 </div>
 <div class="objs"><f:cObject typoscriptObjectPath="lib.objs" /></div>
