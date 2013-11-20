@@ -22,7 +22,7 @@ config{
   sys_language_mode = content_fallback
   sys_language_overlay = hideNonTranslated
   # Setting up the language variable "L" to be passed along with links
-  linkVars = L(0-11)
+  linkVars = L(0-11), debug
   uniqueLinkVars = 1
   
   index_enable = 1
@@ -47,6 +47,14 @@ config{
   cache_clearAtMidnight = {$t3d_cache.clearAtMidnight}
 }
 #----------------------------------------------------------- CONFIG-END
+
+#------------------------------------------------------------ CONFIG-DEBUG-BEGIN
+[globalVar = GP:debug=1]
+config{
+  spamProtectEmailAddresses = 0
+}
+[global]
+#------------------------------------------------------------ CONFIG-DEBUG-END
 
 #------------------------------------------------------------ CONFIG-MOBIL-BEGIN
 [globalString = IENV:HTTP_HOST=m.*]
@@ -231,8 +239,28 @@ page.10 = FLUIDTEMPLATE
 page.10 {
   file = {$t3d_pfade.tmpls}fluid/normal.html
   partialRootPath = {$t3d_pfade.tmpls}fluid/partials
+  ## Frontend Template analog zum BE Template auswählen
+
   variables{
+    layout = TEXT
+    layout.data = levelfield:-1, backend_layout_next_level, slide
+    layout.override.field = backend_layout
+    
+    content_head < styles.content.getBorder
     content_main < styles.content.get
+    content_right < styles.content.getRight
+  }
+}
+tt_content.gridelements_pi1.20.10.setup {
+  1 < lib.gridelements.defaultGridSetup
+  1 {
+    wrap = <div class="row">|</div>
+    columns {
+      100 < .default
+      100.wrap = <div class="col col-1 span_12">|</div>
+      120 < .default
+      120.wrap = <div class="col col-2 span_12">|</div>
+    }
   }
 }
 [global]
@@ -243,6 +271,7 @@ page.10 = USER
 page.10.userFunc = tx_templavoila_pi1->main_page
 page.10.disableExplosivePreview = 1
 [global]
+
 #----------------------------------------------------------- DEFAULT-PAGE-END
 
 #------------------------------------------------------------ PAGE-CONFIG-MOBIL-BEGIN
@@ -314,8 +343,16 @@ page.bodyTagCObject.20.40.noTrimWrap = | rootpage||
 [browser = msie]
 page.bodyTagCObject.20.10.value = msie
 [global]
+[browser = msie] && [version = 8]
+page.bodyTagCObject.20.15.value = version-8
+page.bodyTagCObject.20.15.noTrimWrap = | || 
+[global]
 [browser = msie] && [version = 9]
 page.bodyTagCObject.20.15.value = version-9
+page.bodyTagCObject.20.15.noTrimWrap = | || 
+[global]
+[browser = msie] && [version = 10]
+page.bodyTagCObject.20.15.value = version-10
 page.bodyTagCObject.20.15.noTrimWrap = | || 
 [global]
 [browser = firefox]
@@ -404,6 +441,9 @@ page.10000{
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-BEGIN
 ### css_styled_content Definitionen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_styled_content.ts">
+
+### css_styled_content Definitionen ###
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_debug.ts">
 
 ### Seitentypen ###
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_seitentypen.ts">

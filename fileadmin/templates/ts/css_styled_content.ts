@@ -833,6 +833,16 @@ tt_content.image.20 {
 				}
 			}
 		}
+    
+    5 = LOAD_REGISTER
+    5{
+      respClass.cObject = TEXT
+      respClass.cObject{
+        field = imagecols
+        stdWrap.dataWrap = {$t3d_grid.max_cols}/|
+        prioriCalc = 1
+      }
+    }
 	}
 
 	# captionSplit is deprecated, use imageTextSplit instead
@@ -867,7 +877,7 @@ tt_content.image.20 {
 	imageStdWrapNoWidth.wrap.insertData = 1
 
 	# if noRows is set, wrap around each column:
-	imageColumnStdWrap.dataWrap = <div class="csc-textpic-imagecolumn" style="width:{register:columnwidth}px;"> | </div>
+	imageColumnStdWrap.dataWrap = <div class="csc-textpic-imagecolumn col span_{register:respClass}" style="width:{register:columnwidth}px;"> | </div>
 
 	layout = CASE
 	layout {
@@ -1000,10 +1010,11 @@ tt_content.image.20 {
 					override = <figure class="csc-textpic-image###CLASSES###"> | </figure>
 				}
 			}
-			rowStdWrap.wrap = <div class="csc-textpic-imagerow"> | </div>
-			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-none"> | </div>
-			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-last"> | </div>
-			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES###"> | </div>
+			rowStdWrap.wrap = <div class="csc-textpic-imagerow row"> | </div>
+			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-none"> | </div>
+			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-last"> | </div>
+			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES### col span_{register:respClass}"> | </div>
+			columnStdWrap.wrap.insertData = 1
 		}
 		singleCaption {
 			# Just one image with a caption
@@ -1048,10 +1059,11 @@ tt_content.image.20 {
 					}
 				}
 			}
-			rowStdWrap.wrap = <div class="csc-textpic-imagerow"> | </div>
-			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-none"> | </div>
-			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-last"> | </div>
-			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES###"> | </div>
+			rowStdWrap.wrap = <div class="csc-textpic-imagerow row"> | </div>
+			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-none"> | </div>
+			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-last"> | </div>
+			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES### col span_{register:respClass}"> | </div>
+			columnStdWrap.wrap.insertData = 1
 			caption {
 				required = 1
 				wrap = <caption class="csc-textpic-caption###CLASSES###"> | </caption>
@@ -1089,10 +1101,11 @@ tt_content.image.20 {
 					override = <div class="csc-textpic-image###CLASSES###"> | </div>
 				}
 			}
-			rowStdWrap.wrap = <div class="csc-textpic-imagerow"> | </div>
-			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-none"> | </div>
-			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow csc-textpic-imagerow-last"> | </div>
-			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES###"> | </div>
+			rowStdWrap.wrap = <div class="csc-textpic-imagerow row"> | </div>
+			noRowsStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-none"> | </div>
+			lastRowStdWrap.wrap = <div class="csc-textpic-imagerow row csc-textpic-imagerow-last"> | </div>
+			columnStdWrap.wrap = <div class="csc-textpic-imagecolumn###CLASSES### col span_{register:respClass}"> | </div>
+			columnStdWrap.wrap.insertData = 1
 			caption {
 				required = 1
 				wrap = <caption class="csc-textpic-caption"> | </caption>
@@ -2131,20 +2144,20 @@ plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE (
 	/* Float the columns */
 	DIV.csc-textpic DIV.csc-textpic-imagecolumn { float: left; }
 
-	/* Border just around the image */
+	/* Border just around the image 
 	{$styles.content.imgtext.borderSelector} {
 		border: {$styles.content.imgtext.borderThick}px solid {$styles.content.imgtext.borderColor};
 		padding: {$styles.content.imgtext.borderSpace}px {$styles.content.imgtext.borderSpace}px;
-	}
+	}*/
 
-	DIV.csc-textpic .csc-textpic-imagewrap IMG { border: none; display: block; }
+	DIV.csc-textpic .csc-textpic-imagewrap IMG { display: block; }
 
 	/* Space below each image (also in-between rows) */
 	DIV.csc-textpic .csc-textpic-imagewrap .csc-textpic-image { margin-bottom: {$styles.content.imgtext.rowSpace}px; }
-	DIV.csc-textpic .csc-textpic-imagewrap .csc-textpic-imagerow-last .csc-textpic-image { margin-bottom: 0; }
+	DIV.csc-textpic .csc-textpic-imagewrap .csc-textpic-imagerow-last .csc-textpic-image {  }
 
 	/* colSpace around image columns, except for last column */
-	DIV.csc-textpic-imagecolumn, TD.csc-textpic-imagecolumn .csc-textpic-image { margin-right: {$styles.content.imgtext.colSpace}px; }
+	DIV.csc-textpic-imagecolumn, TD.csc-textpic-imagecolumn .csc-textpic-image {  }
 	DIV.csc-textpic-imagecolumn.csc-textpic-lastcol, TD.csc-textpic-imagecolumn.csc-textpic-lastcol .csc-textpic-image { margin-right: 0; }
 
 	/* Add margin from image-block to text (in case of "Text w/ images") */

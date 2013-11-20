@@ -2,18 +2,17 @@
 ## Navigation ###
 
 ### Hauptnavigation ###
-tmp.nav_main = COA
-tmp.nav_main{
+tmp.nav_header = COA
+tmp.nav_header{
   10 = COA
   10{
-    wrap = <div>|</div>
+    wrap = <ul class="level-1">|</ul>
     10 = HMENU
     10{
-      entryLevel = {$t3d_navigation.nav_main_entryLevel}
-      excludeUidList = {$t3d_navigation.nav_main_excludeUidList}
+      special = directory
+      special.value = 9
       1 = TMENU
       1 {
-        wrap = <ul class="level-1">|</ul>
         IProcFunc = user_tmenulinebreak->main
         expAll = 1
         noBlur = 1
@@ -29,27 +28,86 @@ tmp.nav_main{
         ACT < .CUR
         ACT = 1
       }
+    }
+    20 = IMAGE
+    20{
+      file = {$t3d_pfade.tmpls}/image/icon_facebook.gif
+      stdWrap{
+        wrap =  <li class="level-1 facebook">|</li>
+        typolink.parameter = http://www.youtube.com/user/physio4dog _blank
+      }
+    }
+  }
+}
+
+### Hauptnavigation ###
+tmp.nav_main = COA
+tmp.nav_main{
+  10 = COA
+  10{
+    10 = HMENU
+    10{
+      wrap = <ul class="level-1">|</ul>
+      entryLevel = {$t3d_navigation.nav_main_entryLevel}
+      excludeUidList = {$t3d_navigation.nav_main_excludeUidList}
+      1 = TMENU
+      1 {
+        IProcFunc = user_tmenulinebreak->main
+        expAll = 1
+        noBlur = 1
+        NO{
+          wrapItemAndSub = <li class="level-1 norm first index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm last index_{register:count_MENUOBJ}">|</li>
+          wrapItemAndSub.insertData = 1
+          ATagParams = class="level-1 norm color-1"
+          stdWrap.wrap = <span>|</span>
+        }
+        CUR < .NO
+        CUR.wrapItemAndSub = <li class="level-1 click first index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 click index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 click last index_{register:count_MENUOBJ}">|</li>
+        CUR.wrapItemAndSub.insertData = 1
+        CUR.ATagParams = class="level-1 click color-3"
+        CUR = 1
+        ACT < .CUR
+        ACT = 1
+      }
       2 < .1
       2 {
         wrap = <ul class="level-2">|</ul>
         expAll = 1
         noBlur = 1
         NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
-        NO.ATagParams = class="level-2 norm"
+        NO.ATagParams = class="level-2 norm color-2"
+        #NO.ATagParams.append >
         CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
-        CUR.ATagParams = class="level-2 click"
+        CUR.ATagParams = class="level-2 click color-3"
         ACT < .CUR
         ACT = 1
       }
-      3 < .1
-      3 {
-        wrap = <ul class="level-3">|</ul>
+    }
+  }
+}
+tmp.nav_main_level2 = COA
+tmp.nav_main_level2{
+  10 = COA
+  10{
+    wrap = <ul class="level-1">|</ul>
+    10 = HMENU
+    10{
+      entryLevel = {$t3d_navigation.nav_main_entryLevel}+1
+      excludeUidList = {$t3d_navigation.nav_main_excludeUidList}
+      1 = TMENU
+      1 {
+        IProcFunc = user_tmenulinebreak->main
         expAll = 1
         noBlur = 1
-        NO.wrapItemAndSub = <li class="level-3 norm first">|</li>|*|<li class="level-3 norm">|</li>|*|<li class="level-3 norm last">|</li>
-        NO.ATagParams = class="level-3 norm"
-        CUR.wrapItemAndSub = <li class="level-3 click first">|</li>|*|<li class="level-3 click">|</li>|*|<li class="level-3 click last">|</li>
-        CUR.ATagParams = class="level-3 click"
+        NO{
+          wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
+          ATagParams = class="level-1 norm color-1"
+          stdWrap.wrap = <span>|</span>
+        }
+        CUR < .NO
+        CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
+        CUR.ATagParams = class="level-1 click color-1"
+        CUR = 1
         ACT < .CUR
         ACT = 1
       }
@@ -146,7 +204,9 @@ tmp.nav_rootline{
 # Include tmenulinebreak script
 page.includeLibs.tmenulinebreak = {$t3d_pfade.tmpls}php/tmenulinebreak.php
 
+lib.nav_header < tmp.nav_header
 lib.nav_main < tmp.nav_main
+lib.nav_main_level2 < tmp.nav_main_level2
 lib.nav_sub < tmp.nav_sub
 lib.nav_rootline < tmp.nav_rootline
 [global]
