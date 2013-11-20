@@ -164,15 +164,9 @@ page.footerData.150{
   10.value(
     jQuery(function(j){
       /* COLORBOX: http://www.jacklmoore.com/colorbox */
+
       if(jQuery().colorbox){
         j('a.lightbox').colorbox({
-          onOpen:function(){
-            big_title = '<div class="big_title col span_17"><h1 class="color-3">Bildergallerie</h1></div>';
-            logo = '<div class="logo col span_7"><img width="324" height="158" border="0" alt="" src="fileadmin/templates/image/obj_logo.png"></div>';
-            j('#cboxTopCenter').append(big_title+logo);
-          },
-          'maxWidth': '100%',
-          'top': '0',
   )
   20 = TEXT
   20.value(

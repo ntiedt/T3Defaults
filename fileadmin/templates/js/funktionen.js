@@ -52,14 +52,14 @@ jQuery(function(j){
   };
   
   /* COLORBOX: http://www.jacklmoore.com/colorbox */
-//   if(jQuery().colorbox){
-//     j('a.lightbox').colorbox({
-//       'current': '{current} / {total}',
-//       'previous': '<',
-//       'next': '>',
-//       'close': 'X'
-//     });
-//   }
+  if(jQuery().colorbox){
+    j('a.lightbox').colorbox({
+      'current': '{current} / {total}',
+      'previous': '<',
+      'next': '>',
+      'close': 'X'
+    });
+  }
   
   
   /* FLEXSLIDER: */
