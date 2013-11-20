@@ -1,1 +1,204 @@
 /* Normal */
+/*
+
+color-1: Weiß: Nav Main 1. Level, Footer																				#fff
+color-2: Schwarz: Nav Main 2. Level, Nav Header, Content												#000
+color-3: Orange: Nav Main 2. Level aktiv, Content-/Box-/Footer Headlines				#e74840
+
+bg-1: BG Body																																		#fff
+bg-2: BG Header																																	#f6e4d7
+bg-3: BG Nav Main, Footer																												#3d3c3f
+
+font-1: Text																																		arial
+font-2: Nav, Headlines, Links																										Dosis
+
+*/
+.color-1{ color: #fff;}
+.color-2{ color: #000;}
+.color-3, .nav_main li.hover > a{ color: #e74840;}
+.bg-1{ background-color: #fff;}
+.bg-2{ background-color: #f6e4d7;}
+.bg-3{ background-color: #3d3c3f;}
+.font-1{ font-family: arial, sans-serif;}
+.font-2{ font-family: 'Dosis', sans-serif;}
+
+.tx-indexedsearch input.bg-1[type=submit]{
+  background: url(../image/icon_obj_search_submit.gif) no-repeat 0 0 #fff;
+  background-size: 100% auto;
+}
+
+/* 
+ALLGEMEIN */
+html,body{
+	width: 100%; height: 100%;
+}
+body{
+	background: none white;
+}
+div, a, li, input, select, label{
+	margin: 0;
+	padding: 0;
+	font-family: 'Dosis', sans-serif; color: #000;
+	min-height: 1px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+a{
+	font-weight: bold; text-decoration: none;
+}
+div a:hover, a.click{
+	color: #e74840;
+}
+.content a, .footer a{
+	text-decoration: underline;
+}
+ul{
+  list-style: none outside;
+}
+.content h1,
+.content h2,
+.content p{
+	padding: 0 0 22px 0;
+}
+h1,h2,h3{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.csc-frame h1,
+.csc-frame h2,
+.csc-frame h3,
+.content_head h1,
+.content_main h2,
+.content_main h3,
+.csc-frame a{
+  color: #e74840;
+}
+h1{
+  font-size: 3em; line-height: 1em;
+}
+h2{
+  font-size: 1.6em; line-height: 1.6em;
+}
+h3{
+  font-size: 1.15em; line-height: 1.15em;
+}
+.content_right .csc-header h3{
+  padding: 2em 0 0.9em 0;
+}
+b{
+  font-weight: bold;
+}
+p{
+  font-size: 0.9em; line-height: 1.5em;
+}
+
+/* 
+Struktur */
+.header > .row-2{
+	border-style:solid;
+	border-color:#ccc;
+	border-width: 1px 0 3px 0;
+	-moz-border-image: url(../image/nav_main_border.gif) 1 0 3 0 stretch;
+	-webkit-border-image: url(../image/nav_main_border.gif) 1 0 3 0 stretch;
+	-o-border-image: url(../image/nav_main_border.gif) 1 0 3 0 stretch;
+	border-image: url(../image/nav_main_border.gif) 1 0 3 0 stretch;
+}
+.body .content_head{
+  padding: 4em 0 0 0;
+}
+.body .content_right{
+  padding: 0 0 1.1em 0;
+}
+.footer{
+	padding: 47px 0 68px 0;
+	background-image: url(../image/bg_footer.gif);
+	background-repeat: no-repeat;
+}
+
+/* 
+Objekte */
+.obj_logo{
+  padding: 38px 0 35px 0;
+}
+
+.nav_header ul{
+  float: right;
+  padding: 26px 0 0 0;
+}
+.nav_header li{
+  float: left;
+  padding: 0 0 0 1em;
+}
+.nav_header a{
+  font-size: 0.9em; line-height: 0.9em; font-weight: normal;
+}
+.nav_header a.facebook{
+  width: 19px; height: 19px;
+}
+
+.nav_main{
+}
+.nav_main ul{
+}
+.nav_main ul.level-2{
+  position: absolute;
+  display: none;
+}
+.nav_main li.hover ul.level-2,
+.nav_main li.click ul.level-2{
+  display: block;
+}
+.nav_main li{
+  float: left;
+}
+.nav_main a{
+	display: block;
+  padding: 9px 1.4em 10px 0;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+.nav_main li:last-child a{
+  padding-right: 0;
+}
+.nav_main .level-2 a{
+  padding: 16px 1.4em 13px 0;
+	font-size: 0.95em;
+	line-height: 0.95em;
+}
+
+.obj_contact{
+}
+.obj_contact h3{
+	padding: 0 0 21px 0;
+	text-transform: uppercase;
+  color: #e74840;
+}
+.obj_contact p, .obj_contact a{
+	font-weight: normal;
+  color: #fff;
+}
+
+/* 
+Rahmen */
+.nav_main ul.level-2,
+.content_main img,
+.csc-frame-frame1,
+.csc-frame-frame2{
+	border-style:solid;
+	border-color:#ccc;
+	border-width: 3px 3px 3px 3px;
+	-moz-border-image: url(../image/border.gif) 3 3 3 3 stretch;
+	-webkit-border-image: url(../image/border.gif) 3 3 3 3 stretch;
+	-o-border-image: url(../image/border.gif) 3 3 3 3 stretch;
+	border-image: url(../image/border.gif) 3 3 3 3 stretch;
+}
+.nav_main ul.level-2{
+	border-width: 0 0 3px 0;
+}
+.csc-frame-frame2{
+  padding: 2.3584905660377% 6.6037735849057% 0 6.6037735849057%;
+	background-color: #f6e4d7;
+}
