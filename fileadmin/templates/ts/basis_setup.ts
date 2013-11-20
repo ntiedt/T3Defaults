@@ -255,6 +255,15 @@ page.headerData.10.value(
 [global]
 #------------------------------------------------------------ PAGE-CONFIG-MOBIL-END
 
+#----------------------------------------------------------- META-IE-BEGIN 
+[browser = msie]
+page{
+  meta.X-UA-Compatible = IE=edge
+  meta.X-UA-Compatible.httpEquivalent = 1
+}
+[end]
+#----------------------------------------------------------- META-IE-END
+
 #----------------------------------------------------------- PAGE-SHORTCUT-ICON-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.favicon}]
 page.shortcutIcon = {$t3d_basis.favicon_file}
