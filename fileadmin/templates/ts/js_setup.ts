@@ -164,6 +164,7 @@ page.footerData.150{
   10.value(
     jQuery(function(j){
       /* COLORBOX: http://www.jacklmoore.com/colorbox */
+
       if(jQuery().colorbox){
         j('a.lightbox').colorbox({
           onOpen:function(){
