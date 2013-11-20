@@ -1,17 +1,35 @@
 ### JAVASCRIPT INCLUDES ANFANG
 [globalVar = LIT:1 = {$t3d_basis.ts_js}]
-
 page.includeJSFooter{
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
   jquery.disableCompression = 1
-  #jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
-  #jqueryui.disableCompression = 1
+  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
+  jqueryui.disableCompression = 1
   colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
   colorbox.disableCompression = 1
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
+[global]
+
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = GP:debug == 1]
+page.includeJSFooter{
+  jquery >
+  jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  jqueryui >
+  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
+  colorbox >
+  colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
+  debug >
+  debug = {$t3d_pfade.tmpls}js/debug.js
+  debugbar >
+  debugbar = {$t3d_pfade.tmpls}js/debugbar.js
+  funktionen >
+  funktionen = {$t3d_pfade.tmpls}js/funktionen.js
+}
+[global]
 
 
+[globalVar = LIT:1 = {$t3d_basis.ts_js}]
 page.headerData.150 = COA
 page.headerData.150{
   wrap = |
@@ -102,7 +120,7 @@ var jquery_speed = '{$t3d_jquery.speed}';
         additionalParams = &debug=0
         addQueryString = 1
         addQueryString.method = GET
-        addQueryString.exclude = id
+        addQueryString.exclude = id,debug
         forceAbsoluteUrl = 1
         returnLast = url
       }
@@ -124,6 +142,11 @@ var jquery_speed = '{$t3d_jquery.speed}';
       }
     }
   }
+  90 = TEXT
+  90{
+    wrap = var max_cols = |;
+    value = {$t3d_grid.max_cols}
+  }
   100 = TEXT
   100.value(
 </script>
@@ -143,6 +166,13 @@ page.footerData.150{
       /* COLORBOX: http://www.jacklmoore.com/colorbox */
       if(jQuery().colorbox){
         j('a.lightbox').colorbox({
+          onOpen:function(){
+            big_title = '<div class="big_title col span_17"><h1 class="color-3">Bildergallerie</h1></div>';
+            logo = '<div class="logo col span_7"><img width="324" height="158" border="0" alt="" src="fileadmin/templates/image/obj_logo.png"></div>';
+            j('#cboxTopCenter').append(big_title+logo);
+          },
+          'maxWidth': '100%',
+          'top': '0',
   )
   20 = TEXT
   20.value(

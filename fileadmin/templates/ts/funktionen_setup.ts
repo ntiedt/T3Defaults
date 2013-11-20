@@ -94,63 +94,80 @@ unity={$t3d_grid.unity}
 /* RESET MARGINS */
 .col:first-child{ margin-left: 0; } /* all browsers except IE6 and lower */
 
+/* COLUMN WIDTH ON DISPLAYS +768px */
     )
     
     50 = COA
     50{
       wrap = @media ( min-width : 768px ) {|}
-      5 = TEXT
-      5.value(
-      
-      )
-      10 = TEXT
+      10 = COA
       10{
-        noTrimWrap = |  .col {margin-left: |%;}|
-        data = register:grid_col_margin
+        5 = TEXT
+        5.value(
+        
+        )
+        10 = TEXT
+        10{
+          noTrimWrap = |  .col {margin-left: |%;}|
+          data = register:grid_col_margin
+        }
+        55 = TEXT
+        55.value(
+          #layer_grid .col{margin-left: 0;}
+        
+        )
       }
-      55 = TEXT
-      55.value(
-      
-      )
-    }
-  
-    55 = TEXT
-    55.value(
-
-/* COLUMN WIDTH ON DISPLAYS +768px */
-    )
-    
-    60 = COA
-    60{
-      wrap = @media ( min-width : 768px ) {|}
-      5 = TEXT
-      5.value(
-      
-      )
-      10 = TEXT
-      10{
-        wrap = |
-        data = register:grid_cols
-        split{
-          token = ;
-          cObjNum = 1
-          1.current = 1
-          1.split{
-            token = ,
-            cObjNum = 1 || 2
+      20 = COA
+      20{
+        5 = TEXT
+        5.value(
+        
+        )
+        10 = TEXT
+        10{
+          noTrimWrap = |  .spacer {width: |%;}|
+          data = register:grid_col_margin
+        }
+        55 = TEXT
+        55.value(
+        
+        )
+      }
+      30 = COA
+      30{
+        5 = TEXT
+        5.value(
+        
+        )
+        10 = TEXT
+        10{
+          wrap = |
+          data = register:grid_cols
+          split{
+            token = ;
+            cObjNum = 1
             1.current = 1
-            1.noTrimWrap = |  .||
-            2{
-              10 = TEXT
-              10.current = 1
-              10.wrap = {width:|%;}
-              15 = TEXT
-              15.value(
-              
-              )
+            1.split{
+              token = ,
+              cObjNum = 1 || 2
+              1.current = 1
+              1.noTrimWrap = |  .||
+              2{
+                10 = TEXT
+                10.current = 1
+                10.wrap = {width:|%;}
+                15 = TEXT
+                15.value(
+                
+                )
+              }
             }
           }
         }
+        55 = TEXT
+        55.value(
+        
+        )
       }
     }
     

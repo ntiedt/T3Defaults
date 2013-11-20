@@ -1,3 +1,6 @@
+# Include following tag without # in the page TSconfig section of your root page
+#<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/tsconfig/page.ts">
+
 #----------------------------------------------------------- PAGE-TSCONFIG-NEWS-SYSORDNER-BEGIN
 # FE-Cache fuer Seiten mit News loeschen
 # z.b. 2,3,4 = Seiten auf denen News sind
@@ -5,6 +8,10 @@
 TCEMAIN.clearCacheCmd = all
 #----------------------------------------------------------- PAGE-TSCONFIG-NEWS-SYSORDNER-END
 
+mod {
+	//0=Normal, 1=Left, 2=Right, 3=Border
+	SHARED.colPos_list = 0,2,3
+}
 
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-BEGIN
 TCEMAIN.table.tt_content {
@@ -19,37 +26,43 @@ TCEFORM.pages {
   layout.altLabels.2 = Layout 2
   layout.altLabels.3 = Layout 3
   layout.removeItems = 1,2,3
+  
+  #backend_layout.label = Layout
+  #backend_layout.altLabels.-1 = 2 Spalter (1 große Spalte links / 1 kleine rechts)
+  #backend_layout.altLabels.1 = 1 Spalter
+  backend_layout_next_level.removeItems= -1,0
+  backend_layout.removeItems= -1,0
 }
 
 ### tt_content Layout
 TCEFORM.tt_content {
-  header_layout.altLabels.0 = Standard
-  header_layout.altLabels.1 = Layout 1
-  header_layout.altLabels.2 = Layout 2
-  header_layout.altLabels.3 = Layout 3
-  header_layout.altLabels.4 = Layout 4
-  header_layout.altLabels.5 = Layout 5
-  header_layout.altLabels.100 = Verborgen
+  #header_layout.altLabels.0 = Standard
+  #header_layout.altLabels.1 = Layout 1
+  #header_layout.altLabels.2 = Layout 2
+  #header_layout.altLabels.3 = Layout 3
+  #header_layout.altLabels.4 = Layout 4
+  #header_layout.altLabels.5 = Layout 5
+  #header_layout.altLabels.100 = Verborgen
   #header_layout.addItems.7 = Bereichsheadline (H1)
   
-  layout.altLabels.0 = Standard
-  layout.altLabels.1 = Layout 1
-  layout.altLabels.2 = Layout 2
-  layout.altLabels.3 = Layout 3
+  #layout.altLabels.0 = Standard
+  #layout.altLabels.1 = Layout 1
+  #layout.altLabels.2 = Layout 2
+  #layout.altLabels.3 = Layout 3
   layout.removeItems = 1,2,3
   
-  section_frame.altLabels.0 = Standardframe
-  section_frame.altLabels.1 = Unsichtbar
-  section_frame.altLabels.5 = Linie davor
-  section_frame.altLabels.6 = Linie danach
-  section_frame.altLabels.10 = Einrücken
-  section_frame.altLabels.11 = Einrücken, 33/66%
-  section_frame.altLabels.12 = Einrücken, 66/33%
-  section_frame.altLabels.20 = Rahmen 1
-  section_frame.altLabels.21 = Rahmen 2
-  section_frame.altLabels.66 = Kein Frame
+  #section_frame.altLabels.0 = Standardframe
+  #section_frame.altLabels.1 = Unsichtbar
+  #section_frame.altLabels.5 = Linie davor
+  #section_frame.altLabels.6 = Linie danach
+  #section_frame.altLabels.10 = Einrücken
+  #section_frame.altLabels.11 = Einrücken, 33/66%
+  #section_frame.altLabels.12 = Einrücken, 66/33%
+  section_frame.altLabels.20 = Rahmen mit weißem Hintergrund
+  section_frame.altLabels.21 = Rahmen mit aprikot Hintergrund
+  #section_frame.altLabels.66 = Kein Frame
   #section_frame.addItems.22=3 Name de Rahmens
-  section_frame.removeItems = 1,5,6,10,11,12,20,21,66
+  section_frame.removeItems = 1,10,11,12,66
 }
 
 ### language default flag
