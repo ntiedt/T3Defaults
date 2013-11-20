@@ -170,7 +170,6 @@ t3d_pfade{
 t3d_style{
   #cat=t3d_style/file/10; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_style.webfont
   webfont = 
-    
   #cat=t3d_style/color/15; type=color; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_style.bgcolor_showpic
   bgcolor_showpic = white
 }

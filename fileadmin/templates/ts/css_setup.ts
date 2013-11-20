@@ -9,10 +9,25 @@ page.includeCSS{
   ie = {$t3d_pfade.tmpls}css/ie.css
   #jqueryui = {$t3d_pfade.tmpls}css/ui-lightness/jquery-ui-1.10.3.custom.min.css
   colorbox = {$t3d_pfade.tmpls}css/colorbox.css
+  powermail = {$t3d_pfade.tmpls}css/powermail.css
   normal = {$t3d_pfade.tmpls}css/normal.css
 }
 [global]
 #----------------------------------------------------------- INCLUDECSS-END
+
+#----------------------------------------------------------- INCLUDECSS-DEBUG-BEGIN
+[globalVar = LIT:1 = {$t3d_basis.ts_css}] && [globalVar = GP:debug == 1]
+page.includeCSS{
+  reset = {$t3d_pfade.tmpls}css/reset.css
+  ie = {$t3d_pfade.tmpls}css/ie.css
+  jqueryuidbg = {$t3d_pfade.tmpls}css/dbgsmoothness/jquery-ui-1.9.2.custom.min.css
+  colorbox = {$t3d_pfade.tmpls}css/colorbox.css
+  powermail = {$t3d_pfade.tmpls}css/powermail.css
+  debug = {$t3d_pfade.tmpls}css/debug.css
+  normal = {$t3d_pfade.tmpls}css/normal.css
+}
+[global]
+#----------------------------------------------------------- INCLUDECSS-DEBUG-END
 
 #----------------------------------------------------------- INCLUDECSS-MOBILE-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}] AND [globalString = IENV:HTTP_HOST=m.*]
