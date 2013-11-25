@@ -15,7 +15,6 @@ tmp.nav_header{
       1 {
         IProcFunc = user_tmenulinebreak->main
         expAll = 1
-        noBlur = 1
         NO{
           wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
           ATagParams = class="level-1 norm"
@@ -54,7 +53,6 @@ tmp.nav_main{
       1 {
         IProcFunc = user_tmenulinebreak->main
         expAll = 1
-        noBlur = 1
         NO{
           wrapItemAndSub = <li class="level-1 norm first index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm last index_{register:count_MENUOBJ}">|</li>
           wrapItemAndSub.insertData = 1
@@ -73,7 +71,6 @@ tmp.nav_main{
       2 {
         wrap = <ul class="level-2">|</ul>
         expAll = 1
-        noBlur = 1
         NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
         NO.ATagParams = class="level-2 norm color-2"
         #NO.ATagParams.append >
@@ -98,7 +95,6 @@ tmp.nav_main_level2{
       1 {
         IProcFunc = user_tmenulinebreak->main
         expAll = 1
-        noBlur = 1
         NO{
           wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
           ATagParams = class="level-1 norm color-1"
@@ -130,7 +126,6 @@ tmp.nav_sub{
         wrap = <ul class="level-1">|</ul>
         IProcFunc = user_tmenulinebreak->main
         expAll = 1
-        noBlur = 1
         NO{
           wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
           ATagParams = class="level-1 norm"
@@ -147,7 +142,6 @@ tmp.nav_sub{
       2 {
         wrap = <ul class="level-2">|</ul>
         expAll = 1
-        noBlur = 1
         NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
         NO.ATagParams = class="level-2 norm"
         CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
@@ -159,7 +153,6 @@ tmp.nav_sub{
       3 {
         wrap = <ul class="level-3">|</ul>
         expAll = 1
-        noBlur = 1
         NO.wrapItemAndSub = <li class="level-3 norm first">|</li>|*|<li class="level-3 norm">|</li>|*|<li class="level-3 norm last">|</li>
         NO.ATagParams = class="level-3 norm"
         CUR.wrapItemAndSub = <li class="level-3 click first">|</li>|*|<li class="level-3 click">|</li>|*|<li class="level-3 click last">|</li>

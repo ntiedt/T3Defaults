@@ -29,7 +29,6 @@ config{
   
   baseURL = {$t3d_config.baseURL}
   tx_realurl_enable = {$t3d_config.tx_realurl_enable}
-  simulateStaticDocuments = {$t3d_config.simulateStaticDocuments}
 
 
   metaCharset = utf-8

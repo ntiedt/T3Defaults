@@ -21,7 +21,6 @@
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
 			<label index="t3d_config.baseURL_mobil">Basis-Url Mobil:e.g. http://m.kunde.de/</label>
 			<label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
-			<label index="t3d_config.simulateStaticDocuments">Enable simulateStaticDocuments?</label>
 			<label index="t3d_config.language">Default language</label>
 			<label index="t3d_config.locale_all">Default localisation</label>
 			<label index="t3d_config.language_2">2. language</label>
@@ -142,7 +141,6 @@
 			<label index="t3d_config.spamProtectEmailAddresses">@-Zeichen Ersetzung einschalten</label>
 			<label index="t3d_config.spamProtectEmailAddresses_atSubst">@-Zeichen Ersetzung</label>
 			<label index="t3d_config.tx_realurl_enable">RealUrl aktivieren?</label>
-			<label index="t3d_config.simulateStaticDocuments">SimulateStaticDocuments aktivieren?</label>
 			<label index="t3d_config.language">Standard Sprache</label>
 			<label index="t3d_config.locale_all">Standard Lokalisierung</label>
 			<label index="t3d_config.language_2">2. Sprache</label>

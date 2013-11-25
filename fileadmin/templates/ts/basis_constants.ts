@@ -24,9 +24,6 @@ t3d_config{
   #cat=t3d_config/enable/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.tx_realurl_enable
   tx_realurl_enable = 0
   
-  #cat=t3d_config/enable/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.simulateStaticDocuments
-  simulateStaticDocuments = 0
-  
   #cat=t3d_config/links/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL
   baseURL = 
   
