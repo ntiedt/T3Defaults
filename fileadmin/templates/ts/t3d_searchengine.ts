@@ -5,6 +5,7 @@
 temp.etrackerareas = HMENU
 temp.etrackerareas.special.range = {$t3d_searchengine.etracker.range_areas}
 temp.etrackerareas.special = rootline
+temp.etrackerareas.includeNotInMenu = 1
 temp.etrackerareas.1 = TMENU
 temp.etrackerareas.1 {
   NO.allWrap = | {$t3d_searchengine.etracker.areas_splitchar} |*||*| |
