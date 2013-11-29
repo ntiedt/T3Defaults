@@ -51,16 +51,6 @@ jQuery(function(j){
     j('form.powermail_form .powermail_field:first').val(job);
   };
   
-  /* COLORBOX: http://www.jacklmoore.com/colorbox */
-  if(jQuery().colorbox){
-    j('a.lightbox').colorbox({
-      'current': '{current} / {total}',
-      'previous': '<',
-      'next': '>',
-      'close': 'X'
-    });
-  }
-  
   
   /* FLEXSLIDER: */
   if(jQuery().flexslider){
