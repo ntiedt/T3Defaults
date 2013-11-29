@@ -165,14 +165,17 @@ var jquery_speed = '{$t3d_jquery.speed}';
 
 [global]
 
-
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = LIT:1 = {$styles.content.imgtext.linkWrap.lightboxEnabled}]
 page.footerData.150 = COA
 page.footerData.150{
   wrap = <script>|</script>
+}
+
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = LIT:1 = {$styles.content.imgtext.linkWrap.lightboxEnabled}]
+page.footerData.150{
   10 = TEXT
   10.value(
-    jQuery(function(j){
+    jQuery(function(j){      
+      
       /* COLORBOX: http://www.jacklmoore.com/colorbox */
 
       if(jQuery().colorbox){
@@ -202,9 +205,20 @@ page.footerData.150{
 }
 [global]
 
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker_enable}] AND [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker_enable}] OR [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker_enable}]
 page.includeJSFooter{
-  t3d_webanalytic_event_tracking = {$t3d_pfade.tmpls}js/t3d_webanalytic_event_tracking.js
+  t3d_webanalytic_event_tracking = {$t3d_pfade.tmpls}js/jquery.t3d_webanalytic_event_tracking.js
+}
+page.footerData.150{
+  20 = TEXT
+  20.value(
+  
+      /* Event Tracker */
+      j('body a').t3d_searchengine_event_tracking({
+        config_baseurl: '{$t3d_config.baseURL}',
+        debug:{$t3d_webanalytic.eventtracker.debug}
+      });
+  )
 }
 [global]
 

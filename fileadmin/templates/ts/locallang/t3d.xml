@@ -79,9 +79,10 @@
 			<label index="t3d_grid.col_margin">Margin of single column(px):e.g. 20</label>
 			<label index="t3d_grid.unity">Unit of the grid:e.g.</label>
       
+			<label index="t3d_webanalytic.eventtracker.debug">Enable event tracker debug:</label>
 			<label index="t3d_webanalytic.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
 			<label index="t3d_webanalytic.etracker.id">E-Tracker id</label>
-			<label index="t3d_webanalytic.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.eventtracker.enable">Enable etracker event tracker:</label>
 			<label index="t3d_webanalytic.etracker.range_areas">E-Tracker range (et_areas):e.g. 1|-2</label>
 			<label index="t3d_webanalytic.etracker.areas_splitchar">E-Tracker separator char (et_areas):,=default or /=area-dependent evaluation</label>
 			<label index="t3d_webanalytic.etracker.range_pagename">E-Tracker range pagename(et_pagename):-> e.g. 1|-1</label>
@@ -98,7 +99,7 @@
 			<label index="t3d_webanalytic.google_ver.enable">Enable Google site verification?</label>
 			<label index="t3d_webanalytic.google_analytics.enable">Enable Google Analytics?</label>
 			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
-			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Enable google event tracker:</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Entry level of main navigation</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Exclude page ids from main navigation</label>
@@ -202,9 +203,10 @@
 			<label index="t3d_grid.col_margin">Breite eines Spaltenabstands(px):z.b. 20</label>
 			<label index="t3d_grid.unity">Einheit des Grids:z.b.</label>
       
+			<label index="t3d_webanalytic.eventtracker.debug">Debug für Event Tracker aktivieren:</label>
 			<label index="t3d_webanalytic.etracker.id">E-Tracker ID</label>
 			<label index="t3d_webanalytic.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
-			<label index="t3d_webanalytic.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.eventtracker.enable">Etracker Event Tracker aktivieren:</label>
 			<label index="t3d_webanalytic.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>
 			<label index="t3d_webanalytic.etracker.areas_splitchar">E-Tracker Trennerzeichen (et_areas):,=Standard und /=Bereichsabhaengige Auswertung</label>
 			<label index="t3d_webanalytic.etracker.range_pagename">E-Tracker Bereich Seitenname (et_pagename):z.b. 1|-1</label>
@@ -221,7 +223,7 @@
 			<label index="t3d_webanalytic.google_ver.enable">Google Seiten Verifizierung aktivieren?</label>
 			<label index="t3d_webanalytic.google_analytics.enable">Enable Google Analytics?</label>
 			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
-			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Google Event Tracker aktivieren:</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Hauptnavigation Einstiegslevel</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Hauptnavigation Seiten ausschließen</label>
