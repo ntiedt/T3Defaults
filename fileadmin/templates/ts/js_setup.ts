@@ -205,7 +205,7 @@ page.footerData.150{
 }
 [global]
 
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker_enable}] OR [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker.enable}] OR [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker.enable}]
 page.includeJSFooter{
   t3d_webanalytic_event_tracking = {$t3d_pfade.tmpls}js/jquery.t3d_webanalytic_event_tracking.js
 }

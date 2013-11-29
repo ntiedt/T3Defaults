@@ -231,10 +231,10 @@ t3d_webanalytic{
   etracker.id =
   
   #cat=t3d_webanalytic/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.asnch.enable
-  etracker.asnch_enable = 1
+  etracker.asnch.enable = 1
   
   #cat=t3d_webanalytic/etracker/015; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.eventtracker.enable
-  etracker.eventtracker_enable = 0
+  etracker.eventtracker.enable = 0
   
   #cat=t3d_webanalytic/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.range_areas
   etracker.range_areas = 1|-2
@@ -282,7 +282,7 @@ t3d_webanalytic{
   google_analytics.id = 
   
   #cat=t3d_webanalytic/google/050; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_analytics.eventtracker.enable
-  google_analytics.eventtracker_enable = 0
+  google_analytics.eventtracker.enable = 0
 }
 
 

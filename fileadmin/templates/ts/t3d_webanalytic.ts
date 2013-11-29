@@ -79,7 +79,7 @@ temp.etrackerjavascript.10.value (
 <script type="text/javascript">
 )
 
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
 temp.etrackerjavascript.10.value >
 temp.etrackerjavascript.10.value(
 
@@ -126,7 +126,7 @@ var et_lpage        = "0";
 var et_trig         = "";
 var et_se           = "0";
 )
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
 temp.etrackerjavascript.55 = TEXT
 temp.etrackerjavascript.55.value(
 }
@@ -174,7 +174,7 @@ et={$t3d_webanalytic.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 
 <!-- etracker CODE END -->
 )
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
 temp.etrackerjavascript.60 >
 [global]
 
