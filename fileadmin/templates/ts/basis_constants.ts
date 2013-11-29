@@ -221,7 +221,7 @@ t3d_grid{
 
 
 
-###  TYPO3 Defaults (T3D) Bereich Etracker ###
+###  TYPO3 Defaults (T3D) Bereich Webanalytic ###
 t3d_webanalytic{
   
   #cat=t3d_webanalytic//015; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.eventtracker.debug
