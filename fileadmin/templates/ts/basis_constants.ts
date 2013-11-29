@@ -117,8 +117,8 @@ t3d_basis{
   #cat=t3d_basis/enable/88; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_navigation
   ts_navigation = 1
   
-  #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_searchengine
-  t3d_searchengine = 1
+  #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_webanalytic
+  t3d_webanalytic = 1
   
   #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_funktionen
   ts_funktionen = 0
@@ -222,62 +222,62 @@ t3d_grid{
 
 
 ###  TYPO3 Defaults (T3D) Bereich Etracker ###
-t3d_searchengine{
-  #cat=t3d_searchengine/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.id
+t3d_webanalytic{
+  #cat=t3d_webanalytic/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.id
   etracker.id =
   
-  #cat=t3d_searchengine/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.asnch.enable
+  #cat=t3d_webanalytic/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.asnch.enable
   etracker.asnch_enable = 1
   
-  #cat=t3d_searchengine/etracker/015; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.eventtracker.enable
+  #cat=t3d_webanalytic/etracker/015; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.eventtracker.enable
   etracker.eventtracker_enable = 0
   
-  #cat=t3d_searchengine/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_areas
+  #cat=t3d_webanalytic/etracker/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.range_areas
   etracker.range_areas = 1|-2
   
-  #cat=t3d_searchengine/etracker/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.areas_splitchar
+  #cat=t3d_webanalytic/etracker/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.areas_splitchar
   etracker.areas_splitchar = ,
   
-  #cat=t3d_searchengine/etracker/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.range_pagename
+  #cat=t3d_webanalytic/etracker/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.range_pagename
   etracker.range_pagename = 1|-1
   
-  #cat=t3d_searchengine/etracker/060; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.pagename_splitchar
+  #cat=t3d_webanalytic/etracker/060; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.pagename_splitchar
   etracker.pagename_splitchar = %20->%20
   
-  #cat=t3d_searchengine/etracker/070; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_all
+  #cat=t3d_webanalytic/etracker/070; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_all
   etracker.ilevel_all = 4
   
-  #cat=t3d_searchengine/etracker/080; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_1
+  #cat=t3d_webanalytic/etracker/080; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_1
   etracker.ilevel_1 = 5
   
-  #cat=t3d_searchengine/etracker/090; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_2
+  #cat=t3d_webanalytic/etracker/090; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_2
   etracker.ilevel_2 = 6
   
-  #cat=t3d_searchengine/etracker/100; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_3
+  #cat=t3d_webanalytic/etracker/100; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_3
   etracker.ilevel_3 = 7
   
-  #cat=t3d_searchengine/etracker/110; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_4
+  #cat=t3d_webanalytic/etracker/110; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_4
   etracker.ilevel_4 = 8
   
-  #cat=t3d_searchengine/etracker/120; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_5
+  #cat=t3d_webanalytic/etracker/120; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_5
   etracker.ilevel_5 = 9
   
-  #cat=t3d_searchengine/etracker/130; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.etracker.ilevel_6
+  #cat=t3d_webanalytic/etracker/130; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.ilevel_6
   etracker.ilevel_6 = 10
   
-  #cat=t3d_searchengine/google/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google_ver.enable
+  #cat=t3d_webanalytic/google/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_ver.enable
   google_ver.enable = 1
   
-  #cat=t3d_searchengine/google/020; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google_ver.id
+  #cat=t3d_webanalytic/google/020; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_ver.id
   google_ver.id = Za8YMk2jAVt9oylO8hRVNXHdSwUBuAd6a_rPDFFIomk
   
-  #cat=t3d_searchengine/google/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google_analytics.enable
+  #cat=t3d_webanalytic/google/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_analytics.enable
   google_analytics.enable = 0
   
-  #cat=t3d_searchengine/google/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google_analytics.id
+  #cat=t3d_webanalytic/google/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_analytics.id
   google_analytics.id = 
   
-  #cat=t3d_searchengine/google/050; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_searchengine.google_analytics.eventtracker.enable
+  #cat=t3d_webanalytic/google/050; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.google_analytics.eventtracker.enable
   google_analytics.eventtracker_enable = 0
 }
 

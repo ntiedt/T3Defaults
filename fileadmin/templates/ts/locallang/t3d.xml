@@ -48,7 +48,7 @@
 			<label index="t3d_basis.ts_css">Load TS ts_css</label>
 			<label index="t3d_basis.ts_objekte">Load TS ts_objekte</label>
 			<label index="t3d_basis.ts_navigation">Load TS ts_navigation</label>
-			<label index="t3d_basis.t3d_searchengine">Load TS t3d_searchengine:Etracker and google(needs to activate)</label>
+			<label index="t3d_basis.t3d_webanalytic">Load TS t3d_webanalytic:Etracker and google(needs to activate)</label>
 			<label index="t3d_basis.ts_funktionen">Load TS ts_funktionen</label>
 			<label index="t3d_basis.ts_js">Load TS ts_js</label>
       
@@ -79,26 +79,26 @@
 			<label index="t3d_grid.col_margin">Margin of single column(px):e.g. 20</label>
 			<label index="t3d_grid.unity">Unit of the grid:e.g.</label>
       
-			<label index="t3d_searchengine.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
-			<label index="t3d_searchengine.etracker.id">E-Tracker id</label>
-			<label index="t3d_searchengine.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
-			<label index="t3d_searchengine.etracker.range_areas">E-Tracker range (et_areas):e.g. 1|-2</label>
-			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker separator char (et_areas):,=default or /=area-dependent evaluation</label>
-			<label index="t3d_searchengine.etracker.range_pagename">E-Tracker range pagename(et_pagename):-> e.g. 1|-1</label>
-			<label index="t3d_searchengine.etracker.pagename_splitchar">E-Tracker separator char (et_pagename):e.g. %20->%20</label>
-			<label index="t3d_searchengine.etracker.ilevel_all">Rating default level(et_ilevel):-> 0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_1">Rating level 1(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_2">Rating level 2(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_3">Rating level 3(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_4">Rating level 4(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_5">Rating level 5(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.google_ver.id">Google site verification id</label>
-			<label index="t3d_searchengine.google_ver.enable">Enable Google site verification?</label>
-			<label index="t3d_searchengine.google_analytics.enable">Enable Google Analytics?</label>
-			<label index="t3d_searchengine.google_analytics.id">Google Analytics ID</label>
-			<label index="t3d_searchengine.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
+			<label index="t3d_webanalytic.etracker.id">E-Tracker id</label>
+			<label index="t3d_webanalytic.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.range_areas">E-Tracker range (et_areas):e.g. 1|-2</label>
+			<label index="t3d_webanalytic.etracker.areas_splitchar">E-Tracker separator char (et_areas):,=default or /=area-dependent evaluation</label>
+			<label index="t3d_webanalytic.etracker.range_pagename">E-Tracker range pagename(et_pagename):-> e.g. 1|-1</label>
+			<label index="t3d_webanalytic.etracker.pagename_splitchar">E-Tracker separator char (et_pagename):e.g. %20->%20</label>
+			<label index="t3d_webanalytic.etracker.ilevel_all">Rating default level(et_ilevel):-> 0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_1">Rating level 1(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_2">Rating level 2(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_3">Rating level 3(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_4">Rating level 4(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_5">Rating level 5(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_6">Rating level 6(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.google_ver.id">Google site verification id</label>
+			<label index="t3d_webanalytic.google_ver.enable">Enable Google site verification?</label>
+			<label index="t3d_webanalytic.google_analytics.enable">Enable Google Analytics?</label>
+			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
+			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Entry level of main navigation</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Exclude page ids from main navigation</label>
@@ -171,7 +171,7 @@
 			<label index="t3d_basis.ts_css">Lade TS ts_css</label>
 			<label index="t3d_basis.ts_objekte">Lade TS ts_objekte</label>
 			<label index="t3d_basis.ts_navigation">Lade TS ts_navigation</label>
-			<label index="t3d_basis.t3d_searchengine">Lade TS t3d_searchengine:Etracker und google(muß aktiviert werden)</label>
+			<label index="t3d_basis.t3d_webanalytic">Lade TS t3d_webanalytic:Etracker und google(muß aktiviert werden)</label>
 			<label index="t3d_basis.ts_funktionen">Lade TS ts_funktionen</label>
 			<label index="t3d_basis.ts_js">Lade TS ts_js</label>
       
@@ -202,26 +202,26 @@
 			<label index="t3d_grid.col_margin">Breite eines Spaltenabstands(px):z.b. 20</label>
 			<label index="t3d_grid.unity">Einheit des Grids:z.b.</label>
       
-			<label index="t3d_searchengine.etracker.id">E-Tracker ID</label>
-			<label index="t3d_searchengine.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
-			<label index="t3d_searchengine.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
-			<label index="t3d_searchengine.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>
-			<label index="t3d_searchengine.etracker.areas_splitchar">E-Tracker Trennerzeichen (et_areas):,=Standard und /=Bereichsabhaengige Auswertung</label>
-			<label index="t3d_searchengine.etracker.range_pagename">E-Tracker Bereich Seitenname (et_pagename):z.b. 1|-1</label>
-			<label index="t3d_searchengine.etracker.pagename_splitchar">E-Tracker Trennerzeichen (et_pagename):z.b. %20->%20</label>
-			<label index="t3d_searchengine.etracker.ilevel_all">Bewertung Standard Level(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_1">Bewertung Level 1(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_2">Bewertung Level 2(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_3">Bewertung Level 3(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_4">Bewertung Level 4(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_5">Bewertung Level 5(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
-			<label index="t3d_searchengine.google_ver.id">Google Seiten Verifizierung ID</label>
-			<label index="t3d_searchengine.google_ver.enable">Google Seiten Verifizierung aktivieren?</label>
-			<label index="t3d_searchengine.google_analytics.enable">Enable Google Analytics?</label>
-			<label index="t3d_searchengine.google_analytics.id">Google Analytics ID</label>
-			<label index="t3d_searchengine.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.id">E-Tracker ID</label>
+			<label index="t3d_webanalytic.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
+			<label index="t3d_webanalytic.etracker.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
+			<label index="t3d_webanalytic.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>
+			<label index="t3d_webanalytic.etracker.areas_splitchar">E-Tracker Trennerzeichen (et_areas):,=Standard und /=Bereichsabhaengige Auswertung</label>
+			<label index="t3d_webanalytic.etracker.range_pagename">E-Tracker Bereich Seitenname (et_pagename):z.b. 1|-1</label>
+			<label index="t3d_webanalytic.etracker.pagename_splitchar">E-Tracker Trennerzeichen (et_pagename):z.b. %20->%20</label>
+			<label index="t3d_webanalytic.etracker.ilevel_all">Bewertung Standard Level(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_1">Bewertung Level 1(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_2">Bewertung Level 2(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_3">Bewertung Level 3(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_4">Bewertung Level 4(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_5">Bewertung Level 5(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.etracker.ilevel_6">Bewertung Level 6(et_ilevel):0-10</label>
+			<label index="t3d_webanalytic.google_ver.id">Google Seiten Verifizierung ID</label>
+			<label index="t3d_webanalytic.google_ver.enable">Google Seiten Verifizierung aktivieren?</label>
+			<label index="t3d_webanalytic.google_analytics.enable">Enable Google Analytics?</label>
+			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
+			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Event Tracker für Downloads aktivieren:*.pdf,*.zip</label>
       
 			<label index="t3d_navigation.nav_main_entryLevel">Hauptnavigation Einstiegslevel</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Hauptnavigation Seiten ausschließen</label>

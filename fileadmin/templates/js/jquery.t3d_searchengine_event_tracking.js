@@ -1,5 +1,5 @@
 /**
- * Title:         TYPO3 Defaults - Searchengine - Event Tracker
+ * Title:         TYPO3 Defaults - webanalytic - Event Tracker
  * Version:       0.1
  * Author:        Niels Tiedt (nt[AT]typo3-coders.org)
  * Date Created:  2013-11-28
@@ -9,7 +9,7 @@
  */
 
 (function($) {
-  $.fn.t3d_searchengine_event_tracking = function( options ) {
+  $.fn.t3d_webanalytic_event_tracking = function( options ) {
     var defaults = {
       config_baseurl: '',
       etracker_eventtracker: 1,
@@ -144,13 +144,13 @@
       window.console.log( 'settings.e_action: ' + settings.e_action );
       window.console.log( 'settings.e_pageurl: ' + settings.e_pageurl );
     }else{
-      if($('.debug.t3d_searchengine_event_tracking').length<1){
-        $('body').append('<div class="debug t3d_searchengine_event_tracking" style="width: auto; height: 100%; padding: 10px;position: fixed;right:0;overflow: scroll;background-color: whitesmoke;"><h3>Debug:</h3></div>');
+      if($('.debug.t3d_webanalytic_event_tracking').length<1){
+        $('body').append('<div class="debug t3d_webanalytic_event_tracking" style="width: auto; height: 100%; padding: 10px;position: fixed;right:0;overflow: scroll;background-color: whitesmoke;"><h3>Debug:</h3></div>');
       }
-      $('.debug.t3d_searchengine_event_tracking').append( 'settings.e_cat: ' + settings.e_cat + '<br>');
-      $('.debug.t3d_searchengine_event_tracking').append( 'settings.e_label: ' + settings.e_label + '<br>');
-      $('.debug.t3d_searchengine_event_tracking').append( 'settings.e_action: ' + settings.e_action + '<br>');
-      $('.debug.t3d_searchengine_event_tracking').append( 'settings.e_pageurl: ' + settings.e_pageurl + '<br><hr>');
+      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_cat: ' + settings.e_cat + '<br>');
+      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_label: ' + settings.e_label + '<br>');
+      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_action: ' + settings.e_action + '<br>');
+      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_pageurl: ' + settings.e_pageurl + '<br><hr>');
     }
   }
 })(jQuery);

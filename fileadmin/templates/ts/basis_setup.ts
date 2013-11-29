@@ -463,5 +463,5 @@ page.10000{
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/objekte_setup.ts">
 
 ### E-Tracker ###
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_searchengine.ts">
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_webanalytic.ts">
 #----------------------------------------------------------- EXTERNAL-TS-SCRIPT-FILE-INCLUDE-END

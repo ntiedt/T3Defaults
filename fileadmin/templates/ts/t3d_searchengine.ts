@@ -3,12 +3,12 @@
 
 #----------------------------------------------------------- BEREICHE(et_areas)-BEGIN
 temp.etrackerareas = HMENU
-temp.etrackerareas.special.range = {$t3d_searchengine.etracker.range_areas}
+temp.etrackerareas.special.range = {$t3d_webanalytic.etracker.range_areas}
 temp.etrackerareas.special = rootline
 temp.etrackerareas.includeNotInMenu = 1
 temp.etrackerareas.1 = TMENU
 temp.etrackerareas.1 {
-  NO.allWrap = | {$t3d_searchengine.etracker.areas_splitchar} |*||*| |
+  NO.allWrap = | {$t3d_webanalytic.etracker.areas_splitchar} |*||*| |
   NO.doNotLinkIt = 1
 }
 #----------------------------------------------------------- BEREICHE(et_areas)-END
@@ -16,8 +16,8 @@ temp.etrackerareas.1 {
 
 #----------------------------------------------------------- SEITENNAME(et_pagename)-BEGIN
 temp.etrackerpagename < temp.etrackerareas 
-temp.etrackerpagename.special.range = {$t3d_searchengine.etracker.range_pagename}
-temp.etrackerpagename.1.NO.allWrap = | {$t3d_searchengine.etracker.pagename_splitchar}  |*||*| |
+temp.etrackerpagename.special.range = {$t3d_webanalytic.etracker.range_pagename}
+temp.etrackerpagename.1.NO.allWrap = | {$t3d_webanalytic.etracker.pagename_splitchar}  |*||*| |
 #----------------------------------------------------------- SEITENNAME(et_pagename)-END
 
 
@@ -40,25 +40,25 @@ temp.etrackerurl{
 
 #----------------------------------------------------------- BESUCHERINTERESSE(et_ilevel)-BEGIN
 temp.etrackerilevel=TEXT
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_all}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_all}
 
 [treeLevel = 1]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_1}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_1}
 [global]
 [treeLevel = 2]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_2}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_2}
 [global]
 [treeLevel = 3]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_3}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_3}
 [global]
 [treeLevel = 4]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_4}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_4}
 [global]
 [treeLevel = 5]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_5}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_5}
 [global]
 [treeLevel = 6]
-temp.etrackerilevel.value = {$t3d_searchengine.etracker.ilevel_6}
+temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_6}
 [global]
 #----------------------------------------------------------- BESUCHERINTERESSE(et_ilevel)-END
 
@@ -73,13 +73,13 @@ temp.etrackerjavascript.10.value (
 <!-- without the express prior written permission of the copyright holder. -->
 
 <!-- BEGIN etracker Tracklet 3.0 -->
-<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.etracker.com/t.js?et={$t3d_searchengine.etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
+<script type="text/javascript">document.write(String.fromCharCode(60)+"script type=\"text/javascript\" src=\"http"+("https:"==document.location.protocol?"s":"")+"://code.etracker.com/t.js?et={$t3d_webanalytic.etracker.id}\">"+String.fromCharCode(60)+"/script>");</script>
 
 <!-- etracker PARAMETER 3.0 -->
 <script type="text/javascript">
 )
 
-[globalVar = LIT:1 = {$t3d_searchengine.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
 temp.etrackerjavascript.10.value >
 temp.etrackerjavascript.10.value(
 
@@ -126,7 +126,7 @@ var et_lpage        = "0";
 var et_trig         = "";
 var et_se           = "0";
 )
-[globalVar = LIT:1 = {$t3d_searchengine.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
 temp.etrackerjavascript.55 = TEXT
 temp.etrackerjavascript.55.value(
 }
@@ -135,7 +135,7 @@ temp.etrackerjavascript.55.value(
   var et_init = function(){     
     var et = document.createElement('script'); 
     et.src = 'http'+('https:'==document.location.protocol?'s':'') 
-  +'://code.etracker.com/a.js?et={$t3d_searchengine.etracker.id}'; 
+  +'://code.etracker.com/a.js?et={$t3d_webanalytic.etracker.id}'; 
     var head = document.getElementsByTagName('head')[0]; 
     head.insertBefore(et, head.firstChild); 
   }; 
@@ -158,12 +158,12 @@ temp.etrackerjavascript.60.value (
 
 </script>
 <script type="text/javascript">_etc();</script>
-<noscript><p><a href="www.etracker.com"><img style="border:0px;" alt="" src="http://www.etracker.com/nscnt.php?et={$t3d_searchengine.etracker.id}" /></a></p></noscript>
+<noscript><p><a href="www.etracker.com"><img style="border:0px;" alt="" src="http://www.etracker.com/nscnt.php?et={$t3d_webanalytic.etracker.id}" /></a></p></noscript>
 <!-- etracker CODE NOSCRIPT 3.0 -->
 <noscript>
-<p><a href='http://www.etracker.de/app?et={$t3d_searchengine.etracker.id}'>
+<p><a href='http://www.etracker.de/app?et={$t3d_webanalytic.etracker.id}'>
 <img style='border:0px;' alt='' src='http://www.etracker.de/cnt.php?
-et={$t3d_searchengine.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
+et={$t3d_webanalytic.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 &amp;et_pagename=
 &amp;et_areas=&amp;et_ilevel=0&amp;et_target=,0,,0
 &amp;et_lpage=0&amp;et_trig=&amp;et_se=0&amp;et_cust=0
@@ -174,11 +174,11 @@ et={$t3d_searchengine.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 
 <!-- etracker CODE END -->
 )
-[globalVar = LIT:1 = {$t3d_searchengine.etracker.asnch_enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch_enable}]
 temp.etrackerjavascript.60 >
 [global]
 
-[globalVar = LIT:1 = {$t3d_searchengine.google_analytics.enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.google_analytics.enable}]
 temp.googlejavascript = COA
 temp.googlejavascript.1 = LOAD_REGISTER
 temp.googlejavascript.1{
@@ -193,13 +193,13 @@ temp.googlejavascript.10(
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{t3d_searchengine.google_analytics.id}', '{register:HTTP_HOST}');
+  ga('create', '{t3d_webanalytic.google_analytics.id}', '{register:HTTP_HOST}');
   ga('send', 'pageview');
 </script>
 )
 [global]
 
-[globalVar = LIT:1 = {$t3d_basis.t3d_searchengine}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
 page.1001 = COA
 page.1001.10 < temp.etrackerjavascript
 page.1001.10 < temp.googlejavascript
@@ -209,9 +209,9 @@ page.1001.10 < temp.googlejavascript
 
 #----------------------------------------------------------- GOOGLE-BEGIN
 ### Google Verifizierung ###
-[globalVar = LIT:1 = {$t3d_searchengine.google_ver.enable}]
+[globalVar = LIT:1 = {$t3d_webanalytic.google_ver.enable}]
 page.meta.verify-v1.cObject = COA
 page.meta.verify-v1.cObject.10 = TEXT
-page.meta.verify-v1.cObject.10.value= {$t3d_searchengine.google_ver.id}
+page.meta.verify-v1.cObject.10.value= {$t3d_webanalytic.google_ver.id}
 [global]
 #----------------------------------------------------------- GOOGLE-END
