@@ -147,60 +147,62 @@ var jquery_speed = '{$t3d_jquery.speed}';
     wrap = var max_cols = |;
     value = {$t3d_grid.max_cols}
   }
-  92 = TEXT
-  92{
-    wrap = var etracker_eventtracker = |;
-    value = {$t3d_webanalytic.etracker.eventtracker.enable}
-  }
-  94 = TEXT
-  94{
-    wrap = var google_analytics_eventtracker = |;
-    value = {$t3d_webanalytic.google_analytics.eventtracker.enable}
-  }
-  100 = TEXT
-  100.value(
+  1000 = TEXT
+  1000.value(
 </script>
   )
 }
-
-[global]
-
 page.footerData.150 = COA
 page.footerData.150{
-  wrap = <script>|</script>
-}
-
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = LIT:1 = {$styles.content.imgtext.linkWrap.lightboxEnabled}]
-page.footerData.150{
+  wrap = |
+  1 = TEXT
+  1.value(
+<script type="text/javascript">
+  )
   10 = TEXT
   10.value(
-    jQuery(function(j){      
-      
-      /* COLORBOX: http://www.jacklmoore.com/colorbox */
-
-      if(jQuery().colorbox){
-        j('a.lightbox').colorbox({
-          onOpen:function(){
-            big_title = '<div class="big_title col span_17"><h1 class="color-3">Bildergallerie</h1></div>';
-            logo = '<div class="logo col span_7"><img width="324" height="158" border="0" alt="" src="fileadmin/templates/image/obj_logo.png"></div>';
-            j('#cboxTopCenter').append(big_title+logo);
-          },
-          'maxWidth': '100%',
-          'top': '0',
+    var etracker_eventtracker = {$t3d_webanalytic.etracker.eventtracker.enable};
+    var google_analytics_eventtracker = {$t3d_webanalytic.google_analytics.eventtracker.enable};
+    var eventtracker_debug = {$t3d_webanalytic.eventtracker.debug};
+    jQuery('body a').t3d_webanalytic_event_tracking({
+      config_baseurl: config_baseurl,
+      debug: eventtracker_debug 
+    });
   )
   20 = TEXT
   20.value(
-          'current': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.current}',
-          'previous': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.previous}',
-          'next': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.next}',
-          'close': '{LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.close}'
+    lightboxEnabled = {$styles.content.imgtext.linkWrap.lightboxEnabled};
+    big_title = '<div class="big_title col span_17"><h1 class="color-3">Bildergallerie</h1></div>';
+    logo = '<div class="logo col span_7"><img width="324" height="158" border="0" alt="" src="fileadmin/templates/image/obj_logo.png"></div>';
+    maxWidth = '100%';
+    top = '0';
   )
-  20.insertData = 1
-  30 = TEXT
-  30.value(
-        });
-      }
-    });
+  30 = COA
+  30{
+    10 = TEXT
+    10{
+      wrap = var current = '|';
+      data = LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.current
+    }
+    20 = TEXT
+    20{
+      wrap = var previous = '|';
+      data = LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.previous
+    }
+    30 = TEXT
+    30{
+      wrap = var next = '|';
+      data = LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.next
+    }
+    40 = TEXT
+    40{
+      wrap = var close = '|';
+      data = LLL:fileadmin/templates/ts/locallang/t3d.xml:lightbox.close
+    }
+  }
+  1000 = TEXT
+  1000.value(
+</script>
   )
 }
 [global]
@@ -208,17 +210,6 @@ page.footerData.150{
 [globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker.enable}] OR [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker.enable}]
 page.includeJSFooter{
   t3d_webanalytic_event_tracking = {$t3d_pfade.tmpls}js/jquery.t3d_webanalytic_event_tracking.js
-}
-page.footerData.150{
-  20 = TEXT
-  20.value(
-  
-      /* Event Tracker */
-      j('body a').t3d_searchengine_event_tracking({
-        config_baseurl: '{$t3d_config.baseURL}',
-        debug:{$t3d_webanalytic.eventtracker.debug}
-      });
-  )
 }
 [global]
 

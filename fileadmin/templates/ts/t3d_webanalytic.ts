@@ -186,7 +186,8 @@ temp.googlejavascript.1{
   HTTP_HOST.cObject.data = getIndpEnv:HTTP_HOST
 }
 temp.googlejavascript.10 = TEXT
-temp.googlejavascript.10(
+temp.googlejavascript.10.value(
+<!-- google CODE BEGIN -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -196,13 +197,14 @@ temp.googlejavascript.10(
   ga('create', '{t3d_webanalytic.google_analytics.id}', '{register:HTTP_HOST}');
   ga('send', 'pageview');
 </script>
+<!-- google CODE END -->
 )
 [global]
 
 [globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
 page.1001 = COA
 page.1001.10 < temp.etrackerjavascript
-page.1001.10 < temp.googlejavascript
+page.1001.20 < temp.googlejavascript
 [global]
 #----------------------------------------------------------- JS-END
 

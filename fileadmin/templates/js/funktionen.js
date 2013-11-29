@@ -51,6 +51,31 @@ jQuery(function(j){
     j('form.powermail_form .powermail_field:first').val(job);
   };
   
+//   /* COLORBOX: http://www.jacklmoore.com/colorbox */
+//   if(lightboxEnabled==1){
+//     if(jQuery().colorbox){
+//       j('a.lightbox').colorbox({
+//         onOpen:function(){
+//           j('#cboxTopCenter').append(big_title+logo);
+//         },
+//         'maxWidth': maxWidth,
+//         'top': top,
+//         'current': current,
+//         'previous': previous,
+//         'next': next,
+//         'close': close
+//       });
+//     }
+//   }
+  
+  /* Event Tracker */
+  if( (etracker_eventtracker==1) || (google_analytics_eventtracker==1) ){
+    j('body a').t3d_webanalytic_event_tracking({
+      config_baseurl: config_baseurl,
+      debug: eventtracker_debug 
+    });
+  }
+  
   
   /* FLEXSLIDER: */
   if(jQuery().flexslider){
