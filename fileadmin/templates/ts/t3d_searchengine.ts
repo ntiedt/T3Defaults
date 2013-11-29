@@ -131,18 +131,22 @@ temp.etrackerjavascript.55 = TEXT
 temp.etrackerjavascript.55.value(
 }
 
-(function(){ 
+(function(){
   var et_init = function(){     
-  var et = document.createElement('script'); 
-  et.src = 'http'+('https:'==document.location.protocol?'s':'') 
-+'://code.etracker.com/a.js?et={$t3d_searchengine.etracker.id}'; 
-  var head = document.getElementsByTagName('head')[0]; 
-  head.insertBefore(et, head.firstChild); 
+    var et = document.createElement('script'); 
+    et.src = 'http'+('https:'==document.location.protocol?'s':'') 
+  +'://code.etracker.com/a.js?et={$t3d_searchengine.etracker.id}'; 
+    var head = document.getElementsByTagName('head')[0]; 
+    head.insertBefore(et, head.firstChild); 
   }; 
   window.addEventListener 
     ? window.addEventListener('load', et_init, false) 
     : window.attachEvent('onload', et_init); 
-  })(); 
+})(); 
+
+var ET_Event = { 
+  link: function() {  } 
+}
 </script> 
 <!-- etracker Tracklet END -->
 )
@@ -174,17 +178,40 @@ et={$t3d_searchengine.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 temp.etrackerjavascript.60 >
 [global]
 
+[globalVar = LIT:1 = {$t3d_searchengine.google_analytics.enable}]
+temp.googlejavascript = COA
+temp.googlejavascript.1 = LOAD_REGISTER
+temp.googlejavascript.1{
+  HTTP_HOST.cObject = TEXT
+  HTTP_HOST.cObject.data = getIndpEnv:HTTP_HOST
+}
+temp.googlejavascript.10 = TEXT
+temp.googlejavascript.10(
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{t3d_searchengine.google_analytics.id}', '{register:HTTP_HOST}');
+  ga('send', 'pageview');
+</script>
+)
+[global]
+
 [globalVar = LIT:1 = {$t3d_basis.t3d_searchengine}]
-page.1001 < temp.etrackerjavascript
+page.1001 = COA
+page.1001.10 < temp.etrackerjavascript
+page.1001.10 < temp.googlejavascript
 [global]
 #----------------------------------------------------------- JS-END
 
 
 #----------------------------------------------------------- GOOGLE-BEGIN
 ### Google Verifizierung ###
-[globalVar = LIT:1 = {$t3d_searchengine.google.enable}]
+[globalVar = LIT:1 = {$t3d_searchengine.google_ver.enable}]
 page.meta.verify-v1.cObject = COA
 page.meta.verify-v1.cObject.10 = TEXT
-page.meta.verify-v1.cObject.10.value= {$t3d_searchengine.google.id}
+page.meta.verify-v1.cObject.10.value= {$t3d_searchengine.google_ver.id}
 [global]
 #----------------------------------------------------------- GOOGLE-END

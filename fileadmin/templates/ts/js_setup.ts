@@ -147,6 +147,16 @@ var jquery_speed = '{$t3d_jquery.speed}';
     wrap = var max_cols = |;
     value = {$t3d_grid.max_cols}
   }
+  92 = TEXT
+  92{
+    wrap = var etracker_eventtracker = |;
+    value = {$t3d_searchengine.etracker.eventtracker.enable}
+  }
+  94 = TEXT
+  94{
+    wrap = var google_analytics_eventtracker = |;
+    value = {$t3d_searchengine.google_analytics.eventtracker.enable}
+  }
   100 = TEXT
   100.value(
 </script>
@@ -192,9 +202,9 @@ page.footerData.150{
 }
 [global]
 
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalVar = LIT:1 = {$t3d_searchengine.etracker.eventtracker_enable}]
+[globalVar = LIT:1 = {$t3d_searchengine.etracker.eventtracker_enable}] AND [globalVar = LIT:1 = {$t3d_searchengine.google.eventtracker_enable}]
 page.includeJSFooter{
-  etracker_event_tracking = {$t3d_pfade.tmpls}js/etracker_event_tracking.js
+  t3d_searchengine_event_tracking = {$t3d_pfade.tmpls}js/t3d_searchengine_event_tracking.js
 }
 [global]
 
