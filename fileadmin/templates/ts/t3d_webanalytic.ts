@@ -131,6 +131,10 @@ temp.etrackerjavascript.55 = TEXT
 temp.etrackerjavascript.55.value(
 }
 
+var ET_Event = { 
+  link: function() {  } 
+}
+
 (function(){
   var et_init = function(){     
     var et = document.createElement('script'); 
@@ -143,10 +147,6 @@ temp.etrackerjavascript.55.value(
     ? window.addEventListener('load', et_init, false) 
     : window.attachEvent('onload', et_init); 
 })(); 
-
-var ET_Event = { 
-  link: function() {  } 
-}
 </script> 
 <!-- etracker Tracklet END -->
 )
