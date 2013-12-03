@@ -1,4 +1,7 @@
-### JAVASCRIPT INCLUDES ANFANG
+###
+### JAVASCRIPT INCLUDES ANFANG ###
+
+#----------------------------------------------------------- INCLUDEJSFOOTER-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_js}]
 page.includeJSFooter{
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
@@ -10,7 +13,9 @@ page.includeJSFooter{
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 [global]
+#----------------------------------------------------------- INCLUDEJSFOOTER-END
 
+#----------------------------------------------------------- INCLUDEJSFOOTER-DEBUG-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = GP:debug == 1]
 page.includeJSFooter{
   jquery >
@@ -27,8 +32,10 @@ page.includeJSFooter{
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 [global]
+#----------------------------------------------------------- INCLUDEJSFOOTER-DEBUG-END
 
 
+#----------------------------------------------------------- HEADERDATA-VARS-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_js}]
 page.headerData.150 = COA
 page.headerData.150{
@@ -152,6 +159,18 @@ var jquery_speed = '{$t3d_jquery.speed}';
 </script>
   )
 }
+#----------------------------------------------------------- HEADERDATA-VARS-END
+
+#----------------------------------------------------------- HEADERDATA-MOBILE-BEGIN
+[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalString = IENV:HTTP_HOST=m.*]
+page.headerData.150{
+  24.10.value=1
+}
+[global]
+#----------------------------------------------------------- HEADERDATA-MOBILE-END
+
+
+#----------------------------------------------------------- FOOTERDATA-BEGIN
 page.footerData.150 = COA
 page.footerData.150{
   wrap = |
@@ -164,10 +183,6 @@ page.footerData.150{
     var etracker_eventtracker = {$t3d_webanalytic.etracker.eventtracker.enable};
     var google_analytics_eventtracker = {$t3d_webanalytic.google_analytics.eventtracker.enable};
     var eventtracker_debug = {$t3d_webanalytic.eventtracker.debug};
-    jQuery('body a').t3d_webanalytic_event_tracking({
-      config_baseurl: config_baseurl,
-      debug: eventtracker_debug 
-    });
   )
   20 = TEXT
   20.value(
@@ -206,16 +221,12 @@ page.footerData.150{
   )
 }
 [global]
+#----------------------------------------------------------- FOOTERDATA-END
 
-[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker.enable}] OR [globalVar = LIT:1 = {$t3d_webanalytic.google.eventtracker.enable}]
+#----------------------------------------------------------- FOOTERDATA-WEBANALYTIC-BEGIN
+[globalVar = LIT:1 = {$t3d_webanalytic.etracker.eventtracker.enable}] || [globalVar = LIT:1 = {$t3d_webanalytic.google_analytics.eventtracker.enable}]
 page.includeJSFooter{
   t3d_webanalytic_event_tracking = {$t3d_pfade.tmpls}js/jquery.t3d_webanalytic_event_tracking.js
 }
 [global]
-
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalString = IENV:HTTP_HOST=m.*]
-page.headerData.150{
-  24.10.value=1
-}
-[global]
-### JAVASCRIPT INCLUDES ENDE
+#----------------------------------------------------------- FOOTERDATA-WEBANALYTIC-END
