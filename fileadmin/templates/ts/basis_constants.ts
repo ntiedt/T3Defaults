@@ -114,8 +114,8 @@ t3d_basis{
   #cat=t3d_basis/enable/86; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_objekte
   t3d_objekte = 1
   
-  #cat=t3d_basis/enable/88; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_navigation
-  ts_navigation = 1
+  #cat=t3d_basis/enable/88; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_navigation
+  t3d_navigation = 1
   
   #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_webanalytic
   t3d_webanalytic = 1
