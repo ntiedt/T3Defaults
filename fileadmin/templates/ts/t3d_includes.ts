@@ -17,9 +17,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
 #----------------------------------------------------------- FUNKTIONEN_SETUP-END
 
-#----------------------------------------------------------- CSS_SETUP-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_setup.ts">
-#----------------------------------------------------------- CSS_SETUP-END
+#----------------------------------------------------------- T3D_CSS-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_css.ts">
+#----------------------------------------------------------- T3D_CSS-END
 
 #----------------------------------------------------------- JS_SETUP-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/js_setup.ts">
