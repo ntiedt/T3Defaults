@@ -21,9 +21,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_css.ts">
 #----------------------------------------------------------- T3D_CSS-END
 
-#----------------------------------------------------------- JS_SETUP-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/js_setup.ts">
-#----------------------------------------------------------- JS_SETUP-END
+#----------------------------------------------------------- T3D_JS-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_js.ts">
+#----------------------------------------------------------- T3D_JS-END
 
 #----------------------------------------------------------- T3D_NAVIGATION-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_navigation.ts">

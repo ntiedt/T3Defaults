@@ -2,7 +2,7 @@
 ### JAVASCRIPT ###
 
 #----------------------------------------------------------- INCLUDEJSFOOTER-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_js}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_js}]
 page.includeJSFooter{
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
   jquery.disableCompression = 1
@@ -16,7 +16,7 @@ page.includeJSFooter{
 #----------------------------------------------------------- INCLUDEJSFOOTER-END
 
 #----------------------------------------------------------- INCLUDEJSFOOTER-DEBUG-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] && [globalVar = GP:debug == 1]
+[globalVar = LIT:1 = {$t3d_basis.t3d_js}] && [globalVar = GP:debug == 1]
 page.includeJSFooter{
   jquery >
   jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
@@ -36,7 +36,7 @@ page.includeJSFooter{
 
 
 #----------------------------------------------------------- HEADERDATA-VARS-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_js}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_js}]
 page.headerData.150 = COA
 page.headerData.150{
   wrap = |
@@ -162,7 +162,7 @@ var jquery_speed = '{$t3d_jquery.speed}';
 #----------------------------------------------------------- HEADERDATA-VARS-END
 
 #----------------------------------------------------------- HEADERDATA-MOBILE-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_js}] AND [globalString = IENV:HTTP_HOST=m.*]
+[globalVar = LIT:1 = {$t3d_basis.t3d_js}] AND [globalString = IENV:HTTP_HOST=m.*]
 page.headerData.150{
   24.10.value=1
 }
