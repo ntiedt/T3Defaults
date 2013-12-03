@@ -29,9 +29,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/navigation_setup.ts">
 #----------------------------------------------------------- NAVIGATION_SETUP-END
 
-#----------------------------------------------------------- OBJEKTE_SETUP-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/objekte_setup.ts">
-#----------------------------------------------------------- OBJEKTE_SETUP-END
+#----------------------------------------------------------- T3D_OBJEKTE-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_objekte.ts">
+#----------------------------------------------------------- T3D_OBJEKTE-END
 
 #----------------------------------------------------------- T3D_WEBANALYTIC-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_webanalytic.ts">

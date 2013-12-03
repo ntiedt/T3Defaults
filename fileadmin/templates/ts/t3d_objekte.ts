@@ -66,7 +66,7 @@ tmp.objs{
 #----------------------------------------------------------- OBJS-END
 
 #----------------------------------------------------------- OBJ-INCLUDES-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_objekte}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_objekte}]
 lib.obj_logo < tmp.obj_logo
 lib.obj_claim < tmp.obj_claim
 lib.obj_search < tmp.obj_search

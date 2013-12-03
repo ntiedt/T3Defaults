@@ -46,7 +46,7 @@
 			<label index="t3d_basis.ts_css_styled_content">Load TS css_styled_content</label>
 			<label index="t3d_basis.ts_seitentypen">Load TS ts_seitentypen</label>
 			<label index="t3d_basis.t3d_css">Load TS t3d_css</label>
-			<label index="t3d_basis.ts_objekte">Load TS ts_objekte</label>
+			<label index="t3d_basis.t3d_objekte">Load TS t3d_objekte</label>
 			<label index="t3d_basis.ts_navigation">Load TS ts_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Load TS t3d_webanalytic:Etracker and google(needs to activate)</label>
 			<label index="t3d_basis.t3d_funktionen">Load TS t3d_funktionen</label>
@@ -170,7 +170,7 @@
 			<label index="t3d_basis.ts_css_styled_content">Lade TS css_styled_content</label>
 			<label index="t3d_basis.ts_seitentypen">Lade TS t3d_seitentypen</label>
 			<label index="t3d_basis.t3d_css">Lade TS t3d_css</label>
-			<label index="t3d_basis.ts_objekte">Lade TS ts_objekte</label>
+			<label index="t3d_basis.t3d_objekte">Lade TS t3d_objekte</label>
 			<label index="t3d_basis.ts_navigation">Lade TS ts_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Lade TS t3d_webanalytic:Etracker und google(muß aktiviert werden)</label>
 			<label index="t3d_basis.t3d_funktionen">Lade TS t3d_funktionen</label>
