@@ -105,7 +105,7 @@ lib.parseFunc {
 # good old parsefunc in "styles.content.parseFunc" is created for backwards compatibility. Don't use it, just ignore.
 styles.content.parseFunc < lib.parseFunc
 
-# Creates persistent ParseFunc setup for RTE content (which is mainly HTML) based on the "ts_css" transformation.
+# Creates persistent ParseFunc setup for RTE content (which is mainly HTML) based on the "t3d_css" transformation.
 lib.parseFunc_RTE < lib.parseFunc
 lib.parseFunc_RTE {
 	//  makelinks >

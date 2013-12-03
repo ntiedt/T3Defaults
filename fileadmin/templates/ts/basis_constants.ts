@@ -108,8 +108,8 @@ t3d_basis{
   #cat=t3d_basis/enable/82; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_seitentypen
   ts_seitentypen = 1
   
-  #cat=t3d_basis/enable/84; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_css
-  ts_css = 1
+  #cat=t3d_basis/enable/84; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_css
+  t3d_css = 1
   
   #cat=t3d_basis/enable/86; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_objekte
   ts_objekte = 1
@@ -120,8 +120,8 @@ t3d_basis{
   #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_webanalytic
   t3d_webanalytic = 1
   
-  #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_funktionen
-  ts_funktionen = 0
+  #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_funktionen
+  t3d_funktionen = 0
   
   #cat=t3d_basis/enable/96; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_js
   ts_js = 1

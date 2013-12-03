@@ -2,7 +2,7 @@
 ### CSS ###
 
 #----------------------------------------------------------- INCLUDECSS-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_css}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_css}]
 page.includeCSS{
   reset = {$t3d_pfade.tmpls}css/reset.css
   ie = {$t3d_pfade.tmpls}css/ie.css
@@ -15,7 +15,7 @@ page.includeCSS{
 #----------------------------------------------------------- INCLUDECSS-END
 
 #----------------------------------------------------------- INCLUDECSS-DEBUG-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_css}] && [globalVar = GP:debug == 1]
+[globalVar = LIT:1 = {$t3d_basis.t3d_css}] && [globalVar = GP:debug == 1]
 page.includeCSS{
   reset = {$t3d_pfade.tmpls}css/reset.css
   ie = {$t3d_pfade.tmpls}css/ie.css
@@ -29,7 +29,7 @@ page.includeCSS{
 #----------------------------------------------------------- INCLUDECSS-DEBUG-END
 
 #----------------------------------------------------------- INCLUDECSS-MOBILE-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_css}] AND [globalString = IENV:HTTP_HOST=m.*]
+[globalVar = LIT:1 = {$t3d_basis.t3d_css}] AND [globalString = IENV:HTTP_HOST=m.*]
 page.includeCSS{
   normal >
   mobil = {$t3d_pfade.tmpls}css/mobil.css
@@ -38,7 +38,7 @@ page.includeCSS{
 #----------------------------------------------------------- INCLUDECSS-MOBILE-END
 
 #----------------------------------------------------------- DYN-CSS-PAGE-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_css}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_css}]
 css = PAGE
 css {
 	typeNum = {$t3d_seitentypen.a.typenum}

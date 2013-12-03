@@ -13,9 +13,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_seitentypen.ts">
 #----------------------------------------------------------- T3D_SEITENTYPEN-END
 
-#----------------------------------------------------------- FUNKTIONEN_SETUP-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/funktionen_setup.ts">
-#----------------------------------------------------------- FUNKTIONEN_SETUP-END
+#----------------------------------------------------------- T3D_FUNKTIONEN-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_funktionen.ts">
+#----------------------------------------------------------- T3D_FUNKTIONEN-END
 
 #----------------------------------------------------------- T3D_CSS-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_css.ts">
