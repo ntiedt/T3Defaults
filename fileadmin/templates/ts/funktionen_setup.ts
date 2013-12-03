@@ -1,7 +1,8 @@
 ###
 ### Funktionen ###
-[globalVar = LIT:1 = {$t3d_basis.ts_funktionen}]
 
+#----------------------------------------------------------- USERFUNC-DEMO-BEGIN
+[globalVar = LIT:1 = {$t3d_basis.ts_funktionen}]
 includeLibs.testMd5 = {$t3d_pfade.tmpls}ts/userfunc_funktionen.php
 temp.info = USER
 temp.info {
@@ -17,9 +18,10 @@ $get_vars = t3lib_div::_GET();
 page.XX < temp.info
 
 [global]
+#----------------------------------------------------------- USERFUNC-DEMO-END
 
 
-### Grid ###
+#----------------------------------------------------------- GRID-BEGIN
 [globalVar = LIT:1 = {$t3d_grid.enable}]
 
 includeLibs.grid = {$t3d_pfade.tmpls}php/grid.php
@@ -245,3 +247,4 @@ unity={$t3d_grid.unity}
 }
 
 [global]
+#----------------------------------------------------------- GRID-END

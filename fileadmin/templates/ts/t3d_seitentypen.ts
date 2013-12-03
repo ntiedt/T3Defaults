@@ -1,5 +1,7 @@
-### Seitentypen
+###
+### Seitentypen ###
 
+#----------------------------------------------------------- SEITENTYPEN-BEGIN
 #-Load content from table(specified in constants. default:tt_content) of current page, specified in constants or from page of the post var getid
 [globalVar = LIT:1 = {$t3d_basis.ts_seitentypen}]
 seitentypen_b = PAGE
@@ -58,3 +60,4 @@ seitentypen_b{
   }
 }
 [global]
+#----------------------------------------------------------- SEITENTYPEN-END

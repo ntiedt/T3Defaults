@@ -1,7 +1,6 @@
 ###
 ### CSS ###
 
-
 #----------------------------------------------------------- INCLUDECSS-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_css}]
 page.includeCSS{

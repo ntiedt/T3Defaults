@@ -1,7 +1,7 @@
 ##
 ## Navigation ###
 
-### Hauptnavigation ###
+#----------------------------------------------------------- NAV_HEADER-BEGIN
 tmp.nav_header = COA
 tmp.nav_header{
   10 = COA
@@ -38,7 +38,9 @@ tmp.nav_header{
     }
   }
 }
+#----------------------------------------------------------- NAV_HEADER-END
 
+#----------------------------------------------------------- NAV_MAIN-BEGIN
 ### Hauptnavigation ###
 tmp.nav_main = COA
 tmp.nav_main{
@@ -82,35 +84,9 @@ tmp.nav_main{
     }
   }
 }
-tmp.nav_main_level2 = COA
-tmp.nav_main_level2{
-  10 = COA
-  10{
-    wrap = <ul class="level-1">|</ul>
-    10 = HMENU
-    10{
-      entryLevel = {$t3d_navigation.nav_main_entryLevel}+1
-      excludeUidList = {$t3d_navigation.nav_main_excludeUidList}
-      1 = TMENU
-      1 {
-        IProcFunc = user_tmenulinebreak->main
-        expAll = 1
-        NO{
-          wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
-          ATagParams = class="level-1 norm color-1"
-          stdWrap.wrap = <span>|</span>
-        }
-        CUR < .NO
-        CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
-        CUR.ATagParams = class="level-1 click color-1"
-        CUR = 1
-        ACT < .CUR
-        ACT = 1
-      }
-    }
-  }
-}
+#----------------------------------------------------------- NAV_MAIN-END
 
+#----------------------------------------------------------- NAV_SUB-BEGIN
 ### Unternavigation ###
 tmp.nav_sub = COA
 tmp.nav_sub{
@@ -163,8 +139,9 @@ tmp.nav_sub{
     }
   }
 }
+#----------------------------------------------------------- NAV_SUB-END
 
-### Verlaufsnavigation ###
+#----------------------------------------------------------- NAV_ROOTLINE-BEGIN
 tmp.nav_rootline = COA
 tmp.nav_rootline{
   wrap = |
@@ -191,8 +168,10 @@ tmp.nav_rootline{
     }
   }
 }
+#----------------------------------------------------------- NAV_ROOTLINE-END
 
 
+#----------------------------------------------------------- NAV-INCLUDES-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.ts_navigation}]
 # Include tmenulinebreak script
 page.includeLibs.tmenulinebreak = {$t3d_pfade.tmpls}php/tmenulinebreak.php
@@ -203,3 +182,4 @@ lib.nav_main_level2 < tmp.nav_main_level2
 lib.nav_sub < tmp.nav_sub
 lib.nav_rootline < tmp.nav_rootline
 [global]
+#----------------------------------------------------------- NAV-INCLUDES-END

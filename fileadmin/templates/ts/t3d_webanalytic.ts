@@ -1,5 +1,5 @@
 ###
-### eTracker ###
+### Webanalytic ###
 
 #----------------------------------------------------------- BEREICHE(et_areas)-BEGIN
 temp.etrackerareas = HMENU
