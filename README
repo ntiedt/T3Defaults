@@ -1,6 +1,6 @@
 My TYPO3 Defaults
 
-Complete TYPO3 TS config for all things you need.
+Complete TYPO3 TS config/constant definition for all things i need.
 
 - Save it to your fileadmin (Use same folder structure)
 - Create a root TS template in BE
