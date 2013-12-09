@@ -143,6 +143,11 @@
       window.console.log( 'settings.e_label: ' + settings.e_label );
       window.console.log( 'settings.e_action: ' + settings.e_action );
       window.console.log( 'settings.e_pageurl: ' + settings.e_pageurl );
+    }else if($.debug){
+      $.debug(settings.e_cat);
+      $.debug(settings.e_label);
+      $.debug(settings.e_action);
+      $.debug(settings.e_pageurl);
     }else{
       if($('.debug.t3d_webanalytic_event_tracking').length<1){
         $('body').append('<div class="debug t3d_webanalytic_event_tracking" style="width: auto; height: 100%; padding: 10px;position: fixed;right:0;overflow: scroll;background-color: whitesmoke;"><h3>Debug:</h3></div>');
