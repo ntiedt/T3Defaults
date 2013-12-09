@@ -75,12 +75,15 @@
                     position: 'fixed',
                     top: 40,
                     left: 0,
+                    padding: '10px',
                     backgroundColor: 'white'
                   });
                 }
             }
             else{
-              $("#"+settings.divId).dialog( "open" );
+              if(jQuery.fn.dialog){
+                $("#"+settings.divId).dialog( "open" );
+              }
             }
         }
 

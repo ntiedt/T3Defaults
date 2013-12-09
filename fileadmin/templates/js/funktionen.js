@@ -54,19 +54,21 @@ jQuery(function(j){
   };
   
   /* COLORBOX: http://www.jacklmoore.com/colorbox */
-  if((lightboxEnabled==1) && (typeof lightboxEnabled!='undefined')){
-    if(jQuery().colorbox){
-      j('a.lightbox').colorbox({
-        onOpen:function(){
-          j('#cboxTopCenter').append(big_title+logo);
-        },
-        'maxWidth': maxWidth,
-        'top': top,
-        'current': current,
-        'previous': previous,
-        'next': next,
-        'close': close
-      });
+  if(typeof lightboxEnabled!='undefined'){
+    if(lightboxEnabled==1){
+      if(jQuery().colorbox){
+        j('a.lightbox').colorbox({
+          onOpen:function(){
+            j('#cboxTopCenter').append(big_title+logo);
+          },
+          'maxWidth': maxWidth,
+          'top': top,
+          'current': current,
+          'previous': previous,
+          'next': next,
+          'close': close
+        });
+      }
     }
   }
   
