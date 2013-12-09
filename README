@@ -1,1 +1,16 @@
 My TYPO3 Defaults
+
+Complete TYPO3 TS config for all things you need.
+
+- Save it to your fileadmin (Use same folder structure)
+- Create a root TS template in BE
+- Copy/paste basis_constants.ts into your constant field
+- Copy/paste <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/basis_setup.ts"> into your setup field
+- Include css_styled_content into your static template section
+- Save
+- Switch to template view -> constant editor
+- Select T3D_Config
+- Enter your base url
+- Save and view it in FE
+
+TAGS: config, navigation, objects, js, css, debug, user functions, grid, page types, exts, locallang, webanalytic.
