@@ -150,7 +150,17 @@
       $.debug(settings.e_pageurl);
     }else{
       if($('.debug.t3d_webanalytic_event_tracking').length<1){
-        $('body').append('<div class="debug t3d_webanalytic_event_tracking" style="width: auto; height: 100%; padding: 10px;position: fixed;right:0;overflow: scroll;background-color: whitesmoke;"><h3>Debug:</h3></div>');
+        $('body').prepend('<div class="debug t3d_webanalytic_event_tracking"></div>');
+        $('.debug.t3d_webanalytic_event_tracking').css({
+          width: 'auto',
+          position: 'fixed',
+          top: 40,
+          right: 10,
+          padding: '10px',
+          backgroundColor: 'white',
+          border: '1px solid #ccc',
+          boxShadow: '0 0 5px #ccc'
+        });
       }
       $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_cat: ' + settings.e_cat + '<br>');
       $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_label: ' + settings.e_label + '<br>');
