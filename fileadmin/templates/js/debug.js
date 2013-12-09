@@ -61,13 +61,23 @@
             if ($("#"+settings.divId).length == 0)
             {
                 $('body').append(vars.debugContainer);
-                $("#"+settings.divId).dialog({
-                  dialogClass: settings.divId,
-                  autoOpen: true,
-                  width: 'auto',
-                  closeOnEscape: false,
-                  position: { my: 'center top', at: 'center top+40', of: window }    
-                });
+                if(jQuery.fn.dialog){
+                  $("#"+settings.divId).dialog({
+                    dialogClass: settings.divId,
+                    autoOpen: true,
+                    width: 'auto',
+                    closeOnEscape: false,
+                    position: { my: 'center top', at: 'center top+40', of: window }    
+                  });
+                }else{
+                  $("#"+settings.divId).prependTo('body').css({
+                    width: 'auto',
+                    position: 'fixed',
+                    top: 40,
+                    left: 0,
+                    backgroundColor: 'white'
+                  });
+                }
             }
             else{
               $("#"+settings.divId).dialog( "open" );
