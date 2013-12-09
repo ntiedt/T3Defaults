@@ -1,9 +1,9 @@
 /**
  * Title:         TYPO3 Defaults - webanalytic - Event Tracker
- * Version:       0.1
+ * Version:       0.2
  * Author:        Niels Tiedt (nt[AT]typo3-coders.org)
  * Date Created:  2013-11-28
- * Date Modified: 2013-11-29
+ * Date Modified: 2013-12-09
  * URL:           
  * Contributors:  
  */
@@ -139,15 +139,13 @@
 
   var debug = function(settings){
     if ( window.console && window.console.log ) {
-      window.console.log( 'settings.e_cat: ' + settings.e_cat );
-      window.console.log( 'settings.e_label: ' + settings.e_label );
-      window.console.log( 'settings.e_action: ' + settings.e_action );
-      window.console.log( 'settings.e_pageurl: ' + settings.e_pageurl );
+      $.each(settings, function(name, value){
+        window.console.log( name + ': ' + value );
+      });
     }else if($.debug){
-      $.debug(settings.e_cat);
-      $.debug(settings.e_label);
-      $.debug(settings.e_action);
-      $.debug(settings.e_pageurl);
+      $.each(settings, function(name, value){
+        $.debug(value);
+      });
     }else{
       if($('.debug.t3d_webanalytic_event_tracking').length<1){
         $('body').prepend('<div class="debug t3d_webanalytic_event_tracking"></div>');
@@ -162,10 +160,9 @@
           boxShadow: '0 0 5px #ccc'
         });
       }
-      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_cat: ' + settings.e_cat + '<br>');
-      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_label: ' + settings.e_label + '<br>');
-      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_action: ' + settings.e_action + '<br>');
-      $('.debug.t3d_webanalytic_event_tracking').append( 'settings.e_pageurl: ' + settings.e_pageurl + '<br><hr>');
+      $.each(settings, function(name, value){
+        $('.debug.t3d_webanalytic_event_tracking').append( name + ': ' + value + '<br>');
+      });
     }
   }
 })(jQuery);
