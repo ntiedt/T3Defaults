@@ -74,9 +74,11 @@
                     width: 'auto',
                     position: 'fixed',
                     top: 40,
-                    left: 0,
+                    left: 10,
                     padding: '10px',
-                    backgroundColor: 'white'
+                    backgroundColor: 'white',
+                    border: '1px solid #ccc',
+                    boxShadow: '0 0 5px #ccc'
                   });
                 }
             }
