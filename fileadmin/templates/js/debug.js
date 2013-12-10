@@ -73,6 +73,7 @@
                   $("#"+settings.divId).prependTo('body').css({
                     width: 'auto',
                     position: 'fixed',
+                    zIndex: '99999',
                     top: 40,
                     left: 10,
                     padding: '10px',
