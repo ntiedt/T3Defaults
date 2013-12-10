@@ -31,6 +31,7 @@ tmp.obj_search{
   10 < plugin.tx_indexedsearch
   10{
     templateFile = {$t3d_pfade.tmpls}html/ext_indexed_search_mini.html
+    search.targetPid = {$t3d_basis.searchpageID}
   }
 }
 #----------------------------------------------------------- OBJ_SEARCH-END
