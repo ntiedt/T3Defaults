@@ -16,7 +16,7 @@
 
 <!-- ###SEARCH_FORM### begin -->
 <div class="tx-indexedsearch-searchbox searchbox-tmpl-css">
-<form action="###ACTION_URL###" method="post" id="tx_indexedsearch">
+<form action=###ACTION_URL### method="post" id="tx_indexedsearch">
 	<div>
 		<input type="hidden" name="tx_indexedsearch[_sections]" value="0" />
 		<input type="hidden" name="tx_indexedsearch[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_" />
@@ -25,7 +25,7 @@
 		<input type="hidden" name="###HIDDEN_FIELDNAME###" value="###HIDDEN_VALUE###" />
 		<!-- ###HIDDEN_FIELDS### end -->
 	</div>
-	<input type="text" name="tx_indexedsearch[sword]" value="###SWORD_VALUE###" id="tx-indexedsearch-searchbox-sword" class="tx-indexedsearch-searchbox-sword sword" placeholder="Search" />
+	<input type="text" name="tx_indexedsearch[sword]" value="###SWORD_VALUE###" id="tx-indexedsearch-searchbox-sword" class="tx-indexedsearch-searchbox-sword sword" placeholder="###FORM_SUBMIT###" />
   <input type="submit" name="tx_indexedsearch[submit_button]" value=">" id="tx-indexedsearch-searchbox-button-submit" class="tx-indexedsearch-searchbox-button submit" rel="#the_overlay" />
 </form>
 </div>

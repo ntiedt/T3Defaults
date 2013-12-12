@@ -169,6 +169,18 @@ plugin.tx_indexedsearch {
 		.tx-indexedsearch .info-tmpl-css dd.item-mtime { float:none; }
 		.tx-indexedsearch .info-tmpl-css dd.item-path { float:none; }
 	)
-	_LOCAL_LANG {
+	_LOCAL_LANG{
+    en{
+      submit_button_label = Search
+    }
+    fr{
+      submit_button_label = Recherche
+    }
+    es{
+      submit_button_label = Búsqueda
+    }
+    ch{
+      submit_button_label = 搜索
+    }
 	}
 }
