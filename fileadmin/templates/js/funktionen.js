@@ -43,13 +43,11 @@ jQuery(function(j){
   );
 
   /* FUNC: Jobs: Uebergabe */
-  if(typeof deineVariable!='undefined'){
-    if(j('* a.internal-job').length>0){
-      href = j('* a.internal-job').attr('href');
-      field = '&job=';
-      job = j('.news-single-item h1:first').text();
-      j('* a.internal-job').attr('href',encodeURI(href+field+job));
-    };
+  if(j('* a.internal-job').length>0){
+    href = j('* a.internal-job').attr('href');
+    field = '&job=';
+    job = j('.news-single-item h1:first').text();
+    j('* a.internal-job').attr('href',encodeURI(href+field+job));
     j('form.powermail_form .powermail_field:first').val(job);
   };
   
