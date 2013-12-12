@@ -44,10 +44,10 @@
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
 			<label index="t3d_basis.ul_liststyleimage">Enable own list image?</label>
 			<label index="t3d_basis.ts_css_styled_content">Load TS css_styled_content</label>
-			<label index="t3d_basis.ts_seitentypen">Load TS ts_seitentypen</label>
+			<label index="t3d_basis.t3d_seitentypen">Load TS t3d_seitentypen</label>
 			<label index="t3d_basis.t3d_css">Load TS t3d_css</label>
 			<label index="t3d_basis.t3d_objekte">Load TS t3d_objekte</label>
-			<label index="t3d_basis.ts_navigation">Load TS ts_navigation</label>
+			<label index="t3d_basis.t3d_navigation">Load TS t3d_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Load TS t3d_webanalytic:Etracker and google(needs to activate)</label>
 			<label index="t3d_basis.t3d_funktionen">Load TS t3d_funktionen</label>
 			<label index="t3d_basis.t3d_js">Load TS t3d_js</label>
@@ -101,12 +101,14 @@
 			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
 			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Enable google event tracker:</label>
       
+			<label index="t3d_navigation.nav_header_directory_id">Page id of header navigation:(parent page)</label>
 			<label index="t3d_navigation.nav_main_entryLevel">Entry level of main navigation</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Exclude page ids from main navigation</label>
 			<label index="t3d_navigation.nav_sub_entryLevel">Entry level of sub navigation</label>
 			<label index="t3d_navigation.nav_sub_excludeUidList">Exclude page ids from sub navigation</label>
 			<label index="t3d_navigation.nav_rootline_text">Prepend breadcrumb navigation with following text</label>
 			<label index="t3d_navigation.nav_rootline_range">Range of breadcrumb navigation</label>
+			<label index="t3d_navigation.nav_footer_directory_id">Page id of footer navigation:(parent page)</label>
       
 			<label index="t3d_seitentitel.enable">Enable page title replacement</label>
 			<label index="t3d_seitentitel.basisTemplateId">ID of the root page template</label>
@@ -168,10 +170,10 @@
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
 			<label index="t3d_basis.ul_liststyleimage">Eigenes Listenbild aktivieren?</label>
 			<label index="t3d_basis.ts_css_styled_content">Lade TS css_styled_content</label>
-			<label index="t3d_basis.ts_seitentypen">Lade TS t3d_seitentypen</label>
+			<label index="t3d_basis.t3d_seitentypen">Lade TS t3d_seitentypen</label>
 			<label index="t3d_basis.t3d_css">Lade TS t3d_css</label>
 			<label index="t3d_basis.t3d_objekte">Lade TS t3d_objekte</label>
-			<label index="t3d_basis.ts_navigation">Lade TS ts_navigation</label>
+			<label index="t3d_basis.t3d_navigation">Lade TS t3d_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Lade TS t3d_webanalytic:Etracker und google(muß aktiviert werden)</label>
 			<label index="t3d_basis.t3d_funktionen">Lade TS t3d_funktionen</label>
 			<label index="t3d_basis.t3d_js">Lade TS t3d_js</label>
@@ -225,12 +227,14 @@
 			<label index="t3d_webanalytic.google_analytics.id">Google Analytics ID</label>
 			<label index="t3d_webanalytic.google_analytics.eventtracker.enable">Google Event Tracker aktivieren:</label>
       
+			<label index="t3d_navigation.nav_header_directory_id">Seiten-ID der Headernavigation:(übergeordnete Seite)</label>
 			<label index="t3d_navigation.nav_main_entryLevel">Hauptnavigation Einstiegslevel</label>
 			<label index="t3d_navigation.nav_main_excludeUidList">Hauptnavigation Seiten ausschließen</label>
 			<label index="t3d_navigation.nav_sub_entryLevel">Unternavigation Einstiegslevel</label>
 			<label index="t3d_navigation.nav_sub_excludeUidList">Unternavigation Seiten ausschließen</label>
 			<label index="t3d_navigation.nav_rootline_text">Text vor Verlaufsnavigation</label>
 			<label index="t3d_navigation.nav_rootline_range">Verlaufnavigation Bereich</label>
+			<label index="t3d_navigation.nav_footer_directory_id">Seiten-ID der Footernavigation:(übergeordnete Seite)</label>
       
 			<label index="t3d_seitentitel.enable">Seitentitelersetzung einschalten</label>
 			<label index="t3d_seitentitel.basisTemplateId">ID des Basis-Templates</label>

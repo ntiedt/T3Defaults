@@ -10,7 +10,7 @@ tmp.nav_header{
     10 = HMENU
     10{
       special = directory
-      special.value = 9
+      special.value = {$t3d_navigation.nav_header_directory_id}
       1 = TMENU
       1 {
         IProcFunc = user_tmenulinebreak->main
@@ -26,14 +26,6 @@ tmp.nav_header{
         CUR = 1
         ACT < .CUR
         ACT = 1
-      }
-    }
-    20 = IMAGE
-    20{
-      file = {$t3d_pfade.tmpls}/image/icon_facebook.gif
-      stdWrap{
-        wrap =  <li class="level-1 facebook">|</li>
-        typolink.parameter = http://www.youtube.com/user/physio4dog _blank
       }
     }
   }
@@ -170,9 +162,40 @@ tmp.nav_rootline{
 }
 #----------------------------------------------------------- NAV_ROOTLINE-END
 
+#----------------------------------------------------------- NAV_FOOTER-BEGIN
+tmp.nav_footer = COA
+tmp.nav_footer{
+  10 = COA
+  10{
+    wrap = <ul class="level-1">|</ul>
+    10 = HMENU
+    10{
+      special = directory
+      special.value = {$t3d_navigation.nav_footer_directory_id}
+      1 = TMENU
+      1 {
+        IProcFunc = user_tmenulinebreak->main
+        expAll = 1
+        NO{
+          wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
+          ATagParams = class="level-1 norm"
+          stdWrap.wrap = <span>|</span>
+        }
+        CUR < .NO
+        CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
+        CUR.ATagParams = class="level-1 click"
+        CUR = 1
+        ACT < .CUR
+        ACT = 1
+      }
+    }
+  }
+}
+#----------------------------------------------------------- NAV_FOOTER-END
+
 
 #----------------------------------------------------------- NAV-INCLUDES-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.ts_navigation}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_navigation}]
 # Include tmenulinebreak script
 page.includeLibs.tmenulinebreak = {$t3d_pfade.tmpls}php/tmenulinebreak.php
 
@@ -181,5 +204,6 @@ lib.nav_main < tmp.nav_main
 lib.nav_main_level2 < tmp.nav_main_level2
 lib.nav_sub < tmp.nav_sub
 lib.nav_rootline < tmp.nav_rootline
+lib.nav_footer < tmp.nav_footer
 [global]
 #----------------------------------------------------------- NAV-INCLUDES-END

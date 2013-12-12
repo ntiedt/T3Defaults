@@ -105,8 +105,8 @@ t3d_basis{
   #cat=t3d_basis/enable/80; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_css_styled_content
   ts_css_styled_content = 1
   
-  #cat=t3d_basis/enable/82; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_seitentypen
-  ts_seitentypen = 1
+  #cat=t3d_basis/enable/82; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_seitentypen
+  t3d_seitentypen = 1
   
   #cat=t3d_basis/enable/84; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_css
   t3d_css = 1
@@ -293,6 +293,9 @@ t3d_webanalytic{
 
 ## Hauptnavigation #
 t3d_navigation{
+  #cat=t3d_navigation//10; type=int; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_navigation.nav_header_directory_id
+  nav_header_directory_id = 0
+  
   #cat=t3d_navigation//15; type=int; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_navigation.nav_main_entryLevel
   nav_main_entryLevel = 0
   
@@ -312,6 +315,9 @@ t3d_navigation{
   
   #cat=t3d_navigation//40; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_navigation.nav_rootline_range
   nav_rootline_range = 1|5
+  
+  #cat=t3d_navigation//50; type=int; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_navigation.nav_footer_directory_id
+  nav_footer_directory_id = 0
 }
 
 ##
