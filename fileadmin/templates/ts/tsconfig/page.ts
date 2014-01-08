@@ -133,6 +133,7 @@ RTE {
     }
   }
   default{
+    contentCSS = fileadmin/templates/css/rte/default.css
   	## List all class selectors that are allowed on the way to the database
   	proc.allowedClasses (
   		external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail,
@@ -146,6 +147,12 @@ RTE {
 		## Configuration of links
 		## These classes should also be in the list proc.allowedClasses
   	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail
+    
+		## Restrict the list of class selectors presented by the RTE to the following for the specified tags:
+  	buttons.blockstyle.tags.div.allowedClasses (
+  		align-left, align-center, align-right,
+  		csc-frame-frame1, csc-frame-frame2
+  	)
   }
 }
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-END
