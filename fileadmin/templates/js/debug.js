@@ -1,11 +1,12 @@
 /**
  * Title:         Alert++ (jQuery Debugger Plugin)
- * Version:       1.2
+ * Version:       1.3
  * Author:        Andrew Groff (andrew[DOT]p[DOT]groff[AT]gmail.com)
  * Date Created:  2009-10-14
- * Date Modified: 2012-06-15
+ * Date Modified: 2014-01-27
  * URL:           http://andygroff.com/jquery-debugger-debugging-plugin/
  * Contributors:  Chris Weiss
+ * Contributors:  Niels Tiedt
  */
 
 (function($) {
@@ -14,12 +15,13 @@
         // by extending the default settings, we don't modify the argument
         var settings = $.extend({
             divId: "dialog_output",
+            cssScopeUI: "t3d_debug",
             divTitle: "Output",
             recursive: true
         }, options);
 
         var vars = {
-            debugContainer: $('<div id="'+settings.divId+'" title="'+settings.divTitle+'"><table></table></div>')
+            debugContainer: $('<div id="'+settings.divId+'" class="'+settings.cssScopeUI+'" title="'+settings.divTitle+'"><table></table></div>')
         }
 
         var object = variable;

@@ -5,7 +5,7 @@
 [globalVar = GP:debug = 1]
 page.55 = COA
 page.55{
-  wrap = <div id="toolbar" class="ui-widget-header ui-corner-all">|</div>
+  wrap = <div id="toolbar" class="ui-widget-header ui-corner-all t3d_debug">|</div>
   /*
   20 = TEXT
   20{
@@ -250,13 +250,13 @@ page.55{
     120 = TEXT
     120{
       wrap = <li>|</li>
-      value = TYPO3 TSref 4.7
-      typolink.parameter = http://typo3.org/documentation/document-library/core-documentation/doc_core_tsref/4.7.0/view _blank
+      value = TYPO3 CMS Documentation
+      typolink.parameter = http://docs.typo3.org/typo3cms/ _blank
     }
     130 = TEXT
     130{
       wrap = <li>|</li>
-      value = TYPO3 Extension repository
+      value = TYPO3 Extension Repository
       typolink.parameter = http://typo3.org/extensions/repository/ _blank
     }
     140 = TEXT
@@ -264,6 +264,12 @@ page.55{
       wrap = <li>|</li>
       value = jQuery
       typolink.parameter = http://jquery.com/ _blank
+    }
+    150 = TEXT
+    150{
+      wrap = <li>|</li>
+      value = typo3.net
+      typolink.parameter = http://www.typo3.net/ _blank
     }
   }
 }

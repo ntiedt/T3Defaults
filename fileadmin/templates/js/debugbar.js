@@ -57,7 +57,7 @@ jQuery(function(j){
     text: true
   }).click(function() {
     j( '#dialog_mdebug' ).dialog({
-      dialogClass: "dialog_mdebug",
+      dialogClass: "dialog_mdebug t3d_debug",
       width: 'auto',
       autoOpen: false,
       closeOnEscape: false,
