@@ -98,8 +98,8 @@ page.55{
             20 = TEXT
             20{
               dataWrap = |%0A
-              lang.en = Question
-              lang.de = Frage
+              lang.en = REPLACE THIS TEXT WITH YOUR QUESTION
+              lang.de = ERSETZEN SIE DIESEN TEXT DURCH IHRE FRAGE.
               rawUrlEncode = 1
             }
             30 = TEXT
@@ -184,7 +184,9 @@ page.55{
             }
             140 = TEXT
             140{
-              value =aaaa
+              data ={GP:L}
+              ifEmpty.lang.en = Single%20language
+              ifEmpty.lang.de = Einzelsprache
             }
           }
         }
