@@ -10,6 +10,8 @@ page.includeJSFooter{
   jqueryui.disableCompression = 1
   colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
   colorbox.disableCompression = 1
+  flexslider = {$t3d_pfade.tmpls}js/jquery.flexslider-min.js
+  flexslider.disableCompression = 1
   funktionen = {$t3d_pfade.tmpls}js/funktionen.js
 }
 [global]
@@ -24,6 +26,8 @@ page.includeJSFooter{
   jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
   colorbox >
   colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
+  flexslider >
+  flexslider = {$t3d_pfade.tmpls}js/jquery.flexslider-min.js
   debug >
   debug = {$t3d_pfade.tmpls}js/debug.js
   debugbar >

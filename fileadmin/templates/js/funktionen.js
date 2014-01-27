@@ -71,7 +71,11 @@ jQuery(function(j){
   }
   
   /* Event Tracker */
+  etracker_eventtracker = (typeof etracker_eventtracker=='undefined') ? etracker_eventtracker='' : etracker_eventtracker=etracker_eventtracker;
+  google_analytics_eventtracker = (typeof google_analytics_eventtracker=='undefined') ? google_analytics_eventtracker='' : google_analytics_eventtracker=google_analytics_eventtracker;
   if( (etracker_eventtracker==1) || (google_analytics_eventtracker==1) ){
+  j.debug(etracker_eventtracker);
+  j.debug(google_analytics_eventtracker);
     j('body a').t3d_webanalytic_event_tracking({
       config_baseurl: config_baseurl,
       etracker_eventtracker: etracker_eventtracker,
