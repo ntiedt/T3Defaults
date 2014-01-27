@@ -199,8 +199,8 @@ page.55{
       110 = TEXT
       110{
         wrap = <li>|</li>
-        value = Homepage folge4 agentur
-        typolink.parameter = http://www.folge4.de/ _blank
+        value = Homepage gedankenfolger
+        typolink.parameter = http://www.gedankenfolger.de/ _blank
       }
     }
   }
