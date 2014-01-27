@@ -20,13 +20,7 @@ page.55{
     lang.en = Print
     lang.de = Drucken
   }
-  35 = TEXT
-  35{
-    wrap = <input type="checkbox" id="showgrid" /><label for="showgrid" id="bt_showgrid">|</label>
-    lang.en = Show grid
-    lang.de = Zeige Grid
-    if.isPositive = {$t3d_grid.enable}
-  }
+  # 35 - grid
   /*
   40 = TEXT
   40{
@@ -114,6 +108,18 @@ page.55{
               lang.de = Mit freundlichen Grüßen
               rawUrlEncode = 1
             }
+            50 = TEXT
+            50{
+              dataWrap = |%0A
+              value = %20
+            }
+            60 = TEXT
+            60{
+              wrap = |
+              lang.en = YOUR NAME
+              lang.de = IHR NAME
+              rawUrlEncode = 1
+            }
           }
         }
       }
@@ -157,6 +163,18 @@ page.55{
               wrap = |
               lang.en = Kind regards
               lang.de = Mit freundlichen Grüßen
+              rawUrlEncode = 1
+            }
+            50 = TEXT
+            50{
+              dataWrap = |%0A
+              value = %20
+            }
+            60 = TEXT
+            60{
+              wrap = |
+              lang.en = YOUR NAME
+              lang.de = IHR NAME
               rawUrlEncode = 1
             }
             100 = TEXT
@@ -221,6 +239,13 @@ page.55{
 #----------------------------------------------------------- DEBUG-BEUSER-BEGIN
 [globalVar = GP:debug = 1] && [globalVar = TSFE : beUserLogin > 0]
 page.55{
+  35 = TEXT
+  35{
+    wrap = <input type="checkbox" id="showgrid" /><label for="showgrid" id="bt_showgrid">|</label>
+    lang.en = Show grid
+    lang.de = Zeige Grid
+    if.isPositive = {$t3d_grid.enable}
+  }
   100.20{
     120 = TEXT
     120{

@@ -101,11 +101,16 @@ jQuery(function(j){
     }
   })
   .click(function() {
-    var menu = j( this ).parent().next().show().position({
-      my: 'left top',
-      at: 'left bottom',
-      of: this
-    });
+    var menu = j( this ).parent().next();
+    if(menu.is(":hidden")){
+      var menu = menu.show().position({
+        my: 'left top',
+        at: 'left bottom',
+        of: this
+      });
+    }else{
+      menu.hide();
+    }
     j( document ).one( 'click', function() {
       menu.hide();
     });
