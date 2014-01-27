@@ -57,7 +57,9 @@ jQuery(function(j){
       if(jQuery().colorbox){
         j('a.lightbox').colorbox({
           onOpen:function(){
-            j('#cboxTopCenter').append(big_title+logo);
+            if(j('.big_title').length<1){
+              j('#cboxTopCenter').append(big_title+logo);
+            }
           },
           'maxWidth': maxWidth,
           'top': top,
