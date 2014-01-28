@@ -114,6 +114,13 @@ jQuery(function(j){
     j( document ).one( 'click', function() {
       menu.hide();
     });
+    
     return false;
   }).parent().next().hide().menu();
+  
+  
+  j( '#help .debug_msg a' ).one( 'click', function() {
+    j(this).attr('href', j(this).attr('href').replace('XXX',j(window).width()));
+    j(this).attr('href', j(this).attr('href').replace('YYY',j(window).height()));
+  })
 })

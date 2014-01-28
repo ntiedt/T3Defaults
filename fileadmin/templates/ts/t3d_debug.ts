@@ -70,7 +70,7 @@ page.55{
         wrap = <li>|</li>
         lang.en = Mail to agency
         lang.de = Nachricht an Agentur
-        typolink.parameter = webmaster@folge4.de
+        typolink.parameter = webmaster@gedankenfolger.de
         typolink.parameter.postCObject = COA
         typolink.parameter.postCObject {
           10 = TEXT
@@ -128,7 +128,7 @@ page.55{
         wrap = <li class="debug_msg">|</li>
         lang.en = Send debug mail to webmaster
         lang.de = Debug-Nachricht an Webmaster senden
-        typolink.parameter = webmaster@folge4.de
+        typolink.parameter = webmaster@gedankenfolger.de
         typolink.parameter.postCObject = COA
         typolink.parameter.postCObject {
           10 = TEXT
@@ -149,8 +149,15 @@ page.55{
             20 = TEXT
             20{
               dataWrap = |%0A
-              lang.en = The following error occured
-              lang.de = Der folgende Fehler ist aufgetreten
+              lang.en = The following error occured.
+              lang.de = Der folgende Fehler ist aufgetreten.
+              rawUrlEncode = 1
+            }
+            25 = TEXT
+            25{
+              dataWrap = %0A|
+              lang.en = REPLACE THIS TEXT WITH YOUR PROBLEM.
+              lang.de = ERSETZEN SIE DIESEN TEXT DURCH IHR PROBLEM.
               rawUrlEncode = 1
             }
             30 = TEXT
@@ -179,7 +186,7 @@ page.55{
             }
             100 = TEXT
             100{
-              wrap = %0A|
+              wrap = %0A%0A|
               value = ----------------
               rawUrlEncode = 1
             }
@@ -205,6 +212,18 @@ page.55{
               data ={GP:L}
               ifEmpty.lang.en = Single%20language
               ifEmpty.lang.de = Einzelsprache
+            }
+            150 = TEXT
+            150{
+              wrap =%0A|%20XXX
+              ifEmpty.lang.en = Window%20width
+              ifEmpty.lang.de = Fensterbreite
+            }
+            160 = TEXT
+            160{
+              wrap =%0A|%20YYY
+              ifEmpty.lang.en = Window%20height
+              ifEmpty.lang.de = Fensterhoehe
             }
           }
         }
