@@ -1,11 +1,25 @@
 /**
  * Title:         TYPO3 Defaults - adjust typography for responsive sites
- * Version:       0.2
+ * Phase:         Beta
+ * Version:       0.5
  * Author:        Niels Tiedt (nt[AT]typo3-coders.org)
  * Date Created:  2013-12-09
- * Date Modified: 2013-12-09
+ * Date Modified: 2014-02-05
  * URL:           
- * Contributors:  
+ * Contributors: 
+ * 
+ * Usage:
+ * $('.t3d_adjusttypo').t3d_adjusttypo();
+ * or
+ * $('a').t3d_adjusttypo();
+ * 
+ * Important:
+ * If your max-width definition is NOT 1272px set the correct value
+ * $('.t3d_adjusttypo').t3d_adjusttypo({'maxWidth': '1272'});
+ *  
+ * If another element than your body have the max-width definition correct the selector
+ * $('.t3d_adjusttypo').t3d_adjusttypo({'baseObj': $('yourelement')});
+ *   
  */
 
 (function($) {
@@ -14,38 +28,71 @@
 // Establish default settings/variables
 // ====================================
     var settings = $.extend({
-      baseWidth: $('body').width(),
-      maxWidth: parseInt($('.container').css('max-width')),
+      baseObj: $('body'),
+      elementWidth: 0,
+      windowWidth: 0,
+      maxWidth: 1272,
+      baseRatio: 0,
+      ratio: 0,
       baseFontSize: 0,
       newFontSize: 0,
       minFontSize: 0,
       maxFontSize: 9999,
-      baseFontSizeIsMinFontSize: 0,
-      baseFontSizeIsMaxFontSize: 1,
+      baseFontSizeIsMinFontSize: false,
+      baseFontSizeIsMaxFontSize: true,
       baseLineHeight: 0,
       newLineHeight: 0,
       minLineHeight: 0,
       maxLineHeight: 9999,
-      baseLineHeightIsMinLineHeight: 0,
-      baseLineHeightIsMaxLineHeight: 1,
+      baseLineHeightIsMinLineHeight: false,
+      baseLineHeightIsMaxLineHeight: true,
       unit: 'px',
-      debug: 1
+      debug: 0,
+      debugTo: 2 // 0=Console; 1=Debug plugin; 2=Overlay
     }, options),
+
+// Function checkElementWidth
+// =================
+    checkElementWidth = function(el) {
+      if($(el).parent().css('width')=='0px'){
+        return;
+      }else{
+        settings.elementWidth = $(el).parent().width();
+      }
+    };
+
+// Function checkWindowWidth
+// =================
+    checkWindowWidth = function() {
+      settings.windowWidth = $(window).width();
+    };
+
+// Function checkRatio
+// =================
+    checkRatio = function(el) {
+      settings.baseRatio = settings.maxWidth / settings.elementWidth;
+      settings.ratio = settings.windowWidth / settings.elementWidth;
+    };
 
 // Function adjustFontSize
 // =================
-    adjustFontSize = function(el) {      
-      if($(el).data('fontSize')){
-        settings.baseFontSize = $(el).data('fontSize');
-      }else{
+    adjustFontSize = function(el) {
+      if(!$(el).data('baseFontSize')){
         settings.baseFontSize = parseFloat($(el).css('font-size'));
-        $(el).data('fontSize',settings.baseFontSize);
+        $(el).data('baseFontSize',settings.baseFontSize);
+      }else{
+        settings.baseFontSize = $(el).data('baseFontSize');
       }
-      settings.newFontSize = settings.baseFontSize * (settings.baseWidth / settings.maxWidth);
-      if(settings.baseFontSizeIsMinFontSize == 1){
+      if(Math.round(settings.ratio)==1){
+        settings.newFontSize = settings.baseFontSize * settings.ratio;
+      }else{
+        settings.newFontSize = settings.baseFontSize * (settings.ratio / settings.baseRatio);
+      }
+      
+      if(settings.baseFontSizeIsMinFontSize == true){
         settings.minFontSize = settings.baseFontSize;
       }
-      if(settings.baseFontSizeIsMaxFontSize == 1){
+      if(settings.baseFontSizeIsMaxFontSize == true){
         settings.maxFontSize = settings.baseFontSize;
       }
       if((settings.newFontSize > settings.minFontSize) && (settings.newFontSize < settings.maxFontSize)){
@@ -56,17 +103,22 @@
 // Function adjustLineHeight
 // =================
     adjustLineHeight = function(el) {
-      if($(el).data('lineHeight')){
-        settings.baseLineHeight = $(el).data('lineHeight');
-      }else{
+      if(!$(el).data('baseLineHeight')){
         settings.baseLineHeight = parseFloat($(el).css('line-height'));
-        $(el).data('lineHeight',settings.baseLineHeight);
+        $(el).data('baseLineHeight',settings.baseLineHeight);
+      }else{
+        settings.baseLineHeight = $(el).data('baseLineHeight');
       }
-      settings.newLineHeight = settings.baseLineHeight * (settings.baseWidth / settings.maxWidth);
-      if(settings.baseLineHeightIsMinLineHeight == 1){
+      if(Math.round(settings.ratio)==1){
+        settings.newLineHeight = settings.baseLineHeight * settings.ratio;
+      }else{
+        settings.newLineHeight = settings.baseLineHeight * (settings.ratio / settings.baseRatio);
+      }
+      
+      if(settings.baseLineHeightIsMinLineHeight == true){
         settings.minLineHeight = settings.baseLineHeight;
       }
-      if(settings.baseLineHeightIsMaxLineHeight == 1){
+      if(settings.baseLineHeightIsMaxLineHeight == true){
         settings.maxLineHeight = settings.baseLineHeight;
       }
       if((settings.newLineHeight > settings.minLineHeight) && (settings.newLineHeight < settings.maxLineHeight)){
@@ -80,25 +132,48 @@
        
       // Context for resize callback
       var that = this;
-
+      
+      // Get elementWidth on load
+      checkElementWidth(this);
+      
+      // Get windowWidth on load
+      checkWindowWidth();
+      
+      // Get checkRatio on load
+      checkRatio(this);
+      
+      // Set adjustFontSize on load
+      adjustFontSize(this);
+      
+      // Set adjustLineHeight on load
+      adjustLineHeight(this);
+      
+      // Debug output
       if(settings.debug==1){
         debug(settings);
       }
          
-      // Set adjustFontSize on load
-      adjustFontSize(this);
-         
-      // Set adjustLineHeight on load
-      adjustLineHeight(this);
-         
       // Make adjustFontSize upon resize
       $(window).resize(function(){
+        // Get elementWidth on load
+        checkElementWidth(that);
+        
+        // Get windowWidth on load
+        checkWindowWidth();
+        
+        // Get checkRatio on load
+        checkRatio(that);
+      
+        // Set adjustFontSize on load
+        adjustFontSize(that);
+        
+        // Set adjustLineHeight on load
+        adjustLineHeight(that);
+        
+        // Debug output
         if(settings.debug==1){
           debug(settings);
         }
-        settings.baseWidth = $('body').width();
-        adjustFontSize(that);
-        adjustLineHeight(that);
       });
       
     });
@@ -106,11 +181,11 @@
   
 
   var debug = function(settings){
-    if ( window.console && window.console.log ) {
+    if ( window.console && window.console.log && settings.debugTo==0 ) {
       $.each(settings, function(name, value){
         window.console.log( name + ': ' + value );
       });
-    }else if($.debug){
+    }else if($.debug && settings.debugTo==1){
       $.each(settings, function(name, value){
         $.debug(value);
       });
@@ -120,6 +195,7 @@
         $('.debug.t3d_adjusttypo').css({
           width: 'auto',
           position: 'fixed',
+          zIndex: 999,
           top: 40,
           right: 10,
           padding: '10px',
@@ -128,9 +204,11 @@
           boxShadow: '0 0 5px #ccc'
         });
       }
+      var output = '';
       $.each(settings, function(name, value){
-        $('.debug.t3d_adjusttypo').append( name + ': ' + value + '<br>');
+        output += name + ': ' + value + '<br>';
       });
+      $('.debug.t3d_adjusttypo').html( output );
     }
   }
 })(jQuery);
