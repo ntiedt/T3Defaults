@@ -9,6 +9,7 @@ function dbg(el){
 
 jQuery(function(j){
   var the_overlay;
+  var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
   
 
 	j(document).keydown(function(e) {
