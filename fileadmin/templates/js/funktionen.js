@@ -1,6 +1,12 @@
 // Default JS
 jQuery.noConflict();
 
+function dbg(el){
+  if(jQuery.debug){
+    jQuery.debug(el);
+  }
+}
+
 jQuery(function(j){
   var the_overlay;
   
