@@ -97,7 +97,7 @@ t3d_config{
 t3d_basis{
   ### enable ###
   #cat=t3d_basis/enable/10; type=options[Default=0,Fluid=1,Templavoila=2]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.templateengine
-  templateengine = 2
+  templateengine = 1
   
   #cat=t3d_basis/enable/12; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.favicon
   favicon = 0

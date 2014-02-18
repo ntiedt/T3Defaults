@@ -5,6 +5,10 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/css_styled_content.ts">
 #----------------------------------------------------------- CSS_STYLED_CONTENT-END
 
+#----------------------------------------------------------- T3D_PAGE-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_page.ts">
+#----------------------------------------------------------- T3D_PAGE-END
+
 #----------------------------------------------------------- T3D_DEBUG-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_debug.ts">
 #----------------------------------------------------------- T3D_DEBUG-END
