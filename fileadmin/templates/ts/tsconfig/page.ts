@@ -30,8 +30,10 @@ TCEFORM.pages {
   #backend_layout.label = Layout
   #backend_layout.altLabels.-1 = 2 Spalter (1 große Spalte links / 1 kleine rechts)
   #backend_layout.altLabels.1 = 1 Spalter
-  backend_layout_next_level.removeItems= -1,0
-  backend_layout.removeItems= -1,0
+  backend_layout.altLabels.0 = Vererbt
+  backend_layout_next_level.altLabels.0 = Vererbt
+  backend_layout.removeItems= -1
+  backend_layout_next_level.removeItems= -1
 }
 
 ### tt_content Layout
