@@ -18,9 +18,20 @@ page.10 {
     layout.data = levelfield:-1, backend_layout_next_level, slide
     layout.override.field = backend_layout
     
-    content_head < styles.content.getBorder
-    content_main < styles.content.get
+    # colPos=0
+    content < styles.content.get
+    # colPos=1
+    content_left < styles.content.getLeft
+    # colPos=2
     content_right < styles.content.getRight
+    # colPos=3
+    content_border < styles.content.getBorder
+    # colPos=4
+    #content_bottomcenter < styles.content.get
+    #content_bottomcenter.select.where = colPos=4
+    # colPos=5
+    #content_bottomright < styles.content.get
+    #content_bottomright.select.where = colPos=5
   }
 }
 tt_content.gridelements_pi1.20.10.setup {
