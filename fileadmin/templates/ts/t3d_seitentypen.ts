@@ -3,7 +3,7 @@
 
 #----------------------------------------------------------- SEITENTYPEN-BEGIN
 #-Load content from table(specified in constants. default:tt_content) of current page, specified in constants or from page of the post var getid
-[globalVar = LIT:1 = {$t3d_basis.ts_seitentypen}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_seitentypen}]
 seitentypen_b = PAGE
 seitentypen_b{
   typeNum = {$t3d_seitentypen.b.typenum}
