@@ -66,7 +66,7 @@ var config_baseurl = '{$t3d_config.baseURL}';
   9= TEXT
   9.value(
 
-var ajax_param = '{$t3d_seitentypen.b_typenum}';
+var ajax_param = '{$t3d_seitentypen.b.typenum}';
   )
   10 = TEXT
   10.value(
