@@ -61,7 +61,7 @@ page.headerData.150{
   8= TEXT
   8.value(
 
-var config_baseurl = '{$t3d_basis.baseURL}';
+var config_baseurl = '{$t3d_config.baseURL}';
   )
   9= TEXT
   9.value(
