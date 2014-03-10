@@ -59,7 +59,7 @@ page.10.disableExplosivePreview = 1
 
 #------------------------------------------------------------ PAGE-CONFIG-MOBIL-BEGIN
 [globalString = IENV:HTTP_HOST=m.*]
-page.headerData.10 = HTML
+page.headerData.10 = TEXT
 page.headerData.10.value(
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
