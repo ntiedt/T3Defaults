@@ -32,12 +32,12 @@ page.includeCSS{
 [globalVar = LIT:1 = {$t3d_basis.t3d_css}]
 css = PAGE
 css {
-	typeNum = {$t3d_seitentypen.a.typenum}
+	typeNum = {$t3d_pagetypes.a.typenum}
 	config{
 		additionalHeaders = Content-type: text/css
 		disableAllHeaderCode = 1
-    debug = {$t3d_seitentypen.a.debug}
-    no_cache = {$t3d_seitentypen.a.no_cache}
+    debug = {$t3d_pagetypes.a.debug}
+    no_cache = {$t3d_pagetypes.a.no_cache}
 	}
 	10 = TEXT
 	10.value (
@@ -72,7 +72,7 @@ page.headerData{
     10{
       typolink{
         parameter.data = field:uid
-        additionalParams =&type={$t3d_seitentypen.a.typenum}
+        additionalParams =&type={$t3d_pagetypes.a.typenum}
         returnLast = url
         useCacheHash = 1
       }

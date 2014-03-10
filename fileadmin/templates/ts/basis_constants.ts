@@ -102,8 +102,8 @@ t3d_basis{
   #cat=t3d_basis/enable/80; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.ts_css_styled_content
   ts_css_styled_content = 1
   
-  #cat=t3d_basis/enable/82; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_seitentypen
-  t3d_seitentypen = 1
+  #cat=t3d_basis/enable/82; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_pagetypes
+  t3d_pagetypes = 1
   
   #cat=t3d_basis/enable/84; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_css
   t3d_css = 1
@@ -349,39 +349,39 @@ t3d_seitentitel{
 
 
 ##
-## SeitenTypen ###
-t3d_seitentypen{
-  #cat=t3d_seitentypen/alpha/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.typenum
+## Page types ###
+t3d_pagetypes{
+  #cat=t3d_pagetypes/alpha/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.a.typenum
   a.typenum = 500
   
-  #cat=t3d_seitentypen/alpha/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.no_cache
+  #cat=t3d_pagetypes/alpha/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.a.no_cache
   a.no_cache = 0
   
-  #cat=t3d_seitentypen/alpha/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.a.debug
+  #cat=t3d_pagetypes/alpha/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.a.debug
   a.debug = 0
   
-  #cat=t3d_seitentypen/beta/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.typenum
+  #cat=t3d_pagetypes/beta/010; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.typenum
   b.typenum = 22
   
-  #cat=t3d_seitentypen/beta/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.no_cache
+  #cat=t3d_pagetypes/beta/010; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.no_cache
   b.no_cache = 1
   
-  #cat=t3d_seitentypen/beta/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.debug
+  #cat=t3d_pagetypes/beta/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.debug
   b.debug = 0
   
-  #cat=t3d_seitentypen/beta/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_type
+  #cat=t3d_pagetypes/beta/030; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.cobj_type
   b.cobj_type = 0
   
-  #cat=t3d_seitentypen/beta/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables
+  #cat=t3d_pagetypes/beta/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.cobj_tables
   b.cobj_tables = tt_content
   
-  #cat=t3d_seitentypen/beta/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids
+  #cat=t3d_pagetypes/beta/050; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.cobj_tables_ids
   b.cobj_tables_ids = 
   
-  #cat=t3d_seitentypen/beta/060; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids_data
+  #cat=t3d_pagetypes/beta/060; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.cobj_tables_ids_data
   b.cobj_tables_ids_data = 0
   
-  #cat=t3d_seitentypen/beta/070; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_seitentypen.b.cobj_tables_ids_data_gp
+  #cat=t3d_pagetypes/beta/070; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_pagetypes.b.cobj_tables_ids_data_gp
   b.cobj_tables_ids_data_gp = uid
 }
 

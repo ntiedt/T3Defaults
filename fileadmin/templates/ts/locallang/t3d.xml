@@ -43,7 +43,7 @@
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
 			<label index="t3d_basis.ul_liststyleimage">Enable own list image?</label>
 			<label index="t3d_basis.ts_css_styled_content">Load TS css_styled_content</label>
-			<label index="t3d_basis.t3d_seitentypen">Load TS t3d_seitentypen</label>
+			<label index="t3d_basis.t3d_pagetypes">Load TS t3d_pagetypes</label>
 			<label index="t3d_basis.t3d_css">Load TS t3d_css</label>
 			<label index="t3d_basis.t3d_objekte">Load TS t3d_objekte</label>
 			<label index="t3d_basis.t3d_navigation">Load TS t3d_navigation</label>
@@ -116,17 +116,17 @@
 			<label index="t3d_seitentitel.charBetweenWords">Separator char between words</label>
 			<label index="t3d_seitentitel.debug">Enable debug move for logged in BE users</label>
       
-			<label index="t3d_seitentypen.a.typenum">Type A(CSS) - TypeNum(type=):500</label>
-			<label index="t3d_seitentypen.a.no_cache">Type A(CSS) - disable cache</label>
-			<label index="t3d_seitentypen.a.debug">Type A(CSS) - enable debug</label>
-			<label index="t3d_seitentypen.b.typenum">Type B(Content only) - TypeNum(type=):500</label>
-			<label index="t3d_seitentypen.b.no_cache">Type B(Content only) - disable cache</label>
-			<label index="t3d_seitentypen.b.debug">Type B(Content only) - enable debug</label>
-			<label index="t3d_seitentypen.b.cobj_type">Type B(Content only):0=Content / 1=Records</label>
-			<label index="t3d_seitentypen.b.cobj_tables">Type B(Content only) - Table(s):tt_content,...</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids">Type B(Content only) - If content are selected -> Page-UID(s), if records are selected -> Element-UID(s) :1,2,3</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids_data">Type B(Content only) - Enable load UIDs from post object</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids_data_gp">Type B(Content only) - Name of the post object (e.g. uid=) :uid</label>
+			<label index="t3d_pagetypes.a.typenum">Type A(CSS) - TypeNum(type=):500</label>
+			<label index="t3d_pagetypes.a.no_cache">Type A(CSS) - disable cache</label>
+			<label index="t3d_pagetypes.a.debug">Type A(CSS) - enable debug</label>
+			<label index="t3d_pagetypes.b.typenum">Type B(Content only) - TypeNum(type=):500</label>
+			<label index="t3d_pagetypes.b.no_cache">Type B(Content only) - disable cache</label>
+			<label index="t3d_pagetypes.b.debug">Type B(Content only) - enable debug</label>
+			<label index="t3d_pagetypes.b.cobj_type">Type B(Content only):0=Content / 1=Records</label>
+			<label index="t3d_pagetypes.b.cobj_tables">Type B(Content only) - Table(s):tt_content,...</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids">Type B(Content only) - If content are selected -> Page-UID(s), if records are selected -> Element-UID(s) :1,2,3</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids_data">Type B(Content only) - Enable load UIDs from post object</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids_data_gp">Type B(Content only) - Name of the post object (e.g. uid=) :uid</label>
       
 			<label index="lightbox.current">{current} / {total}</label>
 			<label index="lightbox.previous">&lt;</label>
@@ -168,7 +168,7 @@
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
 			<label index="t3d_basis.ul_liststyleimage">Eigenes Listenbild aktivieren?</label>
 			<label index="t3d_basis.ts_css_styled_content">Lade TS css_styled_content</label>
-			<label index="t3d_basis.t3d_seitentypen">Lade TS t3d_seitentypen</label>
+			<label index="t3d_basis.t3d_pagetypes">Lade TS t3d_pagetypes</label>
 			<label index="t3d_basis.t3d_css">Lade TS t3d_css</label>
 			<label index="t3d_basis.t3d_objekte">Lade TS t3d_objekte</label>
 			<label index="t3d_basis.t3d_navigation">Lade TS t3d_navigation</label>
@@ -241,17 +241,17 @@
 			<label index="t3d_seitentitel.charBetweenWords">Trennzeichen zwischen Wörtern</label>
 			<label index="t3d_seitentitel.debug">Debug-Modus für eingeloggte BE-User</label>
       
-			<label index="t3d_seitentypen.a.typenum">Typ A(CSS) - TypeNum(type=):500</label>
-			<label index="t3d_seitentypen.a.no_cache">Typ A(CSS) - Cache ausschalten</label>
-			<label index="t3d_seitentypen.a.debug">Typ A(CSS) - Debug einschalten</label>
-			<label index="t3d_seitentypen.b.typenum">Typ B(nur Inhalt) - TypeNum(type=):500</label>
-			<label index="t3d_seitentypen.b.no_cache">Typ B(nur Inhalt) - Cache ausschalten</label>
-			<label index="t3d_seitentypen.b.debug">Typ B(CSS) - Debug einschalten</label>
-			<label index="t3d_seitentypen.b.cobj_type">Typ B(nur Inhalt):0=Inhalt / 1=Datensätze</label>
-			<label index="t3d_seitentypen.b.cobj_tables">Typ B(nur Inhalt) - Tabelle(n):tt_content,...</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids">Typ B(nur Inhalt) - Bei Auswahl Inhalt -> Page-UID(s), bei Auswahl Datensätze -> Element-UID(s) :1,2,3</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids_data">Typ B(nur Inhalt) - UIDs von Post Objekt laden einschalten</label>
-			<label index="t3d_seitentypen.b.cobj_tables_ids_data_gp">Typ B(nur Inhalt) - Post Objekt Name (z.b. uid=) :uid</label>
+			<label index="t3d_pagetypes.a.typenum">Typ A(CSS) - TypeNum(type=):500</label>
+			<label index="t3d_pagetypes.a.no_cache">Typ A(CSS) - Cache ausschalten</label>
+			<label index="t3d_pagetypes.a.debug">Typ A(CSS) - Debug einschalten</label>
+			<label index="t3d_pagetypes.b.typenum">Typ B(nur Inhalt) - TypeNum(type=):500</label>
+			<label index="t3d_pagetypes.b.no_cache">Typ B(nur Inhalt) - Cache ausschalten</label>
+			<label index="t3d_pagetypes.b.debug">Typ B(CSS) - Debug einschalten</label>
+			<label index="t3d_pagetypes.b.cobj_type">Typ B(nur Inhalt):0=Inhalt / 1=Datensätze</label>
+			<label index="t3d_pagetypes.b.cobj_tables">Typ B(nur Inhalt) - Tabelle(n):tt_content,...</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids">Typ B(nur Inhalt) - Bei Auswahl Inhalt -> Page-UID(s), bei Auswahl Datensätze -> Element-UID(s) :1,2,3</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids_data">Typ B(nur Inhalt) - UIDs von Post Objekt laden einschalten</label>
+			<label index="t3d_pagetypes.b.cobj_tables_ids_data_gp">Typ B(nur Inhalt) - Post Objekt Name (z.b. uid=) :uid</label>
       
 			<label index="lightbox.current">{current} / {total}</label>
 			<label index="lightbox.previous">&lt;</label>

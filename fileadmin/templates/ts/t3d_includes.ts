@@ -13,9 +13,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_debug.ts">
 #----------------------------------------------------------- T3D_DEBUG-END
 
-#----------------------------------------------------------- T3D_SEITENTYPEN-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_seitentypen.ts">
-#----------------------------------------------------------- T3D_SEITENTYPEN-END
+#----------------------------------------------------------- T3D_PAGETYPES-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_pagetypes.ts">
+#----------------------------------------------------------- T3D_PAGETYPES-END
 
 #----------------------------------------------------------- T3D_FUNKTIONEN-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_funktionen.ts">
