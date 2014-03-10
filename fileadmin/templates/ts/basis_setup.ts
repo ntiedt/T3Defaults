@@ -55,14 +55,6 @@ config{
 [global]
 #------------------------------------------------------------ CONFIG-DEBUG-END
 
-#------------------------------------------------------------ CONFIG-MOBIL-BEGIN
-[globalString = IENV:HTTP_HOST=m.*]
-config{
-  baseURL = {$t3d_config.baseURL_mobil}
-}
-[global]
-#------------------------------------------------------------ CONFIG-MOBIL-END
-
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-BEGIN
 plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
 #----------------------------------------------------------- EXT-INDEXEDSEARCH-LANG-END

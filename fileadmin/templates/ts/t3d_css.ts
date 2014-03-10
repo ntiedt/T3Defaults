@@ -28,15 +28,6 @@ page.includeCSS{
 [global]
 #----------------------------------------------------------- INCLUDECSS-DEBUG-END
 
-#----------------------------------------------------------- INCLUDECSS-MOBILE-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.t3d_css}] AND [globalString = IENV:HTTP_HOST=m.*]
-page.includeCSS{
-  normal >
-  mobil = {$t3d_pfade.tmpls}css/mobil.css
-}
-[global]
-#----------------------------------------------------------- INCLUDECSS-MOBILE-END
-
 #----------------------------------------------------------- DYN-CSS-PAGE-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.t3d_css}]
 css = PAGE

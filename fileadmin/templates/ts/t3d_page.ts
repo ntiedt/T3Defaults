@@ -57,15 +57,13 @@ page.10.disableExplosivePreview = 1
 
 #----------------------------------------------------------- DEFAULT-PAGE-END
 
-#------------------------------------------------------------ PAGE-CONFIG-MOBIL-BEGIN
-[globalString = IENV:HTTP_HOST=m.*]
+#------------------------------------------------------------ PAGE-CONFIG-VIEWPORT-BEGIN
 page.headerData.10 = TEXT
 page.headerData.10.value(
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 )
-[global]
-#------------------------------------------------------------ PAGE-CONFIG-MOBIL-END
+#------------------------------------------------------------ PAGE-CONFIG-VIEWPORT-END
 
 #----------------------------------------------------------- META-IE-BEGIN 
 [browser = msie]
@@ -108,15 +106,9 @@ page.bodyTagCObject{
     20 = TEXT
     20.data = TSFE:sys_language_uid
     20.noTrimWrap = | l_|| 
-    #30 Mobil
     #40 startseite
   }
 }
-
-[globalString = IENV:HTTP_HOST=m.*]
-page.bodyTagCObject.20.30 = TEXT
-page.bodyTagCObject.20.30.noTrimWrap = | mobil||
-[global]
 
 [globalVar = TSFE:id = {$t3d_basis.rootpageID}]
 page.bodyTagCObject.20.40 = TEXT

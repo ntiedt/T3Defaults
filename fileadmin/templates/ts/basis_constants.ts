@@ -27,9 +27,6 @@ t3d_config{
   #cat=t3d_config/links/030; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL
   baseURL = 
   
-  #cat=t3d_config/links/040; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.baseURL_mobil
-  baseURL_mobil = 
-  
   #cat=t3d_config/enable/050; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses
   spamProtectEmailAddresses = 1
   

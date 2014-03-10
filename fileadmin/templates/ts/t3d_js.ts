@@ -85,14 +85,6 @@ var jquery_speed = '{$t3d_jquery.speed}';
       ifEmpty = 0
     }
   }
-  24 = COA
-  24{
-    wrap = var mobil = |;
-    10 = TEXT
-    10{
-      value = 0
-    }
-  }
   26 = COA
   26{
     wrap = var job = '|';
@@ -164,14 +156,6 @@ var jquery_speed = '{$t3d_jquery.speed}';
   )
 }
 #----------------------------------------------------------- HEADERDATA-VARS-END
-
-#----------------------------------------------------------- HEADERDATA-MOBILE-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.t3d_js}] AND [globalString = IENV:HTTP_HOST=m.*]
-page.headerData.150{
-  24.10.value=1
-}
-[global]
-#----------------------------------------------------------- HEADERDATA-MOBILE-END
 
 
 #----------------------------------------------------------- FOOTERDATA-BEGIN

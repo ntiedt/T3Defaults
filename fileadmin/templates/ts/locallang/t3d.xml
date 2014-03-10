@@ -19,7 +19,6 @@
 			<label index="customsubcategory.beta">Page type B(dynamic db output e.g. for ajax)</label>
       
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
-			<label index="t3d_config.baseURL_mobil">Basis-Url Mobil:e.g. http://m.kunde.de/</label>
 			<label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
 			<label index="t3d_config.language">Default language</label>
 			<label index="t3d_config.locale_all">Default localisation</label>
@@ -143,7 +142,6 @@
 			<label index="customsubcategory.beta">Seitentyp B(dynamischer DB-Ausgabe z.b. für Ajax)</label>
       
 			<label index="t3d_config.baseURL">Basis-Url:z.b. http://www.kunde.de/</label>
-			<label index="t3d_config.baseURL_mobil">Basis-Url Mobil:z.b. http://m.kunde.de/</label>
 			<label index="t3d_config.spamProtectEmailAddresses">@-Zeichen Ersetzung einschalten</label>
 			<label index="t3d_config.spamProtectEmailAddresses_atSubst">@-Zeichen Ersetzung</label>
 			<label index="t3d_config.tx_realurl_enable">RealUrl aktivieren?</label>
