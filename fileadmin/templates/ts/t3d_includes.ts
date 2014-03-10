@@ -33,9 +33,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_navigation.ts">
 #----------------------------------------------------------- T3D_NAVIGATION-END
 
-#----------------------------------------------------------- T3D_OBJEKTE-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_objekte.ts">
-#----------------------------------------------------------- T3D_OBJEKTE-END
+#----------------------------------------------------------- T3D_OBJECTS-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_objects.ts">
+#----------------------------------------------------------- T3D_OBJECTS-END
 
 #----------------------------------------------------------- T3D_WEBANALYTIC-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_webanalytic.ts">

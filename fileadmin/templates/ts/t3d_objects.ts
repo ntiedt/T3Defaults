@@ -1,5 +1,5 @@
 ###
-### Objekte ###
+### Objects ###
 
 #----------------------------------------------------------- OBJ_LOGO-BEGIN
 tmp.obj_logo = IMAGE
@@ -68,7 +68,7 @@ tmp.objs{
 #----------------------------------------------------------- OBJS-END
 
 #----------------------------------------------------------- OBJ-INCLUDES-BEGIN
-[globalVar = LIT:1 = {$t3d_basis.t3d_objekte}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_objects}]
 lib.obj_logo < tmp.obj_logo
 lib.obj_claim < tmp.obj_claim
 lib.obj_search < tmp.obj_search
