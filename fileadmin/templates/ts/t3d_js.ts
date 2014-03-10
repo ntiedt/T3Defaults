@@ -12,7 +12,7 @@ page.includeJSFooter{
   colorbox.disableCompression = 1
   flexslider = {$t3d_pfade.tmpls}js/jquery.flexslider-min.js
   flexslider.disableCompression = 1
-  funktionen = {$t3d_pfade.tmpls}js/funktionen.js
+  functions = {$t3d_pfade.tmpls}js/functions.js
 }
 [global]
 #----------------------------------------------------------- INCLUDEJSFOOTER-END
@@ -32,8 +32,8 @@ page.includeJSFooter{
   debug = {$t3d_pfade.tmpls}js/debug.js
   debugbar >
   debugbar = {$t3d_pfade.tmpls}js/debugbar.js
-  funktionen >
-  funktionen = {$t3d_pfade.tmpls}js/funktionen.js
+  functions >
+  functions = {$t3d_pfade.tmpls}js/functions.js
 }
 [global]
 #----------------------------------------------------------- INCLUDEJSFOOTER-DEBUG-END

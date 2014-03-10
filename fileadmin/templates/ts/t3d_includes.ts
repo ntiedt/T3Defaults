@@ -17,9 +17,9 @@
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_pagetypes.ts">
 #----------------------------------------------------------- T3D_PAGETYPES-END
 
-#----------------------------------------------------------- T3D_FUNKTIONEN-BEGIN
-<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_funktionen.ts">
-#----------------------------------------------------------- T3D_FUNKTIONEN-END
+#----------------------------------------------------------- T3D_FUNCTIONS-BEGIN
+<INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_functions.ts">
+#----------------------------------------------------------- T3D_FUNCTIONS-END
 
 #----------------------------------------------------------- T3D_CSS-BEGIN
 <INCLUDE_TYPOSCRIPT:source="file:fileadmin/templates/ts/t3d_css.ts">

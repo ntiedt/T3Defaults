@@ -117,8 +117,8 @@ t3d_basis{
   #cat=t3d_basis/enable/90; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_webanalytic
   t3d_webanalytic = 1
   
-  #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_funktionen
-  t3d_funktionen = 0
+  #cat=t3d_basis/enable/94; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_functions
+  t3d_functions = 0
   
   #cat=t3d_basis/enable/96; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_basis.t3d_js
   t3d_js = 1

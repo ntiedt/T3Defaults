@@ -48,7 +48,7 @@
 			<label index="t3d_basis.t3d_objects">Load TS t3d_objects</label>
 			<label index="t3d_basis.t3d_navigation">Load TS t3d_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Load TS t3d_webanalytic:Etracker and google(needs to activate)</label>
-			<label index="t3d_basis.t3d_funktionen">Load TS t3d_funktionen</label>
+			<label index="t3d_basis.t3d_functions">Load TS t3d_functions</label>
 			<label index="t3d_basis.t3d_js">Load TS t3d_js</label>
       
 			<label index="t3d_cache.no_cache">Deactivate page cache if BE user is logged in (0=Cache on / 1=Cache off)</label>
@@ -173,7 +173,7 @@
 			<label index="t3d_basis.t3d_objects">Lade TS t3d_objects</label>
 			<label index="t3d_basis.t3d_navigation">Lade TS t3d_navigation</label>
 			<label index="t3d_basis.t3d_webanalytic">Lade TS t3d_webanalytic:Etracker und google(muß aktiviert werden)</label>
-			<label index="t3d_basis.t3d_funktionen">Lade TS t3d_funktionen</label>
+			<label index="t3d_basis.t3d_functions">Lade TS t3d_functions</label>
 			<label index="t3d_basis.t3d_js">Lade TS t3d_js</label>
       
 			<label index="t3d_cache.no_cache">Seitencache deaktivieren wenn BE-User eingeloggt?(0=Cache an / 1=Cache aus)</label>
