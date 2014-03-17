@@ -9,7 +9,11 @@ function dbg(el){
 
 jQuery(function(j){
   var the_overlay;
-  var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+  if(isTouch==1){
+    isTouch = true;
+  }else{
+    isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+  }
   if(isTouch==true) j('body').addClass('touch');
   
 

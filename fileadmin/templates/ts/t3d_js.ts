@@ -68,13 +68,15 @@ var config_baseurl = '{$t3d_config.baseURL}';
 
 var ajax_param = '{$t3d_pagetypes.b.typenum}';
   )
-  10 = TEXT
-  10.value(
-var jquery_interval = '{$t3d_jquery.interval}';
-  )
   20 = TEXT
   20.value(
-var jquery_speed = '{$t3d_jquery.speed}';
+    wrap = var isTouch = |;
+    10 = TEXT
+    10{
+      data = GP:touch
+      intval = 1
+      ifEmpty = 0
+    }
   )
   22 = COA
   22{
@@ -82,6 +84,7 @@ var jquery_speed = '{$t3d_jquery.speed}';
     10 = TEXT
     10{
       data = GP:L
+      intval = 1
       ifEmpty = 0
     }
   }
@@ -100,6 +103,7 @@ var jquery_speed = '{$t3d_jquery.speed}';
     10{
       data = GP:debug
       removeBadHTML = 1
+      intval = 1
       ifEmpty = 0
     }
   }
