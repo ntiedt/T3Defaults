@@ -68,16 +68,16 @@ var config_baseurl = '{$t3d_config.baseURL}';
 
 var ajax_param = '{$t3d_pagetypes.b.typenum}';
   )
-  20 = TEXT
-  20.value(
+  20 = COA
+  20{
     wrap = var isTouch = |;
     10 = TEXT
     10{
       data = GP:touch
-      intval = 1
       ifEmpty = 0
+      intval = 1
     }
-  )
+  }
   22 = COA
   22{
     wrap = var gp_l = |;
