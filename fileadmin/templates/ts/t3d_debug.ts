@@ -21,6 +21,12 @@ page.55{
     lang.de = Drucken
   }
   # 35 - grid
+  40 = TEXT
+  40{
+    wrap = <input type="checkbox" id="debugwidth" /><label for="debugwidth" id="bt_debugwidth">|</label>
+    lang.en = Output window width
+    lang.de = Fensterbreite ausgeben
+  }
   /*
   40 = TEXT
   40{

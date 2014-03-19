@@ -42,6 +42,15 @@ jQuery(function(j){
       j('#layer_grid').remove();
     }
   });
+  j( '#debugwidth' ).button({
+    text: true
+  }).click(function() {    
+    if(j('#debugwidth').is(':checked')){
+        j.debug(j(window).width());
+    }else{
+      j( '#dialog_output' ).dialog( "close" );
+    }
+  });
   
 //   j( '#colorpicker' ).button({
 //     text: true
@@ -69,7 +78,7 @@ jQuery(function(j){
       j('body > .all').css('cursor','pointer');
       j('body > .all').bind('click', function(event){
         j( '#dialog_mdebug' ).dialog( "close" );
-        j.debug(event.target);
+        j.dbg(event.target);
         return false;
       });
       j( '#dialog_mdebug' ).dialog( "open" );
@@ -119,7 +128,7 @@ jQuery(function(j){
   }).parent().next().hide().menu();
   
   
-  j( '#help .debug_msg a' ).one( 'click', function() {
+  j( '#help .dbg_msg a' ).one( 'click', function() {
     j(this).attr('href', j(this).attr('href').replace('XXX',j(window).width()));
     j(this).attr('href', j(this).attr('href').replace('YYY',j(window).height()));
   })
