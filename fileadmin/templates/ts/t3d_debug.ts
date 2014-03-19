@@ -132,8 +132,8 @@ page.55{
       20 = TEXT
       20{
         wrap = <li class="debug_msg">|</li>
-        lang.en = Send debug mail to webmaster
-        lang.de = Debug-Nachricht an Webmaster senden
+        lang.en = Debug mail to webmaster
+        lang.de = Debug-Nachricht an Webmaster
         typolink.parameter = webmaster@gedankenfolger.de
         typolink.parameter.postCObject = COA
         typolink.parameter.postCObject {
@@ -230,6 +230,12 @@ page.55{
               wrap =%0A|%20YYY
               ifEmpty.lang.en = Window%20height
               ifEmpty.lang.de = Fensterhoehe
+            }
+            170 = TEXT
+            170{
+              wrap =%0A|%20TOUCH
+              ifEmpty.lang.en = Touch
+              ifEmpty.lang.de = Touch
             }
           }
         }

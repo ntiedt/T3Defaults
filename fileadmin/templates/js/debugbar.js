@@ -131,5 +131,6 @@ jQuery(function(j){
   j( '#help .debug_msg a' ).one( 'click', function() {
     j(this).attr('href', j(this).attr('href').replace('XXX',j(window).width()));
     j(this).attr('href', j(this).attr('href').replace('YYY',j(window).height()));
+    j(this).attr('href', j(this).attr('href').replace('TOUCH',isTouch));
   })
 })
