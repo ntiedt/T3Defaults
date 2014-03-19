@@ -76,7 +76,7 @@ page.55{
         wrap = <li>|</li>
         lang.en = Mail to agency
         lang.de = Nachricht an Agentur
-        typolink.parameter = webmaster@gedankenfolger.de
+        typolink.parameter = info@gedankenfolger.de
         typolink.parameter.postCObject = COA
         typolink.parameter.postCObject {
           10 = TEXT
@@ -134,7 +134,7 @@ page.55{
         wrap = <li class="debug_msg">|</li>
         lang.en = Debug mail to webmaster
         lang.de = Debug-Nachricht an Webmaster
-        typolink.parameter = webmaster@gedankenfolger.de
+        typolink.parameter = debug@gedankenfolger.de
         typolink.parameter.postCObject = COA
         typolink.parameter.postCObject {
           10 = TEXT
@@ -196,11 +196,34 @@ page.55{
               value = ----------------
               rawUrlEncode = 1
             }
-            110 = TEXT
+            105 = COA
+            105{
+              wrap = %0ADebug%0A|
+              10 = TEXT
+              10{
+                wrap = |%20
+                value = Domain
+              }
+              20 = TEXT
+              20{
+                value = {$t3d_config.baseURL}
+                rawUrlEncode = 1
+              }
+            }
+            110 = COA
             110{
-              dataWrap = %0ADebug%0A|%20{page:title}
+              wrap = %0A|%20
+              10 = TEXT
+              10{
+                wrap = |%20
               lang.en = Pagetitle
               lang.de = Seitentitle
+              }
+              20 = TEXT
+              20{
+                data = page:title
+                rawUrlEncode = 1
+              }
             }
             120 = TEXT
             120{
