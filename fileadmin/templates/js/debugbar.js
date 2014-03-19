@@ -78,7 +78,7 @@ jQuery(function(j){
       j('body > .all').css('cursor','pointer');
       j('body > .all').bind('click', function(event){
         j( '#dialog_mdebug' ).dialog( "close" );
-        j.dbg(event.target);
+        j.debug(event.target);
         return false;
       });
       j( '#dialog_mdebug' ).dialog( "open" );
@@ -128,7 +128,7 @@ jQuery(function(j){
   }).parent().next().hide().menu();
   
   
-  j( '#help .dbg_msg a' ).one( 'click', function() {
+  j( '#help .debug_msg a' ).one( 'click', function() {
     j(this).attr('href', j(this).attr('href').replace('XXX',j(window).width()));
     j(this).attr('href', j(this).attr('href').replace('YYY',j(window).height()));
   })
