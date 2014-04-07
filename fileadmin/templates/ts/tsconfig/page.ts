@@ -10,7 +10,7 @@ TCEMAIN.clearCacheCmd = all
 
 mod {
 	//0=Normal, 1=Left, 2=Right, 3=Border
-	SHARED.colPos_list = 0,2,3
+	SHARED.colPos_list = 0,1,2,3,4
 }
 
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-BEGIN
@@ -69,96 +69,219 @@ TCEFORM.tt_content {
 
 ### language default flag
 mod.SHARED {
-defaultLanguageFlag = gb
-defaultLanguageLabel = English
+  defaultLanguageFlag = gb
+  defaultLanguageLabel = English
 }
 
-### RTE
-RTE {
-  classes{
-    /*
-    csc-frame-frame1 {
-      name = gestrichelte Linie davor
-      value = border-top: 1px dashed #CECECE;
-    }
-  	action-items {
-  		name = Aufzählung Maschinenbereich
-  		value = 
-  	}
-    */
-  }
-  ## Anchor classes configuration for use by the anchor accesibility feature
-  classesAnchor {
-    externalLink {
-      altText =
-      titleText =
-    }
-    externalLinkInNewWindow {
-      altText =
-      titleText =
-    }
-    externalOverlay {
-      class = external-overlay
-      type = url
-      altText =
-      titleText =
-      target = overlay
-    }
-    internalLink {
-      altText =
-      titleText =
-    }
-    internalLinkInNewWindow {
-      altText =
-      titleText =
-    }
-    internalOverlay {
-      class = internal-overlay
-      type = page
-      altText =
-      titleText =
-      target = overlay
-    }
-    internalJob {
-      class = internal-job
-      type = page
-      altText =
-      titleText =
-    }
-    download {
-      altText =
-      titleText =
-    }
-    mail {
-      altText =
-      titleText =
-    }
-  }
-  default{
+# ***************************************************************************************
+# "Typical" Page TSconfig for htmlArea RTE and Classic RTE
+#
+# Sets Page TSConfig with most commonly used features representing a good start for typical sites.
+#
+# @author	Stanislas Rolland <typo3(arobas)sjbr.ca>
+# ***************************************************************************************
+
+	## Define labels and styles to be applied to class selectors in the interface of the RTE
+	## The examples included here make partial re-use of color scheme and frame scheme from CSS Styled Content extension
+RTE.classes {
+  /*
+	align-left {
+		name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifyleft
+		value = text-align: left;
+	}
+	align-center {
+		name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifycenter
+		value = text-align: center;
+	}
+	align-right {
+		name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifyright
+		value = text-align: right;
+	}
+	csc-frame-frame1 {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:frame-frame1
+		value = background-color: #EDEBF1; border: 1px solid #333333;
+	}
+	csc-frame-frame2 {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:frame-frame2
+		value = background-color: #F5FFAA; border: 1px solid #333333;
+	}
+	important {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:important
+		value = color: #8A0020;
+	}
+	name-of-person {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:name-of-person
+		value = color: #10007B;
+	}
+	detail {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:detail
+		value = color: #186900;
+	}
+	component-items {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:component-items
+		value = color: #186900;
+	}
+	action-items {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:action-items
+		value = color: #8A0020;
+	}
+	component-items-ordered {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:component-items
+		value = color: #186900;
+	}
+	action-items-ordered {
+		name = LLL:EXT:rtehtmlarea/res/contentcss/locallang.xml:action-items
+		value = color: #8A0020;
+	}
+  */
+}
+
+	## Anchor classes configuration for use by the anchor accesibility feature
+RTE.classesAnchor {
+	externalLink {
+		class = external-link
+		type = url
+		titleText = 
+	}
+	externalLinkInNewWindow {
+		class = external-link-new-window
+		type = url
+		titleText = 
+	}
+	externalDialog {
+		class = external-dialog
+		type = url
+		titleText = 
+	}
+	internalLink {
+		class = internal-link
+		type = page
+		titleText = 
+	}
+	internalLinkInNewWindow {
+		class = internal-link-new-window
+		type = page
+		titleText = 
+	}
+	internalDialog {
+		class = internal-dialog
+		type = page
+		titleText = 
+	}
+	internalJob {
+		class = internal-job
+		type = page
+		titleText = 
+	}
+	download {
+		class = download
+		type = file
+		titleText = 
+	}
+	mail {
+		class = mail
+		type = mail
+		titleText = 
+	}
+}
+
+	## Default RTE configuration
+RTE.default {
+  #contentCSS = fileadmin/templates/css/rte/default.css
   
-    contentCSS = fileadmin/templates/css/rte/default.css
-  	## List all class selectors that are allowed on the way to the database
-  	proc.allowedClasses (
-  		external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail,
-  		align-left, align-center, align-right, align-justify,
-  		csc-frame-frame1, csc-frame-frame2,
-  		component-items, action-items,
-  		component-items-ordered, action-items-ordered,
-  		important, name-of-person, detail,
-  		indent
-  	)
+		## Markup options
+	enableWordClean = 1
+	removeTrailingBR = 1
+	removeComments = 1
+	removeTags = center, font, o:p, sdfield, strike, u
+	removeTagsAndContents = link, meta, script, style, title
+
+		## Toolbar options
+		## The TCA configuration may add buttons to the toolbar
+	showButtons (
+		blockstylelabel, blockstyle, textstylelabel, textstyle,
+		formatblock, bold, italic, subscript, superscript,
+		orderedlist, unorderedlist, outdent, indent, textindicator,
+		insertcharacter, link, table, findreplace, chMode, removeformat, undo, redo, about,
+		toggleborders, tableproperties,
+		rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit,
+		columninsertbefore, columninsertafter, columndelete, columnsplit,
+		cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+	)
+
+		## More toolbar options
+	keepButtonGroupTogether = 1
+
+		## Enable status bar
+	showStatusBar =  1
+
+		## Hide infrequently used block types in the block formatting selector
+	buttons.formatblock.removeItems = pre,address
+
+		## Property ignoreMainStyleOverride is DEPRECATED as of TYPO3 4.6 and will be removed in TYPO3 6.0
+		## Use stylesheet file rather than mainStyleOverride and inlineStyle properties to style the contents.
+		## When RTE.default.contentCSS is not specified, file EXT:rtehtmlarea/res/contentcsss/default.css is used.
+	ignoreMainStyleOverride = 1
+
+		## List all class selectors that are allowed on the way to the database
+	proc.allowedClasses (
+		external-link, external-link-new-window, external-dialog, internal-link, internal-link-new-window, internal-dialog, internal-job, download, mail,
+		align-left, align-center, align-right, align-justify,
+		csc-frame-frame1, csc-frame-frame2,
+		component-items, action-items,
+		component-items-ordered, action-items-ordered,
+		important, name-of-person, detail,
+		indent
+	)
+
+		## Restrict the list of class selectors presented by the RTE to the following for the specified tags:
+	buttons.blockstyle.tags.div.allowedClasses (
+		align-left, align-center, align-right,
+		csc-frame-frame1, csc-frame-frame2
+	)
+	buttons.blockstyle.tags.table.allowedClasses = csc-frame-frame1, csc-frame-frame2
+	buttons.blockstyle.tags.td.allowedClasses = align-left, align-center, align-right
+	buttons.textstyle.tags.span.allowedClasses = important, name-of-person, detail
+
 		## Configuration of links
 		## These classes should also be in the list proc.allowedClasses
-  	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-overlay, internal-link, internal-link-new-window, internal-overlay, internalJob, download, mail
-    
-    ## internal links with url parameters
-    #buttons.link.queryParametersSelector.enabled = 1
-    
-		## Restrict the list of class selectors presented by the RTE to the following for the specified tags:
-  	buttons.blockstyle.tags.div.allowedClasses (
-  		align-left, align-center, align-right,
-  		csc-frame-frame1, csc-frame-frame2
-  	)
-  }
+	buttons.link.properties.class.allowedClasses = external-link, external-link-new-window, external-dialog, internal-link, internal-link-new-window, internal-dialog, internal-job, download, mail
+	buttons.link.page.properties.class.default = internal-link
+	buttons.link.url.properties.class.default = external-link-new-window
+	buttons.link.file.properties.class.default = download
+	buttons.link.mail.properties.class.default = mail
+  
+  ## internal links with url parameters                                              
+  #buttons.link.queryParametersSelector.enabled = 1
+
+		## Configuration specific to the TableOperations feature
+		## Remove the following fieldsets from the table operations dialogs
+	disableAlignmentFieldsetInTableOperations = 1
+	disableSpacingFieldsetInTableOperations = 1
+	disableColorFieldsetInTableOperations = 1
+	disableLayoutFieldsetInTableOperations = 1
+	disableBordersFieldsetInTableOperations = 1
+		## Show borders on table creation
+	buttons.toggleborders.setOnTableCreation = 1
+
+		## Configuration specific to the bold and italic buttons
+		## Add hotkeys associated with bold and italic buttons
+	buttons.bold.hotKey = b
+	buttons.italic.hotKey = i
+
+		## Configuration of microdata schema
+	schema {
+		sources {
+			schemaOrg = EXT:rtehtmlarea/extensions/MicrodataSchema/res/schemaOrgAll.rdf
+		}
+	}
 }
+
+	## front end RTE configuration for the general public
+RTE.default.FE < RTE.default
+RTE.default.FE.showStatusBar = 0
+RTE.default.FE.hideButtons = chMode, blockstyle, textstyle, underline, strikethrough, subscript, superscript, lefttoright, righttoleft, left, center, right, justifyfull, table, inserttag, findreplace, removeformat, copy, cut, paste
+RTE.default.FE.FE >
+RTE.default.FE.userElements >
+RTE.default.FE.userLinks >
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-END
