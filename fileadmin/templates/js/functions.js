@@ -9,12 +9,14 @@ function dbg(el){
 
 jQuery(function(j){
   var the_overlay;
-  if(isTouch==1){
-    isTouch = true;
-  }else{
-    isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+  if(typeof isTouch!='undefined'){
+    if(isTouch==1){
+      isTouch = true;
+    }else{
+      isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+    }
+    if(isTouch==true) j('body').addClass('touch');
   }
-  if(isTouch==true) j('body').addClass('touch');
   
 
 	j(document).keydown(function(e) {
@@ -37,18 +39,16 @@ jQuery(function(j){
   }
 
 
-  /* EVENTS (nav_main) */
-  j('.nav_main ul.level-1 > li').add('.nav_header ul li').hover(
+  /* EVENTS (nav_main / nav_header) */
+  j('.nav_main ul.level-1 > li').add('.nav_header ul.level-1 > li').hover(
     function(){
       j(this).addClass('hover');
-      if(j(this).parents('.nav_main').length>0){
-        j(this).find('ul.level-2').position({
-          of: j( this ).find('a.level-1'),
-          my: 'left top',
-          at: 'left bottom',
-          collision: 'flipfit'
-        });
-      }
+      j(this).find('ul.level-2').position({
+        of: j( this ).find('a.level-1'),
+        my: 'left top',
+        at: 'left bottom',
+        collision: 'flipfit'
+      });
     }, function(){
       j(this).removeClass('hover');
     }
