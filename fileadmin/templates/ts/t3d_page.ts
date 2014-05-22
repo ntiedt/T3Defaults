@@ -19,7 +19,7 @@ page.10 {
     layout.override.field = backend_layout
     
     # colPos=0
-    content < styles.content.get
+    content_main < styles.content.get
     # colPos=1
     content_left < styles.content.getLeft
     # colPos=2
