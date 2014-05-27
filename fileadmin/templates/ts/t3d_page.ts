@@ -9,7 +9,15 @@ page.typeNum = 0
 [globalVar = LIT:1 = {$t3d_basis.templateengine}]
 page.10 = FLUIDTEMPLATE
 page.10 {
-  file = {$t3d_pfade.tmpls}fluid/normal.html
+	file.stdWrap.cObject = CASE
+	file.stdWrap.cObject {
+		key.data = levelfield:-1, backend_layout_next_level, slide
+		key.override.field = backend_layout
+		default = TEXT
+		default.value = {$t3d_pfade.tmpls}fluid/normal.html
+		#2 = TEXT
+		#2.value = {$t3d_pfade.tmpls}fluid/other.html
+	}
   partialRootPath = {$t3d_pfade.tmpls}fluid/partials
   ## Frontend Template analog zum BE Template auswählen
 
