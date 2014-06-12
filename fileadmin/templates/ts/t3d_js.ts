@@ -4,9 +4,9 @@
 #----------------------------------------------------------- INCLUDEJSFOOTER-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.t3d_js}]
 page.includeJSFooter{
-  jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  jquery = {$t3d_pfade.tmpls}js/jquery-1.11.1.min.js
   jquery.disableCompression = 1
-  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
+  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.4.custom.min.js
   jqueryui.disableCompression = 1
   colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
   colorbox.disableCompression = 1
@@ -21,9 +21,9 @@ page.includeJSFooter{
 [globalVar = LIT:1 = {$t3d_basis.t3d_js}] && [globalVar = GP:debug == 1]
 page.includeJSFooter{
   jquery >
-  jquery = {$t3d_pfade.tmpls}js/jquery-1.9.1.min.js
+  jquery = {$t3d_pfade.tmpls}js/jquery-1.11.1.min.js
   jqueryui >
-  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.3.custom.min.js
+  jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.4.custom.min.js
   colorbox >
   colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
   flexslider >
