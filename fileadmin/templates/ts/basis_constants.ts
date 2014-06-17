@@ -33,58 +33,58 @@ t3d_config{
   #cat=t3d_config/links/060; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.spamProtectEmailAddresses_atSubst
   spamProtectEmailAddresses_atSubst = (at)
   
-  #cat=t3d_config/language/070; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language
+  #cat=t3d_config/language/070; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language
   language = de
   
-  #cat=t3d_config/language/080; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all
+  #cat=t3d_config/language/080; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all
   locale_all = de_DE
   
-  #cat=t3d_config/language/090; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_2
+  #cat=t3d_config/language/090; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_2
   language_2 = en
   
-  #cat=t3d_config/language/100; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_2
+  #cat=t3d_config/language/100; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_2
   locale_all_2 = en_GB
   
-  #cat=t3d_config/language/110; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_3
+  #cat=t3d_config/language/110; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_3
   language_3 = fr
   
-  #cat=t3d_config/language/120; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_3
+  #cat=t3d_config/language/120; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_3
   locale_all_3 = fr_FR
   
-  #cat=t3d_config/language/130; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_4
+  #cat=t3d_config/language/130; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_4
   language_4 = it
   
-  #cat=t3d_config/language/140; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_4
+  #cat=t3d_config/language/140; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_4
   locale_all_4 = it_IT
   
-  #cat=t3d_config/language/150; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_5
+  #cat=t3d_config/language/150; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_5
   language_5 = es
   
-  #cat=t3d_config/language/160; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_5
+  #cat=t3d_config/language/160; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_5
   locale_all_5 = es_ES
   
-  #cat=t3d_config/language/170; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_6
+  #cat=t3d_config/language/170; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_6
   language_6 = nl
   
-  #cat=t3d_config/language/180; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_6
+  #cat=t3d_config/language/180; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_6
   locale_all_6 = nl_NL
   
-  #cat=t3d_config/language/190; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_7
+  #cat=t3d_config/language/190; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_7
   language_7 = cz
   
-  #cat=t3d_config/language/200; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_7
+  #cat=t3d_config/language/200; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_7
   locale_all_7 = cs_CZ
   
-  #cat=t3d_config/language/210; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_8
+  #cat=t3d_config/language/210; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_8
   language_8 = ro
   
-  #cat=t3d_config/language/220; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_8
+  #cat=t3d_config/language/220; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_8
   locale_all_8 = ro_RO
   
-  #cat=t3d_config/language/230; type=options[Deutsch=de,Englisch=en,Slowenisch=si,Italienisch=it,Franzoesisch=fr,Polnisch=pl,Spanisch=es,Niederlaendisch=nl,Schwedisch=se,Tschechisch=cz,Rumaenisch=ro]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_9
+  #cat=t3d_config/language/230; type=options[Deutsch=de,Englisch=en,Franzoesisch=fr,Italienisch=it,Niederlaendisch=nl,Polnisch=pl,Portugiesisch=pt,Rumaenisch=ro,Russisch=ru,Schwedisch=se,Slowenisch=si,Spanisch=es,Tschechisch=cz]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.language_9
   language_9 = pl
   
-  #cat=t3d_config/language/240; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Slowenisch=sl_SI,Italienisch=it_IT,Franzoesisch=fr_FR,Polnisch=pl_PL,Spanisch=es_ES,Niederlaendisch=nl_NL,Schwedisch=sv_SE,Tschechisch=cs_CZ,Rumaenisch=ro_RO]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_9
+  #cat=t3d_config/language/240; type=options[Deutsch=de_DE,Britisch Englisch=en_GB,Amerikanisch Englisch=en_US,Franzoesisch=fr_FR,Italienisch=it_IT,Niederlaendisch=nl_NL,Polnisch=pl_PL,Portugiesisch=pt_PT,Rumaenisch=ro_RO,Russisch=ru_RUSchwedisch=sv_SE,Slowenisch=sl_SI,Spanisch=es_ES,Tschechisch=cs_CZ]; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_config.locale_all_9
   locale_all_9 = pl_PL
 }
 
