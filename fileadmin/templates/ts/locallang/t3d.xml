@@ -20,24 +20,24 @@
       
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
 			<label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
-			<label index="t3d_config.language">Default language</label>
-			<label index="t3d_config.locale_all">Default localisation</label>
-			<label index="t3d_config.language_2">2. language</label>
-			<label index="t3d_config.locale_all_2">Localisation of 2. language</label>
-			<label index="t3d_config.language_3">3. language</label>
-			<label index="t3d_config.locale_all_3">Localisation of 3. language</label>
-			<label index="t3d_config.language_4">4. language</label>
-			<label index="t3d_config.locale_all_4">Localisation of 4. language</label>
-			<label index="t3d_config.language_5">5. language</label>
-			<label index="t3d_config.locale_all_5">Localisation of 5. language</label>
-			<label index="t3d_config.language_6">6. language</label>
-			<label index="t3d_config.locale_all_6">Localisation of 6. language</label>
-			<label index="t3d_config.language_7">7. language</label>
-			<label index="t3d_config.locale_all_7">Localisation of 7. language</label>
-			<label index="t3d_config.language_8">8. language</label>
-			<label index="t3d_config.locale_all_8">Localisation of 8. language</label>
-			<label index="t3d_config.language_9">9. language</label>
-			<label index="t3d_config.locale_all_9">Localisation of 9. language</label>
+			<label index="t3d_config.language">Default language (ID=0)</label>
+			<label index="t3d_config.locale_all">Default localisation (ID=0)</label>
+			<label index="t3d_config.language_2">2. language (ID=1)</label>
+			<label index="t3d_config.locale_all_2">Localisation of 2. language (ID=1)</label>
+			<label index="t3d_config.language_3">3. language (ID=2)</label>
+			<label index="t3d_config.locale_all_3">Localisation of 3. language (ID=2)</label>
+			<label index="t3d_config.language_4">4. language (ID=3)</label>
+			<label index="t3d_config.locale_all_4">Localisation of 4. language (ID=3)</label>
+			<label index="t3d_config.language_5">5. language (ID=4)</label>
+			<label index="t3d_config.locale_all_5">Localisation of 5. language (ID=4)</label>
+			<label index="t3d_config.language_6">6. language (ID=5)</label>
+			<label index="t3d_config.locale_all_6">Localisation of 6. language (ID=5)</label>
+			<label index="t3d_config.language_7">7. language (ID=6)</label>
+			<label index="t3d_config.locale_all_7">Localisation of 7. language (ID=6)</label>
+			<label index="t3d_config.language_8">8. language (ID=7)</label>
+			<label index="t3d_config.locale_all_8">Localisation of 8. language (ID=7)</label>
+			<label index="t3d_config.language_9">9. language (ID=8)</label>
+			<label index="t3d_config.locale_all_9">Localisation of 9. language (ID=8)</label>
       
 			<label index="t3d_basis.templateengine">Template engine</label>
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
@@ -145,24 +145,24 @@
 			<label index="t3d_config.spamProtectEmailAddresses">@-Zeichen Ersetzung einschalten</label>
 			<label index="t3d_config.spamProtectEmailAddresses_atSubst">@-Zeichen Ersetzung</label>
 			<label index="t3d_config.tx_realurl_enable">RealUrl aktivieren?</label>
-			<label index="t3d_config.language">Standard Sprache</label>
-			<label index="t3d_config.locale_all">Standard Lokalisierung</label>
-			<label index="t3d_config.language_2">2. Sprache</label>
-			<label index="t3d_config.locale_all_2">2. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_3">3. Sprache</label>
-			<label index="t3d_config.locale_all_3">3. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_4">4. Sprache</label>
-			<label index="t3d_config.locale_all_4">4. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_5">5. Sprache</label>
-			<label index="t3d_config.locale_all_5">5. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_6">6. Sprache</label>
-			<label index="t3d_config.locale_all_6">6. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_7">7. Sprache</label>
-			<label index="t3d_config.locale_all_7">7. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_8">8. Sprache</label>
-			<label index="t3d_config.locale_all_8">8. Sprache Lokalisierung</label>
-			<label index="t3d_config.language_9">9. Sprache</label>
-			<label index="t3d_config.locale_all_9">9. Sprache Lokalisierung</label>
+			<label index="t3d_config.language">Standard Sprache (ID=0)</label>
+			<label index="t3d_config.locale_all">Standard Lokalisierung (ID=0)</label>
+			<label index="t3d_config.language_2">2. Sprache (ID=1)</label>
+			<label index="t3d_config.locale_all_2">2. Sprache Lokalisierung (ID=1)</label>
+			<label index="t3d_config.language_3">3. Sprache (ID=2)</label>
+			<label index="t3d_config.locale_all_3">3. Sprache Lokalisierung (ID=2)</label>
+			<label index="t3d_config.language_4">4. Sprache (ID=3)</label>
+			<label index="t3d_config.locale_all_4">4. Sprache Lokalisierung (ID=3)</label>
+			<label index="t3d_config.language_5">5. Sprache (ID=4)</label>
+			<label index="t3d_config.locale_all_5">5. Sprache Lokalisierung (ID=4)</label>
+			<label index="t3d_config.language_6">6. Sprache (ID=5)</label>
+			<label index="t3d_config.locale_all_6">6. Sprache Lokalisierung (ID=5)</label>
+			<label index="t3d_config.language_7">7. Sprache (ID=6)</label>
+			<label index="t3d_config.locale_all_7">7. Sprache Lokalisierung (ID=6)</label>
+			<label index="t3d_config.language_8">8. Sprache (ID=7)</label>
+			<label index="t3d_config.locale_all_8">8. Sprache Lokalisierung (ID=7)</label>
+			<label index="t3d_config.language_9">9. Sprache (ID=8)</label>
+			<label index="t3d_config.locale_all_9">9. Sprache Lokalisierung (ID=8)</label>
       
 			<label index="t3d_basis.templateengine">Template-Engine</label>
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
