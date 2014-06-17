@@ -194,7 +194,15 @@ temp.googlejavascript.10.value(
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{t3d_webanalytic.google_analytics.id}', '{register:HTTP_HOST}');
+  
+)
+temp.googlejavascript.20 = TEXT
+temp.googlejavascript.20.wrap = ga('create', '{$t3d_webanalytic.google_analytics.id}', '|');
+temp.googlejavascript.20.data = register:HTTP_HOST
+temp.googlejavascript.30 = TEXT
+temp.googlejavascript.30.value(
+
+  ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 </script>
 <!-- google CODE END -->
