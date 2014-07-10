@@ -1,9 +1,9 @@
 /**
  * Title:         TYPO3 Defaults - webanalytic - Event Tracker
- * Version:       0.2
+ * Version:       0.3
  * Author:        Niels Tiedt (nt[AT]typo3-coders.org)
  * Date Created:  2013-11-28
- * Date Modified: 2013-12-09
+ * Date Modified: 2014-07-10
  * URL:           
  * Contributors:  
  */
@@ -63,7 +63,7 @@
     var settings = $.extend( {}, defaults, options );
     return this.each(function() {
       // BEGIN
-      if($(this).attr('href')==''){
+      if((!$(this).attr('href')) || ($(this).attr('href')=='') || ($(this).attr('href')=='javascript:;')|| ($(this).attr('href')=='#')){
         return;
       }
       var link = $(this);
