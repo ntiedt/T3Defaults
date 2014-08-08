@@ -19,6 +19,8 @@
 			<label index="customsubcategory.beta">Page type B(dynamic db output e.g. for ajax)</label>
       
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
+			<label index="t3d_config.spamProtectEmailAddresses">Enable @-sign replacement</label>
+			<label index="t3d_config.spamProtectEmailAddresses_atSubst">@-sign replacement</label>
 			<label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
 			<label index="t3d_config.language">Default language (ID=0)</label>
 			<label index="t3d_config.locale_all">Default localisation (ID=0)</label>
