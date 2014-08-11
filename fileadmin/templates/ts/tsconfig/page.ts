@@ -8,11 +8,6 @@
 TCEMAIN.clearCacheCmd = all
 #----------------------------------------------------------- PAGE-TSCONFIG-NEWS-SYSORDNER-END
 
-mod {
-	//0=Normal, 1=Left, 2=Right, 3=Border
-	SHARED.colPos_list = 0,1,2,3,4
-}
-
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-BEGIN
 TCEMAIN.table.tt_content {
   disablePrependAtCopy = 1
