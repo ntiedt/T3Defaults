@@ -8,6 +8,17 @@
 TCEMAIN.clearCacheCmd = all
 #----------------------------------------------------------- PAGE-TSCONFIG-NEWS-SYSORDNER-END
 
+TCEFORM.tx_gridelements_backend_layout.frame{
+  addItems {
+    #4 = My Frame 4
+    #5 = My Frame 5
+  }
+  altLabels{
+    1 = Beige
+  }
+  removeItems = 2,3
+}
+
 #----------------------------------------------------------- PAGE-TSCONFIG-ROOTPAGE-BEGIN
 TCEMAIN.table.tt_content {
   disablePrependAtCopy = 1
