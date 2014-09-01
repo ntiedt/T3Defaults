@@ -41,6 +41,7 @@
 			<label index="t3d_config.language_9">9. language (ID=8)</label>
 			<label index="t3d_config.locale_all_9">Localisation of 9. language (ID=8)</label>
       
+			<label index="t3d_basis.templateengine">Template engine</label>
 			<label index="t3d_basis.favicon">Enable Favicon?</label>
 			<label index="t3d_basis.ul_liststyleimage">Enable own list image?</label>
 			<label index="t3d_basis.ts_css_styled_content">Load TS css_styled_content</label>
@@ -165,6 +166,7 @@
 			<label index="t3d_config.language_9">9. Sprache (ID=8)</label>
 			<label index="t3d_config.locale_all_9">9. Sprache Lokalisierung (ID=8)</label>
       
+			<label index="t3d_basis.templateengine">Template-Engine</label>
 			<label index="t3d_basis.favicon">Favicon aktivieren?</label>
 			<label index="t3d_basis.ul_liststyleimage">Eigenes Listenbild aktivieren?</label>
 			<label index="t3d_basis.ts_css_styled_content">Lade TS css_styled_content</label>
