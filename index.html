@@ -32,7 +32,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="complete-typo3-ts-configconstant-definition-for-all-things-i-need" class="anchor" href="#complete-typo3-ts-configconstant-definition-for-all-things-i-need"><span class="octicon octicon-link"></span></a>Complete TYPO3 TS config/constant definition for all things i need.</h1>
+<a name="complete-typo3-ts-configconstant-definition-for-all-things-i-need" class="anchor" href="#complete-typo3-ts-configconstant-definition-for-all-things-i-need"><span class="octicon octicon-link"></span></a>Complete TYPO3 TS config/constant definition for all things i need. (TYPO3 version 6.2.4)</h1>
 
 <h2>
 <a name="including-the-following" class="anchor" href="#including-the-following"><span class="octicon octicon-link"></span></a>Including the following</h2>
@@ -45,11 +45,16 @@
 <li>Objekts(Logo,Claim,Search...)</li>
 <li>CSS</li>
 <li>JS</li>
-<li>Extensions(tt_news,fluid,templavoila,indexed_search...)</li>
+<li>Complete fluid based</li>
+<li>Responsive</li>
+<li>Grid generator (max_width,max_cols,col_width,col_margin,unity) see constants</li>
+<li>Sass file(normal.scss) for template css. You need compass to compile the file or you must use the generated normal.css</li>
+<li>Less file(news-basic.less) for news extension css. You need less to compile the file or you must use the generated news-basic.css</li>
+<li>Extensions(news,fluid,direct_mail_subscription,indexed_search...)</li>
 <li>Debug</li>
 <li>Debugbar(Press STRG+ALT+SHIFT+D in FE)</li>
 <li>Test touch with url parameter &touch=1</li>
-<li>Webanalytic</li>
+<li>Webanalytic(E-Tracker and google analytics)</li>
 <li>and more...</li>
 </ul><h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
@@ -65,7 +70,17 @@
 <li>Select T3D_Config</li>
 <li>Enter your base url</li>
 <li>Save and view it in FE</li>
-</ul><p>TAGS: config, navigation, objects, js, css, debug, user functions, grid, page types, exts, locallang, webanalytic, fluid, responsive, typo3, ts, typoscript.</p>
+</ul><h2>
+<a name="sassless" class="anchor" href="#sassless"><span class="octicon octicon-link"></span></a>Sass/Less</h2>
+
+<p>There are some great places where you can find informations about Sass/Less. I only list a small selection of helpful sites especially for windows.</p>
+<ul>
+<li><a href="http://www.codechewing.com/library/how-to-install-sass-with-compass-on-windows/" target="_blank">How to install Sass with Compass on Windows</a></li>
+<li><a href="http://www.impressivewebs.com/sass-on-windows/" target="_blank">Setting Up Sass on Windows</a></li>
+<li>If you get an error "Syntax error: Invalid CSS after " @each.." when compiling compass using "@each $width, $fontSize in..." see post <a href="http://www.mindscapehq.com/forums/thread/2000338" target="_blank">In version 3.3.1608 still not supported 'maps' in Compass</a></li>
+</ul>
+
+<p>TAGS: config, navigation, objects, js, css, debug, user functions, grid, page types, exts, locallang, webanalytic, fluid, responsive, typo3, ts, typoscript.</p>
 
 <h2>
 <a name="legal-information" class="anchor" href="#legal-information"><span class="octicon octicon-link"></span></a>Legal information:</h2>
