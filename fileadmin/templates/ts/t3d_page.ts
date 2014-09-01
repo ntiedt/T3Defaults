@@ -5,8 +5,7 @@
 page = PAGE
 page.typeNum = 0
 
-## Templateengine fluid
-[globalVar = LIT:1 = {$t3d_basis.templateengine}]
+## Fluid-Template
 page.10 = FLUIDTEMPLATE
 page.10 {
 	file.stdWrap.cObject = CASE
@@ -54,13 +53,6 @@ tt_content.gridelements_pi1.20.10.setup {
     }
   }
 }
-[global]
-
-## Templateengine templavoila
-[globalVar = LIT:2 = {$t3d_basis.templateengine}]
-page.10 = USER
-page.10.userFunc = tx_templavoila_pi1->main_page
-page.10.disableExplosivePreview = 1
 [global]
 
 #----------------------------------------------------------- DEFAULT-PAGE-END
