@@ -4,14 +4,12 @@
 #----------------------------------------------------------- INCLUDECSS-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.t3d_css}]
 page.includeCSS{
-  #reset = {$t3d_pfade.tmpls}css/reset.css
+  reset = {$t3d_pfade.tmpls}css/reset.css
   ie = {$t3d_pfade.tmpls}css/ie.css
   #jqueryui = {$t3d_pfade.tmpls}css/ui-lightness/jquery-ui-1.10.3.custom.min.css
   colorbox = {$t3d_pfade.tmpls}css/colorbox.css
-  #powermail = {$t3d_pfade.tmpls}css/powermail.css
-  bxslider = {$t3d_pfade.tmpls}css/jquery.bxslider.css
+  powermail = {$t3d_pfade.tmpls}css/powermail.css
   normal = {$t3d_pfade.tmpls}css/normal.css
-  #normal = {$t3d_pfade.tmpls}css/normal.scss
 }
 [global]
 #----------------------------------------------------------- INCLUDECSS-END
@@ -19,12 +17,11 @@ page.includeCSS{
 #----------------------------------------------------------- INCLUDECSS-DEBUG-BEGIN
 [globalVar = LIT:1 = {$t3d_basis.t3d_css}] && [globalVar = GP:debug == 1]
 page.includeCSS{
-  #reset = {$t3d_pfade.tmpls}css/reset.css
+  reset = {$t3d_pfade.tmpls}css/reset.css
   ie = {$t3d_pfade.tmpls}css/ie.css
   jqueryuidbg = {$t3d_pfade.tmpls}css/dbgsmoothness/jquery-ui-1.9.2.custom.min.css
   colorbox = {$t3d_pfade.tmpls}css/colorbox.css
-  #powermail = {$t3d_pfade.tmpls}css/powermail.css
-  bxslider = {$t3d_pfade.tmpls}css/jquery.bxslider.css
+  powermail = {$t3d_pfade.tmpls}css/powermail.css
   debug = {$t3d_pfade.tmpls}css/debug.css
   normal = {$t3d_pfade.tmpls}css/normal.css
 }

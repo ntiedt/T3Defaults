@@ -384,18 +384,10 @@ t3d_pagetypes{
 
 
 
-plugin.tx_news{
-  settings.cssFile = fileadmin/templates/css/news-basic.css
-  view.layoutRootPath = fileadmin/templates/fluid/ext/news/Layouts/
-  view.partialRootPath = fileadmin/templates/fluid/ext/news/Partials/
-  view.templateRootPath = fileadmin/templates/fluid/ext/news/Templates/
-}
 
-plugin.tx_powermail{
-  view.templateRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Templates/
-  view.layoutRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Layouts/
-  view.partialRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Partials/
-}
+
+
+
 
 
 

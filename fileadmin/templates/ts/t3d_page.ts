@@ -41,7 +41,6 @@ page.10 {
     #content_bottomright.select.where = colPos=5
   }
 }
-#includeLibs.functions = {$t3d_pfade.tmpls}php/functions.php
 tt_content.gridelements_pi1.20.10.setup {
   1 < lib.gridelements.defaultGridSetup
   1 {
@@ -53,40 +52,6 @@ tt_content.gridelements_pi1.20.10.setup {
       120.wrap = <div class="col col-2 span_12">|</div>
     }
   }
-  /* Example generate playlist from fluid flexform
-  10 = TEXT
-  10 {
-    stdWrap.cObject = COA
-    stdWrap.cObject{
-      wrap = <script type="text/javascript"> var videos_playlist = [|]; </script>
-      5 = LOAD_REGISTER
-      5{
-        videos.cObject = TEXT
-        videos.cObject.field = flexform_videos
-        thumbnails.cObject = TEXT
-        thumbnails.cObject.field = flexform_thumbnails
-        titles.cObject = TEXT
-        titles.cObject.field = flexform_titles
-      }
-      10 = USER
-      10 {
-        userFunc =user_functions->makePlaylist
-        userFunc{
-          videos = TEXT
-          videos.data = register:videos
-          thumbnails = TEXT
-          thumbnails.data = register:thumbnails
-          titles = TEXT
-          titles.data = register:titles
-          test = TEXT
-          test.value = test
-          basepath = TEXT
-          basepath.value = ../../../../../../../../
-        }
-      }
-    }
-  }
-  */
 }
 [global]
 
