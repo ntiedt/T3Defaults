@@ -1,0 +1,655 @@
+.color-1 {
+  color: white;
+}
+
+.color-2 {
+  color: #333333;
+}
+
+.color-3 {
+  color: #af0917;
+}
+
+.color-4 {
+  color: #996633;
+}
+
+.color-5 {
+  color: #2a2883;
+}
+
+.bg-1 {
+  background-color: white;
+}
+
+.bg-2 {
+  background-color: #e0d1c1;
+}
+
+.bg-3 {
+  background-color: #efe7de;
+}
+
+.bg-4 {
+  background-color: #d5c0aa;
+}
+
+.bg-5 {
+  background-color: #996633;
+}
+
+.bg-6 {
+  background-color: #af0917;
+}
+
+.bg-7 {
+  background-color: #333333;
+}
+
+.otf .bg-6 {
+  background-color: #2a2883;
+}
+
+.border-color-1 {
+  border-color: #6d6d6d;
+}
+
+.font-family-1 {
+  font-family: "Asap", sans-serif;
+}
+
+.font-family-2 {
+  font-family: "Nova Cut", cursive;
+}
+
+/*
+RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+IE */
+/* CLEARFIX HACK */
+.row,
+.clr,
+.group {
+  zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .row,
+*:first-child + html .clr,
+*:first-child + html .group {
+  zoom: 1;
+}
+
+/* IE7 */
+/*
+CSS3/HYPENATION */
+/* 
+ALLGEMEIN */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1272px) {
+  body {
+    font-size: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 80%;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    font-size: 70%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 70%;
+  }
+}
+
+div, a, li, input, select, label, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Asap", sans-serif;
+  color: #333333;
+  min-height: 1px;
+  line-height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none outside;
+}
+
+.content_main a {
+  color: #af0917;
+}
+.otf .content_main a {
+  color: #2a2883;
+}
+.content_main a:hover {
+  color: #996633;
+}
+.content_main h1,
+.content_main h2,
+.content_main h3 {
+  color: #af0917;
+  font-size: 1.4em;
+  font-family: "Nova Cut", cursive;
+}
+.otf .content_main h1,
+.otf .content_main h2,
+.otf .content_main h3 {
+  color: #2a2883;
+}
+.content_main h1,
+.content_main h2,
+.content_main h3,
+.content_main p {
+  padding: 0 0 1em 0;
+}
+
+.layout-1 .content_main h1, .layout-1 .content_main p {
+  color: white;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+sup {
+  font-size: 0.7em;
+  vertical-align: text-top;
+}
+
+form {
+  width: 100%;
+}
+form fieldset legend {
+  display: none;
+}
+form fieldset > .row, form fieldset > .powermail_fieldwrap {
+  padding: 0 0 3% 0;
+}
+form fieldset > .row:after, form fieldset > .powermail_fieldwrap:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+form fieldset > .row label, form fieldset > .powermail_fieldwrap label {
+  display: block;
+  float: left;
+  width: 36.320754716981%;
+  padding: 1.25% 0;
+}
+form fieldset > .row input, form fieldset > .row select, form fieldset > .row textarea, form fieldset > .powermail_fieldwrap input, form fieldset > .powermail_fieldwrap select, form fieldset > .powermail_fieldwrap textarea {
+  display: block;
+  float: left;
+  width: 61.792452830189%;
+  margin-left: 1.8867924528302%;
+  padding: 1%;
+  border: 1px solid #6d6d6d;
+}
+form fieldset > .row.single input, form fieldset > .row.single select, form fieldset > .row.single textarea, form fieldset > .powermail_fieldwrap.single input, form fieldset > .powermail_fieldwrap.single select, form fieldset > .powermail_fieldwrap.single textarea {
+  margin-left: 0;
+}
+form fieldset > .row input[type="submit"], form fieldset > .powermail_fieldwrap input[type="submit"] {
+  width: auto;
+  margin: 2.5% 2.5% 0 0;
+  padding: 1% 2%;
+  color: white;
+  font-weight: normal;
+  font-size: 1.1em;
+  font-family: "Nova Cut", cursive;
+  text-align: center;
+  background: #996633;
+  border: 0 none;
+  cursor: pointer;
+}
+form fieldset > .row input[type="submit"]:last-child, form fieldset > .powermail_fieldwrap input[type="submit"]:last-child {
+  margin-right: 0;
+}
+form fieldset > .row input[type="submit"]:hover, form fieldset > .powermail_fieldwrap input[type="submit"]:hover {
+  background: #333333;
+}
+form fieldset > .row .formError, form fieldset > .powermail_fieldwrap .formError {
+  position: relative;
+}
+form fieldset > .row .formError .formErrorContent, form fieldset > .powermail_fieldwrap .formError .formErrorContent {
+  position: absolute;
+  right: 0;
+  top: -2.75em;
+  padding: 1%;
+  color: white;
+  background: #af0917;
+}
+form fieldset > .row .formError .formErrorContent .formErrorArrow, form fieldset > .powermail_fieldwrap .formError .formErrorContent .formErrorArrow {
+  position: absolute;
+  bottom: -0.9em;
+  width: 15px;
+  color: #af0917;
+}
+.otf form fieldset > .row .formError .formErrorContent .formErrorArrow, .otf form fieldset > .powermail_fieldwrap .formError .formErrorContent .formErrorArrow {
+  color: #2a2883;
+}
+
+/* 
+Struktur */
+.header > .row-1 {
+  display: table;
+  background: url(../image/bg_header.jpg) top right no-repeat transparent;
+  background-size: auto 100%;
+}
+.header > .row-1 > .col {
+  display: table-cell;
+  float: none;
+}
+
+.layout-1 > .col-1 {
+  width: 72.1698113207552%;
+}
+.layout-1 > .col-2 {
+  margin-left: 0;
+}
+
+.layout-2 .content_main {
+  padding: 11.2% 0 5% 0;
+}
+
+.footer > .row-1 {
+  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer > .row-2 {
+  padding: 2em 0;
+}
+
+/* 
+Objects */
+.obj_claim {
+  display: flex;
+  padding: 0 0 5%;
+}
+.obj_claim span {
+  font: 1em "Nova Cut", cursive;
+}
+
+.layout-1 .csc-textpic-text {
+  position: absolute;
+  width: 72.1698%;
+  padding: 4.8% 3.4% 0 3.4%;
+  width: 61.79%;
+}
+
+.nav_main {
+  position: relative;
+  z-index: 2;
+}
+.nav_main ul.level-1 {
+  display: table;
+  width: 100%;
+}
+.nav_main ul.level-2 {
+  position: absolute;
+  display: none;
+  padding: 0.1em 0 0.75em;
+  -webkit-box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.5);
+  box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.5);
+  background: #996633;
+}
+.nav_main li.hover ul.level-2 {
+  display: block;
+}
+.nav_main li.level-1 {
+  display: table-cell;
+}
+.nav_main a {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+}
+.nav_main a.level-1 {
+  position: relative;
+  padding: 8px 0.5em 1em 0.5em;
+  vertical-align: top;
+  font-size: 1em;
+  text-align: center;
+  border-top: 8px solid transparent;
+}
+.nav_main a.level-1.click, .nav_main a.level-1:hover {
+  border-color: white;
+}
+.nav_main li.level-1:first-child a.level-1 {
+  padding-left: 0;
+}
+.nav_main li.level-1:last-child a.level-1 {
+  padding-right: 0;
+}
+.nav_main a.level-2 {
+  display: flex;
+  width: 100%;
+  padding: 0.7em 1em;
+  font-size: 0.95em;
+}
+.nav_main a.level-2:before {
+  content: "> ";
+  padding: 0 0.1em 0 0;
+}
+.nav_main .balken-outer {
+  position: relative;
+}
+.nav_main .balken {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #996633;
+}
+
+.nav_sub ul.level-1 {
+  padding: 0.75em 0;
+  border: solid #6d6d6d;
+  border-width: 1px 0;
+  background: #efe7de;
+}
+.nav_sub ul li a {
+  display: block;
+  width: 100%;
+  padding: 0.7em 0.75em;
+  font-size: 1em;
+}
+.nav_sub ul li a.level-2 {
+  padding: 0 1.5em 0.7em 1.5em;
+  font-size: 0.9em;
+}
+.nav_sub ul li a:hover,
+.nav_sub ul li a.click {
+  color: #af0917;
+}
+.otf .nav_sub ul li a:hover,
+.otf .nav_sub ul li a.click {
+  color: #2a2883;
+}
+
+.nav_footer_1 ul {
+  display: table;
+  width: 100%;
+  margin: 0.8em 0;
+}
+.nav_footer_1 ul li {
+  display: table-cell;
+  padding: 0 0.2em;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+}
+.nav_footer_1 ul li.trenner {
+  width: 1px;
+  padding: 0;
+  background: white;
+}
+.nav_footer_1 ul li a {
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+}
+
+.nav_footer_2 a, .nav_footer_3 a {
+  color: #996633;
+  font-size: 0.9em;
+}
+
+.obj_vorhang {
+  position: relative;
+  z-index: 1;
+}
+.obj_vorhang > div {
+  position: absolute;
+}
+.obj_vorhang div.bg {
+  background: #af0917;
+}
+.obj_vorhang div.image {
+  border-top: 1px solid #af0917;
+}
+.otf .obj_vorhang div.bg {
+  background: #2a2883;
+}
+.otf .obj_vorhang div.image {
+  border-top: 1px solid #2a2883;
+}
+
+.obj_page_title {
+  margin: 30% 0 0;
+}
+.obj_page_title h3 {
+  padding: 9.5% 0.5em 6.2% 0.5em;
+  color: #af0917;
+  font-size: 1.4em;
+  font-family: "Nova Cut", cursive;
+  word-break: normal;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.otf .obj_page_title h3 {
+  color: #2a2883;
+}
+
+.content_right > :first-child {
+  padding-top: 21.5%;
+}
+
+.content_right > :last-child {
+  border-bottom: 0;
+}
+
+.gmap_canvas_wrapper {
+  width: 305px;
+  height: 305px;
+  overflow: hidden;
+  margin: 5% 0;
+  -webkit-box-shadow: 0 0 10px rgba(51, 51, 51, 0.15);
+  -moz-box-shadow: 0 0 10px rgba(51, 51, 51, 0.15);
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.15);
+}
+
+#gmap_canvas {
+  width: 305px;
+  height: 305px;
+}
+
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
+}
+
+.obj_blocks {
+  padding: 7%;
+  border-bottom: 1px solid #6d6d6d;
+}
+.obj_blocks > .row {
+  padding: 1% 0 0;
+}
+.obj_blocks > .row .row {
+  padding: 7% 0 0;
+}
+.obj_blocks > .row .row:first-child {
+  padding: 5% 0 0;
+}
+.obj_blocks h3 {
+  padding: 1% 0 1% 13%;
+  color: #af0917;
+  font-size: 1.4em;
+  font-family: "Nova Cut", cursive;
+  background: url(../image/bg_head_content_right.png) center left no-repeat transparent;
+  background-size: auto 100%;
+}
+.otf .obj_blocks h3 {
+  color: #2a2883;
+  background: url(../image/otf/bg_head_content_right.png) center left no-repeat transparent;
+}
+.obj_blocks h5 {
+  margin: 0;
+  padding: 0 0 1% 0;
+  color: #996633;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+.obj_blocks > a {
+  display: block;
+  margin: 5% 0 0 0;
+  padding: 2%;
+  color: white;
+  font-weight: normal;
+  font-size: 1.1em;
+  font-family: "Nova Cut", cursive;
+  text-align: center;
+  background: #996633;
+}
+.obj_blocks > a:hover {
+  background: #333333;
+}
+.obj_blocks p {
+  font-size: 0.9em;
+}
+.obj_blocks > p {
+  padding: 4% 0 0 0;
+}
+
+.obj_block > p {
+  padding: 5% 0 0 0;
+}
+.obj_block a {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.obj_block h4 {
+  margin: 0;
+  padding: 2% 0;
+  color: #996633;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.content_main .obj_block p.date {
+  display: block;
+  margin: 0;
+  padding: 1%;
+  color: white;
+  font-weight: normal;
+  font-size: 1.1em;
+  font-family: "Nova Cut", cursive;
+  text-align: center;
+  background: #996633;
+}
+
+.obj_address img {
+  max-width: 300px;
+}
+.obj_address > .row-2 {
+  padding: 0 0 0 15%;
+}
+.obj_address p, .obj_address a {
+  font-size: 0.9em;
+}
+.obj_address a {
+  text-decoration: underline;
+}
+
+.obj_newsletter h3 {
+  padding: 9.5% 0 6.2%;
+  color: #af0917;
+  font-size: 1.1em;
+  font-family: "Nova Cut", cursive;
+}
+
+.otf .obj_newsletter h3 {
+  color: #2a2883;
+}
+
+.csc-default:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.layout-1 div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image {
+  margin-bottom: 0;
+}

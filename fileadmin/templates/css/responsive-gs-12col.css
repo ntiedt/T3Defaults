@@ -1,0 +1,93 @@
+/* 
+	12 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+	VERSION - 2.0
+	LICENSED UNDER GPL & MIT
+*/
+
+
+/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+/* MAIN CONTAINER */
+.container{
+  max-width: 1148px;
+  margin: 0 auto;
+}
+
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; }
+
+
+/* DEFAULT ROW STYLES */
+.row { margin-bottom: 0; } /* set according to preference*/
+			
+								  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float:left;
+	width: 100%;
+}
+
+@media ( min-width : 768px ) {
+	.col {
+		margin-left: 2.4390243902439024390243902439024%;
+	}
+}
+
+
+/* RESET MARGINS */
+.col:first-child,
+.col_auto:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+@media ( min-width : 768px ) {
+  .span_1 {
+    width:6.09756097561%;
+  }
+  .span_2 {
+    width:14.6341463415%;
+  }
+  .span_3 {
+    width:23.1707317073%;
+  }
+  .span_4 {
+    width:31.7073170732%;
+  }
+  .span_5 {
+    width:40.243902439%;
+  }
+  .span_6 {
+    width:48.7804878049%;
+  }
+  .span_7 {
+    width:57.3170731707%;
+  }
+  .span_8 {
+    width:65.8536585366%;
+  }
+  .span_9 {
+    width:74.3902439024%;
+  }
+  .span_10 {
+    width:82.9268292683%;
+  }
+  .span_11 {
+      width:91.4634146341%;
+  }
+  .span_12 {
+    width:100%;
+  }
+}
