@@ -1,4 +1,4 @@
-#Complete TYPO3 TS config/constant definition for all things i need.
+#Complete TYPO3 TS config/constant definition for all things i need. (TYPO3 version 6.2.4)
 
 ##Including the following
 * Typoscript constants and setup for the most important things
@@ -8,10 +8,15 @@
 * Objekts(Logo,Claim,Search...)
 * CSS
 * JS
-* Extensions(tt_news,fluid,templavoila,indexed_search...)
+* Complete fluid based
+* Responsive
+* Grid generator (max_width,max_cols,col_width,col_margin,unity) see constants
+* Sass file(normal.scss) for template css. You need compass to compile the file or you must use the generated normal.css
+* Less file(news-basic.less) for news extension css. You need less to compile the file or you must use the generated news-basic.css
+* Extensions(news,fluid,direct_mail_subscription,indexed_search...)
 * Debug
 * Debugbar(Press STRG+ALT+SHIFT+D in FE)
-* Webanalytic
+* Webanalytic(E-Tracker and google analytics)
 * and more...
 
 ##Installation
