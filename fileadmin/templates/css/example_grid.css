@@ -1,0 +1,86 @@
+/* Begin grid */
+/* 
+  12 COLUMN - RESPONSIVE GRID SYSTEM
+  DEVELOPED BY DENIS LEBLANC
+  URL - http://responsive.gs
+  VERSION - 2.0
+  LICENSED UNDER GPL & MIT
+  
+  SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+  If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill
+*/
+/*
+Conf:
+max_width=1272
+max_cols=24
+col_width=30
+col_margin=24
+unity=%
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* MAIN CONTAINER */
+.container{
+  max-width: 1272px;
+  margin: 0 auto;
+}
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after {
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+/* DEFAULT ROW STYLES */
+.row { margin-bottom: 0; } /* set according to preference*/
+								  
+/* DEFAULT COLUMN STYLES */
+.col {
+  display: block;
+  float:left;
+  width: 100%;
+}
+
+/* RESET MARGINS */
+.col:first-child{ margin-left: 0; } /* all browsers except IE6 and lower */
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+@media ( min-width : 768px ) {        
+  .col {margin-left: 1.8867924528302%;}          #layer_grid .col{margin-left: 0;}
+        
+        
+  .spacer {width: 1.8867924528302%;}        
+        
+  .span_1{width:2.3584905660377%;}                
+  .span_2{width:6.6037735849057%;}                
+  .span_3{width:10.849056603774%;}                
+  .span_4{width:15.094339622642%;}                
+  .span_5{width:19.339622641509%;}                
+  .span_6{width:23.584905660377%;}                
+  .span_7{width:27.830188679245%;}                
+  .span_8{width:32.075471698113%;}                
+  .span_9{width:36.320754716981%;}                
+  .span_10{width:40.566037735849%;}                
+  .span_11{width:44.811320754717%;}                
+  .span_12{width:49.056603773585%;}                
+  .span_13{width:53.301886792453%;}                
+  .span_14{width:57.547169811321%;}                
+  .span_15{width:61.792452830189%;}                
+  .span_16{width:66.037735849057%;}                
+  .span_17{width:70.283018867925%;}                
+  .span_18{width:74.528301886792%;}                
+  .span_19{width:78.77358490566%;}                
+  .span_20{width:83.018867924528%;}                
+  .span_21{width:87.264150943396%;}                
+  .span_22{width:91.509433962264%;}                
+  .span_23{width:95.754716981132%;}                
+  .span_24{width:100%;}                
+        
+}    
+/* End grid */
