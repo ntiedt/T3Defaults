@@ -23,6 +23,50 @@ tmp.obj_claim{
 }
 #----------------------------------------------------------- OBJ_CLAIM-END
 
+#----------------------------------------------------------- OBJ_SLIDER-BEGIN
+tmp.obj_slider = COA
+tmp.obj_slider{
+	10 = FILES
+	10 {
+		references {
+			table = pages
+			data = levelmedia:-1, slide
+			treatIdAsReference = 1
+		}
+
+		sorting = sorting_foreign
+
+		stdWrap {
+			wrap = <ul>|</ul>
+		}
+		renderObj = COA
+		renderObj {
+			10 = IMAGE
+			10 {
+				stdWrap{
+					wrap = <li>|</li>
+					typolink{
+						wrap = |<span class="description">{file:current:description}</span>
+						wrap.insertData = 1
+						ATagBeforeWrap = 1
+						parameter.data = file:current:link
+					}
+				}
+				file {
+					import {
+						data = file:current:publicUrl
+					}
+					width = {$page.maxW}
+					height = {$page.maxH}
+				}
+				titleText.data = file:current:title
+				altText.data = file:current:alternative
+			}
+		}
+	}
+}
+#----------------------------------------------------------- OBJ_SLIDER-END
+
 #----------------------------------------------------------- OBJ_SEARCH-BEGIN
 tmp.obj_search = COA
 tmp.obj_search{
@@ -69,6 +113,7 @@ tmp.objs{
 [globalVar = LIT:1 = {$t3d_basis.t3d_objects}]
 lib.obj_logo < tmp.obj_logo
 lib.obj_claim < tmp.obj_claim
+lib.obj_slider < tmp.obj_slider
 lib.obj_search < tmp.obj_search
 lib.obj_copyright < tmp.obj_copyright
 lib.obj_address < tmp.obj_address

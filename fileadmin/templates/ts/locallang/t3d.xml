@@ -17,6 +17,9 @@
 			<label index="customsubcategory.google">Google</label>
 			<label index="customsubcategory.alpha">Page type A(dynamic CSS)</label>
 			<label index="customsubcategory.beta">Page type B(dynamic db output e.g. for ajax)</label>
+			
+			<label index="page.maxW">Max Page Width: This indicates that maximum number of pixels (width) a page is allowed to consume.</label>
+			<label index="page.maxH">Max Page Height: This indicates that maximum number of pixels (height) a page is allowed to consume.</label>
       
 			<label index="t3d_config.baseURL">BaseURL:e.g. http://www.kunde.de/</label>
 			<label index="t3d_config.spamProtectEmailAddresses">Enable @-sign replacement</label>
@@ -141,6 +144,9 @@
 			<label index="customsubcategory.google">Google</label>
 			<label index="customsubcategory.alpha">Seitentyp A(dynamisches CSS)</label>
 			<label index="customsubcategory.beta">Seitentyp B(dynamischer DB-Ausgabe z.b. für Ajax)</label>
+			
+			<label index="page.maxW">Maximale Seitenbreite: Dies kennzeichnet die maximale Anzahl von Pixeln (Breite) einer Seite erlaubt ist einzunehmen.</label>
+			<label index="page.maxH">Maximale Seitenhöhe: Dies kennzeichnet die maximale Anzahl von Pixeln (Höhe) einer Seite erlaubt ist einzunehmen.</label>
       
 			<label index="t3d_config.baseURL">Basis-Url:z.b. http://www.kunde.de/</label>
 			<label index="t3d_config.spamProtectEmailAddresses">@-Zeichen Ersetzung einschalten</label>

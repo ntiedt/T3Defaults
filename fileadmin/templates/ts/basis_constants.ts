@@ -18,6 +18,16 @@ content.pageFrameObj = _top
 # customsubcategory=beta=LLL:fileadmin/templates/ts/locallang/t3d.xml:customsubcategory.beta
 
 
+
+### page Defaults ###
+page{
+  #cat=page/dims; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:page.maxW
+  maxW = 1272
+  #cat=page/dims; type=int+; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:page.maxH
+  maxH = 
+}
+
+
 ###
 ### TYPO3 Defaults (T3D) Bereich Config ###
 t3d_config{
