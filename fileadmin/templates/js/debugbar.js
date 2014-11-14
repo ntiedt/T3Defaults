@@ -66,7 +66,7 @@ jQuery(function(j){
     text: true
   }).click(function() {
     j( '#dialog_mdebug' ).dialog({
-      dialogClass: "dialog_mdebug t3d_debug",
+      dialogClass: "dialog_mdebug",
       width: 'auto',
       autoOpen: false,
       closeOnEscape: false,
@@ -75,18 +75,18 @@ jQuery(function(j){
     });
     
     if(j('#mdebug').is(':checked')){
-      j('body > .all').css('cursor','pointer');
-      j('body > .all').bind('click', function(event){
+      j('body > *:first').css('cursor','pointer');
+      j('body > *:first').bind('click', function(event){
         j( '#dialog_mdebug' ).dialog( "close" );
-        j.debug(event.target);
+		  j.debug(event.target);
         return false;
       });
       j( '#dialog_mdebug' ).dialog( "open" );
     }else{
       j( '#dialog_output' ).dialog( "close" );
       j( '#dialog_mdebug' ).dialog( "close" );
-      j('body > .all').unbind('click');
-      j('body > .all').css('cursor','auto');
+      j('body > *:first').unbind('click');
+      j('body > *:first').css('cursor','auto');
     }
   });
   

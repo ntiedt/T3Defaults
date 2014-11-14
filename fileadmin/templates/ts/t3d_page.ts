@@ -145,6 +145,11 @@ page.bodyTagCObject{
   }
 }
 
+[globalVar = GP:debug = 1]
+page.bodyTagCObject.20.35 = TEXT
+page.bodyTagCObject.20.35.noTrimWrap = | t3d_debug||
+[global]
+
 [globalVar = TSFE:id = {$t3d_basis.rootpageID}]
 page.bodyTagCObject.20.40 = TEXT
 page.bodyTagCObject.20.40.noTrimWrap = | rootpage||

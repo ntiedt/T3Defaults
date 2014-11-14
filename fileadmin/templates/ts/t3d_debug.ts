@@ -5,7 +5,7 @@
 [globalVar = GP:debug = 1]
 page.55 = COA
 page.55{
-  wrap = <div id="toolbar" class="ui-widget-header ui-corner-all t3d_debug">|</div>
+  wrap = <div id="toolbar" class="ui-widget-header ui-corner-all">|</div>
   /*
   20 = TEXT
   20{
