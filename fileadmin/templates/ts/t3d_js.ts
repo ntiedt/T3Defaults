@@ -6,6 +6,7 @@
     page.includeJSFooter {
         jquery = {$t3d_pfade.tmpls}js/jquery-1.11.1.min.js
         jquery.disableCompression = 1
+        jquery.forceOnTop = 1
         jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.4.custom.min.js
         jqueryui.disableCompression = 1
         colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
