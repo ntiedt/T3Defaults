@@ -1,36 +1,36 @@
 <div class="body row row-2">
-  <f:if condition="{data.layout}==1">
-  <f:then>
-  <div class="row layout-1">
-    <div class="span_2 col col-1">
-      <div class="empty"></div>
-    </div>
-    <div class="span_20 col col-3">
-      <div class="content content_main">{content_main -> f:format.raw()}</div>
-    </div>
-    <div class="span_2 col col-3">
-      <div class="empty"></div>
-    </div>
-  </div>
-  </f:then>
-  <f:else>
-  <div class="row layout-2">
-    <div class="span_2 col col-1">
-      <div class="empty"></div>
-    </div>
-    <div class="span_13 col col-3">
-      <div class="content content_main">{content_main -> f:format.raw()}</div>
-    </div>
-    <div class="span_2 col col-3">
-      <div class="empty"></div>
-    </div>
-    <div class="span_5 col col-4">
-      <div class="content content_right">{content_right -> f:format.raw()}</div>
-    </div>
-    <div class="span_2 col col-5">
-      <div class="empty"></div>
-    </div>
-  </div>
-  </f:else>
-  </f:if>
+    <f:if condition="{data.layout}==1">
+        <f:then>
+            <div class="row layout-1">
+                <div class="span_2 col col-1">
+                    <div class="empty"></div>
+                </div>
+                <div class="span_20 col col-3">
+                    <div class="content content_main">{content_main -> f:format.raw()}</div>
+                </div>
+                <div class="span_2 col col-3">
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="row layout-2">
+                <div class="span_2 col col-1">
+                    <div class="empty"></div>
+                </div>
+                <div class="span_13 col col-3">
+                    <div class="content content_main">{content_main -> f:format.raw()}</div>
+                </div>
+                <div class="span_2 col col-3">
+                    <div class="empty"></div>
+                </div>
+                <div class="span_5 col col-4">
+                    <div class="content content_right">{content_right -> f:format.raw()}</div>
+                </div>
+                <div class="span_2 col col-5">
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </f:else>
+    </f:if>
 </div>

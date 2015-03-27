@@ -1,43 +1,45 @@
 <div class="body row row-2">
-  <f:if condition="{layout}==1">
-  <div class="obj obj_vorhang">
-    <f:cObject typoscriptObjectPath="lib.obj_vorhang" />
-  </div>
-  <div class="row row-1 layout-1">
-    <div class="span_17 col col-1">
-      <div class="content content_main">
-        {content_main -> f:format.raw()}
-      </div>
-    </div>
-    <div class="span_7 col col-2">
-      <div class="content content_right">
-        <f:cObject typoscriptObjectPath="lib.content_right" />
-      </div>
-    </div>
-  </div>
-  </f:if>
-  <f:if condition="{layout}==2">
-  <div class="row row-1 layout-2">
-    <div class="span_4 col col-1">
-      <div class="row row-1">
-        <div class="obj obj_page_title"><f:cObject typoscriptObjectPath="lib.obj_page_title" /></div>
-      </div>
-      <div class="row row-2">
-        <div class="nav nav_sub">
-          <f:cObject typoscriptObjectPath="lib.nav_sub" />
+    <f:if condition="{layout}==1">
+        <div class="obj obj_vorhang">
+            <f:cObject typoscriptObjectPath="lib.obj_vorhang"/>
         </div>
-      </div>
-    </div>
-    <div class="span_13 col col-2">
-      <div class="content content_main">
-        {content_main -> f:format.raw()}
-      </div>
-    </div>
-    <div class="span_7 col col-3">
-      <div class="content content_right">
-        <f:cObject typoscriptObjectPath="lib.content_right" />
-      </div>
-    </div>
-  </div>
-  </f:if>
+        <div class="row row-1 layout-1">
+            <div class="span_17 col col-1">
+                <div class="content content_main">
+                    {content_main -> f:format.raw()}
+                </div>
+            </div>
+            <div class="span_7 col col-2">
+                <div class="content content_right">
+                    <f:cObject typoscriptObjectPath="lib.content_right"/>
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{layout}==2">
+        <div class="row row-1 layout-2">
+            <div class="span_4 col col-1">
+                <div class="row row-1">
+                    <div class="obj obj_page_title">
+                        <f:cObject typoscriptObjectPath="lib.obj_page_title"/>
+                    </div>
+                </div>
+                <div class="row row-2">
+                    <div class="nav nav_sub">
+                        <f:cObject typoscriptObjectPath="lib.nav_sub"/>
+                    </div>
+                </div>
+            </div>
+            <div class="span_13 col col-2">
+                <div class="content content_main">
+                    {content_main -> f:format.raw()}
+                </div>
+            </div>
+            <div class="span_7 col col-3">
+                <div class="content content_right">
+                    <f:cObject typoscriptObjectPath="lib.content_right"/>
+                </div>
+            </div>
+        </div>
+    </f:if>
 </div>

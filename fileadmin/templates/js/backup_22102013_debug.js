@@ -8,11 +8,11 @@
  * Contributors:  Chris Weiss
  */
 
-(function($) {
-    $.fn.closeDebugger = function(divId) {
-        $("#"+divId).remove();
+(function ($) {
+    $.fn.closeDebugger = function (divId) {
+        $("#" + divId).remove();
     }
-    $.debug = function(variable, options) {
+    $.debug = function (variable, options) {
         // define defaults and override with options, if available
         // by extending the default settings, we don't modify the argument
         var settings = $.extend({
@@ -35,18 +35,18 @@
         }, options);
 
         var vars = {
-            debugContainer: $('<div style="text-align:left;color:black;" id="'+settings.divId+
-                '" ><span id="'+settings.spanId+
-                '">'+settings.spanText+
-                '</span>'+
-                '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+
-                '<a href="javascript:void(0);" onclick="$().closeDebugger(\''+settings.divId+'\');">Close</a>'+
-                '<hr /><div id="'+settings.objectInfoId+
-                '"></div></div>')
+            debugContainer: $('<div style="text-align:left;color:black;" id="' + settings.divId +
+            '" ><span id="' + settings.spanId +
+            '">' + settings.spanText +
+            '</span>' +
+            '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+            '<a href="javascript:void(0);" onclick="$().closeDebugger(\'' + settings.divId + '\');">Close</a>' +
+            '<hr /><div id="' + settings.objectInfoId +
+            '"></div></div>')
         }
 
         var object = variable;
-        if(variable == undefined){
+        if (variable == undefined) {
             object = this;
             settings.recursive = false;
         }
@@ -56,8 +56,7 @@
             var s = typeof value;
             if (s === 'object') {
                 if (value) {
-                    if (typeof value.length === 'number' &&
-                        !(value.propertyIsEnumerable('length')) &&
+                    if (typeof value.length === 'number' && !(value.propertyIsEnumerable('length')) &&
                         typeof value.splice === 'function') {
                         s = 'array';
                     }
@@ -68,71 +67,69 @@
             return s;
         }
 
-
-        function printDebug(obj){
+        function printDebug(obj) {
             //create the div to display debuggable object
             createDebugDiv();
             //get object html
             var html = getObjectHtml(obj);
             //set little div to object html
-            $("#"+settings.objectInfoId).append(html);
+            $("#" + settings.objectInfoId).append(html);
         }
 
-        function createDebugDiv(){
-            if ($("#"+settings.divId).length == 0)
-            {
+        function createDebugDiv() {
+            if ($("#" + settings.divId).length == 0) {
                 //remove all existing debugDivs
-                $("#"+settings.divId).remove();
+                $("#" + settings.divId).remove();
                 //apply css
                 $(vars.debugContainer).css(settings.divCss);
                 $('body').append(vars.debugContainer);
             }
         }
 
-        function getObjectHtml(obj){
+        function getObjectHtml(obj) {
             var html = "";
-            var br   = "<br />";
+            var br = "<br />";
             //html += obj.innerHTML+br;
-            if(obj.innerHTML != undefined){
+            if (obj.innerHTML != undefined) {
                 html += doHtmlElementHtml(obj);
                 return html;
             }
-            else if(typeof obj == "string" ){
-                html += "String: "+obj+br;
+            else if (typeof obj == "string") {
+                html += "String: " + obj + br;
                 return html;
             }
-            else if(typeof obj == "number" ){
-                html += "Number: "+obj+br;
+            else if (typeof obj == "number") {
+                html += "Number: " + obj + br;
                 return html;
             }
-            else if(typeof obj == "boolean" ){
-                html += "Boolean: "+obj+br;
+            else if (typeof obj == "boolean") {
+                html += "Boolean: " + obj + br;
                 return html;
             }
-            else if(obj instanceof Function){
+            else if (obj instanceof Function) {
                 html += formatFunction(obj);
             }
             for (var prop in obj) {
-                if(prop != "prototype"){
-          
-                    if(obj[prop] instanceof Array && settings.recursive){
+                if (prop != "prototype") {
+
+                    if (obj[prop] instanceof Array && settings.recursive) {
                         html += doArrayHtml(obj, prop);
                     }
-                    else if(obj[prop] instanceof Function && settings.recursive){
+                    else if (obj[prop] instanceof Function && settings.recursive) {
                         html += doFunctionHtml(obj, prop);
                     }
-                    else if(obj[prop] instanceof Object && settings.recursive){
+                    else if (obj[prop] instanceof Object && settings.recursive) {
                         html += doObjectHtml(obj, prop);
                     }
-                    else{
-                        html += "<span style=\"display:block;\">"+prop+": "+obj[prop]+"</span>";
+                    else {
+                        html += "<span style=\"display:block;\">" + prop + ": " + obj[prop] + "</span>";
                     }
                 }
             }
             return html;
         }
 
-        function doHtmlElementHtml(obj){
+        function doHtmlElementHtml(obj) {
             var html = "";
             var currentElement = "";
             var desiredElements = new Array(
@@ -149,43 +146,43 @@
                 "clientTop",
                 "innerHTML",
                 "textContent"
-                );
-            for(var prop in desiredElements){
+            );
+            for (var prop in desiredElements) {
                 currentElement = desiredElements[prop];
-                html += "<span style=\"display:block\">"+currentElement+": "+obj[currentElement]+"</span>";
+                html += "<span style=\"display:block\">" + currentElement + ": " + obj[currentElement] + "</span>";
             }
             return html;
         }
 
-        function doArrayHtml(obj, prop){
-            var id= getUniqueId(prop);
-            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#'+id+'\').toggle();">Array: '+
-            prop+'...</a><div style="display:none;padding-left:15px;" id="'+id+
-            '">'+getObjectHtml(obj[prop])+'</div>';
+        function doArrayHtml(obj, prop) {
+            var id = getUniqueId(prop);
+            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#' + id + '\').toggle();">Array: ' +
+                prop + '...</a><div style="display:none;padding-left:15px;" id="' + id +
+                '">' + getObjectHtml(obj[prop]) + '</div>';
         }
 
-        function doFunctionHtml(obj, prop){
-            var id= getUniqueId(prop);
-            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#'+id+'\').toggle();">Function: '+
-            prop+'...</a><div style="display:none;padding-left:15px;" id="'+id+
-            '">'+formatFunction(obj[prop])+'</div>';
+        function doFunctionHtml(obj, prop) {
+            var id = getUniqueId(prop);
+            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#' + id + '\').toggle();">Function: ' +
+                prop + '...</a><div style="display:none;padding-left:15px;" id="' + id +
+                '">' + formatFunction(obj[prop]) + '</div>';
         }
 
-        function doObjectHtml(obj, prop){
-            var id= getUniqueId(prop);
-            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#'+id+'\').toggle();">Object: '+
-            prop+'...</a><div style="display:none;padding-left:15px;" id="'+id+
-            '">'+getObjectHtml(obj[prop])+'</div>';
+        function doObjectHtml(obj, prop) {
+            var id = getUniqueId(prop);
+            return '<a href="javascript:void(0);" style="display:block;" onclick="$(\'#' + id + '\').toggle();">Object: ' +
+                prop + '...</a><div style="display:none;padding-left:15px;" id="' + id +
+                '">' + getObjectHtml(obj[prop]) + '</div>';
         }
 
-        function getUniqueId(property){
+        function getUniqueId(property) {
             var t = new Date();
-            var randomnumber = Math.floor(Math.random()*110)
-            return "div"+property+"-"+t.getTime()+randomnumber;
+            var randomnumber = Math.floor(Math.random() * 110)
+            return "div" + property + "-" + t.getTime() + randomnumber;
         }
 
-        function formatFunction(str){
-            return "<pre>"+str+"</pre>";
+        function formatFunction(str) {
+            return "<pre>" + str + "</pre>";
         }
 
     }

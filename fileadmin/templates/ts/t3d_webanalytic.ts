@@ -8,58 +8,67 @@ temp.etrackerareas.special = rootline
 temp.etrackerareas.includeNotInMenu = 1
 temp.etrackerareas.1 = TMENU
 temp.etrackerareas.1 {
-  NO.allWrap = | {$t3d_webanalytic.etracker.areas_splitchar} |*||*| |
-  NO.doNotLinkIt = 1
+    NO.allWrap = | {$t3d_webanalytic.etracker.areas_splitchar} |*||*| |
+    NO.doNotLinkIt = 1
 }
+
 #----------------------------------------------------------- BEREICHE(et_areas)-END
 
 
 #----------------------------------------------------------- SEITENNAME(et_pagename)-BEGIN
-temp.etrackerpagename < temp.etrackerareas 
+temp.etrackerpagename < temp.etrackerareas
 temp.etrackerpagename.special.range = {$t3d_webanalytic.etracker.range_pagename}
 temp.etrackerpagename.1.NO.allWrap = | {$t3d_webanalytic.etracker.pagename_splitchar}  |*||*| |
 #----------------------------------------------------------- SEITENNAME(et_pagename)-END
 
 
 #----------------------------------------------------------- URL(et_url)-BEGIN
-temp.etrackerurl=COA
-temp.etrackerurl{
-  10 = TEXT
-  10{
-    data=getIndpEnv:TYPO3_HOST_ONLY
-    wrap = http://|/
-  }
-  20 = TEXT
-  20.typolink{
-    parameter.data=TSFE:id
-    returnLast=url
-  }
+temp.etrackerurl = COA
+temp.etrackerurl {
+    10 = TEXT
+    10 {
+        data = getIndpEnv:TYPO3_HOST_ONLY
+        wrap = http://|/
+    }
+
+    20 = TEXT
+    20.typolink {
+        parameter.data = TSFE:id
+        returnLast = url
+    }
 }
+
 #----------------------------------------------------------- URL(et_url)-END
 
 
 #----------------------------------------------------------- BESUCHERINTERESSE(et_ilevel)-BEGIN
-temp.etrackerilevel=TEXT
+temp.etrackerilevel = TEXT
 temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_all}
 
 [treeLevel = 1]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_1}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_1}
 [global]
+
 [treeLevel = 2]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_2}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_2}
 [global]
+
 [treeLevel = 3]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_3}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_3}
 [global]
+
 [treeLevel = 4]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_4}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_4}
 [global]
+
 [treeLevel = 5]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_5}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_5}
 [global]
+
 [treeLevel = 6]
-temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_6}
+    temp.etrackerilevel.value = {$t3d_webanalytic.etracker.ilevel_6}
 [global]
+
 #----------------------------------------------------------- BESUCHERINTERESSE(et_ilevel)-END
 
 
@@ -80,13 +89,13 @@ temp.etrackerjavascript.10.value (
 )
 
 [globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
-temp.etrackerjavascript.10.value >
-temp.etrackerjavascript.10.value(
+    temp.etrackerjavascript.10.value >
+    temp.etrackerjavascript.10.value (
 
 <!-- BEGIN etracker Tracklet 3.0 async --> 
 <script type="text/javascript"> 
 function et_params() {
-)
+    )
 [global]
 
 temp.etrackerjavascript.20 < temp.etrackerpagename
@@ -108,10 +117,11 @@ temp.etrackerjavascript.47.value (
 
 )
 temp.etrackerjavascript.48 = COA
-temp.etrackerjavascript.48{
-  wrap = var et_ilevel = "|";
-  10 < temp.etrackerilevel
+temp.etrackerjavascript.48 {
+    wrap = var et_ilevel = "|";
+    10 < temp.etrackerilevel
 }
+
 temp.etrackerjavascript.50 = TEXT
 temp.etrackerjavascript.50.value (
 
@@ -127,8 +137,8 @@ var et_trig         = "";
 var et_se           = "0";
 )
 [globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
-temp.etrackerjavascript.55 = TEXT
-temp.etrackerjavascript.55.value(
+    temp.etrackerjavascript.55 = TEXT
+    temp.etrackerjavascript.55.value (
 }
 
 (function(){
@@ -149,7 +159,7 @@ var ET_Event = {
 }
 </script> 
 <!-- etracker Tracklet END -->
-)
+    )
 [global]
 
 temp.etrackerjavascript.60 = TEXT
@@ -175,18 +185,19 @@ et={$t3d_webanalytic.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
 <!-- etracker CODE END -->
 )
 [globalVar = LIT:1 = {$t3d_webanalytic.etracker.asnch.enable}]
-temp.etrackerjavascript.60 >
+    temp.etrackerjavascript.60 >
 [global]
 
 [globalVar = LIT:1 = {$t3d_webanalytic.google_analytics.enable}]
-temp.googlejavascript = COA
-temp.googlejavascript.1 = LOAD_REGISTER
-temp.googlejavascript.1{
-  HTTP_HOST.cObject = TEXT
-  HTTP_HOST.cObject.data = getIndpEnv:HTTP_HOST
-}
-temp.googlejavascript.10 = TEXT
-temp.googlejavascript.10.value(
+    temp.googlejavascript = COA
+    temp.googlejavascript.1 = LOAD_REGISTER
+    temp.googlejavascript.1 {
+        HTTP_HOST.cObject = TEXT
+        HTTP_HOST.cObject.data = getIndpEnv:HTTP_HOST
+    }
+
+    temp.googlejavascript.10 = TEXT
+    temp.googlejavascript.10.value (
 <!-- google CODE BEGIN -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -195,33 +206,35 @@ temp.googlejavascript.10.value(
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   
-)
-temp.googlejavascript.20 = TEXT
-temp.googlejavascript.20.wrap = ga('create', '{$t3d_webanalytic.google_analytics.id}', '|');
-temp.googlejavascript.20.data = register:HTTP_HOST
-temp.googlejavascript.30 = TEXT
-temp.googlejavascript.30.value(
+    )
+    temp.googlejavascript.20 = TEXT
+    temp.googlejavascript.20.wrap = ga('create', '{$t3d_webanalytic.google_analytics.id}', '|');
+    temp.googlejavascript.20.data = register:HTTP_HOST
+    temp.googlejavascript.30 = TEXT
+    temp.googlejavascript.30.value (
 
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 </script>
 <!-- google CODE END -->
-)
+    )
 [global]
 
 [globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
-page.1001 = COA
-page.1001.10 < temp.etrackerjavascript
-page.1001.20 < temp.googlejavascript
+    page.1001 = COA
+    page.1001.10 < temp.etrackerjavascript
+    page.1001.20 < temp.googlejavascript
 [global]
+
 #----------------------------------------------------------- JS-END
 
 
 #----------------------------------------------------------- GOOGLE-BEGIN
 ### Google Verifizierung ###
 [globalVar = LIT:1 = {$t3d_webanalytic.google_ver.enable}]
-page.meta.verify-v1.cObject = COA
-page.meta.verify-v1.cObject.10 = TEXT
-page.meta.verify-v1.cObject.10.value= {$t3d_webanalytic.google_ver.id}
+    page.meta.verify-v1.cObject = COA
+    page.meta.verify-v1.cObject.10 = TEXT
+    page.meta.verify-v1.cObject.10.value = {$t3d_webanalytic.google_ver.id}
 [global]
+
 #----------------------------------------------------------- GOOGLE-END
