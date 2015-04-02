@@ -270,6 +270,9 @@ RTE.default {
     ## internal links with url parameters
     #buttons.link.queryParametersSelector.enabled = 1
 
+    ## internal links with rel attribute
+    #buttons.link.relAttribute.enabled = 1
+
     ## Configuration specific to the TableOperations feature
     ## Remove the following fieldsets from the table operations dialogs
     disableAlignmentFieldsetInTableOperations = 1
