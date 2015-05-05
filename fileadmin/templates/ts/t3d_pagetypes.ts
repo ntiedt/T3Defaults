@@ -22,6 +22,7 @@
                 pidInList = {$t3d_pagetypes.b.cobj_tables_ids}
                 # Von Post Objekt getid laden
                 pidInList.override.data = GP:getid
+                languageField = sys_language_uid
             }
         }
     }
