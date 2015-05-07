@@ -379,9 +379,9 @@ plugin.tx_news {
 }
 
 plugin.tx_powermail {
-    view.templateRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Templates/
-    view.layoutRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Layouts/
-    view.partialRootPath = fileadmin/templates/fluid/ext/powermail/Resources/Private/Partials/
+    view.templateRootPath = fileadmin/templates/fluid/ext/powermail/Templates/
+    view.layoutRootPath = fileadmin/templates/fluid/ext/powermail/Layouts/
+    view.partialRootPath = fileadmin/templates/fluid/ext/powermail/Partials/
 }
 
 ##
