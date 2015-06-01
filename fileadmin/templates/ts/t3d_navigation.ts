@@ -16,14 +16,15 @@ tmp.nav_header {
                 IProcFunc = user_tmenulinebreak->main
                 expAll = 1
                 NO {
-                    wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
-                    ATagParams = class="level-1 norm"
+                    wrapItemAndSub = <li class="level-1 norm">|</li>
+                    ATagParams = class="level-1 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                    ATagParams.insertData = 1
                     stdWrap.wrap = <span>|</span>
                 }
 
                 CUR < .NO
-                CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
-                CUR.ATagParams = class="level-1 click"
+                CUR.wrapItemAndSub = <li class="level-1 click">|</li>
+                CUR.ATagParams = class="level-1 click" data-uid="{field:uid}" data-pid="{field:pid}"
                 CUR = 1
                 ACT < .CUR
                 ACT = 1
@@ -50,16 +51,19 @@ tmp.nav_main {
                 IProcFunc = user_tmenulinebreak->main
                 expAll = 1
                 NO {
-                    wrapItemAndSub = <li class="level-1 norm first index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 norm last index_{register:count_MENUOBJ}">|</li>
+                    wrapItemAndSub = <li class="level-1 norm index_{register:count_MENUOBJ}">|</li>|*|
                     wrapItemAndSub.insertData = 1
-                    ATagParams = class="level-1 norm color-1"
+                    ATagParams = class="level-1 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                    ATagParams.insertData = 1
                     stdWrap.wrap = <span>|</span>
                 }
 
                 CUR < .NO
-                CUR.wrapItemAndSub = <li class="level-1 click first index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 click index_{register:count_MENUOBJ}">|</li>|*|<li class="level-1 click last index_{register:count_MENUOBJ}">|</li>
-                CUR.wrapItemAndSub.insertData = 1
-                CUR.ATagParams = class="level-1 click color-3"
+                CUR{
+                    wrapItemAndSub = <li class="level-1 click index_{register:count_MENUOBJ}">|</li>
+                    wrapItemAndSub.insertData = 1
+                    ATagParams = class="level-1 click" data-uid="{field:uid}" data-pid="{field:pid}"
+                }
                 CUR = 1
                 ACT < .CUR
                 ACT = 1
@@ -69,11 +73,15 @@ tmp.nav_main {
             2 {
                 wrap = <ul class="level-2">|</ul>
                 expAll = 1
-                NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
-                NO.ATagParams = class="level-2 norm color-2"
-                #NO.ATagParams.append >
-                CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
-                CUR.ATagParams = class="level-2 click color-3"
+                NO{
+                    wrapItemAndSub = <li class="level-2 norm">|</li>
+                    ATagParams = class="level-2 norm color-2" data-uid="{field:uid}" data-pid="{field:pid}"
+                }
+
+                CUR{
+                    wrapItemAndSub = <li class="level-2 click">|</li>
+                    ATagParams = class="level-2 click color-3" data-uid="{field:uid}" data-pid="{field:pid}"
+                }
                 ACT < .CUR
                 ACT = 1
             }
@@ -100,14 +108,15 @@ tmp.nav_sub {
                 IProcFunc = user_tmenulinebreak->main
                 expAll = 1
                 NO {
-                    wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
-                    ATagParams = class="level-1 norm"
+                    wrapItemAndSub = <li class="level-1 norm">|</li>
+                    ATagParams = class="level-1 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                    ATagParams.insertData = 1
                     stdWrap.wrap = <span>|</span>
                 }
 
                 CUR < .NO
-                CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
-                CUR.ATagParams = class="level-1 click"
+                CUR.wrapItemAndSub = <li class="level-1 click">|</li>
+                CUR.ATagParams = class="level-1 click" data-uid="{field:uid}" data-pid="{field:pid}"
                 CUR = 1
                 ACT < .CUR
                 ACT = 1
@@ -117,10 +126,10 @@ tmp.nav_sub {
             2 {
                 wrap = <ul class="level-2">|</ul>
                 expAll = 1
-                NO.wrapItemAndSub = <li class="level-2 norm first">|</li>|*|<li class="level-2 norm">|</li>|*|<li class="level-2 norm last">|</li>
-                NO.ATagParams = class="level-2 norm"
-                CUR.wrapItemAndSub = <li class="level-2 click first">|</li>|*|<li class="level-2 click">|</li>|*|<li class="level-2 click last">|</li>
-                CUR.ATagParams = class="level-2 click"
+                NO.wrapItemAndSub = <li class="level-2 norm">|</li>
+                NO.ATagParams = class="level-2 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                CUR.wrapItemAndSub = <li class="level-2 click">|</li>
+                CUR.ATagParams = class="level-2 click" data-uid="{field:uid}" data-pid="{field:pid}"
                 ACT < .CUR
                 ACT = 1
             }
@@ -129,10 +138,10 @@ tmp.nav_sub {
             3 {
                 wrap = <ul class="level-3">|</ul>
                 expAll = 1
-                NO.wrapItemAndSub = <li class="level-3 norm first">|</li>|*|<li class="level-3 norm">|</li>|*|<li class="level-3 norm last">|</li>
-                NO.ATagParams = class="level-3 norm"
-                CUR.wrapItemAndSub = <li class="level-3 click first">|</li>|*|<li class="level-3 click">|</li>|*|<li class="level-3 click last">|</li>
-                CUR.ATagParams = class="level-3 click"
+                NO.wrapItemAndSub = <li class="level-3 norm">|</li>
+                NO.ATagParams = class="level-3 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                CUR.wrapItemAndSub = <li class="level-3 click">|</li>
+                CUR.ATagParams = class="level-3 click" data-uid="{field:uid}" data-pid="{field:pid}"
                 ACT < .CUR
                 ACT = 1
             }
@@ -157,7 +166,8 @@ tmp.nav_rootline {
         1 {
             NO {
                 ATagParams = class = nav_rootline_norm
-                allWrap = <div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_text">|</div><div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_norm">|</div>
+                allWrap = <div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_text">|</div><div id="nav_rootline_trenner">></div> |*| <div id="nav_rootline_norm" data-uid="{field:uid}" data-pid="{field:pid}">|</div>
+                allWrap.insertData = 1
                 #allWrap = |*| |  <img src="{$t3d_pfade.tmpls}verlaufsnav_trenner_9.png" width="7" height="20" />  |*| |
             }
 
@@ -188,14 +198,15 @@ tmp.nav_footer {
                 IProcFunc = user_tmenulinebreak->main
                 expAll = 1
                 NO {
-                    wrapItemAndSub = <li class="level-1 norm first">|</li>|*|<li class="level-1 norm">|</li>|*|<li class="level-1 norm last">|</li>
-                    ATagParams = class="level-1 norm"
+                    wrapItemAndSub = <li class="level-1 norm">|</li>
+                    ATagParams = class="level-1 norm" data-uid="{field:uid}" data-pid="{field:pid}"
+                    ATagParams.insertData = 1
                     stdWrap.wrap = <span>|</span>
                 }
 
                 CUR < .NO
-                CUR.wrapItemAndSub = <li class="level-1 click first">|</li>|*|<li class="level-1 click">|</li>|*|<li class="level-1 click last">|</li>
-                CUR.ATagParams = class="level-1 click"
+                CUR.wrapItemAndSub = <li class="level-1 click">|</li>
+                CUR.ATagParams = class="level-1 click" data-uid="{field:uid}" data-pid="{field:pid}"
                 CUR = 1
                 ACT < .CUR
                 ACT = 1
