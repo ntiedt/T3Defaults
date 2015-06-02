@@ -7,7 +7,7 @@
         jquery = {$t3d_pfade.tmpls}js/jquery-1.11.1.min.js
         jquery.disableCompression = 1
         jquery.forceOnTop = 1
-        jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.4.custom.min.js
+        jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.11.4.min.js
         jqueryui.disableCompression = 1
         colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
         colorbox.disableCompression = 1
@@ -25,7 +25,7 @@
         jquery >
         jquery = {$t3d_pfade.tmpls}js/jquery-1.11.1.min.js
         jqueryui >
-        jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.10.4.custom.min.js
+        jqueryui = {$t3d_pfade.tmpls}js/jquery-ui-1.11.4.min.js
         colorbox >
         colorbox = {$t3d_pfade.tmpls}js/jquery.colorbox-min.js
         bxslider >
@@ -145,18 +145,30 @@ var ajax_param = '{$t3d_pagetypes.b.typenum}';
         }
 
         34 = COA
-        34 {
-            wrap = var debug_url = '|';
-            10 = TEXT
-            10 {
-                typolink {
-                    parameter.data = page:uid
-                    additionalParams = &debug=1
-                    addQueryString = 1
-                    addQueryString.method = GET
-                    addQueryString.exclude = id
-                    forceAbsoluteUrl = 1
-                    returnLast = url
+        34{
+            10 = COA
+            10{
+                wrap = var debug_url = '|';
+                10 = TEXT
+                10{
+                    typolink{
+                        parameter.data = page:uid
+                        additionalParams = &debug=1
+                        addQueryString = 1
+                        addQueryString.method = GET
+                        addQueryString.exclude = id
+                        forceAbsoluteUrl = 1
+                        returnLast = url
+                    }
+                }
+            }
+            20 = COA
+            20{
+                wrap = var windowwidth_alert = '|';
+                10 = TEXT
+                10{
+                    lang.de = Ausgewählt Größe liegt außerhalb der maximalen Fensterbreite. Ausgangsgröße wird wieder hergestellt.
+                    lang.en = Selected size is out of the maximum window width. Switch back to original size.
                 }
             }
         }

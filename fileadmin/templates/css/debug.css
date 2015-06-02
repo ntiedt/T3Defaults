@@ -1,15 +1,17 @@
 #toolbar .ui-button-text,
 .ui-menu-item a,
-#dialog_output, #dialog_mdebug {
-    font-size: 12px !important;
+#dialog_output, #dialog_mdebug, #dialog_dimensions {
+    font-size: 0.9rem !important;
+    font-weight: normal;
 }
 
-#dialog_mdebug {
-    font-size: 15px !important;
+#dialog_mdebug, #dialog_dimensions {
+    font-size: 1.2rem !important;
 }
 
 .dialog_mdebug .ui-dialog-titlebar-close,
-.dialog_output .ui-dialog-titlebar-close {
+.dialog_output .ui-dialog-titlebar-close,
+.dialog_dimensions .ui-dialog-titlebar-close {
     display: none;
 }
 
@@ -39,8 +41,12 @@
     top: 0;
     left: 0;
     z-index: 9999;
-    padding: 4px;
     display: inline-block;
+}
+
+#toolbar .ui-button {
+    margin-right: 0;
+    padding: 0.25rem;
 }
 
 #toolbar #help {
@@ -54,10 +60,30 @@
 }
 
 #dialog_output,
-#dialog_mdebug {
+#dialog_mdebug,
+#dialog_dimensions{
     min-width: 200px;
     overflow: auto;
     display: none;
+}
+#dialog_mdebug{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 4px;
+    display: inline-block;
+}
+.dialog_dimensions{
+    position: fixed;
+    left: auto !important;
+    right: 0;
+    top: 0 !important;
+    z-index: 9999;
+    overflow: visible;
+}
+#dialog_dimensions table{
+    width: 100%;
 }
 
 #dialog_output table {
@@ -73,9 +99,28 @@
     padding: 0;
     background-color: grey;
 }
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
-.ui-widget-header a,
-.ui-widget-content a {
-    color: #F6A828;
+#toolbar .ui-state-default,
+.ui-widget-content,
+#toolbar .ui-widget-content .ui-state-default,
+#toolbar .ui-widget-header .ui-state-default{
+    border: 0;
+    background: #FFF url("./jquery-ui-1.11.4.t3d_debug/images/ui-bg_flat_0_ffffff_40x100.png") repeat-x scroll 50% 50%;
+}
+#toolbar .ui-state-default{
+    color: #DFDFDF;
+    background-color: #ffffff;
+}
+#toolbar .ui-state-hover,
+#toolbar .ui-state-active{
+    color: #ffffff;
+    background: #DFDFDF none;
+}
+#toolbar button.ui-button-icon-only{
+    height: 100%;
+}
+#windowwidth-button{
+    width: 100% !important;
+}
+.t3d_debug .ui-widget-header{
+    background: none #fff;
 }
