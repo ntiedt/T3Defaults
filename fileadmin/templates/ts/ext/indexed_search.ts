@@ -16,27 +16,31 @@ plugin.tx_indexedsearch {
 
     show {
         ### Settings: 1=aktiv (sichtbar), 0 inaktiv (nicht sichtbar)
-        ## zeige Kurzanleitung
+        ## Hilfe einblenden
         rules = 0
-        ## Erstellungsinformationen des Hashes
+        ## Angabe der Suchzeit
         parsetimes = 0
+        ## Erste Ebene im Bereichs-Pulldown anzeigen
+        L1sections = 1
         ## Zweite Ebene im Bereichs-Dropdown anzeigen
         L2sections = 0
-        ## Erste Ebene im Bereichs-Dropdown anzeigen
-        L1sections = 1
         ## Alle "nicht im Menue" oder "im Menue verstecken" (aber nicht "versteckte" Seiten) mit anzeigen in section?
         LxALLtypes = 0
         ## leeren des Suchfeldes nach suche
         clearSearchBox = 0
         ## Aktuelles Suchwort zu den bisherigen Suchwoertern hinzufuegen
         clearSearchBox.enableSubSearchCheckBox = 0
+        ## Die Anzahl der gefundenen Seiten enthält keine Suchergebnisse
+        ## auf dessen Seiten der Suchende keinen Zugriff hat. Sollen diese
+        ## dennoch eingerechnet werden, so ist die Option auf 1 zu setzen
         forbiddenRecords = 0
+        ## Anzeige des Seitenbrowsers (auch wenn weniger als 10 Ergebnisse)
         alwaysShowPageLinks = 0
         ## erweiterte Suche abschalten
         advancedSearchLink = 0
         ## Die Anzahl der Suchergebnisse anzeigen
         resultNumber = 0
-        ## Dateiliste begrenzen wenn nach Dateien gesucht wird
+        ## Kommaseparierte Liste von Medientypen, die als Ergebnisse angezeigt werden sollen.
         mediaList =
     }
 
@@ -45,40 +49,43 @@ plugin.tx_indexedsearch {
         ### Settings: 0=aktiv (sichtbar), -1 inaktiv (nicht sichtbar)
         ## Vergleichs-Typ (Ganzes Wort, Wortteil,etc)
         type = 0
-        ## type default option (und /oder)
+        ## Logische Verknüpfung der Suchbegriffe
+        ## 0 = Alle Wörter (UND), 1 = Jedes Wort (ODER)
         defOp = 0
-        ## Bereich(e) der website
+        ## Sektionen, in denen gesucht wird:
+        ## 0 = ganze Website, -1 = Aktuelle Seite,
+        ## -2 = Homepage + Ebene 1, -3 = Ebene 2 und tiefer
+        ## rlx_y = Ebene x, Seite y
         sections = 0
         ## Liste von indizierten UIDs die als Kategorie angezeigt werden sollen
         freeIndexUid = 1
-        ## Suche in Medientypen (Erweiterungen)
-        media = 0
-        ## Sortierung
+        ## -1 = Alle Medien, 0 = Interne Seiten, -2 = Alle externen Seiten
+        ## pdf = PDF-Dokumente, doc = MS-Word, sxw = OpenOffice , ?
+        media = -1
+        ## Sortierung:
+        ## rank_flag = Trefferquote/Vorkommen, mtime = letzte Änderung
+        ## rank_first = Nähe zum Dokumentenanfang, title = Titel der Seite
         order = 0
-        ## Ansicht (Sektionshierachie / Liste)
+        ## Gruppierung:
+        ## sections = Sektionshierarchie, flat = Flache Liste
         group = 0
         ## Sprachwahlbox
         lang = 0
-        ## Aufsteigend absteigend
+        ## Reihenfolge:
+        ## 0 = höchstes zuerst, 1 = geringstes zuerst
         desc = 0
-        ## Ergebnisse (Anzahl der Treffer pro Seite)
+        ## Anzahl der Suchergebnisse auf einer Seite:
+        ## 0 (oder 10) = Standard 10 Ergebnisse, 20 = 20 Ergebnisse, ?
         results = 0
-        ## Ansicht: Erweiterte Vorschau
-        extResume = -1
+        ## Erweiterte Vorschau: 0 = nein, 1 = ja
+        extResume=-1
     }
-
     rules_stdWrap {
-
     }
-
     sectionlinks_stdWrap {
-
     }
-
     path_stdWrap {
-
     }
-
     search {
         ## Liste von Root Seiten-IDs von den gesucht werden soll.
         ## Damit kann man mehrere Seitenbaeume durch suchen.
@@ -128,7 +135,6 @@ plugin.tx_indexedsearch {
         #results = 6
         group = flat
     }
-
     _CSS_DEFAULT_STYLE (
     .tx-indexedsearch-form,
     .tx-indexedsearch-search-submit{
@@ -136,9 +142,6 @@ plugin.tx_indexedsearch {
       padding-bottom: 15px;
     }
 		.tx-indexedsearch .tx-indexedsearch-browsebox LI { display:inline; margin-right:5px; }
-		.obj_search .tx-indexedsearch .tx-indexedsearch-browsebox,
-    .tx-indexedsearch .tx-indexedsearch-browsebox p,
-    .tx-indexedsearch .tx-indexedsearch-browsebox ul.browsebox { display: none; }
 		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-button {  }
 		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-sword {  }
 		.tx-indexedsearch .tx-indexedsearch-whatis {
@@ -148,7 +151,7 @@ plugin.tx_indexedsearch {
       padding: 15px 0;
     }
 		.obj_search .tx-indexedsearch .tx-indexedsearch-whatis { display: none; }
-		.tx-indexedsearch .tx-indexedsearch-whatis .tx-indexedsearch-sw { font-weight:bold; font-style:italic; }
+		.tx-indexedsearch .tx-indexedsearch-whatis .tx-indexedsearch-sw { font-weight:bold; color:#0070B8; }
 		.tx-indexedsearch .tx-indexedsearch-noresults { text-align:center; font-weight:bold; }
 		.obj_search .tx-indexedsearch .tx-indexedsearch-noresults { display: none; }
 		.tx-indexedsearch .tx-indexedsearch-res {
@@ -158,7 +161,7 @@ plugin.tx_indexedsearch {
       padding-top: 0px;
     }
 		.tx-indexedsearch .tx-indexedsearch-res TD.tx-indexedsearch-descr { font-style:italic; }
-		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup { color:red; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup { color:#0070B8; }
 		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-info { background:#eeeeee; }
 		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead { margin-top:20px; margin-bottom:5px; }
 		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead H2 { margin-top:0px; margin-bottom:0px; }
@@ -171,26 +174,28 @@ plugin.tx_indexedsearch {
       border-bottom: 2px solid #E3E4E4;
       clear:both; margin-bottom:1em;
     }
+		.tx-indexedsearch .res-tmpl-css:first-child {
+      border-top: 2px solid #E3E4E4;
+      margin-top:1rem;
+      padding-top:1rem;
+    }
 		.tx-indexedsearch .searchbox-tmpl-css LABEL { margin-right:1em; width:10em; float:left; }
 		.tx-indexedsearch .result-count-tmpl-css, .tx-indexedsearch .percent-tmpl-css { letter-spacing:0; font-weight:normal; float:right; }
 		.tx-indexedsearch .info-tmpl-css dt, .tx-indexedsearch dl.info-tmpl-css dd { float:left; }
 		.tx-indexedsearch .info-tmpl-css dd.item-mtime { float:none; }
 		.tx-indexedsearch .info-tmpl-css dd.item-path { float:none; }
     )
-    _LOCAL_LANG {
-        en {
+    _LOCAL_LANG{
+        en{
             submit_button_label = Search
         }
-
-        fr {
+        fr{
             submit_button_label = Recherche
         }
-
-        es {
+        es{
             submit_button_label = Búsqueda
         }
-
-        ch {
+        ch{
             submit_button_label = 搜索
         }
     }
