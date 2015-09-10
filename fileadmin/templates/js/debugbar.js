@@ -46,8 +46,8 @@ jQuery(function(j){
         if(selectwidth){
             j( '#dialog_dimensions' ).find('.width').html(selectwidth);
         }else{
-            j( '#dialog_dimensions' ).find('.width').html(j(window).width());
-            j( '#dialog_dimensions' ).find('.height').html(j(window).height());
+            j( '#dialog_dimensions' ).find('.width').html(window.innerWidth);
+            j( '#dialog_dimensions' ).find('.height').html(window.innerHeight);
         }
     }
     j( '#debugwidth' ).button({
@@ -77,7 +77,7 @@ jQuery(function(j){
                     j('body .page').show();
                     j('.windowwidth-frame').remove();
                 }else{
-                    if(breite>j(window).width()){
+                    if(breite>window.innerWidth){
                         alert(windowwidth_alert);
                         j('body .page').show();
                         j('.windowwidth-frame').remove();
@@ -88,7 +88,7 @@ jQuery(function(j){
                             .selectmenu("refresh");
 
                     }else{
-                        var iframe = '<iframe class="windowwidth-frame" src="'+document_url+'" style="width:'+breite+'px; height:'+j(window).height()+'px"></iframe>';
+                        var iframe = '<iframe class="windowwidth-frame" src="'+document_url+'" style="width:'+breite+'px; height:'+window.innerHeight+'px"></iframe>';
                         if(j('.windowwidth-frame').length<1){
                             j('body').append(iframe);
                         }else{
@@ -186,8 +186,8 @@ jQuery(function(j){
 
 
     j( '#help .debug_msg a' ).one( 'click', function() {
-        j(this).attr('href', j(this).attr('href').replace('XXX',j(window).width()));
-        j(this).attr('href', j(this).attr('href').replace('YYY',j(window).height()));
+        j(this).attr('href', j(this).attr('href').replace('XXX',window.innerWidth));
+        j(this).attr('href', j(this).attr('href').replace('YYY',window.innerHeight));
         j(this).attr('href', j(this).attr('href').replace('TOUCH',isTouch));
     })
 })
