@@ -91,6 +91,7 @@
             <label index="t3d_grid.unity">Unit of the grid:e.g.</label>
 
             <label index="t3d_webanalytic.eventtracker.debug">Enable event tracker debug:</label>
+            <label index="t3d_webanalytic.etracker.enable">Enable E-Tracker</label>
             <label index="t3d_webanalytic.etracker.asnch.enable">Enable asynchronous version of the Tracklets</label>
             <label index="t3d_webanalytic.etracker.id">E-Tracker id</label>
             <label index="t3d_webanalytic.etracker.eventtracker.enable">Enable etracker event tracker:</label>
@@ -239,6 +240,7 @@
 
             <label index="t3d_webanalytic.eventtracker.debug">Debug für Event Tracker aktivieren:</label>
             <label index="t3d_webanalytic.etracker.id">E-Tracker ID</label>
+            <label index="t3d_webanalytic.etracker.enable">E-Tracker aktivieren</label>
             <label index="t3d_webanalytic.etracker.asnch.enable">Asynchrone Variante des Tracklets aktivieren</label>
             <label index="t3d_webanalytic.etracker.eventtracker.enable">Etracker Event Tracker aktivieren:</label>
             <label index="t3d_webanalytic.etracker.range_areas">E-Tracker Bereich (et_areas):z.b. 1|-2</label>

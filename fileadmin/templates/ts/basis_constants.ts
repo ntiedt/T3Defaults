@@ -220,6 +220,9 @@ t3d_webanalytic {
     #cat=t3d_webanalytic/etracker/010; type=string; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.id
     etracker.id =
 
+    #cat=t3d_webanalytic/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.enable
+    etracker.enable = 0
+
     #cat=t3d_webanalytic/etracker/020; type=boolean; label=LLL:fileadmin/templates/ts/locallang/t3d.xml:t3d_webanalytic.etracker.asnch.enable
     etracker.asnch.enable = 1
 

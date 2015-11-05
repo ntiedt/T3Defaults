@@ -220,8 +220,12 @@ et={$t3d_webanalytic.etracker.id}&amp;v=3.0&amp;java=n&amp;et_easy=0
     )
 [global]
 
+page.1001 = COA
 [globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
-    page.1001 = COA
+    page.1001.20 < temp.googlejavascript
+[global]
+
+[globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}] && [globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
     page.1001.10 < temp.etrackerjavascript
     page.1001.20 < temp.googlejavascript
 [global]
