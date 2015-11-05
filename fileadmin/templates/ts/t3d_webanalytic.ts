@@ -225,7 +225,7 @@ page.1001 = COA
     page.1001.20 < temp.googlejavascript
 [global]
 
-[globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}] && [globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}]
+[globalVar = LIT:1 = {$t3d_basis.t3d_webanalytic}] && [globalVar = LIT:1 = {$t3d_webanalytic.etracker.enable}]
     page.1001.10 < temp.etrackerjavascript
     page.1001.20 < temp.googlejavascript
 [global]
