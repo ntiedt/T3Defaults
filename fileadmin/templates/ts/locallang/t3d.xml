@@ -31,22 +31,31 @@
             <label index="t3d_config.tx_realurl_enable">Enable RealUrl?</label>
             <label index="t3d_config.language">Default language (ID=0)</label>
             <label index="t3d_config.locale_all">Default localisation (ID=0)</label>
+            <label index="t3d_config.htmltag_langkey">Default HTML-Langkey (ID=0)</label>
             <label index="t3d_config.language_2">2. language (ID=1)</label>
             <label index="t3d_config.locale_all_2">Localisation of 2. language (ID=1)</label>
+            <label index="t3d_config.htmltag_langkey_2">HTML-Langkey of 2. language (ID=1)</label>
             <label index="t3d_config.language_3">3. language (ID=2)</label>
             <label index="t3d_config.locale_all_3">Localisation of 3. language (ID=2)</label>
+            <label index="t3d_config.htmltag_langkey_3">HTML-Langkey of 3. language (ID=2)</label>
             <label index="t3d_config.language_4">4. language (ID=3)</label>
             <label index="t3d_config.locale_all_4">Localisation of 4. language (ID=3)</label>
+            <label index="t3d_config.htmltag_langkey_4">HTML-Langkey of 4. language (ID=3)</label>
             <label index="t3d_config.language_5">5. language (ID=4)</label>
             <label index="t3d_config.locale_all_5">Localisation of 5. language (ID=4)</label>
+            <label index="t3d_config.htmltag_langkey_5">HTML-Langkey of 5. language (ID=4)</label>
             <label index="t3d_config.language_6">6. language (ID=5)</label>
             <label index="t3d_config.locale_all_6">Localisation of 6. language (ID=5)</label>
+            <label index="t3d_config.htmltag_langkey_6">HTML-Langkey of 6. language (ID=5)</label>
             <label index="t3d_config.language_7">7. language (ID=6)</label>
             <label index="t3d_config.locale_all_7">Localisation of 7. language (ID=6)</label>
+            <label index="t3d_config.htmltag_langkey_7">HTML-Langkey of 7. language (ID=6)</label>
             <label index="t3d_config.language_8">8. language (ID=7)</label>
             <label index="t3d_config.locale_all_8">Localisation of 8. language (ID=7)</label>
+            <label index="t3d_config.htmltag_langkey_8">HTML-Langkey of 8. language (ID=7)</label>
             <label index="t3d_config.language_9">9. language (ID=8)</label>
             <label index="t3d_config.locale_all_9">Localisation of 9. language (ID=8)</label>
+            <label index="t3d_config.htmltag_langkey_9">HTML-Langkey of 9. language (ID=8)</label>
 
             <label index="t3d_basis.favicon">Enable Favicon?</label>
             <label index="t3d_basis.ul_liststyleimage">Enable own list image?</label>
@@ -178,22 +187,31 @@
             <label index="t3d_config.tx_realurl_enable">RealUrl aktivieren?</label>
             <label index="t3d_config.language">Standard Sprache (ID=0)</label>
             <label index="t3d_config.locale_all">Standard Lokalisierung (ID=0)</label>
+            <label index="t3d_config.htmltag_langkey">Standard HTML-Langkey (ID=0)</label>
             <label index="t3d_config.language_2">2. Sprache (ID=1)</label>
             <label index="t3d_config.locale_all_2">2. Sprache Lokalisierung (ID=1)</label>
+            <label index="t3d_config.htmltag_langkey_2">2. Sprache HTML-Langkey (ID=1)</label>
             <label index="t3d_config.language_3">3. Sprache (ID=2)</label>
             <label index="t3d_config.locale_all_3">3. Sprache Lokalisierung (ID=2)</label>
+            <label index="t3d_config.htmltag_langkey_3">3. Sprache HTML-Langkey (ID=2)</label>
             <label index="t3d_config.language_4">4. Sprache (ID=3)</label>
             <label index="t3d_config.locale_all_4">4. Sprache Lokalisierung (ID=3)</label>
+            <label index="t3d_config.htmltag_langkey_4">4. Sprache HTML-Langkey (ID=3)</label>
             <label index="t3d_config.language_5">5. Sprache (ID=4)</label>
             <label index="t3d_config.locale_all_5">5. Sprache Lokalisierung (ID=4)</label>
+            <label index="t3d_config.htmltag_langkey_5">5. Sprache HTML-Langkey (ID=4)</label>
             <label index="t3d_config.language_6">6. Sprache (ID=5)</label>
             <label index="t3d_config.locale_all_6">6. Sprache Lokalisierung (ID=5)</label>
+            <label index="t3d_config.htmltag_langkey_6">6. Sprache HTML-Langkey (ID=5)</label>
             <label index="t3d_config.language_7">7. Sprache (ID=6)</label>
             <label index="t3d_config.locale_all_7">7. Sprache Lokalisierung (ID=6)</label>
+            <label index="t3d_config.htmltag_langkey_7">7. Sprache HTML-Langkey (ID=6)</label>
             <label index="t3d_config.language_8">8. Sprache (ID=7)</label>
             <label index="t3d_config.locale_all_8">8. Sprache Lokalisierung (ID=7)</label>
+            <label index="t3d_config.htmltag_langkey_8">8. Sprache HTML-Langkey (ID=7)</label>
             <label index="t3d_config.language_9">9. Sprache (ID=8)</label>
             <label index="t3d_config.locale_all_9">9. Sprache Lokalisierung (ID=8)</label>
+            <label index="t3d_config.htmltag_langkey_9">9. Sprache HTML-Langkey (ID=8)</label>
 
             <label index="t3d_basis.favicon">Favicon aktivieren?</label>
             <label index="t3d_basis.ul_liststyleimage">Eigenes Listenbild aktivieren?</label>

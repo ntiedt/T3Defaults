@@ -65,6 +65,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 1
     config.language = {$t3d_config.language_2}
     config.locale_all = {$t3d_config.locale_all_2}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_2}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 1
 [global]
@@ -73,6 +74,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 2
     config.language = {$t3d_config.language_3}
     config.locale_all = {$t3d_config.locale_all_3}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_3}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 2
 [global]
@@ -81,6 +83,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 3
     config.language = {$t3d_config.language_4}
     config.locale_all = {$t3d_config.locale_all_4}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_4}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 3
 [global]
@@ -89,6 +92,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 4
     config.language = {$t3d_config.language_5}
     config.locale_all = {$t3d_config.locale_all_5}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_5}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 4
 [global]
@@ -97,6 +101,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 5
     config.language = {$t3d_config.language_6}
     config.locale_all = {$t3d_config.locale_all_6}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_6}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 5
 [global]
@@ -105,6 +110,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 6
     config.language = {$t3d_config.language_7}
     config.locale_all = {$t3d_config.locale_all_7}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_7}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 6
 [global]
@@ -113,6 +119,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 7
     config.language = {$t3d_config.language_8}
     config.locale_all = {$t3d_config.locale_all_8}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_8}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 7
 [global]
@@ -121,6 +128,7 @@ plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
     config.sys_language_uid = 8
     config.language = {$t3d_config.language_9}
     config.locale_all = {$t3d_config.locale_all_9}
+    config.htmlTag_langKey = {$t3d_config.htmlTag_langKey_9}
     #----------------------------- EXT-INDEXEDSEARCH-_DEFAULT_PI_VARS
     plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 8
 [global]
